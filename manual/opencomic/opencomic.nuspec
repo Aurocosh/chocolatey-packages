@@ -9,9 +9,9 @@
     <owners>Aurocosh</owners>
     <title>opencomic (Install)</title>
     <authors>Oleguer Llopart (ollm)</authors>
-    <projectUrl>https://github.com/ollm/OpenComic</projectUrl>
+    <projectUrl>https://github.com/ollm/OpenComic/releases</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/icons/opencomic.png</iconUrl>
-    <copyright>2024</copyright>
+    <copyright>2017-2024</copyright>
     <licenseUrl>https://github.com/ollm/OpenComic/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ollm/OpenComic</projectSourceUrl>

@@ -19,44 +19,27 @@
     <tags>opencomic comics comic webtoon manga image images reader viewer book ebook epub cbr cbz cb7 jpeg png gif webp</tags>
     <summary>Comic and Manga reader</summary>
     <description>
-      Comic and Manga reader
+Comic and Manga reader
 
-      ## Features
-      - 🖼 Support this image formats: `JPG`, `PNG`, `APNG`, `AVIF`, `WEBP`, `GIF`, `SVG`, `BMP`, `ICO`
-      - 🗄 Support this compressed formats: `RAR`, `ZIP`, `7Z`, `TAR`, `CBR`, `CBZ`, `CB7`, `CBT`
-      - 📄 Support this documents/ebook formats: `PDF`, `EPUB` (Alpha)
-      - 🎵 Support background music from folder: `MP3`, `M4A`, `WEBM`, `WEBA`, `OGG`, `OPUS`, `WAV`, `FLAC`
-      - 📁 Master folders support
-      - ☁️ Server connection support: `smb://`, `ftp://`, `ftps://`, `scp://`, `sftp://`, `ssh://`
-      - 🇯🇵 Manga read mode
-      - 🇰🇷 Webtoon read mode
-      - 📖 Double page view
-      - 🔖 Bookmarks and continue reading
-      - 🔍 Floating magnifying glass
-      - 🖱 Reading in scroll or slide
-      - ⚪ Adjust the brightness, saturation, contrast, sepia, negative and invert colors
-      - 🎨 Colorize black and white images
-      - 🔄 Tracking with sites (AniList)
-      - 🎮 Gamepad navigation
-      - 🔢 Multiple interpolation methods: `lanczos3`, `lanczos2`, `mitchell`, `cubic`, `nearest` and others
-     </description>
-    <releaseNotes>
-      ##### 🚀 New Features
-
-      - Option to set maximum size of temporary files, preserving them when closing the app
-      - Label to display only the contents of a master folder
-      - Support favorite label
-      - Custom labels support
-      - Option to not enlarge images more than its original size
-      - New image interpolation methods available: lanczos3, lanczos2, mitchell, cubic, nearest and others
-      - Server connection support: smb://, ftp://, ftps://, scp://, sftp://, ssh://
-      - Compress json files from cache to zstd to reduce used space
-
-      ##### 🐛 Bug Fixes
-
-      - Error on detect file type from binary
-      - Zoom bug in vertical reading if global zoom disabled
-    </releaseNotes>
+## Features
+- 🖼 Support this image formats: `JPG`, `PNG`, `APNG`, `AVIF`, `WEBP`, `GIF`, `SVG`, `BMP`, `ICO`
+- 🗄 Support this compressed formats: `RAR`, `ZIP`, `7Z`, `TAR`, `CBR`, `CBZ`, `CB7`, `CBT`
+- 📄 Support this documents/ebook formats: `PDF`, `EPUB` (Alpha)
+- 🎵 Support background music from folder: `MP3`, `M4A`, `WEBM`, `WEBA`, `OGG`, `OPUS`, `WAV`, `FLAC`
+- 📁 Master folders support
+- ☁️ Server connection support: `smb://`, `ftp://`, `ftps://`, `scp://`, `sftp://`, `ssh://`
+- 🇯🇵 Manga read mode
+- 🇰🇷 Webtoon read mode
+- 📖 Double page view
+- 🔖 Bookmarks and continue reading
+- 🔍 Floating magnifying glass
+- 🖱 Reading in scroll or slide
+- ⚪ Adjust the brightness, saturation, contrast, sepia, negative and invert colors
+- 🎨 Colorize black and white images
+- 🔄 Tracking with sites (AniList)
+- 🎮 Gamepad navigation
+- 🔢 Multiple interpolation methods: `lanczos3`, `lanczos2`, `mitchell`, `cubic`, `nearest` and others</description>
+    <releaseNotes>[Changelog](https://github.com/ollm/OpenComic/blob/master/CHANGELOG.md)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

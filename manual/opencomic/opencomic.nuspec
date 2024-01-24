@@ -18,8 +18,7 @@
     <bugTrackerUrl>https://github.com/ollm/OpenComic/issues</bugTrackerUrl>
     <tags>opencomic comics comic webtoon manga image images reader viewer book ebook epub cbr cbz cb7 jpeg png gif webp</tags>
     <summary>Comic and Manga reader</summary>
-    <description>
-Comic and Manga reader
+    <description>Comic and Manga reader
 
 ## Features
 - 🖼 Support this image formats: `JPG`, `PNG`, `APNG`, `AVIF`, `WEBP`, `GIF`, `SVG`, `BMP`, `ICO`

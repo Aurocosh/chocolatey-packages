@@ -6,14 +6,10 @@
     <id>opencomic</id>
     <version>1.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Aurocosh</owners>
-    <!-- ============================== -->
     <title>opencomic (Install)</title>
     <authors>Oleguer Llopart (ollm)</authors>
     <projectUrl>https://github.com/ollm/OpenComic</projectUrl>
-    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
-    <!-- Here is an example using Githack -->
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/icons/opencomic.png</iconUrl>
     <copyright>2024</copyright>
     <licenseUrl>https://github.com/ollm/OpenComic/blob/master/LICENSE</licenseUrl>
@@ -64,7 +60,6 @@
     </releaseNotes>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
   </files>
 </package>

@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://github.com/ollm/OpenComic/releases/download/v1.0.0/OpenComic.Setup.1.0.0.exe'
+$url64 = 'https://github.com/ollm/OpenComic/releases/download/v1.1.0/OpenComic.Setup.1.1.0.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType       = 'exe'
   url64bit       = $url64
   softwareName   = 'opencomic*'
-  checksum64     = '52F89DD22C3FA684885F0AF32245D81AB5895F06A2CC7837232C75BA52906DDA'
+  checksum64     = 'ECAC622BF1D7795002EB940AE934B1065CA4FD922A92F00D088FC18C4C5FF3DE'
   checksumType64 = 'sha256'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = '/S'  # NSIS

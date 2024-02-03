@@ -3,11 +3,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>opencomic</id>
-    <version>1.1.0</version>
+    <id>opencomic.portable</id>
+    <version>1.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>OpenComic (Install)</title>
+    <title>OpenComic (Portable)</title>
     <authors>Oleguer Llopart (ollm)</authors>
     <projectUrl>https://github.com/ollm/OpenComic/releases</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/icons/opencomic.png</iconUrl>
@@ -16,7 +16,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ollm/OpenComic</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ollm/OpenComic/issues</bugTrackerUrl>
-    <tags>opencomic comics comic webtoon manga image images reader viewer book ebook epub cbr cbz cb7 jpeg png gif webp</tags>
+    <tags>opencomic comics comic webtoon manga image images reader viewer book ebook epub cbr cbz cb7 jpeg png gif webp portable</tags>
     <summary>Comic and Manga reader</summary>
     <description>Comic and Manga reader
 

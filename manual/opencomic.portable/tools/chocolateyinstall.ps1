@@ -5,8 +5,8 @@ $exeFile = Join-Path $toolsDir 'OpenComic.exe'
 $packageArgs = @{
   packageName  = $env:ChocolateyPackageName
   fileFullPath = $exeFile
-  url          = 'https://github.com/ollm/OpenComic/releases/download/v1.0.0/OpenComic.Portable.1.0.0.exe'
-  checksum     = 'F179905B0D3D38820AAF1E35935812974C2FD39D678CC3A10F105EB741E2C989'
+  url          = 'https://github.com/ollm/OpenComic/releases/download/v1.1.0/OpenComic.Portable.1.1.0.exe'
+  checksum     = 'E74E402B0F8938983E36FA446E56EA22F408CF92C7C715378CD4B178739D276C'
   checksumType = 'sha256'
 }
 

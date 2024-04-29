@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$exeFile = Join-Path $toolsDir 'OpenComic.exe'
+$packagePath = $(Split-Path -parent $toolsDir)
+$exeFile = Join-Path $packagePath 'OpenComic.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

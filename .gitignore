@@ -12,6 +12,7 @@
 *.handover
 *.new
 *.exist
+*.exe
 *-orig.*
 Thumbs.db
 .DS_Store

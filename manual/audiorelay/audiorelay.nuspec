@@ -10,7 +10,7 @@
     <title>AudioRelay (Install)</title>
     <authors>Asapha Halifa</authors>
     <projectUrl>https://audiorelay.net</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/images/icon.avif</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/images/icon.png</iconUrl>
     <bugTrackerUrl>https://community.audiorelay.net/c/bug-reports</bugTrackerUrl>
     <tags>audio streaming cross-platform</tags>
     <summary>Device audio streaming program</summary>

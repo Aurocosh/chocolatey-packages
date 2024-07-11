@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>audiorelay</id>
-    <version>0.27.5</version>
+    <version>0.27.5.20240711</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>AudioRelay (Install)</title>

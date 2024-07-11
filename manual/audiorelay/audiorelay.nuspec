@@ -15,7 +15,8 @@
     <tags>audio streaming cross-platform</tags>
     <summary>Device audio streaming program</summary>
     <description># AudioRelay
-AudioRelay is an audio streaming application that allows users to stream audio between their devices. One device acts as a virtual microphone and streams its audio to another which acts as as a speaker for the remote device. Audio relay also has an Android version: [Google Play](https://play.google.com/store/apps/details?id=com.azefsw.audioconnect). You can use your phone as a microphone for PC or you can use your phone as a speaker for PC. 
+AudioRelay is an audio streaming application that allows users to stream audio between their devices. One device acts as a virtual microphone and streams its audio to another which acts as as a speaker for the remote device.
+AudioRelay also has an Android version: [Google Play](https://play.google.com/store/apps/details?id=com.azefsw.audioconnect). You can use your phone as a microphone for PC or you can use your phone as a speaker for PC. 
 
 ## Features
 - Wireless - Turn your phone into a wireless speaker or headset for your computer

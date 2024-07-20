@@ -10,7 +10,7 @@
     <title>AudioRelay (Install)</title>
     <authors>Asapha Halifa</authors>
     <projectUrl>https://audiorelay.net</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/images/icon.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/img/icon.png</iconUrl>
     <bugTrackerUrl>https://community.audiorelay.net/c/bug-reports</bugTrackerUrl>
     <tags>audio streaming cross-platform</tags>
     <summary>Device audio streaming program</summary>
@@ -24,7 +24,7 @@ AudioRelay also has an Android version: [Google Play](https://play.google.com/st
 - Multiple devices - Send your music to multiple rooms, wirelessly listen with multiple people
 - Low delay - Your PC audio is sent in realtime. Experience lower latency than with Bluetooth 
 
-![Audio player](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/images/main-screenshot.png "Audio player")
+![Audio player](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/audiorelay/img/main-screenshot.png "Audio player")
 </description>
     <releaseNotes>[Changelog](https://community.audiorelay.net/c/releases)</releaseNotes>
   </metadata>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sonobus</id>
+    <version>1.7.2</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>SonoBus</title>
+    <authors>Sonosaurus LLC</authors>
+    <projectUrl>https://sonobus.net/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/sonobus/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/sonosaurus/sonobus/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sonosaurus/sonobus</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/sonosaurus/sonobus/issues</bugTrackerUrl>
+    <tags>audio streaming cross-platform</tags>
+    <summary>Peer-to-peer audio streaming application</summary>
+    <description># SonoBus
+
+SonoBus is an easy to use application for streaming high-quality, low-latency peer-to-peer audio between devices over the internet or a local network.
+
+Simply choose a unique group name (with optional password), and instantly connect multiple people together to make music, remote sessions, podcasts, etc. Easily record the audio from everyone, as well as playback any audio content to the whole group.
+
+Connects multiple users together to send and receive audio among all in a group, with fine-grained control over latency, quality and overall mix. Includes optional input compression, noise gate, and EQ effects, along with a master reverb. All settings are dynamic, network statistics are clearly visible.
+
+Works as a standalone application on macOS, Windows, iOS, and Linux, and as an audio plugin (AU, VST) on macOS and Windows. Use it on your desktop or in your DAW, or on your mobile device.
+
+Easy to setup and use, yet still provides all the details that audio nerds want to see. Audio quality can be instantly adjusted from full uncompressed PCM (16, 24, or 32 bit) or with various compressed bitrates (16-256 kbps per channel) using the low-latency Opus codec, and you can do this independently for any of the users you are connected with in a group.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/sonobus/img/screenshot.png "Screenshot")
+
+IMPORTANT TIPS
+
+SonoBus does not use any echo cancellation, or automatic noise reduction in order to maintain the highest audio quality. As a result, if you have a live microphone signal you will need to also use headphones to prevent echos and/or feedback.
+
+For best results, and to achieve the lowest latencies, connect your computer with wired ethernet to your router if you can. Although it will work with WiFi, the added network jitter and packet loss will require you to use a bigger safety buffer to maintain a quality audio signal, which results in higher latencies.
+
+SonoBus does NOT currently use any encryption for the data communication, so while it is unlikely that it will be intercepted, please keep that in mind. All audio is sent directly between users peer-to-peer, the connection server is only used so that the users in a group can find each other.
+</description>
+    <releaseNotes>[Changelog](https://github.com/sonosaurus/sonobus/releases)</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -13,4 +13,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-."$drop/InputDirector.v2.2.build164.Domain.Setup.exe" /S
+$packageArgs.file = Join-Path -Path $toolsDir -ChildPath $installerName
+Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item "$toolsDir/$installerName"

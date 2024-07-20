@@ -3,22 +3,22 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>houdoku</id>
+    <id>houdoku.portable</id>
     <version>2.14.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Houdoku (Install)</title>
+    <title>Houdoku (Portable)</title>
     <authors>xgi</authors>
     <projectUrl>https://houdoku.org/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/icon.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku.portable/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/xgi/houdoku/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/xgi/houdoku</projectSourceUrl>
     <docsUrl>https://houdoku.org/docs</docsUrl>
     <bugTrackerUrl>https://github.com/xgi/houdoku/issues</bugTrackerUrl>
-    <tags>houdoku comics comic webtoon manga image images reader viewer cbr cbz cb7 jpeg png webp</tags>
+    <tags>houdoku comics comic webtoon manga image images reader viewer cbr cbz cb7 jpeg png webp portable</tags>
     <summary>Houdoku is a free and open source manga reader for the desktop</summary>
-    <description>![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/houdoku_header.png "Houdoku Header")
+    <description>![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku.portable/img/houdoku_header.png "Houdoku Header")
 
 Houdoku is a free and open source manga reader for the desktop.
 
@@ -34,8 +34,8 @@ Houdoku is a free and open source manga reader for the desktop.
 
 ---
 
-![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots1.png "Screenshots1")
-![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots2.png "Screenshots2")
+![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku.portable/img/screenshots1.png "Screenshots1")
+![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku.portable/img/screenshots2.png "Screenshots2")
 
 ---
 

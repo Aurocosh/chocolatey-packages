@@ -18,9 +18,7 @@
     <bugTrackerUrl>https://github.com/xgi/houdoku/issues</bugTrackerUrl>
     <tags>houdoku comics comic webtoon manga image images reader viewer cbr cbz cb7 jpeg png webp</tags>
     <summary>Houdoku is a free and open source manga reader for the desktop</summary>
-    <description>__REPLACE__MarkDown_Okay
-
-![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/houdoku_header.png "Houdoku Header")
+    <description>![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/houdoku_header.png "Houdoku Header")
 
 Houdoku is a free and open source manga reader for the desktop.
 
@@ -28,8 +26,7 @@ Houdoku is a free and open source manga reader for the desktop.
 
 ## Features
 
-- Read manga from popular websites or import ones from your filesystem,
-  all in one place.
+- Read manga from popular websites or import ones from your filesystem, all in one place.
 - Download chapters for offline reading.
 - Customizable reader interface with multiple layouts and settings.
 - Tagging and filtering support to easily browse and manage large libraries.
@@ -37,21 +34,18 @@ Houdoku is a free and open source manga reader for the desktop.
 
 ---
 
-![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/screenshots1.png "Screenshots1")
-![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/screenshots2.png "Screenshots2")
+![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots1.png "Screenshots1")
+![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots2.png "Screenshots2")
 
 ---
 
 ## Documentation
 
-User guides and documentation are available on
-[houdoku.org](https://houdoku.org).
+User guides and documentation are available on [houdoku.org](https://houdoku.org).
 
 ## Content Sources
 
-Houdoku allows users to import manga from their filesystem (e.g. as zip files
-or folders of images). To read manga from 3rd-party "content sources", the
-Tiyo plugin can be installed from the Plugins tab in the client.
+Houdoku allows users to import manga from their filesystem (e.g. as zip files or folders of images). To read manga from 3rd-party "content sources", the Tiyo plugin can be installed from the Plugins tab in the client.
 
 To learn about Tiyo or request a new content source, please go to https://github.com/xgi/tiyo
 </description>

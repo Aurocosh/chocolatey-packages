@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>houdoku</id>
+    <version>2.14.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>houdoku (Install)</title>
+    <authors>xgi</authors>
+    <projectUrl>https://houdoku.org/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/xgi/houdoku/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/xgi/houdoku</projectSourceUrl>
+    <docsUrl>https://houdoku.org/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/xgi/houdoku/issues</bugTrackerUrl>
+    <tags>houdoku comics comic webtoon manga image images reader viewer cbr cbz cb7 jpeg png webp</tags>
+    <summary>Houdoku is a free and open source manga reader for the desktop</summary>
+    <description>__REPLACE__MarkDown_Okay
+
+![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/houdoku_header.png "Houdoku Header")
+
+Houdoku is a free and open source manga reader for the desktop.
+
+---
+
+## Features
+
+- Read manga from popular websites or import ones from your filesystem,
+  all in one place.
+- Download chapters for offline reading.
+- Customizable reader interface with multiple layouts and settings.
+- Tagging and filtering support to easily browse and manage large libraries.
+- Cross-platform!
+
+---
+
+![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/screenshots1.png "Screenshots1")
+![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/audiorelay/img/screenshots2.png "Screenshots2")
+
+---
+
+## Documentation
+
+User guides and documentation are available on
+[houdoku.org](https://houdoku.org).
+
+## Content Sources
+
+Houdoku allows users to import manga from their filesystem (e.g. as zip files
+or folders of images). To read manga from 3rd-party "content sources", the
+Tiyo plugin can be installed from the Plugins tab in the client.
+
+To learn about Tiyo or request a new content source, please go to https://github.com/xgi/tiyo
+</description>
+    <releaseNotes>https://github.com/xgi/houdoku/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

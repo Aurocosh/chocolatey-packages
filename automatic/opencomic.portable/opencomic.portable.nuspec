@@ -4,13 +4,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opencomic.portable</id>
-    <version>1.2.0</version>
+    <version>1.2.0.20240720</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>OpenComic (Portable)</title>
     <authors>Oleguer Llopart (ollm)</authors>
     <projectUrl>https://github.com/ollm/OpenComic/releases</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/icons/opencomic.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/opencomic.portable/img/icon.png</iconUrl>
     <copyright>2017-2024</copyright>
     <licenseUrl>https://github.com/ollm/OpenComic/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

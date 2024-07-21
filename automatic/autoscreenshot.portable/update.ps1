@@ -1,7 +1,7 @@
 import-module au
 
 $releases = 'https://api.github.com/repos/artem78/AutoScreenshot/releases/latest'
-$re = "AutoScreenshot_v(\d+\.\d+(?:\.\d+)?)_Windows_setup.exe"
+$re = "AutoScreenshot_v(\d+\.\d+(?:\.\d+)?)_Windows_portable.zip"
 
 function global:au_SearchReplace {
     @{

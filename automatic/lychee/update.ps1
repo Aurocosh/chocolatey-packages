@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://api.github.com/repos/xgi/houdoku/releases/latest'
+$releases = 'https://api.github.com/repos/lycheeverse/lychee/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -13,13 +13,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_assets = (Invoke-WebRequest $releases | ConvertFrom-Json).assets
-    $specific_asset = $download_assets | Where-Object name -like "lychee-*-windows-x86_64.exe "
+    $specific_asset = $download_assets | Where-Object name -like "lychee-v*-windows-x86_64.exe"
     $url64 = $specific_asset.browser_download_url
-	
-    if ($url64 -match "lychee-(\d+\.\d+\.\d+)-windows-x86_64.exe") {
+
+    if ($url64 -match "lychee-v(\d+\.\d+\.\d+)-windows-x86_64.exe") {
         $version = $matches[1]
     }
-	
+
     @{
         URL64   = $url64
         Version = $version

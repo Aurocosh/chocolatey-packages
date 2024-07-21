@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>topgrade</id>
+    <version>15.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Topgrade (Install)</title>
+    <authors>topgrade-rs</authors>
+    <projectUrl>https://github.com/topgrade-rs/topgrade</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/topgrade-rs/topgrade/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/topgrade-rs/topgrade</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/topgrade-rs/topgrade/issues</bugTrackerUrl>
+    <tags>topgrade package automatic updater cli admin</tags>
+    <summary>Topgrade is a cli program update utility</summary>
+    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/banner.png "Banner")
+
+## Introduction
+
+Keeping your system up to date usually involves invoking multiple package managers.
+This results in big, non-portable shell one-liners saved in your shell.
+To remedy this, **Topgrade** detects which tools you use and runs the appropriate commands to update them.
+
+![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/topgrade_demo.gif "Demo")
+
+## Usage
+
+Just run `topgrade`.
+
+## Configuration 
+
+See `config.example.toml` for an example configuration file.
+ Configuration Path on Windows: `%APPDATA%`
+</description>
+    <releaseNotes>https://github.com/topgrade-rs/topgrade/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

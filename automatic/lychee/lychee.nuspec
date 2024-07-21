@@ -15,13 +15,13 @@
     <bugTrackerUrl>https://github.com/lycheeverse/lychee/issues</bugTrackerUrl>
     <tags>lychee url cli markdown html rst website</tags>
     <summary>A fast, async, stream-based link checker written in Rust</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/banner.svg "Banner")
+    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/banner.svg "Banner")
 
 ⚡ A fast, async, stream-based link checker written in Rust.\
 Finds broken hyperlinks and mail addresses inside Markdown, HTML,
 reStructuredText, or any other text file or website!
 
-![Screencast](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screencast.svg "Screencast")
+![Screencast](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/screencast.svg "Screencast")
 </description>
     <releaseNotes>https://github.com/lycheeverse/lychee/releases</releaseNotes>
   </metadata>

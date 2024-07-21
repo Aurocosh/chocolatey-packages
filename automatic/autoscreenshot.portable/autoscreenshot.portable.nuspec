@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>autoscreenshot.portable</id>
+    <version>1.16</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Auto Screenshot (Install)</title>
+    <authors>artem78</authors>
+    <projectUrl>https://github.com/artem78/AutoScreenshot</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/icon.png</iconUrl>
+    <projectSourceUrl>https://github.com/artem78/AutoScreenshot</projectSourceUrl>
+    <docsUrl>https://github.com/artem78/AutoScreenshot/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/artem78/AutoScreenshot/issues</bugTrackerUrl>
+    <tags>autoscreenshot screen screenshot capture portable</tags>
+    <summary>Application for automatically taking screenshots at specified time intervals</summary>
+    <description>## Overview
+An application for automatically taking screenshots at specified time intervals.
+
+## Features
+* Automatic screenshot capture at specified time intervals (from 1 second to 24 hours)
+* Saving images in PNG, JPEG, BMP, TIFF or GIF formats
+* Pause capture when user is inactive (depending on mouse moves and keyboard events) 
+* Customizable output filenames with variables (date, time, user, computer name, sequential number) and ability of grouping by folders (for example: by day or month)
+* Automatic capture can be started on system startup
+* Multiple screens support
+* High DPI support
+* Can execute custom command after screenshot was taken
+* Clearing old screenshots
+* Absolutely free and open source
+
+## Screenshots
+![Main program window in Windows 7](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/screenshot.png "Main program window in Windows 7")
+</description>
+    <releaseNotes>https://github.com/artem78/AutoScreenshot/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

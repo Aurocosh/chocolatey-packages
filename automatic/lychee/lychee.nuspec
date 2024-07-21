@@ -7,7 +7,7 @@
     <version>0.15.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>lychee (Install)</title>
+    <title>Lychee (Install)</title>
     <authors>The lychee maintainers</authors>
     <projectUrl>https://github.com/lycheeverse/lychee</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/icon.png</iconUrl>

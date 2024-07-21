@@ -10,7 +10,7 @@ $packageArgs = @{
   checksum       = '554beb38f2efb3591da213524c4b74d31d8178e6e194be8cbcc4d733a19e5a54'
   checksumType   = 'sha256'
   url64bit       = 'https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-windows-amd64.zip'
-  checksum64     = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+  checksum64     = 'feccdd4ac756d5fc1dd24913aec61c256ede8b141d5076079fdebcefcf81a9c7'
   checksumType64 = 'sha256'
 }
 

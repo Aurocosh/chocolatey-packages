@@ -23,9 +23,9 @@
 
 Fastfetch is a [neofetch](https://github.com/dylanaraps/neofetch)-like tool for fetching system information and displaying it prettily. It is written mainly in C, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, macOS, SunOS and Windows 7+ are supported.
 
-![example1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example1.png")
-![example2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example2.png")
-![example3](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example3.png")
+![example1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example1.png)
+![example2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example2.png)
+![example3](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastfetch/img/win-example3.png)
 ## Usage
 
 * Run it with default configuration: `fastfetch`

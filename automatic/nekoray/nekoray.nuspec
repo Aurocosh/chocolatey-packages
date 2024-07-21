@@ -18,7 +18,7 @@
     <summary>Qt based cross-platform GUI proxy configuration manager</summary>
     <description>## Overview
 
-Qt based cross-platform GUI proxy configuration manager (backend: sing-box)
+Qt based cross-platform GUI proxy configuration manager (backend: XRay or sing-box)
 
 ## Screenshot
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/nekoray/img/screenshot.png "Screenshot")
@@ -44,7 +44,6 @@ Qt based cross-platform GUI proxy configuration manager (backend: sing-box)
 * `/PurgeConfig`      - remove old configuration files before installation
 
 eg. `choco install -y nekoray --package-parameters="/AddToDesktop /PurgeConfig"`
-
 </description>
     <releaseNotes>https://github.com/MatsuriDayo/nekoray/releases</releaseNotes>
     <dependencies>

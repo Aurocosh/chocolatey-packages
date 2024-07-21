@@ -16,11 +16,7 @@
     <bugTrackerUrl>https://github.com/artem78/AutoScreenshot/issues</bugTrackerUrl>
     <tags>autoscreenshot screen screenshot capture</tags>
     <summary>Application for automatically taking screenshots at specified time intervals</summary>
-    <description>
-Auto Screenshot
-===============
-
-## Overview
+    <description>## Overview
 An application for automatically taking screenshots at specified time intervals.
 
 ## Features

@@ -7,7 +7,7 @@
     <version>1.16</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Auto Screenshot (Install)</title>
+    <title>Auto Screenshot (Portable)</title>
     <authors>artem78</authors>
     <projectUrl>https://github.com/artem78/AutoScreenshot</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/icon.png</iconUrl>

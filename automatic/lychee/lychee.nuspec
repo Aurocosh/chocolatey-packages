@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lychee</id>
+    <version>0.15.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>lychee (Install)</title>
+    <authors>The lychee maintainers</authors>
+    <projectUrl>https://github.com/lycheeverse/lychee</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/icon.png</iconUrl>
+    <projectSourceUrl>https://github.com/lycheeverse/lychee</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/lycheeverse/lychee/issues</bugTrackerUrl>
+    <tags>lychee url cli markdown html rst website</tags>
+    <summary>A fast, async, stream-based link checker written in Rust</summary>
+    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/banner.svg "Banner")
+
+⚡ A fast, async, stream-based link checker written in Rust.\
+Finds broken hyperlinks and mail addresses inside Markdown, HTML,
+reStructuredText, or any other text file or website!
+
+![Screencast](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screencast.svg "Screencast")
+</description>
+    <releaseNotes>https://github.com/lycheeverse/lychee/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://api.github.com/artem78/AutoScreenshot/topgrade/releases/latest'
+$releases = 'https://api.github.com/repos/artem78/AutoScreenshot/releases/latest'
 $re = "AutoScreenshot_v(\d+\.\d+(?:\.\d+)?)_Windows_setup.exe"
 
 function global:au_SearchReplace {
@@ -15,9 +15,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_assets = (Invoke-WebRequest $releases | ConvertFrom-Json).assets
     $specific_asset = $download_assets | Where-Object name -match $re
-    $url64 = $specific_asset.browser_download_url
+    $url = $specific_asset.browser_download_url
 	
-    if ($url64 -match $re) {
+    if ($url -match $re) {
         $version = $matches[1]
     }
 	

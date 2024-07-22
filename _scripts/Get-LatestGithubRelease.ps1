@@ -52,17 +52,17 @@ function Get-LatestGithubRelease {
     $releaseData["Body"] = $release.body;
   }
   
-  if (!$MainUrl32Regex) {
+  if ($MainUrl32Regex) {
     $releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url;
   }
-  if (!$MainUrl64Regex) {
+  if ($MainUrl64Regex) {
     $releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url;
   }
   
-  if (!$PortableUrl32Regex) {
+  if ($PortableUrl32Regex) {
     $releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url;
   }
-  if (!$PortableUrl64Regex) {
+  if ($PortableUrl64Regex) {
     $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url;
   }
   return $releaseData;

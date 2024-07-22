@@ -48,10 +48,8 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
     -   Color info text
     -   Image files: PNG, JPG, BMP, TGA, ICO, TIFF and **GIF**
 -   Supported operations
-    -   Zoom (`mouse scroll` or `+`/`-`)  
-        or set speed for GIF
-    -   Rotate (`1`/`2`)  
-        or jump to previous/next frame for GIF
+    -   Zoom (`mouse scroll` or `+`/`-`)
+    -   Rotate (`1`/`2`)
     -   Flip (`3`/`4`)
     -   Set transparency (`Ctrl` + `mouse scroll` or `Ctrl` + `+`/`-`)
     -   Mouse click-through
@@ -90,7 +88,8 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 -   Theme color, interface font, tray icon, and more
 -   Hot keys
 -   Detailed functionality options
--   Want more options? Just [tell me](https://github.com/liulex/Snipaste-Feedback/issues)!</description>
+-   Want more options? Just [tell me](https://github.com/liulex/Snipaste-Feedback/issues)!
+</description>
     <releaseNotes>https://www.snipaste.com/download.html</releaseNotes>
     <!--<dependencies>
       <dependency id="" version="__MINIMUM_VERSION__" />

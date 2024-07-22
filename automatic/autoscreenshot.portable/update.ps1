@@ -15,7 +15,6 @@ function global:au_GetLatest {
         -GitUser artem78 `
         -RepoName AutoScreenshot `
         -MainUrl32Regex "AutoScreenshot_v\d+.\d+_Windows_portable.zip"
-	
     @{
         URL     = $release.MainUrl32
         Version = $release.Version

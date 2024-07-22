@@ -1,8 +1,8 @@
 function Get-LatestGithubRelease {
   param(
-	[Parameter(Position=0,mandatory=$true)]
+    [Parameter(Position = 0, mandatory = $true)]
     [string]$GitUser,
-	[Parameter(Position=1,mandatory=$true)]
+    [Parameter(Position = 1, mandatory = $true)]
     [string]$RepoName,
     [Switch]$UsePreRelease,
     [Switch]$IncludeAssets,
@@ -40,30 +40,30 @@ function Get-LatestGithubRelease {
   };
   
   if ($IncludeAssets) {
-	  $releaseData["Assets"] = $release.assets;
+    $releaseData["Assets"] = $release.assets;
   }
   if ($IncludeAssetUrls) {
-	  $releaseData["AssetUrls"] = $release.assets | Select-Object -expand browser_download_url;
+    $releaseData["AssetUrls"] = $release.assets | Select-Object -expand browser_download_url;
   }
   if ($IncludeReleaseUrl) {
-	  $releaseData["ReleaseUrl"] = $release.html_url;
+    $releaseData["ReleaseUrl"] = $release.html_url;
   }
   if ($IncludeReleaseBody) {
-	  $releaseData["Body"] = $release.body;
+    $releaseData["Body"] = $release.body;
   }
   
-  if (![string]::IsNullOrEmpty($MainUrl32Regex)) {
-	$releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url;
+  if (!$MainUrl32Regex) {
+    $releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url;
   }
-  if (![string]::IsNullOrEmpty($MainUrl64Regex)) {
-	$releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url;
+  if (!$MainUrl64Regex) {
+    $releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url;
   }
   
-  if (![string]::IsNullOrEmpty($PortableUrl32Regex)) {
-	$releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url;
+  if (!$PortableUrl32Regex) {
+    $releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url;
   }
-  if (![string]::IsNullOrEmpty($PortableUrl64Regex)) {
-	$releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url;
+  if (!$PortableUrl64Regex) {
+    $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url;
   }
   return $releaseData;
 }

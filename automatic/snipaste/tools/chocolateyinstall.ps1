@@ -17,12 +17,12 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Add Desktop shortcut
+$PackageParameters = Get-PackageParameters
+
 If (!$PackageParameters.NoDesktopShortcut) {
   Install-ChocolateyShortcut -ShortcutFilePath "$env:ALLUSERSPROFILE\Desktop\Snipaste.lnk" -TargetPath $exeFile
 }
 
-# Add StartMenu shortcut
 If (!$PackageParameters.NoStartMenuShortcut) {
   Install-ChocolateyShortcut -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Snipaste.lnk" -TargetPath $exeFile
 }

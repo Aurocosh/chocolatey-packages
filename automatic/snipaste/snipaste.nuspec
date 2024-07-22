@@ -89,6 +89,15 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 -   Hot keys
 -   Detailed functionality options
 -   Want more options? Just [tell me](https://github.com/liulex/Snipaste-Feedback/issues)!
+
+----------
+
+### Package Parameters:
+
+ - `/NoDesktopShortcut` Do not create Desktop Shortcut
+ - `/NoStartMenuShortcut` Do not create Start Menu Shortcut
+ 
+eg. `choco install -y snipaste --package-parameters="/NoDesktopShortcut /NoStartMenuShortcut"`
 </description>
     <releaseNotes>https://www.snipaste.com/download.html</releaseNotes>
     <!--<dependencies>

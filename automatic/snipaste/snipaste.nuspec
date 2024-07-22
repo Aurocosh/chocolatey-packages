@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>snipaste</id>
+    <version>2.9.2</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Snipaste (Portable)</title>
+    <authors>Snipaste</authors>
+    <projectUrl>https://www.snipaste.com/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/icon.png</iconUrl>
+    <copyright>2016-2024</copyright>
+    <docsUrl>https://docs.snipaste.com/</docsUrl>
+    <bugTrackerUrl>https://github.com/Snipaste/feedback/issues</bugTrackerUrl>
+    <tags>snipaste screenshot screen capture editor portable</tags>
+    <summary>Snipaste is a simple but powerful snipping tool</summary>
+    <description>## Boost your productivity with Snipaste
+
+Snipaste is a simple but powerful snipping tool, and also allows you to pin the screenshot back onto the screen. Download and start the application, press `F1` to start snipping, then press `F3` to paste it as a floating window. That's it!
+
+You can also convert text or color info in the clipboard into a floating image window. Such windows can be zoomed, rotated, flipped, made translucent, and even made click-through! If you are a programmer, a designer or whoever works much time before the computer, you will be surprised how it can help you get your work done more efficiently!
+
+Snipaste is easy and intuitive to use, but there are also many hidden features that can make your life even more efficient. Read the [manual](https://docs.snipaste.com) if you are interested.
+
+----------
+
+### Intuitive snipping
+![Snipping](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/snipping.png "Snipping")
+
+-   Auto detect UI elements
+-   Pixel-level control
+-   Color picker (try `F1`, `C`, `F3`)
+-   **History play back** (`,`/`.`)
+-   Multi-screen support
+-   HiDPI (retina display) support
+
+----------
+
+### Paste images as topmost floating windows
+![Windows](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/windows.png "Windows")
+
+-   The source (in the clipboard) could be
+    -   Image
+    -   Plain text
+    -   HTML text
+    -   Color info text
+    -   Image files: PNG, JPG, BMP, TGA, ICO, TIFF and **GIF**
+-   Supported operations
+    -   Zoom (`mouse scroll` or `+`/`-`)  
+        or set speed for GIF
+    -   Rotate (`1`/`2`)  
+        or jump to previous/next frame for GIF
+    -   Flip (`3`/`4`)
+    -   Set transparency (`Ctrl` + `mouse scroll` or `Ctrl` + `+`/`-`)
+    -   Mouse click-through
+    -   Image editing (`Space`)
+    -   Thumbnail mode (`Shift` + `Double click`)
+    -   Hide (`Double click`)
+    -   ...
+-   Color picker (`Alt`)
+-   Drag &amp; drop
+-   **Grouping**
+-   **Auto backup &amp; restore**
+----------
+
+### Easy image annotation
+![Annotation](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/annotation.png "Annotation")
+
+-   Rich shapes
+    -   Rectangle
+    -   Ellipse
+    -   Linestrip
+    -   Arrow
+    -   Pencil
+    -   Marker pen
+    -   Text
+-   Advanced annotation tools
+    -   Mosaic
+    -   Gaussian blur
+    -   Eraser
+-   Undo &amp; redo
+
+----------
+
+### Customization
+![Customization](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/customization.png "Customization")
+
+-   Theme color, interface font, tray icon, and more
+-   Hot keys
+-   Detailed functionality options
+-   Want more options? Just [tell me](https://github.com/liulex/Snipaste-Feedback/issues)!</description>
+    <releaseNotes>https://www.snipaste.com/download.html</releaseNotes>
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

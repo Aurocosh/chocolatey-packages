@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://inputdirector.com/downloads.html'
-
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
@@ -12,16 +10,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    $releases = 'https://inputdirector.com/downloads.html'
     $download_page = Invoke-WebRequest -Uri $releases
 
     $re = "InputDirector\.v(\d+\.\d+(?:\.\d+)?)\.zip"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-	
-    if ($url -match $re) {
-        $version = $matches[1]
+    $version = $matches[1]
+    
+    if ($url) {
+        $url = 'https://inputdirector.com/' + $url
     }
-	
-    $url = 'https://inputdirector.com/' + $url
 
     @{
         URL     = $url

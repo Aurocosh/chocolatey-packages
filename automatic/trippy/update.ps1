@@ -17,8 +17,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
-        -GitUser emuell `
-        -RepoName restic-browser `
+        -GitUser fujiapple852 `
+        -RepoName trippy `
         -MainUrl32Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-msvc.zip" `
         -MainUrl64Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-gnu.zip"
     @{

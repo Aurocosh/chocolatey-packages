@@ -8,7 +8,7 @@
     <title>Input Director (Install)</title>
     <authors>Shane Richards</authors>
     <projectUrl>http://www.inputdirector.com</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/icons/inputdirector.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/InputDirector/img/icon.png</iconUrl>
     <licenseUrl>http://www.inputdirector.com/faq.html#1_6</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>http://inputdirector.com/quickstart-usage.html</docsUrl>

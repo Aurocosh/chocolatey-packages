@@ -37,6 +37,9 @@ See `config.example.toml` for an example configuration file.
  Configuration Path on Windows: `%APPDATA%`
 </description>
     <releaseNotes>https://github.com/topgrade-rs/topgrade/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

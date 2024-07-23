@@ -12,3 +12,33 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
+
+# To work properly with Chocolatey we need to enable self renaming in the configuration. Otherwise choco will not be able to update the package when update is launched by topgrade.
+
+# Paths for the configuration files
+$topgradePrimaryConfig = "$env:APPDATA/topgrade.toml"
+$topgradeSecondaryConfig = "$env:APPDATA/topgrade/topgrade.toml"
+$defaultConfigFile = Join-Path $toolsDir 'topgrade.toml'
+
+# Check if either of the configuration files exists
+if (!((Test-Path $topgradePrimaryConfig) -or (Test-Path $topgradeSecondaryConfig))) {
+  # Neither config file exists. Copy our default config file to the config location
+  $destinationDir = Join-Path $env:APPDATA 'topgrade'
+  if (!(Test-Path $destinationDir)) {
+    New-Item -ItemType Directory -Path $destinationDir
+  }
+  Copy-Item -Path $defaultConfigFile -Destination $topgradeSecondaryConfig
+  Write-Output "Copied default config to $topgradeSecondaryConfig"
+}
+else {
+  # At least one of the files exists. Perform regex replacement to uncomment the line "self_rename = true"
+  $configFile = if (Test-Path $topgradePrimaryConfig) { $topgradePrimaryConfig } else { $topgradeSecondaryConfig }
+  $content = Get-Content -Path $configFile -Raw
+
+  # Regex to uncomment the line '# self_rename = true'
+  $updatedContent = $content -replace '#\s*self_rename\s*=\s*true', 'self_rename = true'
+
+  # Save the updated content back to the file
+  Set-Content -Path $configFile -Value $updatedContent
+  Write-Output "Updated $configFile to uncomment 'self_rename = true'"
+}

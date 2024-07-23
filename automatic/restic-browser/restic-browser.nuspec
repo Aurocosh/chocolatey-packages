@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>restic-browser</id>
+    <version>0.3.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/restic-browser</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Restic Browser (Portable)</title>
+    <authors>emuell</authors>
+    <projectUrl>https://github.com/emuell/restic-browser</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/emuell/restic-browser/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/emuell/restic-browser</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/emuell/restic-browser/issues</bugTrackerUrl>
+    <tags>restic-browser backup file encryption browser</tags>
+    <summary>A simple, cross-platform restic backup GUI for browsing and restoring restic repositories</summary>
+    <description>![Logo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/logo.png)
+
+---
+
+A simple, cross-platform [restic backup](https://github.com/restic/restic) GUI for browsing and restoring restic repositories. 
+
+## Features
+
+This is not a fullblown restic backup GUI - it only allows you to *browse* existing repositories!
+
+* *Displays* contents (snapshots, files) from local and remote restic repositories.
+* *Dumps* selected files or folders (as a zip archive) to a desired location.
+* *Restores* selected files or folders to a desired location.
+* *Opens* selected files by moving them to TEMP, then opens them with your operating system's default programs.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/screenshot.png)
+</description>
+    <releaseNotes>https://github.com/emuell/restic-browser/releases</releaseNotes>
+    <dependencies>
+      <dependency id="webview2-runtime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

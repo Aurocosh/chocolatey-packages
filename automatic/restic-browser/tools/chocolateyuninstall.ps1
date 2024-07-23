@@ -1,0 +1,2 @@
+﻿Remove-Item -Path "$env:ALLUSERSPROFILE\Desktop\Restic Browser.lnk" -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Restic Browser.lnk" -ErrorAction SilentlyContinue

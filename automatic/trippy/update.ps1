@@ -22,7 +22,7 @@ function global:au_GetLatest {
         -MainUrl32Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-msvc.zip" `
         -MainUrl64Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-gnu.zip"
     @{
-        URL32   = $release.MainUrl32
+        URL     = $release.MainUrl32
         URL64   = $release.MainUrl64
         Version = $release.Version
     }

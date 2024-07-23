@@ -5,7 +5,7 @@
   <metadata>
     <id>topgrade</id>
     <version>15.0.0</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/topgrade</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Topgrade (Install)</title>
     <authors>topgrade-rs</authors>

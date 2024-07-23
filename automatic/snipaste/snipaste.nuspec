@@ -5,7 +5,7 @@
   <metadata>
     <id>snipaste</id>
     <version>2.9.2</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/snipaste</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Snipaste (Portable)</title>
     <authors>Snipaste</authors>

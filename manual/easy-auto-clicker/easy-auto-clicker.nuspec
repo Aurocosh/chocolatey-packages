@@ -5,7 +5,7 @@
   <metadata>
     <id>easy-auto-clicker</id>
     <version>3.0</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/manual/easy-auto-clicker</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Easy Auto Clicker (Portable)</title>
     <authors>eauc</authors>

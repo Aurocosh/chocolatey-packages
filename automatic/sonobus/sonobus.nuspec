@@ -5,7 +5,7 @@
   <metadata>
     <id>sonobus</id>
     <version>1.7.2</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/sonobus</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>SonoBus</title>
     <authors>Sonosaurus LLC</authors>

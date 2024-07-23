@@ -5,7 +5,7 @@
   <metadata>
     <id>autoscreenshot</id>
     <version>1.16</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/autoscreenshot</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Auto Screenshot (Install)</title>
     <authors>artem78</authors>

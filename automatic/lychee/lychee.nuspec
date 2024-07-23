@@ -5,7 +5,7 @@
   <metadata>
     <id>lychee</id>
     <version>0.15.1</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lychee</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lychee (Install)</title>
     <authors>The lychee maintainers</authors>

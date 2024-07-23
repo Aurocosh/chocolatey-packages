@@ -5,7 +5,7 @@
   <metadata>
     <id>houdoku</id>
     <version>2.14.0</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/houdoku</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Houdoku (Install)</title>
     <authors>xgi</authors>

@@ -5,7 +5,7 @@
   <metadata>
     <id>houdoku.portable</id>
     <version>2.14.0</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/houdoku.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Houdoku (Portable)</title>
     <authors>xgi</authors>

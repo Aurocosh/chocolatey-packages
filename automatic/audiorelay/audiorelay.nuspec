@@ -5,7 +5,7 @@
   <metadata>
     <id>audiorelay</id>
     <version>0.27.5.20240711</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/audiorelay</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>AudioRelay (Install)</title>
     <authors>Asapha Halifa</authors>

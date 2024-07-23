@@ -13,7 +13,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# To work properly with Chocolatey we need to enable self renaming in the configuration. Otherwise choco will not be able to update the package when update is launched by topgrade.
+# To work properly with Chocolatey we need to enable the self renaming feature in the configuration. Otherwise choco will not be able to update the package when update is launched by topgrade.
 
 # Paths for the configuration files
 $topgradePrimaryConfig = "$env:APPDATA/topgrade.toml"
@@ -35,10 +35,27 @@ else {
   $configFile = if (Test-Path $topgradePrimaryConfig) { $topgradePrimaryConfig } else { $topgradeSecondaryConfig }
   $content = Get-Content -Path $configFile -Raw
 
-  # Regex to uncomment the line '# self_rename = true'
-  $updatedContent = $content -replace '#\s*self_rename\s*=\s*true', 'self_rename = true'
+  if (!$content) {
+    # If config exists, but empty then simply overwrite it with default config
+    Copy-Item -Path $defaultConfigFile -Destination $topgradeSecondaryConfig -Force
+  }
+  else {
+    # Regex to uncomment the line '# self_rename = true'
+    $updatedContent = $content -replace '#\s*self_rename\s*=\s*true', 'self_rename = true'
+  
+    # Check if `self_rename = true` line now exists in the updated content
+    if ($updatedContent -notmatch 'self_rename\s*=\s*true') {
+      # Ensure `[windows]` section exists
+      if ($updatedContent -notmatch '\[windows\]') {
+        $updatedContent += "`n[windows]"
+      }
 
-  # Save the updated content back to the file
-  Set-Content -Path $configFile -Value $updatedContent
-  Write-Output "Updated $configFile to uncomment 'self_rename = true'"
+      # Add `self_rename = true` line after `[windows]`
+      $updatedContent = $updatedContent -replace '(\[windows\])', "`$1`nself_rename = true"
+    }
+
+    # Save the updated content back to the file
+    Set-Content -Path $configFile -Value $updatedContent
+    Write-Output "Updated $configFile to ensure that line 'self_rename = true' exists and is uncommented"
+  }
 }

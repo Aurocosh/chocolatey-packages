@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>trippy</id>
+    <version>0.10.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/trippy</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Trippy (Portable)</title>
+    <authors>fujiapple852</authors>
+    <projectUrl>https://github.com/fujiapple852/trippy</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/trippy/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/fujiapple852/trippy/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/fujiapple852/trippy</projectSourceUrl>
+    <docsUrl>https://github.com/fujiapple852/trippy</docsUrl>
+    <bugTrackerUrl>https://github.com/fujiapple852/trippy/issues</bugTrackerUrl>
+    <tags>trippy ip ping network traceroute tracert diagnostics</tags>
+    <summary>Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues</summary>
+    <description># Trippy
+
+Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking
+issues.
+
+![Demo gif](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/trippy/img/trippy.gif)
+
+## Features
+
+- Trace using multiple protocols:
+    - `ICMP`, `UDP` &amp; `TCP`
+    - `IPv4` &amp; `IPv6`
+- Customizable tracing options:
+    - packet size &amp; payload pattern
+    - start and maximum time-to-live (TTL)
+    - minimum and maximum round duration
+    - round end grace period &amp; maximum number of unknown hops
+    - source &amp; destination port (`TCP` &amp; `UDP`)
+    - source address and source interface
+    - `TOS` (aka `DSCP + ECN`)
+- Support for `classic`, `paris`
+  and `dublin` [Equal Cost Multi-path Routing](https://en.wikipedia.org/wiki/Equal-cost_multi-path_routing)
+  strategies ([tracking issue](https://github.com/fujiapple852/trippy/issues/274))
+- RFC4884 [ICMP Multi-Part Messages](https://datatracker.ietf.org/doc/html/rfc4884)
+    - Generic Extension Objects
+    - MPLS Label Stacks
+- Unprivileged mode
+- Tui interface:
+    - Trace multiple targets simultaneously from a single instance of Trippy
+    - Per hop stats (sent, received, loss%, last, avg, best, worst, stddev, jitter &amp; status)
+    - Per hop round-trip-time (RTT) history and frequency distributing charts
+    - Interactive chart of RTT for all hops in a trace with zooming capability
+    - Interactive GeoIp world map
+    - Isolate and filter by individual tracing flows
+    - Customizable color theme &amp; key bindings
+    - Customizable column order and visibility
+    - Configuration via both command line arguments and a configuration file
+    - Show multiple hosts per hop with ability to cap display to N hosts and show frequency %
+    - Show hop details and navigate hosts within each hop
+    - Freeze/unfreeze the Tui, reset the stats, flush the cache, preserve screen on exit
+    - Responsive UI with adjustable refresh rate
+    - Hop privacy
+- DNS:
+    - Use system, external (Google `8.8.8.8` or Cloudflare `1.1.1.1`) or custom resolver
+    - Lazy reverse DNS queries
+    - Lookup [autonomous system](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) number (ASN) and name
+- GeoIp:
+    - Lookup and display GeoIp information from local [MaxMind](https://www.maxmind.com)
+      and [IPinfo](https://ipinfo.io) `mmdb` files
+- Generate tracing reports:
+    - `json`, `csv` &amp; tabular (pretty-printed and markdown)
+    - Tracing `flows` report
+    - Graphviz `dot` charts
+    - configurable reporting cycles
+- Runs on multiple platform (macOS, Linux, Windows, NetBSD, FreeBSD, OpenBSD)
+- Capabilities aware application (Linux only)
+
+## Privileges
+
+Trippy normally requires elevated privileges due to the use of raw sockets. Enabling the required privileges for your
+platform can be achieved in several ways, as outlined below. Trippy can also be used without elevated privileged on
+certain platforms, with some limitations.
+
+Trippy must be run with Administrator privileges on Windows.
+
+## Usage Examples
+
+Basic usage with default parameters:
+
+```shell
+trip example.com
+```
+
+Trace without requiring elevated privileges (supported platforms only, see [privileges](#privileges)):
+
+```shell
+trip example.com --unprivileged
+```
+
+Trace using the `udp` (or `tcp` or `icmp`) protocol (also aliases `--icmp`, `--udp` &amp; `--tcp`):
+
+```shell
+trip example.com -p udp
+```
+
+Trace to multiple targets simultaneously (`icmp` protocol only,
+see [#72](https://github.com/fujiapple852/trippy/issues/72)):
+
+```shell
+trip example.com google.com crates.io
+```
+
+Trace with a minimum round time of `250ms` and a grace period of `50ms`:
+
+```shell
+trip example.com -i 250ms -g 50ms
+```
+
+### Package Parameters:
+
+ - `/GnuVersion` Install GNU version. By default MSVC version is installed.
+ 
+eg. `choco install -y trippy --package-parameters="/GnuVersion"`
+</description>
+    <releaseNotes>https://github.com/fujiapple852/trippy/releases</releaseNotes>
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

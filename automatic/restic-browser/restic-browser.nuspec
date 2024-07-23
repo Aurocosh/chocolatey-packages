@@ -33,6 +33,13 @@ This is not a fullblown restic backup GUI - it only allows you to *browse* exist
 * *Opens* selected files by moving them to TEMP, then opens them with your operating system's default programs.
 
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/screenshot.png)
+
+### Package Parameters:
+
+ - `/NoDesktopShortcut` Do not create Desktop Shortcut
+ - `/NoStartMenuShortcut` Do not create Start Menu Shortcut
+ 
+eg. `choco install -y restic-browser --package-parameters="/NoDesktopShortcut /NoStartMenuShortcut"`
 </description>
     <releaseNotes>https://github.com/emuell/restic-browser/releases</releaseNotes>
     <dependencies>

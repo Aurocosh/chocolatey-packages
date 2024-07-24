@@ -1,5 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$installerName  = 'InputDirector.v2.2.build164.Domain.Setup.exe'
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -13,7 +12,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$packageArgs.file = Join-Path -Path $toolsDir -ChildPath $installerName
+$packageArgs.file = Join-Path -Path $toolsDir -ChildPath 'InputDirector.v2.2.build164.Domain.Setup.exe'
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item "$toolsDir/$installerName"

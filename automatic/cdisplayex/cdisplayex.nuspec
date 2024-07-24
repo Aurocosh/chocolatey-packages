@@ -8,7 +8,7 @@
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cdisplayex</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>CDisplayEx (Install)</title>
-    <authors>Henri Gourvest</authors>
+    <authors>Henri Gourvest, Progdigy Software S.A.R.L</authors>
     <projectUrl>https://www.cdisplayex.com/desktop/</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/icon.png</iconUrl>
     <licenseUrl>https://www.cdisplayex.com/desktop/eula/</licenseUrl>

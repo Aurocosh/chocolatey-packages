@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser xgi `
         -RepoName houdoku `
-        -MainUrl64Regex "Houdoku-\d+.\d+.\d+-win.zip"
+        -MainUrl64Regex "Houdoku-\d+\.\d+\.\d+-win\.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

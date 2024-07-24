@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser emuell `
         -RepoName restic-browser `
-        -MainUrl64Regex "Restic-Browser-v\d+.\d+.\d+-windows.zip"
+        -MainUrl64Regex "Restic-Browser-v\d+\.\d+\.\d+-windows\.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

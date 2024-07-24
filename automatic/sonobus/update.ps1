@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser sonosaurus `
         -RepoName sonobus `
-        -MainUrl64Regex "sonobus-\d+.\d+.\d+-win.exe"
+        -MainUrl64Regex "sonobus-\d+\.\d+\.\d+-win\.exe"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

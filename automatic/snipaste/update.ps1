@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.snipaste.com/download.html'
 
-    $versionRegex = "<h4><b>v(\d+.\d+.\d+)<\/b>"
+    $versionRegex = "<h4><b>v(\d+\.\d+\.\d+)<\/b>"
     if ($download_page.content -match $versionRegex) {
         $version = $matches[1]
     }

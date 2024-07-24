@@ -21,8 +21,8 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser fujiapple852 `
         -RepoName trippy `
-        -MainUrl32Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-msvc.zip" `
-        -MainUrl64Regex "trippy-\d+.\d+.\d+-x86_64-pc-windows-gnu.zip"
+        -MainUrl32Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-msvc\.zip" `
+        -MainUrl64Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-gnu\.zip"
     @{
         URL_MSVC = $release.MainUrl32
         URL_GNU  = $release.MainUrl64

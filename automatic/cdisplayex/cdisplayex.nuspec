@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cdisplayex</id>
+    <version>1.10.33</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cdisplayex</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>CDisplayEx (Install)</title>
+    <authors>Henri Gourvest</authors>
+    <projectUrl>https://www.cdisplayex.com/desktop/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/icon.png</iconUrl>
+    <licenseUrl>https://www.cdisplayex.com/desktop/eula/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.cdisplayex.com/desktop/faq/</docsUrl>
+    <tags>cdisplayex comics comic manga image reader viewer book ebook cbr cbz cb7 jpeg png gif webp pdf</tags>
+    <summary>Comic book reader capable of reading all comic book formats (.cbr file, .cbz, .pdf, etc..) and Manga</summary>
+    <description>## CDisplayEx
+
+Light, Efficient CBR Reader. It is the most popular comic book reader. It is able to read all comic book formats (.cbr file, .cbz, .pdf, etc..) and Manga. Everything is designed to give you the best reading experience, it load comic books immediately, reading is fluid and comfortable.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/screenshot.png)
+</description>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

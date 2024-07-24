@@ -22,10 +22,11 @@ function global:au_GetLatest {
     $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
 
     $version = $matches[1]
+    $baseUrl = 'https://www.cdisplayex.com'
 
     @{
-        URL32   = $url32
-        URL64   = $url64
+        URL32   = $baseUrl + $url32
+        URL64   = $baseUrl + $url64
         Version = $version
     }
 }

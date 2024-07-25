@@ -18,7 +18,7 @@ function global:au_GetLatest {
     $version = $matches[1]
     
     if ($url64) {
-        $url64 = 'https://www.codeproject.com/KB/Articles/5322557/' + $url64
+        $url64 = 'https://www.codeproject.com/KB/Articles/5322557' + $url64
     }
 
     @{

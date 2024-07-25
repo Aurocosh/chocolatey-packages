@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  softwareName   = 'Auto Screenshot*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
+  softwareName   = 'CodeProject.AI Server*'  #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
   fileType       = 'EXE'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
   validExitCodes = @(0, 3010, 1605, 1614, 1641)

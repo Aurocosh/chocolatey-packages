@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>codeproject-ai</id>
+    <version>2.6.5</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/codeproject-ai</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>CodeProject.AI (Install)</title>
+    <authors>CodeProject</authors>
+    <projectUrl>https://www.codeproject.com/ai/index.aspx</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/codeproject/CodeProject.AI-Server/blob/main/LICENCE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/codeproject/CodeProject.AI-Server</projectSourceUrl>
+    <docsUrl>https://www.codeproject.com/ai/docs/index.html</docsUrl>
+    <bugTrackerUrl>https://github.com/codeproject/CodeProject.AI-Server/issues</bugTrackerUrl>
+    <tags>codeproject-ai ai cross-platform machine-learning open-source</tags>
+    <summary>CodeProject.AI is an AI Server you install locally</summary>
+    <description># CodeProject.AI Server
+
+A standalone, self-hosted, fast, free and Open Source Artificial Intelligence microserver for any 
+platform, any language. It can be installed locally, required no off-device or out of network data
+transfer, and is easy to use.
+
+![Detection](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/detection.png)
+    </description>
+    <releaseNotes>https://github.com/codeproject/CodeProject.AI-Server/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

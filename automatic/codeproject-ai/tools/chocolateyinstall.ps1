@@ -8,7 +8,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archiveFile
   softwareName   = 'CodeProject.AI Server*'
-  url64bit       = 'https://www.codeproject.com/KB/Articles/5322557/CodeProject.AI-Server-win-x64-2.6.5.zip'
+  url64bit       = 'https://www.codeproject.com/KB/Articles/5322557/KB/Articles/5322557/CodeProject.AI-Server-win-x64-2.6.5.zip'
   checksum64     = '76a56702590bc18e576d3fffb053c0ca8dff5b3db10e5ac7724305f74958e494'
   checksumType64 = 'sha256'
 }

@@ -28,3 +28,5 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor 64
+
+Remove-Item -Path "$PSScriptRoot/CodeProject.AI.zip" -Force

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cocogitto</id>
+    <version>6.1.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cdisplayex</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Cocogitto (Portable)</title>
+    <authors>Paul Delafosse</authors>
+    <projectUrl>https://docs.cocogitto.io/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cocogitto/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/cocogitto/cocogitto/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/cocogitto/cocogitto</projectSourceUrl>
+    <docsUrl>https://docs.cocogitto.io/</docsUrl>
+    <bugTrackerUrl>https://github.com/cocogitto/cocogitto/issues</bugTrackerUrl>
+    <tags>cocogitto git commit cli dev</tags>
+    <summary>Cocogitto is a set of cli tools for the conventional commit and semver specifications</summary>
+    <description>![Logo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cocogitto/img/logo.png)
+**The Conventional Commits toolbox**
+
+- **Verified commits:** create conventional compliant commits with ease.
+- **Automatic Version bump and changelog:** automatically bump versions and generate changelogs with your own custom steps
+  and workflows.
+- **Release profiles:** your branching model requires different steps for releases, pre-release, hotfixes ? We got you
+  covered !
+- **Depends only on libgit2:** cocogitto has one standalone binary, the only system dependency is libgit2.
+- **Conventional git log:** search your commit history matching Conventional Commits items such as scope and commit type.
+- **GitHub integration:** enforce the conventional commits specification with our GitHub action and bot.
+- **Monorepo support:** Automatic versioning for mono-repositories is supported out of the box.
+
+## Foreword
+
+### What is it ?
+
+Cocogitto is a CLI and GitOps toolbox for the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+and [Semver](https://semver.org/) specifications.
+
+### Why ?
+
+There are plenty of tools listed on
+the [conventional commits website](https://www.conventionalcommits.org/en/about/)
+to help you generate changelog, git hooks, commit template etc. Some of them are specifically designed for the
+Conventional Commits specification, and some of them are general purpose. 
+
+**Cocogitto was designed to help you respect the
+conventional and semver standard and is not intended to be used in any other context.**
+
+It strives to be a set of simple, modern and fast command line interfaces.
+
+### Goals
+
+- Make using the conventional commits spec easy and fun.
+- Enable people to focus on their work instead of correcting small mistakes and typos.
+- Enforce correctness regarding Semver and Conventional Commits.
+- Automate things when possible (ex: bumping versions).
+
+### Non goals
+
+- Cocogitto is not a `git` replacement. It uses some of libgit2 but only to provide features related to the
+  Conventional Commits specification. Anything else shall be done with `git`.
+- Supporting other commit conventions or git workflows.
+
+## Quick start
+
+This readme is a quick tour of what you can do with Cocogitto, for an in-depth guide please refer
+to [the documentation](https://docs.cocogitto.io).
+</description>
+    <releaseNotes>https://github.com/cocogitto/cocogitto/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

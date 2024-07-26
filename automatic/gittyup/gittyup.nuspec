@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gittyup</id>
+    <version>1.4.0</version>
+    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gittyup/img/icon.png</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Gittyup (Install)</title>
+    <authors>Scientific Toolworks, Inc.</authors>
+    <projectUrl>https://murmele.github.io/Gittyup</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gittyup/img/icon.png</iconUrl>
+    <copyright>2021-2024</copyright>
+    <licenseUrl>https://github.com/Murmele/Gittyup/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Murmele/Gittyup</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Murmele/Gittyup/issues</bugTrackerUrl>
+    <tags>gittyup git version-control cross-platform cli</tags>
+    <summary>Gittyup is a graphical Git client designed to help you understand and manage your source code history</summary>
+    <description>Gittyup
+==================================
+
+Gittyup is a graphical Git client designed to help you understand and manage your source code history. Gittyup is a continuation of the [GitAhead](https://github.com/gitahead/gitahead) client.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gittyup/img/screenshot.png) </description>
+    <releaseNotes>https://github.com/Murmele/Gittyup</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

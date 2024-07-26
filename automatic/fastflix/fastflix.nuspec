@@ -17,8 +17,8 @@
     <projectSourceUrl>https://github.com/cdgriffith/FastFlix</projectSourceUrl>
     <docsUrl>https://github.com/cdgriffith/FastFlix/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/cdgriffith/FastFlix/issues</bugTrackerUrl>
-    <tags>run-hidden SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
+    <tags>fastflix ffmpeg libavcodec audio video convert media</tags>
+    <summary>FastFlix is a handy GUI for encoding videos</summary>
     <description>FastFlix is a handy GUI for encoding videos. 
 
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/screenshot.png)

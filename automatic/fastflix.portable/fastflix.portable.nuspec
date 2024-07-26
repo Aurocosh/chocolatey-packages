@@ -21,7 +21,7 @@
     <summary>FastFlix is a handy GUI for encoding videos</summary>
     <description>FastFlix is a handy GUI for encoding videos. 
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/screenshot.png)
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/screenshot.png)
 
 It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
 

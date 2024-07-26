@@ -19,8 +19,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
-        -GitUser fujiapple852 `
-        -RepoName trippy `
+        -GitUser Lime3DS `
+        -RepoName Lime3DS `
         -MainUrl32Regex "lime3ds-\d+-windows-msvc.zip" `
         -MainUrl64Regex "lime3ds-\d+-windows-msys2.zip"
     @{

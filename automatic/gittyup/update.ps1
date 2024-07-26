@@ -14,8 +14,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
-        -GitUser xgi `
-        -RepoName houdoku `
+        -GitUser Murmele `
+        -RepoName Gittyup `
         -MainUrl32Regex "Gittyup-win32-\d+\.\d+\.\d+\.exe" `
         -MainUrl64Regex "Gittyup-win64-\d+\.\d+\.\d+\.exe"
     @{

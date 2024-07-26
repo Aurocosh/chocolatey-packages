@@ -1,0 +1,33 @@
+import-module au
+import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+
+function global:au_SearchReplace {
+    $checksumMSVC = Get-RemoteChecksum $Latest.URL_MSVC
+    $checksumMSYS2 = Get-RemoteChecksum $Latest.URL_MSYS2
+
+    Write-Host "Checksum MSVC: $checksumMSVC"
+    Write-Host "Checksum MSYS2: $checksumMSYS2"
+    @{
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(url64msvc\s*=\s*)('.*')"       = "`$1'$($Latest.URL_MSVC)'"
+            "(?i)(checksum64msvc\s*=\s*)('.*')"  = "`$1'$checksumMSVC'"
+            "(?i)(url64msys2\s*=\s*)('.*')"      = "`$1'$($Latest.URL_MSYS2)'"
+            "(?i)(checksum64msys2\s*=\s*)('.*')" = "`$1'$checksumMSYS2'"
+        }
+    }
+}
+
+function global:au_GetLatest {
+    $release = Get-LatestGithubRelease `
+        -GitUser fujiapple852 `
+        -RepoName trippy `
+        -MainUrl32Regex "lime3ds-\d+-windows-msvc.zip" `
+        -MainUrl64Regex "lime3ds-\d+-windows-msys2.zip"
+    @{
+        URL_MSVC  = $release.MainUrl32
+        URL_MSYS2 = $release.MainUrl64
+        Version   = $release.Version
+    }
+}
+
+update -ChecksumFor none

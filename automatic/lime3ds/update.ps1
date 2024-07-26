@@ -26,7 +26,7 @@ function global:au_GetLatest {
     @{
         URL_MSVC  = $release.MainUrl32
         URL_MSYS2 = $release.MainUrl64
-        Version   = $release.Version
+        Version   = '0.' + $release.Version
     }
 }
 

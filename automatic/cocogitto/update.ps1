@@ -23,4 +23,4 @@ function global:au_GetLatest {
 
 update -ChecksumFor 64
 
-Remove-Item -Path "$PSScriptRoot/archive.tar.gz" -Force
+Remove-Item -Path "$PSScriptRoot/archive.tar.gz" -Force -ErrorAction SilentlyContinue

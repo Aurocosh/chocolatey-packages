@@ -1,0 +1,2 @@
+﻿Remove-Item -Path "$env:ALLUSERSPROFILE\Desktop\FastFlix.lnk" -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\FastFlix.lnk" -ErrorAction SilentlyContinue

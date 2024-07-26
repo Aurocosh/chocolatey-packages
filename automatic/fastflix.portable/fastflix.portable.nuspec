@@ -3,31 +3,38 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>fastflix</id>
+    <id>fastflix.portable</id>
     <version>5.7.4</version>
-    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>FastFlix (Install)</title>
+    <title>FastFlix (Portable)</title>
     <authors>Chris Griffith</authors>
     <projectUrl>https://github.com/cdgriffith/FastFlix</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</iconUrl>
     <copyright>2019-2024</copyright>
     <licenseUrl>https://github.com/cdgriffith/FastFlix/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/cdgriffith/FastFlix</projectSourceUrl>
     <docsUrl>https://github.com/cdgriffith/FastFlix/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/cdgriffith/FastFlix/issues</bugTrackerUrl>
-    <tags>fastflix ffmpeg libavcodec audio video convert media</tags>
+    <tags>fastflix fastflix ffmpeg libavcodec audio video convert media portable</tags>
     <summary>FastFlix is a handy GUI for encoding videos</summary>
     <description>FastFlix is a handy GUI for encoding videos. 
 
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/screenshot.png)
 
 It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
+
+## Package Parameters:
+
+ - `/NoDesktopShortcut` Do not create Desktop Shortcut
+ - `/NoStartMenuShortcut` Do not create Start Menu Shortcut
+ 
+eg. `choco install -y fastflix.portable --package-parameters="/NoDesktopShortcut /NoStartMenuShortcut"`
 </description>
     <releaseNotes>https://github.com/cdgriffith/FastFlix/releases</releaseNotes>
     <dependencies>
-      <dependency id="ffmpeg" />
+      <dependency id="ffmpeg"/>
     </dependencies>
   </metadata>
   <files>

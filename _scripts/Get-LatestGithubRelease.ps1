@@ -23,7 +23,12 @@ function Get-LatestGithubRelease {
     $githubUrl += "/latest";
   }
   
-  $response = Invoke-RestMethod -Uri $githubUrl;
+  $headers = @{}
+  if (Test-Path Env:\github_api_key) {
+    $headers.Authorization = "token " + $env:github_api_key
+  }
+
+  $response = Invoke-RestMethod -Uri $githubUrl -Headers $headers
   $versionRegex = "((\d+)(\.\d+){0,3}(\-[a-z]+[0-9]+)?)$";
   $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1;
   

@@ -1,6 +1,6 @@
 $folderPaths = @(
-    "./automatic",
-    "./manual"
+    "$PSScriptRoot/automatic",
+    "$PSScriptRoot/manual"
 )
 $extension = ".nupkg"
 
@@ -11,7 +11,8 @@ foreach ($folderPath in $folderPaths) {
         try {
             Remove-Item -Path $file.FullName -Force
             Write-Host "Deleted file: $($file.FullName)"
-        } catch {
+        }
+        catch {
             Write-Host "Failed to delete file: $($file.FullName). Error: $_"
         }
     }

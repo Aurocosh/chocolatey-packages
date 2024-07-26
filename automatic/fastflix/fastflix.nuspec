@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fastflix</id>
+    <version>5.7.4</version>
+    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>FastFlix (Install)</title>
+    <authors>cdgriffith</authors>
+    <projectUrl>https://github.com/cdgriffith/FastFlix</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</iconUrl>
+    <copyright>2019-2024</copyright>
+    <licenseUrl>https://github.com/cdgriffith/FastFlix/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/cdgriffith/FastFlix</projectSourceUrl>
+    <docsUrl>https://github.com/cdgriffith/FastFlix/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/cdgriffith/FastFlix/issues</bugTrackerUrl>
+    <tags>run-hidden SPACE_SEPARATED</tags>
+    <summary>__REPLACE__</summary>
+    <description>FastFlix is a handy GUI for encoding videos. 
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/screenshot.png)
+
+It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
+</description>
+    <releaseNotes>https://github.com/cdgriffith/FastFlix/releases</releaseNotes>
+    <dependencies>
+      <dependency id="ffmpeg"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

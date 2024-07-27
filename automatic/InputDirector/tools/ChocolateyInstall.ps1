@@ -8,11 +8,13 @@ $packageArgs = @{
   checksumType   = 'sha256'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = '/S'  # NSIS
+  disableLogging = $true
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
-$packageArgs.file = Join-Path -Path $toolsDir -ChildPath 'InputDirector.v2.2.build164.Domain.Setup.exe'
+$installerExe = (Get-ChildItem $toolsDir -filter "InputDirector.v*.build*.Domain.Setup.exe" -File | Select-Object -First 1).FullName
+$packageArgs.file = $installerExe
 Install-ChocolateyInstallPackage @packageArgs
 
-Remove-Item "$toolsDir/$installerName"
+Remove-Item $installerExe -Force -ErrorAction SilentlyContinue

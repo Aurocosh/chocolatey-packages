@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>office2019proplus</id>
-    <version>2019.1808</version>
+    <version>2019.1808.0.20240729</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/office2019proplus</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Microsoft Office 2019 ProPlus</title>
@@ -34,6 +34,6 @@ and you will be prompted to enter your account information upon first launching 
     <releaseNotes>https://docs.microsoft.com/en-en/officeupdates/update-history-office-2019</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**"/>
+    <file src="tools\**" />
   </files>
 </package>

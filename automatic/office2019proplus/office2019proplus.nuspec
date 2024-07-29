@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>office2019proplus</id>
     <version>2019.1808</version>
-    <packageSourceUrl>https://github.com/ftarascio/chocolatey-packages</packageSourceUrl>
-    <owners>Fabio Tarascio</owners>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/office2019proplus</packageSourceUrl>
+    <owners>Aurocosh</owners>
     <title>Microsoft Office 2019 ProPlus</title>
     <authors>Microsoft</authors>
     <projectUrl>http://office.microsoft.com/</projectUrl>
-    <iconUrl>https://github.com/ftarascio/chocolatey-packages/blob/master/icons/Office2019.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/office2019proplus/img/icon.png</iconUrl>
     <copyright>Microsoft</copyright>
-    <licenseUrl>https://docs.microsoft.com/it-it/DeployOffice/overview-of-licensing-and-activation-in-office-365-proplus?redirectSourcePath=%252fen-us%252farticle%252f1096c33e-a6f2-44c8-9821-3cba07ec5750</licenseUrl>
+    <licenseUrl>https://docs.microsoft.com/en-en/DeployOffice/overview-of-licensing-and-activation-in-office-365-proplus?redirectSourcePath=%252fen-us%252farticle%252f1096c33e-a6f2-44c8-9821-3cba07ec5750</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://support.office.com/</docsUrl>
-    <mailingListUrl>https://answers.microsoft.com/it-it</mailingListUrl>
+    <mailingListUrl>https://answers.microsoft.com</mailingListUrl>
     <bugTrackerUrl>https://support.office.com/en-us/home/contact?contactUsExperienceEntryPointAssetId=S.HP.Main</bugTrackerUrl>
     <tags>Office2019ProPlus Office MicrosoftOffice MSOffice</tags>
     <summary>Office 2019 Professional Plus</summary>
@@ -30,7 +31,7 @@ Get the latest versions of your familiar Office programs, such as Word, Excel an
 subscription. This will download and silently install the entire Office 2019 Professional Plus edition. A license is required
 and you will be prompted to enter your account information upon first launching the software after install.
     </description>
-    <releaseNotes>https://docs.microsoft.com/it-it/officeupdates/update-history-office-2019</releaseNotes>
+    <releaseNotes>https://docs.microsoft.com/en-en/officeupdates/update-history-office-2019</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**"/>

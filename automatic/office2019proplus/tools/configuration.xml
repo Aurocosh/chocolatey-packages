@@ -5,8 +5,7 @@
             <Language ID="MatchOS" Fallback="en-us" />
         </Product>
         <Product ID="ProofingTools">
-            <Language ID="it-it" />
-            <Language ID="en-us" />
+            <Language ID="MatchOS" Fallback="en-us" />
         </Product>
     </Add>
     <Updates Enabled="TRUE" />

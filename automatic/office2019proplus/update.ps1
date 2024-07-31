@@ -10,8 +10,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases = 'https://www.microsoft.com/en-us/download/details.aspx?id=49117'
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri 'https://www.microsoft.com/en-us/download/details.aspx?id=49117'
     $urlRegex = "officedeploymenttool_\d+-\d+.exe"
     $remoteUrl = $download_page.links | Where-Object href -match $urlRegex | Select-Object -First 1 -expand href
 
@@ -24,7 +23,7 @@ function global:au_GetLatest {
     $version = $matches[1]
     $baseVersion = $matches[2]
 
-    if ($remoteUrl -and ($remoteUrl -ne $localUrl)) {
+    if ($remoteUrl -and ($remoteUrl -ne $url)) {
         $url = $remoteUrl
         $dateString = (Get-Date).ToString("yyyyMMdd")
         $version = "$baseVersion.0.$dateString"

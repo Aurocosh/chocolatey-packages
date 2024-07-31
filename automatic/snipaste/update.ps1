@@ -16,7 +16,7 @@ function global:au_GetLatest {
 
     $versionRegex = "<h4><b>v(\d+\.\d+\.\d+)<\/b>"
     if ($download_page.content -match $versionRegex) {
-        $version = $matches[1]
+        $version = "$($matches[1])-Beta"
     }
     
     @{

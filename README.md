@@ -1,4 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/Aurocosh/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/Aurocosh/chocolatey-packages)
+[![](http://transparent-favicon.info/favicon.ico)](#)
 [Update status](https://gist.github.com/Aurocosh/3da8aff3c73f7fb1daf19001c7a4492b)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/Aurocosh](https://chocolatey.org/profiles/Aurocosh)

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>xyplorer</id>
-        <title>XYplorer (Install)</title>
-        <version>24.90.0100</version>
-        <authors>Donald Lessau</authors>
-        <owners>criography</owners>
-        <summary>XYplorer is a file manager for Windows.</summary>
-        <description>XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It's fast and light, it's innovative, and it's portable.
+  <metadata>
+    <id>xyplorer</id>
+    <version>24.90.0100</version>
+    <packageSourceUrl>https://github.com/criography/chocolatey-packages/tree/master/dist/xyplorer</packageSourceUrl>
+    <owners>criography</owners>
+    <title>XYplorer (Install)</title>
+    <authors>Donald Lessau</authors>
+    <projectUrl>http://www.xyplorer.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/criography/chocolatey-packages@2.1.0/packages/xyplorer/icon.png</iconUrl>
+    <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <copyright>Copyright © 1997 by Donald Lessau</copyright>
+    <tags>file-manager file-management dual-panel explorer</tags>
+    <summary>XYplorer is a file manager for Windows.</summary>
+    <description>XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It's fast and light, it's innovative, and it's portable.
 
-This is a commercial product, with a 30 day trial. For pricing go to: http://www.xyplorer.com/#buy
+  This is a commercial product, with a 30 day trial. For pricing go to: http://www.xyplorer.com/#buy
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
-        <projectUrl>http://www.xyplorer.com</projectUrl>
-        <tags>file-manager file-management dual-panel explorer</tags>
-        <copyright>Copyright © 1997 by Donald Lessau</copyright>
-        <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <iconUrl>https://cdn.jsdelivr.net/gh/criography/chocolatey-packages@2.1.0/packages/xyplorer/icon.png</iconUrl>
-        <releaseNotes>http://www.xyplorer.com/whatsnew.php#current</releaseNotes>
-        <packageSourceUrl>https://github.com/criography/chocolatey-packages/tree/master/dist/xyplorer</packageSourceUrl>
-    </metadata>
-    <files>
-        <file src="tools\**" target="tools" />
-    </files>
+  **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
+    <releaseNotes>http://www.xyplorer.com/whatsnew.php#current</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

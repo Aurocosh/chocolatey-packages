@@ -4,16 +4,16 @@
   <metadata>
     <id>xyplorer</id>
     <version>26.30.0100</version>
-    <packageSourceUrl>https://github.com/criography/chocolatey-packages/tree/master/dist/xyplorer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/xyplorer</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>XYplorer (Install)</title>
     <authors>Donald Lessau</authors>
     <projectUrl>http://www.xyplorer.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/criography/chocolatey-packages@2.1.0/packages/xyplorer/icon.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/xyplorer/img/icon.png</iconUrl>
     <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <copyright>Copyright © 1997 by Donald Lessau</copyright>
-    <tags>file-manager file-management dual-panel explorer</tags>
+    <tags>xyplorer file-manager file-management dual-panel explorer</tags>
     <summary>XYplorer is a file manager for Windows.</summary>
     <description>XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It's fast and light, it's innovative, and it's portable.
 

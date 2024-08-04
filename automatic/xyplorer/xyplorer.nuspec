@@ -3,9 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xyplorer</id>
-    <version>24.90.0100</version>
+    <version>26.30.0000</version>
     <packageSourceUrl>https://github.com/criography/chocolatey-packages/tree/master/dist/xyplorer</packageSourceUrl>
-    <owners>criography</owners>
+    <owners>Aurocosh</owners>
     <title>XYplorer (Install)</title>
     <authors>Donald Lessau</authors>
     <projectUrl>http://www.xyplorer.com</projectUrl>

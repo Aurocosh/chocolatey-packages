@@ -1,25 +1,25 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
-$packageName    = "xyplorer"
-$installerType  = "EXE"
-$packageVersion = "24.90.0100"
-$url            = "https://www.xyplorer.com/download/xyplorer_full.zip"
-$silentArgs     = "/S"
+$packageName = "xyplorer"
+$installerType = "EXE"
+$packageVersion = "26.30.0000"
+$url = "https://www.xyplorer.com/free-zer/26.30/xyplorer_full.zip"
+$silentArgs = "/S"
 $validExitCodes = @(0)
-$checksum       = "f005cc8f413c4d312f7f9b25f4cb53415561e7695db274a9f48c5549452475cd"
-$checksumType   = "sha256"
+$checksum = "2be73adfec1935381869f511f18c0649912d5bd9207a6c54aff8c0499f7d01ab"
+$checksumType = "sha256"
 
 
 #extract filename from source URL
-$filename       = $url.Substring($url.LastIndexOf("/") + 1)
+$filename = $url.Substring($url.LastIndexOf("/") + 1)
 
 
 #establish temp folder path
-$tempPath       = $env:temp,$packageName,$packageVersion -join "\"
+$tempPath = $env:temp, $packageName, $packageVersion -join "\"
 
 
 #establish full path to local copy of downloaded zip file
-$pathToZip      = ($tempPath,$filename -join "\")
+$pathToZip = ($tempPath, $filename -join "\")
 
 
 # download zip package
@@ -36,7 +36,7 @@ Get-ChocolateyUnzip $pathToZip $tempPath
 
 
 # establish path to extracted installer (exe)
-$pathToExe = Join-Path $tempPath (get-childitem $tempPath | where {$_.extension -eq ".exe"}).Name
+$pathToExe = Join-Path $tempPath (get-childitem $tempPath | where { $_.extension -eq ".exe" }).Name
 
 
 # install package

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>xyplorer.portable</id>
+    <version>26.30.0100</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/xyplorer.portable</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>XYplorer (Portable)</title>
+    <authors>Cologne Code Company</authors>
+    <projectUrl>http://www.xyplorer.com</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/xyplorer.portable/img/icon.png</iconUrl>
+    <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <copyright>Copyright © 2024 Cologne Code Company</copyright>
+    <tags>xyplorer file-manager file-management dual-panel explorer script portable</tags>
+    <summary>XYplorer is a file manager for Windows.</summary>
+    <description>XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It's fast and light, it's innovative, and it's portable.
+
+This is a commercial product, with a 30 day trial. For pricing go to: http://www.xyplorer.com/#buy
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+  
+## Package Parameters:
+
+ - `/NoDesktopShortcut` Do not create Desktop Shortcut
+ - `/NoStartMenuShortcut` Do not create Start Menu Shortcut
+ 
+eg. `choco install -y xyplorer.portable --package-parameters="/NoDesktopShortcut /NoStartMenuShortcut"`</description>
+    <releaseNotes>http://www.xyplorer.com/whatsnew.php#current</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

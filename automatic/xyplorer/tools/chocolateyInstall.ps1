@@ -5,6 +5,7 @@ $tempPath = Join-Path $env:temp $env:ChocolateyPackageName
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $tempPath
+  softwareName   = 'XYPlorer*'
   url            = 'https://www.xyplorer.com/free-zer/26.30/xyplorer_full.zip'
   checksum       = '8da11cf86a80f0a53dcbd014230aff6ce3880b36578592b74d93431cc7dc2bbc'
   checksumType   = 'sha256'

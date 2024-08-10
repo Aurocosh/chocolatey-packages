@@ -22,3 +22,5 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor 64
+
+Remove-Item -Path "$PSScriptRoot/OpenComic.exe" -Force -ErrorAction SilentlyContinue

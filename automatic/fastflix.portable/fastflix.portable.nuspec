@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fastflix.portable</id>
-    <version>5.7.4</version>
+    <version>5.8.0</version>
     <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>FastFlix (Portable)</title>
@@ -34,7 +34,7 @@ eg. `choco install -y fastflix.portable --package-parameters="/NoDesktopShortcut
 </description>
     <releaseNotes>https://github.com/cdgriffith/FastFlix/releases</releaseNotes>
     <dependencies>
-      <dependency id="ffmpeg"/>
+      <dependency id="ffmpeg" />
     </dependencies>
   </metadata>
   <files>

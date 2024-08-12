@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>trippy</id>
-    <version>0.10.0</version>
+    <version>0.11.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/trippy</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Trippy (Portable)</title>

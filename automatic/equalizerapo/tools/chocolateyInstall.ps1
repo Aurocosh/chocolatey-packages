@@ -7,14 +7,14 @@ $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url            = 'http://sourceforge.net/projects/equalizerapo/files/1.2/EqualizerAPO32-1.2.exe/download'
-  url64bit       = 'http://sourceforge.net/projects/equalizerapo/files/1.2/EqualizerAPO64-1.2.exe/download'
+  url            = 'https://sourceforge.net/projects/equalizerapo/files/1.3.2/EqualizerAPO32-1.3.2.exe/download'
+  url64bit       = 'https://sourceforge.net/projects/equalizerapo/files/1.3.2/EqualizerAPO64-1.3.2.exe/download'
   silentArgs     = '/S'
   validExitCodes = @(0)
   softwareName   = 'Equalizer APO*'
-  checksum       = '7A554CC24B8DE2710A06EFE0DB762E96DEDD352DDDC592189ECC669AE7059A41'
+  checksum       = '580d8e5253a6610f8089d5a60597620c6ecb619f7bbb4d28ed75393342fbb708'
   checksumType   = 'sha256'
-  checksum64     = '29DFF1BA1221939AA805182771FD17FA71AE05A54FA97FD4A3641A521BF19E1C'
+  checksum64     = '96a126e677b6d6f51b7d1407aa159b04e31d6dcf8b9d9dda49d0f00976e872ef'
   checksumType64 = 'sha256'
 };
 

@@ -4,10 +4,18 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>equalizerapo</id>
-    <title>Equalizer APO</title>
     <version>1.2</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/equalizerapo</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Equalizer APO (Install)</title>
     <authors>jthedering</authors>
-    <owners>angryhussord</owners>
+    <projectUrl>http://sourceforge.net/projects/equalizerapo/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/equalizerapo/img/icon.png</iconUrl>
+    <projectSourceUrl>https://sourceforge.net/p/equalizerapo/code/HEAD/tree/</projectSourceUrl>
+    <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>GPLv2</copyright>
+    <tags>equalizerapo sound audio windows equalizer asio admin</tags>
     <summary>Equalizer APO is a parametric equalizer for Windows. It is implemented as an Audio Processing Object (APO) for the system effect infrastructure introduced with Windows Vista.</summary>
     <description>Equalizer APO is a parametric equalizer for Windows. It is implemented as an Audio Processing Object (APO) for the system effect infrastructure introduced with Windows Vista.
 
@@ -25,19 +33,9 @@ Requirements:
 
 Equalizer APO is best used in conjunction with Room EQ Wizard (http://www.hometheatershack.com/roomeq/ ), because it can read its filter text file format.
 
-Please have a look at the Wiki (http://sourceforge.net/p/equalizerapo/wiki/) for instructions on installation and configuration.</description>
-    <projectUrl>http://sourceforge.net/projects/equalizerapo/</projectUrl>
-    <packageSourceUrl>https://github.com/angryhussord/choco_equalizerapo</packageSourceUrl>
-    <projectSourceUrl>https://sourceforge.net/p/equalizerapo/code/HEAD/tree/</projectSourceUrl>
-    <tags>Sound Audio Windows Equalizer ASIO admin</tags>
-    <copyright>GPLv2</copyright>
-    <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl></iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
-    <releaseNotes>http://sourceforge.net/projects/equalizerapo/files/0.9.2/</releaseNotes>
+Please have a look at the Wiki (http://sourceforge.net/p/equalizerapo/wiki/) for instructions on installation and configuration.
+</description>
+    <releaseNotes>https://sourceforge.net/projects/equalizerapo/files/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

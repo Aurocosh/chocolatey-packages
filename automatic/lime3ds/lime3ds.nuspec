@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lime3ds</id>
-    <version>0.2116</version>
+    <version>0.2117</version>
     <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lime3ds/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lime3DS (Install)</title>
@@ -34,7 +34,7 @@ eg. `choco install -y lime3ds --package-parameters="/MsysVersion /NoDesktopShort
 </description>
     <releaseNotes>https://github.com/Lime3DS/Lime3DS/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

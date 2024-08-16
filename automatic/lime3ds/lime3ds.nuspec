@@ -5,7 +5,7 @@
   <metadata>
     <id>lime3ds</id>
     <version>0.2117</version>
-    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lime3ds/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lime3ds</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lime3DS (Install)</title>
     <authors>Lime3DS</authors>

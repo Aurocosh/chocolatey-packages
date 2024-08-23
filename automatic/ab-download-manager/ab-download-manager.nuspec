@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ab-download-manager</id>
+    <version>1.0.7</version>
+    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/icon.png</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>ab-download-manager (Install)</title>
+    <!-- Authors are comma separated -->
+    <authors>amir1376</authors>
+    <projectUrl>https://abdownloadmanager.com/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/amir1376/ab-download-manager/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/amir1376/ab-download-manager</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/amir1376/ab-download-manager/issues</bugTrackerUrl>
+    <tags>ab-download-manager download manager free web files foss cross-platform</tags>
+    <summary>AB Download Manager is a desktop app which lets you manage and organize your download files better than before</summary>
+    <description>
+    
+![App banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/app_banner.png) 
+## Description
+
+AB Download Manager is a desktop app which lets you manage and organize your download files better than before
+
+## Features
+
+- ⚡️ Faster Download Speed
+- ⏰ Queues and Schedulers
+- 🌐 Browser Extensions
+- 💻 Multiplatform (Windows / Linux for now)
+- 🌙 Multiple Themes (Dark/Light) with modern UI
+- ❤️ Free and Open Source
+
+## Screenshots
+![App home](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/app-home_dark.png) 
+![App download](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/app-download_dark.png) 
+</description>
+    <releaseNotes>https://github.com/amir1376/ab-download-manager/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

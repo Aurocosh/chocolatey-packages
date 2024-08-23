@@ -5,10 +5,9 @@
   <metadata>
     <id>ab-download-manager</id>
     <version>1.0.7</version>
-    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/ab-download-manager</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>ab-download-manager (Install)</title>
-    <!-- Authors are comma separated -->
     <authors>amir1376</authors>
     <projectUrl>https://abdownloadmanager.com/</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager/img/icon.png</iconUrl>

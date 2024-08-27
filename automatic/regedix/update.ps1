@@ -34,3 +34,5 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor all
+
+Remove-Item -Path "$PSScriptRoot/Regedix.exe" -Force -ErrorAction SilentlyContinue

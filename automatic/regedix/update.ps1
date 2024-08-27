@@ -12,16 +12,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases = 'https://regedix.webrox.fr/'
+    $releases = 'https://regedix.webrox.fr'
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $url32Regex = "Regedix-(\d+\.\d+\.\d+)-x86.exe"
-    $url32 = $download_page.links | Where-Object href -match $url32Regex | Select-Object -First 1 -expand href
+    $url32Regex = "(download\.php.*Regedix-(\d+\.\d+\.\d+)-x86.exe)"
+    if ($download_page.content -match $url32Regex) {
+        $url32 = "https://regedix.webrox.fr/" + $matches[1]
+        $version = $matches[2]
+    }
 
-    $url64Regex = "Regedix-(\d+\.\d+\.\d+)-x64.exe"
-    $url64 = $download_page.links | Where-Object href -match $url64Regex | Select-Object -First 1 -expand href
-
-    $version = $matches[1]
+    $url64Regex = "(download\.php.*Regedix-(\d+\.\d+\.\d+)-x64.exe)"
+    if ($download_page.content -match $url64Regex) {
+        $url64 = "https://regedix.webrox.fr/" + $matches[1]
+    }
     
     @{
         URL32   = $url32

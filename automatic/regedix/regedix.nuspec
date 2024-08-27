@@ -45,7 +45,6 @@
 - Languages : English, French
 </description>
     <releaseNotes>https://regedix.webrox.fr/</releaseNotes>
-
     <dependencies>
       <dependency id="dotnet-7.0-desktopruntime" />
     </dependencies>

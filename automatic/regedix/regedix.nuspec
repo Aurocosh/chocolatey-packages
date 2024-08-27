@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>regedix</id>
+    <version>2.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/regedix</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Regedix (Portable)</title>
+    <authors>Stéphane Graziano</authors>
+    <projectUrl>https://regedix.webrox.fr</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/regedix/img/icon.png</iconUrl>
+    <tags>regedix regedit registry admin portable</tags>
+    <summary>Advanced registry editor</summary>
+    <description>Regedix is an advanced registry editor.
+
+## Screenshot
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/regedix/img/screenshot.png)
+
+## Features
+
+- Same UI and features than Regedit
+- Visual Enhancements
+  - Icon of executable or library in the treeview and listview
+  - Default value or hints (description, product name, etc.)
+  - Date of last write
+  - SID decoding (like S-1-5-18)
+  - Localized strings decoding (@shell32.dll,-9016 shows 'Open with...')
+  - BCD hints (HKLM\BCD00000000\Objects)
+- Handy navigation with Tabs, like a browser
+- Dark Theme, auto or manual
+- Add keys and values to favorites with the star button
+- Scan the registry with Ctrl+Shift+F
+- Explorer address bar style, fast access to paths with chevrons
+- Jump to GUID Root, Open program, URL or directories by context menu
+- History, back &amp; forward, like browsing
+- Search with Regex, and backward
+- Filter search by type and by date
+- Auto update when new versions available, even in portable version
+- Import &amp; Export with progression status
+- Copy/Cut &amp; Paste keys or values (paste in external program in .reg format)
+- Access system keys with elevated privileges feature
+- Tracker &amp; privacy free
+- Languages : English, French
+</description>
+    <releaseNotes>https://regedix.webrox.fr/</releaseNotes>
+
+    <dependencies>
+      <dependency id="dotnet-7.0-desktopruntime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

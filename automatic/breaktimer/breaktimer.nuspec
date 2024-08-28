@@ -5,11 +5,11 @@
   <metadata>
     <id>breaktimer</id>
     <version>1.2.0</version>
-    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/breaktimer</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>BreakTimer (Install)</title>
     <authors>Tom Watson</authors>
-    <projectUrl>https://breaktimer.app/</projectUrl>
+    <projectUrl>https://breaktimer.app</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/icon.png</iconUrl>
     <copyright></copyright>
     <licenseUrl>https://github.com/tom-james-watson/breaktimer-app/blob/master/LICENSE.md</licenseUrl>

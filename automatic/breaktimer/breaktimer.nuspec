@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>breaktimer</id>
+    <version>1.2.0</version>
+    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>BreakTimer (Install)</title>
+    <authors>Tom Watson</authors>
+    <projectUrl>https://breaktimer.app/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/icon.png</iconUrl>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/tom-james-watson/breaktimer-app/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/tom-james-watson/breaktimer-app</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tom-james-watson/breaktimer-app/issues</bugTrackerUrl>
+    <tags>breaktimer reminder time-out break cross-platform foss</tags>
+    <summary>BreakTimer allows you to set up customizable breaks and will remind you to take them</summary>
+    <description>## Description
+
+BreakTimer is a desktop application for managing and enforcing periodic breaks. BreakTimer is available for Windows, macOS, and Linux.
+
+BreakTimer allows you to customize:
+- How long your breaks are and how often do you wish to have them
+- Whether to be reminded with a simple notification or a fullscreen break window
+- Working hours so you are only reminded when you want to be
+- The content of messages shown during breaks.
+- Whether to intelligently restart your break countdown when it detects that you have not been using the computer
+
+## Screenshots
+
+## ![break panel](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/break.png)
+
+## ![settings panel](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/settings.png)
+
+![notification](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/notification.png)
+
+</description>
+    <releaseNotes>https://github.com/tom-james-watson/breaktimer-app/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

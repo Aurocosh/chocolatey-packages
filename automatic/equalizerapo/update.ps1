@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $releases = 'https://sourceforge.net/projects/equalizerapo'
     $download_page = Invoke-WebRequest -Uri $releases
     
-    $re = "https:\/\/sourceforge.net\/projects\/equalizerapo\/files\/(\d+\.\d+(?:\.\d+))\/"
+    $re = "https:\/\/sourceforge.net\/projects\/equalizerapo\/files\/(\d+\.\d+(?:\.\d+)?)\/"
     $download_page.links | Where-Object href -match $re | Out-Null
     $version = $matches[1]
     Write-Host $version

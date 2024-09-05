@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>miru</id>
+    <version>5.5.6</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/miru</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Miru (Install)</title>
+    <authors>ThaUnknown</authors>
+    <projectUrl>https://miru.watch/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/miru/img/icon.png</iconUrl>
+    <copyright>© 2020-2024 ThaUnknown</copyright>
+    <licenseUrl>https://github.com/ThaUnknown/miru/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ThaUnknown/miru</projectSourceUrl>
+    <docsUrl>https://miru.watch/features/</docsUrl>
+    <bugTrackerUrl>https://github.com/ThaUnknown/miru/issues</bugTrackerUrl>
+    <tags>miru torrent client p2p</tags>
+    <summary>A pure JS BitTorrent video streaming client</summary>
+    <description>## **About**
+A pure JS BitTorrent streaming environment, with a built-in list manager. Imagine qBit + Taiga + MPV, all in a single package, but streamed real-time. Completly ad free with no tracking/data collection.
+
+This app is meant to feel look, work and perform like a streaming website/app, while providing all the advantages of torrenting, like file downloads, higher download speeds, better video quality and quicker releases.
+
+Unlike qBit's sequential, seeking into undownloaded data will prioritise downloading that data, instead of flat out closing MPV.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/miru/img/main.gif)
+
+## **Features**
+### **Anime:**
+- full AniList integration
+- automatically find torrents for desired episodes
+- automatically detect what anime a torrent is
+- view latest releases on any custom RSS
+- airing schedule
+- find anime by image [just paste an image into the app]
+
+### **Video:**
+- full subtitle support
+- keybinds for all functions
+- editable keybinds **`** allows drag dropping any key
+- miniplayer
+- media session display
+- media keys support
+- Discord rich pressence
+- preview thumbnails
+- pause on lost focus
+- autoplay next episode
+- multi-audio support
+- torrent download progress on the seek bar
+
+### **Torrent:**
+- select downloads folder
+- specify download/upload speeds
+- support for most popular BEP's
+- support for custom torrent RSS feeds for latest releases
+- change what resolution to find torrents in
+- stream real-time with no waiting for downloads
+- support for custom extensions for custom sources and trackers
+</description>
+    <releaseNotes>https://miru.watch/changelog/</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

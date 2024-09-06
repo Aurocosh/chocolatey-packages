@@ -1,11 +1,11 @@
 ﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
-$url64msvc = 'https://github.com/Lime3DS/Lime3DS/releases/download/2117.1/lime3ds-2117.1-windows-msvc.zip'
-$checksum64msvc = '9a11dc62d6d577bf09d7fd02db064aee1f26bcc553ef0a7f079c517eb303d6f5'
+$url64msvc = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118/lime3ds-2118-windows-msvc.zip'
+$checksum64msvc = '62700c4659b770e4f733447453086fcb7b413a24c45a1f2321f41ed6d439afe5'
 
-$url64msys2 = 'https://github.com/Lime3DS/Lime3DS/releases/download/2117.1/lime3ds-2117.1-windows-msys2.zip'
-$checksum64msys2 = '3148d229bf81177ce55b81e73ce43fe7a37fa442b9435df207c47c671c650e1e'
+$url64msys2 = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118/lime3ds-2118-windows-msys2.zip'
+$checksum64msys2 = 'cb494999d140fd6c8d8880f4cd31e31ab7876e2fc03d69053ef097bf51a5d05f'
 
 $PackageParameters = Get-PackageParameters
 

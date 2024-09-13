@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.microsoft.com/en-us/download/details.aspx?id=102134'
     $urlPattern = "*MSKLC.exe"
-    $remoteUrl = $download_page.links | Where-Object href like $urlPattern | Select-Object -First 1 -expand href
+    $remoteUrl = $download_page.links | Where-Object href -like $urlPattern | Select-Object -First 1 -expand href
 
     $installScriptPath = "$PSScriptRoot/tools/chocolateyinstall.ps1"
     (Get-Content -Path $installScriptPath -Raw) -Match "url\s*=\s*'([^']*)'"

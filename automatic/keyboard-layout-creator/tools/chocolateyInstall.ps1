@@ -1,4 +1,4 @@
-$tempPath = Join-Path $env:temp $env:ChocolateyPackageName
+﻿$tempPath = Join-Path $env:temp $env:ChocolateyPackageName
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName

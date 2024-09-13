@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>keyboard-layout-creator</id>
+    <title>Microsoft Keyboard Layout Creator</title>
+    <version>1.4</version>
+    <authors>Microsoft</authors>
+    <owners>doc</owners>
+    <summary>Ever wanted to quickly and easily define your own keyboard layout for a language Microsoft doesn't support? Or define your own keyboard layout so you can quickly and easily enter your favorite symbols with a simple keystroke? Well, want no more: the Microsoft Keyboard Layout Creator is here!</summary>
+    <description>Ever wanted to quickly and easily define your own keyboard layout for a language Microsoft doesn't support? Or define your own keyboard layout so you can quickly and easily enter your favorite symbols with a simple keystroke? Well, want no more: the Microsoft Keyboard Layout Creator is here!
+
+The Microsoft Keyboard Layout Creator extends the international functionality of Windows Vista by allowing users to:
+
+- Create new keyboard layouts from scratch
+
+- Base a new layout on an existing one
+
+- Modify the functionality of dead keys
+
+- Modify an existing keyboard layout (.KLC) file and build a new layout from it
+
+- Package the resulting keyboard layouts for subsequent deployment and installation.
+</description>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=22339</projectUrl>
+    <tags>keyboard layout keys</tags>
+    <copyright></copyright>
+    <licenseUrl>https://cdn.rawgit.com/aronovgj/chocolatey/52756e18e184135681c5a9d5da3b630bc03ef566/keyboard-layout-creator/4.1.1/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/aronovgj/chocolatey/2c11177cd11d2529bfcd6f55517422b46b428551/icons/keyboard-layout-creator.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

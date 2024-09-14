@@ -26,6 +26,13 @@ function global:au_GetLatest {
     $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
     
     $isBeta = $matches[1]
+    
+    if ($url32) {
+        $url32 = "https:" + $url32
+    }
+    if ($url64) {
+        $url64 = "https:" + $url64
+    }
     if ($version -and $isBeta) {
         $version += "-Beta"
     }

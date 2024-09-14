@@ -16,12 +16,23 @@ function global:au_GetLatest {
 
     $versionRegex = "<h4><b>v(\d+\.\d+\.\d+)<\/b>"
     if ($download_page.content -match $versionRegex) {
-        $version = "$($matches[1])-Beta"
+        $version = $matches[1]
+    }
+
+    $re32 = "\/\/dl.snipaste.com\/win-x64(-beta)?"
+    $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
+    
+    $re64 = "\/\/dl.snipaste.com\/win-x64(-beta)?"
+    $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
+    
+    $isBeta = $matches[1]
+    if ($version -and $isBeta) {
+        $version += "-Beta"
     }
     
     @{
-        URL32   = 'https://dl.snipaste.com/win-x86-beta'
-        URL64   = 'https://dl.snipaste.com/win-x64-beta'
+        URL32   = $url32
+        URL64   = $url64
         Version = $version
     }
 }

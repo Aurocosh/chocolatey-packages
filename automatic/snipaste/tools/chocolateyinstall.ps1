@@ -7,11 +7,11 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Snipaste*'
-  url            = 'https://dl.snipaste.com/win-x86-beta'
-  checksum       = 'c80a47ffd7466a9230a42d8f2ac38ed9904f9104fccb419378fca80dd7a32287'
+  url            = 'https://dl.snipaste.com/win-x86'
+  checksum       = 'f090305ec2f5fe037132083c9f803d42f8213c39d3add9a264d4f60857a2f52e'
   checksumType   = 'sha256'
-  url64bit       = 'https://dl.snipaste.com/win-x64-beta'
-  checksum64     = 'dc4ed80407ad4c9f7b8130cfea089220504371ec6a51a1bab565758fe840b333'
+  url64bit       = 'https://dl.snipaste.com/win-x64'
+  checksum64     = '550c69dfbe05cd4c3031f4c4d8369a04954e816e51d0bcb77cbe7309a097affc'
   checksumType64 = 'sha256'
 }
 

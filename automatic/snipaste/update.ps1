@@ -19,7 +19,7 @@ function global:au_GetLatest {
         $version = $matches[1]
     }
 
-    $re32 = "\/\/dl.snipaste.com\/win-x64(-beta)?"
+    $re32 = "\/\/dl.snipaste.com\/win-x86(-beta)?"
     $url32 = $download_page.links | Where-Object href -match $re32 | Select-Object -First 1 -expand href
     
     $re64 = "\/\/dl.snipaste.com\/win-x64(-beta)?"

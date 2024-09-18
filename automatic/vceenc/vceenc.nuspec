@@ -7,7 +7,7 @@
     <version>8.23</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/vceenc</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>VCEEnc (Install)</title>
+    <title>VCEEnc (Portable)</title>
     <authors>rigaya</authors>
     <projectUrl>https://github.com/rigaya/VCEEnc</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vceenc/img/icon.png</iconUrl>
@@ -39,4 +39,3 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
-

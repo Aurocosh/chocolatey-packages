@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser mihaimoga `
         -RepoName IntelliFile `
-        -MainUrl64Regex "IntelliFile.zip "
+        -MainUrl64Regex "IntelliFile.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

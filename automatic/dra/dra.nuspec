@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dra</id>
+    <version>0.6.2</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dra</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>DRA (Portable)</title>
+    <authors>devmatteini</authors>
+    <projectUrl>https://github.com/devmatteini/dra</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dra/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2021 - present Cosimo Matteini</copyright>
+    <licenseUrl>https://github.com/devmatteini/dra/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/devmatteini/dra</projectSourceUrl>
+    <docsUrl>https://github.com/devmatteini/dra</docsUrl>
+    <bugTrackerUrl>https://github.com/devmatteini/dra/issues</bugTrackerUrl>
+    <tags>dra github download cli portable</tags>
+    <summary>A command line tool to download release assets from GitHub</summary>
+    <description># DRA - Download Release Assets from GitHub
+
+A command line tool to download release assets from GitHub.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dra/img/demo.gif)
+
+## Why should I use dra?
+
+You can do everything `dra` does with the official [GitHub cli](https://cli.github.com/).
+
+`dra` helps you download release assets more easily:
+
+- No authentication for public repository (you cannot use `gh` without authentication)
+- [Built-in generation of pattern](#non-interactive-download) to select an asset to download
+  (with `gh` you need to provide [glob pattern](https://cli.github.com/manual/gh_release_download) that you need to
+  create manually).
+- [Automatically select and download](#automatic) an asset based on your operating system and architecture
+
+</description>
+    <releaseNotes>https://github.com/devmatteini/dra/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

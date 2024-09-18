@@ -16,7 +16,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rigaya/NVEnc</projectSourceUrl>
     <bugTrackerUrl>https://github.com/rigaya/NVEnc/issues</bugTrackerUrl>
-    <tags>nvenc video transcoder encoder conversion AMD portable</tags>
+    <tags>nvenc video transcoder encoder conversion Nvidia portable</tags>
     <summary>Hardware Encoders for Nvidia GPU</summary>
     <description>Hardware Encoders for Nvidia GPU.
 

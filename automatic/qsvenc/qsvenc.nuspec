@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>qsvenc</id>
+    <version>7.69</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/qsvenc</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>QSVEnc (Portable)</title>
+    <authors>rigaya</authors>
+    <projectUrl>https://github.com/rigaya/QSVEnc</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/qsvenc/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2011-2016 rigaya</copyright>
+    <licenseUrl>https://github.com/rigaya/QSVEnc/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rigaya/QSVEnc</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/rigaya/QSVEnc/issues</bugTrackerUrl>
+    <tags>qsvenc video transcoder encoder conversion Intel portable</tags>
+    <summary>Hardware Encoders for Intel GPU/CPU</summary>
+    <description>Hardware Encoders for Intel GPU/CPU.
+
+## Encoding
+- H.264/AVC
+- H.265/HEVC (8bit/10bit)
+- MPEG2
+- VP9 (8bit/10bit)
+- AV1 (8bit/10bit)
+
+## Decoding
+- MPEG2
+- H.264/AVC
+- HEVC
+- VP8
+- VP9
+- AV1
+</description>
+    <releaseNotes>https://github.com/rigaya/QSVEnc/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

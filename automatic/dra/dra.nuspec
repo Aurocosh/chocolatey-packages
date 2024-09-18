@@ -8,14 +8,13 @@
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dra</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>DRA (Portable)</title>
-    <authors>devmatteini</authors>
+    <authors>Cosimo Matteini</authors>
     <projectUrl>https://github.com/devmatteini/dra</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dra/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2021 - present Cosimo Matteini</copyright>
     <licenseUrl>https://github.com/devmatteini/dra/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/devmatteini/dra</projectSourceUrl>
-    <docsUrl>https://github.com/devmatteini/dra</docsUrl>
     <bugTrackerUrl>https://github.com/devmatteini/dra/issues</bugTrackerUrl>
     <tags>dra github download cli portable</tags>
     <summary>A command line tool to download release assets from GitHub</summary>

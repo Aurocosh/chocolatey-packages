@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser rigaya `
-        -RepoName VCEEnc `
+        -RepoName NVEnc `
         -MainUrl32Regex "NVEncC_\d+\.\d+_Win32.7z" `
         -MainUrl64Regex "NVEncC_\d+\.\d+_x64.7z"
     @{

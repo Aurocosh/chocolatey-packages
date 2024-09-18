@@ -15,7 +15,6 @@
     <licenseUrl>https://github.com/rigaya/NVEnc/blob/master/NVEnc_license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rigaya/NVEnc</projectSourceUrl>
-    <docsUrl>https://github.com/rigaya/NVEnc/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/rigaya/NVEnc/issues</bugTrackerUrl>
     <tags>nvenc video transcoder encoder conversion AMD portable</tags>
     <summary>Hardware Encoders for Nvidia GPU</summary>
@@ -42,4 +41,3 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
-

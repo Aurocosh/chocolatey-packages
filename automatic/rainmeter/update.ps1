@@ -15,9 +15,14 @@ function global:au_GetLatest {
         -GitUser rainmeter `
         -RepoName rainmeter `
         -MainUrl64Regex "Rainmeter-\d+\.\d+\.\d+.exe"
+
+    # Truncate revision from version string
+    $release.Version -Match "(\d+\.\d+\.\d+)\.\d+"
+    $version = $matches[1]
+
     @{
         URL64   = $release.MainUrl64
-        Version = $release.Version
+        Version = $version
     }
 }
 

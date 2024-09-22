@@ -36,6 +36,9 @@ Equalizer APO is best used in conjunction with Room EQ Wizard (http://www.hometh
 Please have a look at the Wiki (http://sourceforge.net/p/equalizerapo/wiki/) for instructions on installation and configuration.
 </description>
     <releaseNotes>https://sourceforge.net/projects/equalizerapo/files/</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

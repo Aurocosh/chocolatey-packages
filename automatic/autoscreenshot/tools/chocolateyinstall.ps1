@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = 'autoscreenshot*'
   url            = 'https://github.com/artem78/AutoScreenshot/releases/download/v1.16/AutoScreenshot_v1.16_Windows_setup.exe'

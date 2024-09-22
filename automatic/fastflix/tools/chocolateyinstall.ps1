@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = 'FastFlix*'
   url64bit       = 'https://github.com/cdgriffith/FastFlix/releases/download/5.8.1/FastFlix_5.8.1_installer.exe'

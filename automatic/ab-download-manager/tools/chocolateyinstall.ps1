@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'msi'
   softwareName   = 'ABDownloadManager*'
   url64bit       = 'https://github.com/amir1376/ab-download-manager/releases/download/v1.0.10/ABDownloadManager_1.0.10_windows.msi'

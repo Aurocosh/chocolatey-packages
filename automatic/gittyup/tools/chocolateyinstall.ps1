@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = 'Gittyup*'
   url            = 'https://github.com/Murmele/Gittyup/releases/download/gittyup_v1.4.0/Gittyup-win32-1.4.0.exe'

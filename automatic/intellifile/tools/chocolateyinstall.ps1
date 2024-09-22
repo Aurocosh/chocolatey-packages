@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'msi'
   softwareName   = 'IntelliFile*'
   url64bit       = 'https://github.com/mihaimoga/IntelliFile/releases/download/v1.33/IntelliFileSetup.msi'

@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = 'Miru*'
   url64bit       = 'https://github.com/ThaUnknown/miru/releases/download/v5.5.6/win-Miru-5.5.6-installer.exe'

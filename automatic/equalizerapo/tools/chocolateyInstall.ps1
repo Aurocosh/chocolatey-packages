@@ -1,11 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'equalizerapo'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)";
 
 $packageArgs = @{
   packageName    = $packageName
-  unzipLocation  = $toolsDir
   fileType       = 'EXE'
   url            = 'https://sourceforge.net/projects/equalizerapo/files/1.4/EqualizerAPO32-1.4.exe/download'
   url64bit       = 'https://sourceforge.net/projects/equalizerapo/files/1.4/EqualizerAPO64-1.4.exe/download'

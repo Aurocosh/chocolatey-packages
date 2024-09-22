@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   url64bit       = 'https://github.com/ollm/OpenComic/releases/download/v1.2.0/OpenComic.Setup.1.2.0.exe'
   softwareName   = 'opencomic*'

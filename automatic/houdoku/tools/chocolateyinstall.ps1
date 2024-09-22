@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   softwareName   = 'houdoku*'
   url64bit       = 'https://github.com/xgi/houdoku/releases/download/v2.14.0/Houdoku-Setup-2.14.0.exe'

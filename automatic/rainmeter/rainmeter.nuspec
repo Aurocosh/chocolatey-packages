@@ -6,7 +6,7 @@
     <id>rainmeter</id>
     <version>4.5.20</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rainmeter</packageSourceUrl>
-    <owners>Aurocosh</owners>
+    <owners>Aurocosh, figgycity50, doc</owners>
     <title>Rainmeter (Install)</title>
     <authors>Rainmeter</authors>
     <projectUrl>https://www.rainmeter.net/</projectUrl>
@@ -37,4 +37,3 @@ You are only limited by your imagination and creativity.
     <file src="tools\**" target="tools" />
   </files>
 </package>
-

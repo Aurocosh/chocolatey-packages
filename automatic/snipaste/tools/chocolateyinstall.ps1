@@ -8,10 +8,10 @@ $packageArgs = @{
   unzipLocation  = $installPath
   softwareName   = 'Snipaste*'
   url            = 'https://dl.snipaste.com/win-x86'
-  checksum       = 'f090305ec2f5fe037132083c9f803d42f8213c39d3add9a264d4f60857a2f52e'
+  checksum       = '1fb26a222976f91f750ac96cbeb9bac86247ffd78ea6dcbceca9980e09c78c46'
   checksumType   = 'sha256'
   url64bit       = 'https://dl.snipaste.com/win-x64'
-  checksum64     = '550c69dfbe05cd4c3031f4c4d8369a04954e816e51d0bcb77cbe7309a097affc'
+  checksum64     = 'd9d6c36c961a7f91c7fc1cc511ef55b89ca6ab073e4bc2b3548a0fa9c8423080'
   checksumType64 = 'sha256'
 }
 

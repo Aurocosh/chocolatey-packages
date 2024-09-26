@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lan-mouse</id>
+    <version>0.9.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lan-mouse</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Lan Mouse (Portable)</title>
+    <authors>Ferdinand Schober</authors>
+    <projectUrl>https://github.com/feschber/lan-mouse</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/feschber/lan-mouse/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/feschber/lan-mouse</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/feschber/lan-mouse/issues</bugTrackerUrl>
+    <tags>lan-mouse mouse keyboard sharing portable</tags>
+    <summary>Mouse &amp; keyboard sharing via LAN</summary>
+    <description># Lan Mouse
+Lan Mouse is a mouse and keyboard sharing software similar to universal-control on Apple devices.
+It allows for using multiple pcs with a single set of mouse and keyboard.
+This is also known as a Software KVM switch.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/screenshot.png)</description>
+    <releaseNotes>https://github.com/feschber/lan-mouse/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

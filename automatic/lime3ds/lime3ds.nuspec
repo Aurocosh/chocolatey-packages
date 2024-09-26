@@ -25,12 +25,9 @@ Reports for game compatibility can be made here: https://github.com/Lime3DS/comp
 Please ensure that you have read the contributing document before submitting a report.
 
 ### Package Parameters:
-
  - `/MsysVersion` Install MSYS2 version. By default MSVC version is installed.
- - `/NoDesktopShortcut` Do not create Desktop Shortcut
- - `/NoStartMenuShortcut` Do not create Start Menu Shortcut
  
-eg. `choco install -y lime3ds --package-parameters="/MsysVersion /NoDesktopShortcut /NoStartMenuShortcut"`
+eg. `choco install -y lime3ds --package-parameters="/MsysVersion"`
 </description>
     <releaseNotes>https://github.com/Lime3DS/Lime3DS/releases</releaseNotes>
     <dependencies>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jnv</id>
+    <version>0.4.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/jnv</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>jnv (Portable)</title>
+    <authors>jnv authors</authors>
+    <projectUrl>https://github.com/ynqa/jnv</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/jnv/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2024 jnv authors</copyright>
+    <licenseUrl>https://github.com/ynqa/jnv/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ynqa/jnv</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ynqa/jnv/issues</bugTrackerUrl>
+    <tags>jnv json filter interactive cli portable</tags>
+    <summary>Interactive JSON filter using jq</summary>
+    <description>![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/jnv/img/banner.png)
+    
+    jnv is designed for navigating JSON, offering an interactive JSON viewer and jq filter editor.</description>
+    <releaseNotes>https://github.com/ynqa/jnv/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

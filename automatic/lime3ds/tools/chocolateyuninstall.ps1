@@ -1,2 +1,0 @@
-﻿Remove-Item -Path "$env:ALLUSERSPROFILE\Desktop\Lime3DS.lnk" -ErrorAction SilentlyContinue
-Remove-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Lime3DS.lnk" -ErrorAction SilentlyContinue

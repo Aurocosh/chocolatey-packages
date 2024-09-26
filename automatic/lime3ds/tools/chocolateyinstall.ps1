@@ -1,5 +1,4 @@
-﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$packagePath = $(Split-Path -parent $toolsDir)
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
 $url64msvc = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118/lime3ds-2118-windows-msvc.zip'
 $checksum64msvc = '62700c4659b770e4f733447453086fcb7b413a24c45a1f2321f41ed6d439afe5'
@@ -20,22 +19,13 @@ else {
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $packagePath
+  fileType       = 'exe'
   softwareName   = 'Lime3DS*'
   url64bit       = $url64
   checksum64     = $checksum64
   checksumType64 = 'sha256'
+  validExitCodes = @(0, 3010, 1641)
+  silentArgs     = '/S'  # NSIS
 }
 
-Install-ChocolateyZipPackage @packageArgs
-
-$appFolder = (Get-ChildItem $packagePath -filter "lime3ds-*-windows-*" -Directory | Select-Object -First 1).FullName
-$exeFile = Join-Path $appFolder 'lime3ds-gui.exe'
-
-If (!$PackageParameters.NoDesktopShortcut) {
-  Install-ChocolateyShortcut -ShortcutFilePath "$env:ALLUSERSPROFILE\Desktop\Lime3DS.lnk" -TargetPath $exeFile
-}
-
-If (!$PackageParameters.NoStartMenuShortcut) {
-  Install-ChocolateyShortcut -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Lime3DS.lnk" -TargetPath $exeFile
-}
+Install-ChocolateyPackage @packageArgs

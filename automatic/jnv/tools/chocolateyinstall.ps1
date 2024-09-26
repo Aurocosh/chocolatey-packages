@@ -11,9 +11,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
-
-# $programExe = (Get-ChildItem $packagePath -filter "jnv.exe" -File -Recurse | Select-Object -First 1).FullName
-# Move-Item -Path $programExe -Destination $packagePath
-
-# $distPath = Join-Path $packagePath 'dist'
-# Remove-Item -Path $distPath -Force -Recurse

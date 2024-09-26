@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser ynqa `
         -RepoName jnv `
-        -MainUrl64Regex "v\d+\.\d+\.\d+/jnv-x86_64-pc-windows-msvc.zip"
+        -MainUrl64Regex "jnv-x86_64-pc-windows-msvc.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

@@ -21,8 +21,8 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser Lime3DS `
         -RepoName Lime3DS `
-        -MainUrl32Regex "lime3ds-\d+(?:\.\d+)?-windows-msvc.exe" `
-        -MainUrl64Regex "lime3ds-\d+(?:\.\d+)?-windows-msys2.exe"
+        -MainUrl32Regex "lime3ds-\d+(?:\.\d+)?-windows-msvc-installer.exe" `
+        -MainUrl64Regex "lime3ds-\d+(?:\.\d+)?-windows-msys2-installer.exe"
     @{
         URL_MSVC  = $release.MainUrl32
         URL_MSYS2 = $release.MainUrl64

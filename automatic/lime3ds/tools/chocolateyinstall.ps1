@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
-$url64msvc = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118.1/lime3ds-2118.1-windows-msvc.exe'
-$checksum64msvc = 'ece36ec88fc881399cf4d344803e124bee0d5989a4bddf40f4d82e6b1adceece'
+$url64msvc = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118.2/lime3ds-2118.2-windows-msvc-installer.exe'
+$checksum64msvc = '190a5835f8650a57a330e2e5bda6bafa9259bcfa08f4fb07bbc7d2e6f130509e'
 
-$url64msys2 = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118.1/lime3ds-2118.1-windows-msys2.exe'
-$checksum64msys2 = '48744857c88de343bcc883191a6ca62f350c5e0cf355b5304315b769f41de837'
+$url64msys2 = 'https://github.com/Lime3DS/Lime3DS/releases/download/2118.2/lime3ds-2118.2-windows-msys2-installer.exe'
+$checksum64msys2 = '1e1ae8cf66d6502c3eb20fbf28d0fb477c9aa1aa3fe7b4e37e46bb79d33e7d12'
 
 $PackageParameters = Get-PackageParameters
 

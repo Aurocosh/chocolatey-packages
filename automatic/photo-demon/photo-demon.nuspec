@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>photo-demon</id>
+    <version>2024.7</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/photo-demon</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>PhotoDemon (Portable)</title>
+    <authors>Tanner Helland and Contributors</authors>
+    <projectUrl>https://photodemon.org</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2024 by Tanner Helland and Contributors</copyright>
+    <licenseUrl>https://github.com/tannerhelland/PhotoDemon/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/tannerhelland/PhotoDemon</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/tannerhelland/PhotoDemon/issues</bugTrackerUrl>
+    <tags>photo-demon image image-editor photo-editor png jpg portable</tags>
+    <summary>A free portable photo editor focused on pro-grade features, high performance, and maximum usability.</summary>
+    <description>PhotoDemon is a portable photo editor.  It is 100% free and 100% open-source
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/screenshot.png) 
+
+PhotoDemon provides a comprehensive photo editor in a 15 MB download. It runs on any Windows PC (XP through Win 11) and it does not require installation.
+
+PhotoDemon is open-source and available under a permissive BSD license. Contributors have translated the program into more than a dozen languages.
+</description>
+    <releaseNotes>https://github.com/tannerhelland/PhotoDemon/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

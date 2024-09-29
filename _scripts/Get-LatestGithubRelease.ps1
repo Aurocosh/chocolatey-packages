@@ -29,24 +29,14 @@ function Get-LatestGithubRelease {
   }
 
   $response = Invoke-RestMethod -Uri $githubUrl -Headers $headers
-  $versionRegex = "(\d+(?:\.\d+){0,3})(?:\-([a-z]+)\.?([0-9]+))?$"
+  $versionRegex = "(\d+(?:\.\d+){0,3})(?:\-([a-z]+)\.?([0-9]+)?)?$"
   $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1
   
   if (!$release) {
     return @{};
   }
   
-  $version = $matches[1]
-  $releaseType = $matches[2]
-  $patchVersion = $matches[3]
-  
-  if ($patchVersion) {
-    $version = "$version.$patchVersion"
-  }
-
-  if ($releaseType -and ($releaseType -eq 'a' -or $releaseType -eq 'alpha')) {
-    $version = "$version-alpha"
-  }
+  $version = Get-ProcessDetectedTagVersion $matches[1] $matches[2] $matches[3]
 
   $releaseData = @{
     Name         = $release.name
@@ -81,4 +71,38 @@ function Get-LatestGithubRelease {
     $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url
   }
   return $releaseData
+}
+
+function Get-ProcessDetectedTagVersion {
+  param (
+    [Parameter(Mandatory = $true, Position = 0)]
+    [string]$Version,
+
+    [Parameter(Mandatory = $false, Position = 1)]
+    [string]$ReleaseType,
+
+    [Parameter(Mandatory = $false, Position = 2)]
+    [string]$ReleaseVersion
+  )
+
+  if ($ReleaseVersion) {
+    $Version = "$Version.$ReleaseVersion"
+  }
+
+  if ($ReleaseType) {
+    if ($ReleaseType -match "(?i)(a|alpha)") {
+      $Version = "$Version-alpha"
+      Write-Host "Alpha version"
+    }
+    elseif ($ReleaseType -and $ReleaseType -match "(?i)(b|beta)") {
+      $Version = "$Version-beta"
+      Write-Host $release.Version
+      Write-Host "Beta version"
+    }
+    else {
+      $Version = "$Version-$ReleaseType"
+    }
+  }
+
+  $Version
 }

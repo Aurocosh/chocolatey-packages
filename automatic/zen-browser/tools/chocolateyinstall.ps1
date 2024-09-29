@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop' # stop on all errors
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
 $urlOptimized64 = 'https://github.com/zen-browser/desktop/releases/download/1.0.1-a.5/zen.installer.exe'
 $checksumOptimized64 = '87173726b70d35149b1de0e6357557ddeeae5a97d31296bf6be56fe69412806b'

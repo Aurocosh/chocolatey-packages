@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zen-browser</id>
+    <version>1.0.1.5-alpha</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/zen-browser</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Zen Browser (Install)</title>
+    <authors>Zen Browser</authors>
+    <projectUrl>https://zen-browser.app</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/icon.png</iconUrl>
+    <copyright>Copyright © 2024 Zen Browser</copyright>
+    <licenseUrl>https://github.com/zen-browser/desktop/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/zen-browser/desktop</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/zen-browser/desktop/issues</bugTrackerUrl>
+    <tags>zen-browser firefox firefox-based browser privacy</tags>
+    <summary>🌀 Experience tranquillity while browsing the web without people tracking you!</summary>
+    <description>Firefox based browser.
+Beautifully designed, privacy-focused, and packed with features.
+We care about your experience, not your data.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/screenshot.png)
+
+## Package Parameters:
+ - `/Optimized` Install optimized version. By default generic version is installed.
+
+eg. `choco install -y zen-browser --package-parameters="/Optimized"`
+
+## Differences between the optimized and generic builds
+The optimized version of Zen leverages Advanced Vector Extensions 2 (AVX2), a CPU instruction set that enhances performance for certain computational tasks. This instruction set is only available on modern processors.
+</description>
+    <releaseNotes>https://github.com/zen-browser/desktop/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -15,12 +15,12 @@ function Get-LatestGithubRelease {
     [string]$PortableUrl64Regex
   )
   
-  $githubUrl = "https://api.github.com/repos/$($GitUser)/$($RepoName)/releases";
+  $githubUrl = "https://api.github.com/repos/$($GitUser)/$($RepoName)/releases"
   if ($UsePreRelease) {
-    $githubUrl += "?per_page=1";
+    $githubUrl += "?per_page=1"
   }
   else {
-    $githubUrl += "/latest";
+    $githubUrl += "/latest"
   }
   
   $headers = @{}
@@ -29,14 +29,24 @@ function Get-LatestGithubRelease {
   }
 
   $response = Invoke-RestMethod -Uri $githubUrl -Headers $headers
-  $versionRegex = "((\d+)(\.\d+){0,3}(\-[a-z]+[0-9]+)?)$";
-  $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1;
+  $versionRegex = "(\d+(?:\.\d+){0,3})(?:\-([a-z]+)\.?([0-9]+))?$"
+  $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1
   
   if (!$release) {
     return @{};
   }
   
-  $version = $matches[1];
+  $version = $matches[1]
+  $releaseType = $matches[2]
+  $patchVersion = $matches[3]
+  
+  if ($patchVersion) {
+    $version = "$version.$patchVersion"
+  }
+
+  if ($releaseType -and ($releaseType -eq 'a' -or $releaseType -eq 'alpha')) {
+    $version = "$version-alpha"
+  }
 
   $releaseData = @{
     Name         = $release.name
@@ -48,27 +58,27 @@ function Get-LatestGithubRelease {
     $releaseData["Assets"] = $release.assets;
   }
   if ($IncludeAssetUrls) {
-    $releaseData["AssetUrls"] = $release.assets | Select-Object -expand browser_download_url;
+    $releaseData["AssetUrls"] = $release.assets | Select-Object -expand browser_download_url
   }
   if ($IncludeReleaseUrl) {
-    $releaseData["ReleaseUrl"] = $release.html_url;
+    $releaseData["ReleaseUrl"] = $release.html_url
   }
   if ($IncludeReleaseBody) {
-    $releaseData["Body"] = $release.body;
+    $releaseData["Body"] = $release.body
   }
   
   if ($MainUrl32Regex) {
-    $releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url;
+    $releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url
   }
   if ($MainUrl64Regex) {
-    $releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url;
+    $releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url
   }
   
   if ($PortableUrl32Regex) {
-    $releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url;
+    $releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url
   }
   if ($PortableUrl64Regex) {
-    $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url;
+    $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url
   }
-  return $releaseData;
+  return $releaseData
 }

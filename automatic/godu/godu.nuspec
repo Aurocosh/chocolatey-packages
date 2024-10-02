@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>godu</id>
+    <version>1.5.2</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/godu</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Godu (Portable)</title>
+    <authors>Tomas Vik</authors>
+    <projectUrl>https://github.com/viktomas/godu</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/godu/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2016-present Tomas Vik</copyright>
+    <licenseUrl>https://github.com/viktomas/godu/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/viktomas/godu</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/viktomas/godu/issues</bugTrackerUrl>
+    <tags>godu disk-cleaner disk-space golang cli portable</tags>
+    <summary>Simple golang utility helping to discover large files/folders.</summary>
+    <description>Find the files that are taking up your space.
+
+![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/godu/img/demo.gif)
+
+Do you want something that:
+* can do the job
+* scans your drive blazingly fast
+* works in terminal
+* makes you look cool
+* is written in Golang
+* you can contribute to
+
+??
+
+Well then look no more and try out the godu.
+ </description>
+    <releaseNotes>https://github.com/viktomas/godu/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
 # Archive is .tar.gz, and it has to be extracted twice. So we cannot simply use Install-ChocolateyZipPackage to install the program

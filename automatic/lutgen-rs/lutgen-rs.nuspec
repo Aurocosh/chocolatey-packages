@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lutgen-rs</id>
+    <version>0.11.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lutgen-rs</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Lutgen (Portable)</title>
+    <authors>Ossian Mapes</authors>
+    <projectUrl>https://github.com/ozwaldorf/lutgen-rs</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2023 Ossian Mapes</copyright>
+    <licenseUrl>https://github.com/ozwaldorf/lutgen-rs/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ozwaldorf/lutgen-rs</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ozwaldorf/lutgen-rs/issues</bugTrackerUrl>
+    <tags>lutgen-rs cli color-grading colorscheme theming wallpaper portable</tags>
+    <summary>Blazingly fast interpolated LUT generator and applicator for arbitrary and popular color palettes.</summary>
+    <description>A blazingly fast interpolated [LUT](https://en.wikipedia.org/wiki/3D_lookup_table) utility for arbitrary and popular color palettes. Theme any image to your desktop colorscheme!
+    
+## Example Output
+
+### Hald Cluts
+#### Catppuccin Mocha
+![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha-hald-clut.png)
+#### Gruvbox Dark
+![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark-hald-clut.png)
+
+### Color Corrections
+
+#### Original
+![Original](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/example-image.png)
+#### Catppuccin Mocha
+![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.png)
+#### Gruvbox Dark
+![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.png)
+
+## Package Parameters:
+ - `/Legacy` Install a legacy version for Windows 7 and Windows 8.1.
+
+eg. `choco install -y lutgen-rs --package-parameters="/Legacy"`
+</description>
+    <releaseNotes>https://github.com/ozwaldorf/lutgen-rs/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -31,14 +31,14 @@
 ### Color Corrections
 
 #### Original
-![Original](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/example-image.png)
+![Original](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/example-image.jpg)
 #### Catppuccin Mocha
-![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.png)
+![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.jpg)
 #### Gruvbox Dark
-![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.png)
+![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.jpg)
 
 ## Package Parameters:
- - `/Legacy` Install a legacy version for Windows 7 and Windows 8.1.
+ - `/Legacy` - Install a legacy version for Windows 7 and Windows 8.1.
 
 eg. `choco install -y lutgen-rs --package-parameters="/Legacy"`
 </description>

@@ -10,12 +10,12 @@ $checksumLegacy64 = 'd85cb0dc98209720e7a0883a44ac2a3ad9d0e4865c1e55d5d83d5757e62
 $PackageParameters = Get-PackageParameters
 
 if ($PackageParameters.Legacy) {
-  $url64 = $urlRegular64
-  $checksum64 = $checksumRegular64
-}
-else {
   $url64 = $urlLegacy64
   $checksum64 = $checksumLegacy64
+}
+else {
+  $url64 = $urlRegular64
+  $checksum64 = $checksumRegular64
 }
 
 $packageArgs = @{

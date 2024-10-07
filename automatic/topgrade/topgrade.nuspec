@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>topgrade</id>
-    <version>15.0.0</version>
+    <version>16.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/topgrade</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Topgrade (Install)</title>
@@ -38,7 +38,7 @@ See `config.example.toml` for an example configuration file.
 </description>
     <releaseNotes>https://github.com/topgrade-rs/topgrade/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

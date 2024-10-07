@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser lycheeverse `
         -RepoName lychee `
-        -MainUrl64Regex "lychee-v\d+\.\d+\.\d+-windows-x86_64\.exe"
+        -MainUrl64Regex "lychee-x86_64-windows.exe"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

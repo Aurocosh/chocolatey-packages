@@ -7,15 +7,15 @@
     <version>16.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/topgrade</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Topgrade (Install)</title>
+    <title>Topgrade (Portable)</title>
     <authors>topgrade-rs</authors>
     <projectUrl>https://github.com/topgrade-rs/topgrade</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/topgrade-rs/topgrade/blob/main/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/topgrade-rs/topgrade</projectSourceUrl>
     <bugTrackerUrl>https://github.com/topgrade-rs/topgrade/issues</bugTrackerUrl>
-    <tags>topgrade package automatic updater cli admin</tags>
+    <tags>topgrade package automatic updater cli admin portable</tags>
     <summary>Topgrade is a cli program update utility</summary>
     <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/banner.png "Banner")
 

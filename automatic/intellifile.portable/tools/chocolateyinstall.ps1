@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'IntelliFile*'
-  url64bit       = 'https://github.com/mihaimoga/IntelliFile/releases/download/v1.33/IntelliFile.zip'
-  checksum64     = '95480b49b29943265296149f43afc801f4b03bf2667d657b7aa99a5e6c14e776'
+  url64bit       = 'https://github.com/mihaimoga/IntelliFile/releases/download/v1.34/IntelliFile.zip'
+  checksum64     = 'd9fc0dfc398a909db0239f18deeee47a06067bfcad82eb5693d475beb9fe0d05'
   checksumType64 = 'sha256'
 }
 

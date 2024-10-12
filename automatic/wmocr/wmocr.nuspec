@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wmocr</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wmocr</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Wmocr (Portable)</title>
+    <authors>Aurocosh</authors>
+    <projectUrl>https://github.com/Aurocosh/wmocr</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/wmocr/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2024 Aurocosh</copyright>
+    <licenseUrl>https://github.com/Aurocosh/wmocr/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Aurocosh/wmocr</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Aurocosh/wmocr/issues</bugTrackerUrl>
+    <tags>wmocr cli ocr portable</tags>
+    <summary>Command line OCR tool based on Windows.Media.Ocr</summary>
+    <description>## Overview
+Command line interface wrapper for Windows.Media.Ocr. Performs image optical character recognition through command line. This tool relies on Windows language packs for OCR.
+
+## Usage examples
+
+##### Perform OCR and print result to the console
+```
+wmocr -i test.jpg
+```
+
+#### Perform OCR and save result to the text file
+```
+wmocr -i test.jpg -o out.txt
+```
+
+#### Perform OCR and append result to the text file as one line
+```
+wmocr -i test.jpg -o out.txt --append --one-line
+```
+#### Crop out recognised text from the image and save it to a separate file
+```
+wmocr -i test.jpg -c cropped.jpg
+```
+#### Show list of all supported languages
+```
+wmocr --lang-list
+```
+#### Show help
+```
+wmocr --help
+```</description>
+    <releaseNotes>https://github.com/Aurocosh/wmocr/releases</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet-8.0-runtime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

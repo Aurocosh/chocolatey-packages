@@ -8,7 +8,7 @@ $packageArgs = @{
   unzipLocation = $installPath
   softwareName  = 'XYPlorer*'
   url           = 'https://www.xyplorer.com/free-zer/26.50/xyplorer_full_noinstall.zip'
-  checksum      = '4a13c2692e53f8fcdf792126d6f6202a17fd9fd970cc5e44c32ace4b7982d3fa'
+  checksum      = '592aff4da0790507f092bffe9af9a02f923e728ae5e011460cdb5c495755cdc6'
   checksumType  = 'sha256'
 }
 

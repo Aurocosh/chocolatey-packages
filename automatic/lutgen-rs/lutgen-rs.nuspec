@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lutgen-rs</id>
-    <version>0.11.0</version>
+    <version>0.11.2</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lutgen-rs</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lutgen (Portable)</title>
@@ -44,7 +44,7 @@ eg. `choco install -y lutgen-rs --package-parameters="/Legacy"`
 </description>
     <releaseNotes>https://github.com/ozwaldorf/lutgen-rs/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

@@ -1,11 +1,11 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
-$urlRegular64 = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/v0.11.0/lutgen-0.11.0-x86_64-windows.zip'
-$checksumRegular64 = '500c3cfc9cf4567fa4758a1d3277df07580b9e41d3a6134020aab1429c9eba52'
+$urlRegular64 = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/v0.11.2/lutgen-0.11.2-x86_64-windows.zip'
+$checksumRegular64 = 'd91fadf04ce8ef2c1d7ce4befc79657bd700210f898486740c52349269089945'
 
-$urlLegacy64 = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/v0.11.0/lutgen-0.11.0-x86_64-legacy-windows.zip'
-$checksumLegacy64 = 'd85cb0dc98209720e7a0883a44ac2a3ad9d0e4865c1e55d5d83d5757e625a48e'
+$urlLegacy64 = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/v0.11.2/lutgen-0.11.2-x86_64-legacy-windows.zip'
+$checksumLegacy64 = '3b75d971a26d1fbf2411e565494481765cbb446c8196f49bd6c659cd4ffe973b'
 
 $PackageParameters = Get-PackageParameters
 

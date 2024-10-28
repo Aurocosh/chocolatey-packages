@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dra</id>
-    <version>0.6.2</version>
+    <version>0.6.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dra</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>DRA (Portable)</title>
@@ -39,7 +39,7 @@ You can do everything `dra` does with the official [GitHub cli](https://cli.gith
 </description>
     <releaseNotes>https://github.com/devmatteini/dra/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

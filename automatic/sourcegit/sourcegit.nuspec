@@ -64,7 +64,8 @@ Opensource Git GUI client.
   ![Theme Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_dark.png) 
 
 * Light Theme
-  ![Theme Light](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)</description>
+  ![Theme Light](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)
+</description>
     <releaseNotes>https://github.com/sourcegit-scm/sourcegit/releases</releaseNotes>
   </metadata>
   <files>

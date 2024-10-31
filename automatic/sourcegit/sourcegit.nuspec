@@ -17,9 +17,10 @@
     <projectSourceUrl>https://github.com/sourcegit-scm/sourcegit</projectSourceUrl>
     <docsUrl>https://github.com/sourcegit-scm/sourcegit/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/sourcegit-scm/sourcegit/issues</bugTrackerUrl>
-    <tags>sourcegit cross-platform git git-gui gui</tags>
+    <tags>sourcegit cross-platform git git-gui gui portable</tags>
     <summary>GUI client for GIT users</summary>
-    <description># SourceGit - Opensource Git GUI client.
+    <description># SourceGit
+Opensource Git GUI client.
 
 ## Highlights
 

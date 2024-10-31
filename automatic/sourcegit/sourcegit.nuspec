@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sourcegit</id>
+    <version>8.36</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/sourcegit</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>SourceGit (Portable)</title>
+    <authors>SourceGit</authors>
+    <projectUrl>https://github.com/sourcegit-scm/sourcegit</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2024 sourcegit</copyright>
+    <licenseUrl>https://github.com/sourcegit-scm/sourcegit/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sourcegit-scm/sourcegit</projectSourceUrl>
+    <docsUrl>https://github.com/sourcegit-scm/sourcegit/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/sourcegit-scm/sourcegit/issues</bugTrackerUrl>
+    <tags>sourcegit cross-platform git git-gui gui</tags>
+    <summary>GUI client for GIT users</summary>
+    <description># SourceGit - Opensource Git GUI client.
+
+## Highlights
+
+* Supports Windows/macOS/Linux
+* Opensource/Free
+* Fast
+* English/Français/Deutsch/Português/Русский/简体中文/繁體中文
+* Built-in light/dark themes
+* Customize theme
+* Visual commit graph
+* Supports SSH access with each remote
+* GIT commands with GUI
+  * Clone/Fetch/Pull/Push...
+  * Merge/Rebase/Reset/Revert/Amend/Cherry-pick...
+  * Amend/Reword
+  * Interactive rebase (Basic)
+  * Branches
+  * Remotes
+  * Tags
+  * Stashes
+  * Submodules
+  * Worktrees
+  * Archive
+  * Diff
+  * Save as patch/apply
+  * File histories
+  * Blame
+  * Revision Diffs
+  * Branch Diff
+  * Image Diff - Side-By-Side/Swipe/Blend
+* Search commits
+* GitFlow
+* Git LFS
+* Issue Link
+* Workspace
+* Using AI to generate commit message (C# port of [anjerodev/commitollama](https://github.com/anjerodev/commitollama))
+
+## Screenshots
+
+* Dark Theme
+  ![Theme Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_dark.png) 
+
+* Light Theme
+  ![Theme Light](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)</description>
+    <releaseNotes>https://github.com/sourcegit-scm/sourcegit/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lime3ds</id>
-    <version>0.2118.2</version>
+    <version>0.2119</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lime3ds</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lime3DS (Install)</title>

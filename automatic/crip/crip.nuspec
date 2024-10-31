@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>crip</id>
+    <version>2.3.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/crip</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Certificate Ripper (Portable)</title>
+    <authors>Hakan Altındağ</authors>
+    <projectUrl>https://github.com/Hakky54/certificate-ripper</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/crip/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/Hakky54/certificate-ripper/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Hakky54/certificate-ripper</projectSourceUrl>
+    <docsUrl>https://github.com/Hakky54/certificate-ripper/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Hakky54/certificate-ripper/issues</bugTrackerUrl>
+    <tags>crip certificate ssl portable</tags>
+    <summary>A CLI tool to extract server certificates</summary>
+    <description># Certificate Ripper 🔐
+A CLI tool to extract server certificates
+
+## Demo
+![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/crip/img/demo.gif?raw=true)
+
+## Advantages
+- It is fast
+- Easy to use
+- No openssl required
+- Runs on any Operating System
+- Can be used with or without Java, native executables are present in the releases
+- Extracts all the sub-fields of the certificate
+- Certificates can be formatted to PEM format
+- Bulk extraction of multiple different urls with a single command is possible
+- Extracted certificates can be stored automatically into a p12 truststore
+- Works also behind a proxy
+
+## CLI Options
+```text
+Usage: crip [COMMAND]
+Commands:
+  print             Prints the extracted certificates to the console
+  export p12        Export the extracted certificate to a PKCS12/p12 type truststore
+  export jks        Export the extracted certificate to a JKS (Java KeyStore) type truststore
+  export der        Export the extracted certificate to a binary form also known as DER
+  export pem        Export the extracted certificate to a base64 encoded string also known as PEM
+```
+</description>
+    <releaseNotes>https://github.com/Hakky54/certificate-ripper/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

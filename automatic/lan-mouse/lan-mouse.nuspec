@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lan-mouse</id>
-    <version>0.9.1</version>
+    <version>0.10.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lan-mouse</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lan Mouse (Portable)</title>
@@ -25,7 +25,7 @@ This is also known as a Software KVM switch.
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/screenshot.png)</description>
     <releaseNotes>https://github.com/feschber/lan-mouse/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'lan-mouse*'
-  url64bit       = 'https://github.com/feschber/lan-mouse/releases/download/v0.9.1/lan-mouse-windows.zip'
-  checksum64     = '099f9bb2a3c61ed00a8df04e02dab765e67a929e814dab92f18b0c6cca76d6ba'
+  url64bit       = 'https://github.com/feschber/lan-mouse/releases/download/v0.10.0/lan-mouse-windows.zip'
+  checksum64     = '66b45ae67ebfac4eb32c61c3f4ac46814519437aa051156ae9e0a9db4737b170'
   checksumType64 = 'sha256'
 }
 

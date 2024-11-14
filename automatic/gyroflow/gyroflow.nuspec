@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gyroflow</id>
+    <version>1.6.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/gyroflow</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Gyroflow (Portable)</title>
+    <authors>Elvin Chen, Adrian Eddy</authors>
+    <projectUrl>https://github.com/gyroflow/gyroflow</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/gyroflow/gyroflow/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/gyroflow/gyroflow</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/gyroflow/gyroflow/issues</bugTrackerUrl>
+    <tags>gyroflow fpv gopro gpu gyroscope stabilization video video-processing portable</tags>
+    <summary>Video stabilization using gyroscope data</summary>
+    <description>## About the project
+Gyroflow is an application that can stabilize your video by using motion data from a gyroscope and optionally an accelerometer. Modern cameras record that data internally (GoPro, Sony, Insta360 etc), and this application stabilizes the captured footage precisely by using them. It can also use gyro data from an external source (eg. from Betaflight blackbox).
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/screenshot.png)
+</description>
+    <releaseNotes>https://github.com/gyroflow/gyroflow/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

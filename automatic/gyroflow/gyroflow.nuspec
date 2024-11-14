@@ -9,7 +9,7 @@
     <owners>Aurocosh</owners>
     <title>Gyroflow (Portable)</title>
     <authors>Elvin Chen, Adrian Eddy</authors>
-    <projectUrl>https://github.com/gyroflow/gyroflow</projectUrl>
+    <projectUrl>https://gyroflow.xyz</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/gyroflow/gyroflow/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

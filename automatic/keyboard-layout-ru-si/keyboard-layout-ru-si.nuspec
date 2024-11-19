@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>keyboard-layout-ru-si</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/keyboard-layout-ru-si</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>keyboard-layout-ru-si (Install)</title>
+    <authors>Aurocosh</authors>
+    <projectUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/Aurocosh/keyboard-layout-ru-si/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Aurocosh/keyboard-layout-ru-si/issues</bugTrackerUrl>
+    <tags>keyboard-layout-ru-si cyrillic keyboard keyboard-layout mklc qwerty</tags>
+    <summary>Custom Cyrillic phonetic layout based on the standard QWERTY keyboard layout</summary>
+    <description>## Keyboard layout
+
+Custom Cyrillic phonetic layout based on the standard QWERTY keyboard layout. Each Latin key corresponds to a cyrillic letter with a similar sound. Cyrillic alphabet has more letters than Latin, so some of them are represented as a dead key combination. For example the letter 'ю' requires two keys to be pressed: key 'j' followed 'u'.
+
+Windows keyboard layout is created with Microsoft Keyboard Layout Creator.
+
+## Keyboard layout
+![Layout normal](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/Ru_SI.jpg)
+
+## Keyboard layout (Shift)
+![Layout shift](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/Ru_SIShft.jpg)
+
+## Keys and combinations
+
+|Target symbol|Key / Combination  |
+|--|--|
+|а|a|
+|б|b|
+|в|v|
+|г|g|
+|д|d|
+|е|e|
+|ё|jo|
+|ж|jf|
+|з|z|
+|и|i|
+|к|k|
+|л|l|
+|м|m|
+|н|n|
+|о|o|
+|п|p|
+|р|r|
+|с|s|
+|т|t|
+|у|u|
+|ф|f|
+|х|h|
+|ц|c, cc|
+|ч|ch|
+|ш|w, ww|
+|щ|w;|
+|ъ|j;|
+|ы|y|
+|ь|j, jj|
+|э|je|
+|ю|ju|
+|я|x, ja|
+</description>
+    <releaseNotes>https://github.com/Aurocosh/keyboard-layout-ru-si/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

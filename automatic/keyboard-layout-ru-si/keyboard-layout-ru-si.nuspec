@@ -7,7 +7,7 @@
     <version>1.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/keyboard-layout-ru-si</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Keyboard layout RuSi (Install)</title>
+    <title>Keyboard layout RuSI (Install)</title>
     <authors>Aurocosh</authors>
     <projectUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/icon.png</iconUrl>
@@ -17,7 +17,7 @@
     <bugTrackerUrl>https://github.com/Aurocosh/keyboard-layout-ru-si/issues</bugTrackerUrl>
     <tags>keyboard-layout-ru-si cyrillic keyboard keyboard-layout mklc qwerty</tags>
     <summary>Custom Cyrillic phonetic layout based on the standard QWERTY keyboard layout</summary>
-    <description>## Keyboard layout
+    <description>## Description
 
 Custom Cyrillic phonetic layout based on the standard QWERTY keyboard layout. Each Latin key corresponds to a cyrillic letter with a similar sound. Cyrillic alphabet has more letters than Latin, so some of them are represented as a dead key combination. For example the letter 'ю' requires two keys to be pressed: key 'j' followed 'u'.
 

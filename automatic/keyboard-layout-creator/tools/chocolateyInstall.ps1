@@ -1,5 +1,14 @@
 ﻿$tempPath = Join-Path $env:temp $env:ChocolateyPackageName
 
+# Enable the .NET Framework 3.5 feature if not installed
+if (Get-Command -Name Enable-WindowsOptionalFeature -ErrorAction SilentlyContinue) {
+    if ((Get-WindowsOptionalFeature -Online -FeatureName "NetFx3").State -ne "Enabled") {
+		try {
+			Enable-WindowsOptionalFeature -Online -FeatureName "NetFx3" -All -NoRestart
+		} catch {}
+	}
+}
+
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     unzipLocation  = $tempPath

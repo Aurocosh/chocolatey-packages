@@ -6,7 +6,7 @@
     <title>Microsoft Keyboard Layout Creator</title>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/keyboard-layout-creator</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <version>1.4.0.20240913</version>
+    <version>1.4.0.20241119</version>
     <authors>Microsoft</authors>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=102134</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-creator/img/icon.png</iconUrl>

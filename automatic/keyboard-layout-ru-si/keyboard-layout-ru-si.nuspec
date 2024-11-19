@@ -7,7 +7,7 @@
     <version>1.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/keyboard-layout-ru-si</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>keyboard-layout-ru-si (Install)</title>
+    <title>Keyboard layout RuSi (Install)</title>
     <authors>Aurocosh</authors>
     <projectUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectUrl>
     <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/icon.png</iconUrl>

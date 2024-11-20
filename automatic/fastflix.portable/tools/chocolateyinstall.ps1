@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'FastFlix*'
-  url64bit       = 'https://github.com/cdgriffith/FastFlix/releases/download/5.8.1/FastFlix_5.8.1_win64.zip'
-  checksum64     = '318879cb20d22520379a1b7b138b2f4364cb0284d6025e7718f9d765044f2042'
+  url64bit       = 'https://github.com/cdgriffith/FastFlix/releases/download/5.8.2/FastFlix_5.8.2_win64.zip'
+  checksum64     = 'c8329af55ca904331192f0bf59e2bf69f96dc93a13d969ea816f2be757ec6415'
   checksumType64 = 'sha256'
 }
 

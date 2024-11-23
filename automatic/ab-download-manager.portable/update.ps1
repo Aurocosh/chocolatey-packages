@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser amir1376 `
         -RepoName ab-download-manager `
-        -MainUrl64Regex "ABDownloadManager_\d+\.\d+\.\d+_windows.zip"
+        -MainUrl64Regex "ABDownloadManager_\d+\.\d+\.\d+_windows_x64.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

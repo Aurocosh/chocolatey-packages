@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'DRA*'
-  url64bit       = 'https://github.com/devmatteini/dra/releases/download/0.6.3/dra-0.6.3-x86_64-pc-windows-msvc.zip'
-  checksum64     = '07e5723fb7b3bdce71cd6e32128afab6b433e2178ae8bf840a8f6385a047fecd'
+  url64bit       = 'https://github.com/devmatteini/dra/releases/download/0.7.0/dra-0.7.0-x86_64-pc-windows-msvc.zip'
+  checksum64     = 'c53ecb1636ebbe70002faca4cf2303d14b3383d7a5eba43cf6af0c3c60acc93f'
   checksumType64 = 'sha256'
 }
 

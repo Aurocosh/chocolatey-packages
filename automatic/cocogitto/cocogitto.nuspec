@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cocogitto</id>
-    <version>6.1.0</version>
+    <version>6.2.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cdisplayex</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Cocogitto (Portable)</title>
@@ -69,7 +69,7 @@ to [the documentation](https://docs.cocogitto.io).
 </description>
     <releaseNotes>https://github.com/cocogitto/cocogitto/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

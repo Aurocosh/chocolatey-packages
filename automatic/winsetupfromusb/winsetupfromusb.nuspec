@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>winsetupfromusb</id>
+    <version>1.9.0.0</version>
+    <title>WinSetupFromUSB</title>
+    <authors>Jonathan Bennett and AutoIt Team</authors>
+    <owners>mareccs</owners>
+    <licenseUrl>http://www.winsetupfromusb.com/faq/</licenseUrl>
+    <projectUrl>http://www.winsetupfromusb.com/</projectUrl>
+    <iconUrl>https://res.cloudinary.com/mareccs/image/upload/v1613942814/chocolatey/winsetupfromusb_vapn2t.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>WinSetupFromUSB is a Windows program, which prepares multiboot USB flash or fixed disk to install any Windows versions since 2000/XP, boot various Linux and *BSD flavors, as well as many Windows, Linux, DOS based and other utilities. Since version 1.1 program can create USB disk with Windows versions which support (U)EFI (Vista x64 SP1 and later x64 versions), which USB disk can be used in both (U)EFI and Legacy BIOS modes.
+	
+	The install Windows from USB project started as a challenge back in 2006 at the msfn.org forum. With the invaluable contribution of several forum members, it was the first method to have regular XP setup run from a USB disk, just like if started from a CD media.
+
+WinSetupFromUSB program was made later on to offer graphical interface, and program functionality was slowly extended to allow many other sources in a multiboot USB disk.
+
+What can be added to the USB disk using WinSetupFromUSB:
+
+- Multiple sets of Windows setup files- XP, 2000, 2003, Vista, WIndows 7, Server 2008, Windows 8, Server 2012, both 32 and 64 bit versions are supported. As of version 1.1 program allows to create a USB disk which can boot both in BIOS and (U)EFI mode.
+- Multiple WinPE2 (Vista and above) based sources from ISO files such as Windows Defender Offline, recent Norton Ghost versions and PE (preinstallation environment) based PC manufacturers recovery disks.
+- Single WinPE1 source, such as BartPE, UBCD4Win, LiveXP and similar WinBuilder projects, WinFLPC etc.
+- Multiple Linux-based distributions and utilities from ISO files- Debian, Ubuntu, Fedora, CentOS to name a few, this includes most - - Antivirus Rescue Disks
+- Many other ISO images as long as they are compatible with grub4dos CD emulation, such as Ultimate Boot CD, most DOS based utilities, Acronis and Paragon boot disks and so on
+- Syslinux boot menu and optionally single source which uses Syslinux or Isolinux as boot loader
+- WinSetupFromUSB can also prepare Windows XP (2000, 2003) setup files to be installed from USB disk onto the same or another USB disk. Please refer to the FAQ and Tutorials pages for details.
+
+You can compare md5 or sha1 checksum on the official site: http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/</description>
+    <summary>WinSetupFromUSB is a Windows program, which prepares multiboot USB flash or fixed disk to install any Windows versions since 2000/XP, boot various Linux and *BSD flavors, as well as many Windows, Linux, DOS based and other utilities. Since version 1.1 program can create USB disk with Windows versions which support (U)EFI (Vista x64 SP1 and later x64 versions), which USB disk can be used in both (U)EFI and Legacy BIOS modes.
+	
+	You can compare md5 or sha1 checksum on the official site: http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/</summary>
+    <releaseNotes>http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/</releaseNotes>
+    <copyright>1999-2014 Jonathan Bennett and AutoIt Team</copyright>
+    <tags>usb boot windows flash drive multiboot linux iso setup</tags>
+    <packageSourceUrl>https://drive.google.com/drive/folders/1gWceuSTFFETQlzKabgPfZTVPbazRCrhw?usp=sharing</packageSourceUrl>
+  </metadata>
+</package>

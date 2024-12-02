@@ -1,0 +1,5 @@
+Program is free for personal and commercial use and can be freely redistributed as long as the licenses of the tools included are not violated and there is clear link to the page <http://www.winsetupfromusb.com/> or the home page @ msfn forum (<https://msfn.org/board/topic/120444-how-to-install-windows-from-usb-winsetupfromusb-with-gui/>) if it is hosted elsewhere.
+
+The program may not be sold or included in commercial products without written consent from its author.
+
+The information in this file has been obtained from <http://www.winsetupfromusb.com/faq/>

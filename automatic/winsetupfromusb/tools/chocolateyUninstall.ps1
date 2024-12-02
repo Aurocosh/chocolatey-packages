@@ -1,9 +1,9 @@
-Uninstall-ChocolateyZipPackage 'winsetupfromusb' 'WinSetupFromUSB-1-9.exe'
 
-$shortcut = $env:userprofile  + '\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\WinSetupFromUSB.lnk'
-Write-Host "`n Removing start menu shortcut..." -ForegroundColor green
-Remove-Item -Force $shortcut
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$packagePath = $(Split-Path -parent $toolsDir)
+$installFolder = (Get-ChildItem $packagePath -filter "WinSetupFromUSB-*-*" -Directory | Select-Object -First 1).Name
 
-$shortcut2 = $env:userprofile  + '\Desktop\WinSetupFromUSB.lnk'
-Write-Host "`n Removing desktop shortcut..." -ForegroundColor green
-Remove-Item -Force $shortcut2
+Uninstall-ChocolateyZipPackage $env:ChocolateyPackageName "$installFolder.exe"
+
+Remove-Item -Path "$env:ALLUSERSPROFILE\Desktop\WinSetupFromUSB.lnk" -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\WinSetupFromUSB.lnk" -ErrorAction SilentlyContinue

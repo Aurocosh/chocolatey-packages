@@ -32,7 +32,7 @@ What can be added to the USB disk using WinSetupFromUSB:
 - WinSetupFromUSB can also prepare Windows XP (2000, 2003) setup files to be installed from USB disk onto the same or another USB disk. Please refer to the FAQ and Tutorials pages for details.
 
 </description>
-    <releaseNotes>http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/</releaseNotes>
+    <releaseNotes>http://www.winsetupfromusb.com/downloads/</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

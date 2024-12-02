@@ -3,7 +3,7 @@ import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     # Find download link on the download info page
-    $infoPage = Invoke-WebRequest -Uri $infoUrl
+    $infoPage = Invoke-WebRequest -Uri $Latest.INFO_URL
     $re = "http://www.winsetupfromusb.com/download/winsetupfromusb-\d+\-\d+-exe/"
     $downloadUrl = $infoPage.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 

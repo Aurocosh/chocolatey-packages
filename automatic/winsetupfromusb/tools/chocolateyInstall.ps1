@@ -14,6 +14,8 @@ $packageArgs = @{
 }
 Install-ChocolateyZipPackage @packageArgs
 
+Remove-Item -Path $archiveFile -Force
+
 $installPath = (Get-ChildItem $packagePath -filter "WinSetupFromUSB-*-*" -Directory | Select-Object -First 1).FullName
 $ignoreDir = Join-Path $installPath 'files'
 

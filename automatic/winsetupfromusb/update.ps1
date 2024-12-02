@@ -33,7 +33,7 @@ function global:au_SearchReplace {
         sha1 = $sha1
         md5 = $md5
     }
-    Replace-MarkersInFile $verificationTemplate $verificationTarget $markers
+    Set-ReplaceMarkersInFile $verificationTemplate $verificationTarget $markers
 
     # Print all data
     Write-Host "Info URL: $infoUrl"

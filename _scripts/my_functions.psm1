@@ -1,7 +1,7 @@
 $funcs = @(
   'Get-LatestGithubRelease'
   'Get-RedirectedUrl'
-  'Replace-MarkersInFile'
+  'Set-ReplaceMarkersInFile'
 )
 
 $funcs | ForEach-Object {

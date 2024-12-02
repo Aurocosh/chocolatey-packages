@@ -1,4 +1,4 @@
-function Replace-MarkersInFile {
+function Set-ReplaceMarkersInFile {
 	param (
 		[Parameter(Mandatory = $true, Position = 0)]
 		[string]$InputFilePath,

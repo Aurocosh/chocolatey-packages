@@ -1,6 +1,8 @@
 import-module au
 import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+$releases = 'http://www.winsetupfromusb.com/downloads/'
+
 function global:au_SearchReplace {
     # Find download link on the download info page
     $infoPage = Invoke-WebRequest -Uri $Latest.INFO_URL
@@ -13,7 +15,7 @@ function global:au_SearchReplace {
 
     # Download zip file with program
     $installerFile = "$PSScriptRoot/tools/$fileName"
-    Invoke-WebRequest -Uri $downloadUrl -OutFile $installerFile  -Headers @{ Referer = $releases }
+    Invoke-WebRequest -Uri $downloadUrl -OutFile $installerFile -Headers @{ Referer = $releases }
 
     # Calculate various checksums for VERIFICATION.txt
     $sha1 = (Get-FileHash $installerFile -Algorithm SHA1).Hash
@@ -27,7 +29,7 @@ function global:au_SearchReplace {
     $verificationTarget = "$PSScriptRoot/tools/VERIFICATION.txt"
 
     $markers = @{
-        infoUrl = $infoUrl
+        infoUrl = $Latest.INFO_URL
         sha1 = $sha1
         md5 = $md5
     }
@@ -50,7 +52,6 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases = 'http://www.winsetupfromusb.com/downloads/'
     $download_page = Invoke-WebRequest -Uri $releases
 
     # Find url with specific download information for the latest version

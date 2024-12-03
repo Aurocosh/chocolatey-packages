@@ -2,6 +2,7 @@ import-module au
 import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 $releases = 'http://www.winsetupfromusb.com/downloads/'
+[Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Ssl3
 
 function global:au_SearchReplace {
     # Find download link on the download info page

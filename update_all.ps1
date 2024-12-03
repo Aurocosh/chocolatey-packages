@@ -8,7 +8,7 @@ $Options = [ordered]@{
     WhatIf         = $au_WhatIf                              #Whatif all packages
     Force          = $false                                  #Force all packages
     Timeout        = 100                                     #Connection timeout in seconds
-    UpdateTimeout  = 3000                                    #Update timeout in seconds
+    UpdateTimeout  = 1200                                    #Update timeout in seconds
     Threads        = 10                                      #Number of background jobs to use
     Push           = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll        = $true                                   #Allow to push multiple packages at once
@@ -109,7 +109,7 @@ $Options = [ordered]@{
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root          #Path to the AU packages
 $global:au_GalleryUrl = ''             #URL to package gallery, leave empty for Chocolatey Gallery
-$global:info = updateall -Name $Name -Options $Options -Debug
+$global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
 #if ($global:info.error_count.total) { throw 'Errors during update' }

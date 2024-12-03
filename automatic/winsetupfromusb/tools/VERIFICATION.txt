@@ -2,22 +2,22 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The embedded software have been downloaded from the listed download
-location on <http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/>
-and can be verified by doing the following:
+The embedded software have been downloaded from the listed download location on <http://www.winsetupfromusb.com/downloads/> and can be verified by doing the following:
 
-1. Download the following <http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/>
+1. Download the following <http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-10-exe/>
 2. Get the checksum using one of the following methods:
   - Using powershell function 'Get-FileHash'
   - Use chocolatey utility 'checksum.exe'
-3. The checksums should match the following (also listed on site <http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-9-exe/>):
+3. The checksums should match the following (also listed on site <http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-1-10-exe/>):
 
   checksum type: md5
-  checksum: 25c75a7fb3d6b35dba8313169ea0f031
+  checksum: 3029455E6A2E47BE8981FF79BE09E8AD
   
   or
   
   checksum type: sha1
-  checksum: fb4114e9814eee21896654ecb991b68a7d490a47
+  checksum: 2A424BCFCCC501940C5D9EB3093E59F673E3EA33
 
 The information in the file 'LICENSE.txt' has been obtained from <http://www.winsetupfromusb.com/faq/>
+
+

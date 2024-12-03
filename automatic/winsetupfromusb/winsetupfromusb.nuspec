@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winsetupfromusb</id>
-    <version>1.9.0.0</version>
+    <version>1.10</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/winsetupfromusb</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>WinSetupFromUSB (Portable)</title>

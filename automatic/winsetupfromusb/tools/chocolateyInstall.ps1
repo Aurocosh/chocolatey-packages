@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
@@ -8,7 +8,7 @@ $archiveFile = (Get-ChildItem $toolsDir -filter "WinSetupFromUSB-*-*.exe" -File 
 $packageArgs = @{
   packageName            = $env:ChocolateyPackageName
   file                   = $archiveFile
-  checksum               = 'F1F2DB8CC6E02A8C7ABD3E91A7AAD23D1F3730EB16763B9041E73A55B817A7EB'
+  checksum               = 'b81a239345e11c708c029cc96a41486339881b8c43c39f3b816d92cc290a60ff'
   checksumType           = 'sha256'
   unzipLocation          = $packagePath
 }

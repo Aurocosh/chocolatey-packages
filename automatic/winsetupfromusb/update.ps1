@@ -4,6 +4,8 @@ import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $releases = 'http://www.winsetupfromusb.com/downloads/'
 
 function global:au_SearchReplace {
+    throw "au_SearchReplace executed"
+
     # Find download link on the download info page
     $infoPage = Invoke-WebRequest -Uri $Latest.INFO_URL
     $re = "http://www.winsetupfromusb.com/download/winsetupfromusb-\d+\-\d+-exe/"

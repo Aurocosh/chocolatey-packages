@@ -54,7 +54,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     # Find url with specific download information for the latest version
     $re = "http://www.winsetupfromusb.com/files/download-info/winsetupfromusb-(\d+\-\d+)-exe/"

@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $versionRegex = "<b>Version:</b>\s*(\d+.\d+(?:.\d+)?)\s\("
     if ($download_page.content -match $versionRegex) {
         $version = $matches[1]
-        $url32 = "https://vovsoft.com/files/proxy-checker.exe?v=$version"
+        $url32 = "https://files.vovsoft.com/proxy-checker.exe?v=$version"
     }
 	
     @{

@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>3.5.20160716</version>
-    <authors>Microsoft</authors>
-    <owners>Matt Wrock</owners>
-    <iconUrl>https://github.com/mwrock/Chocolatey-Packages/raw/master/DotNet4.5/dotnet.png</iconUrl>
-    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=296822</projectUrl>
-    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <id>DotNet3.5</id>
+    <version>3.5.20160716</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/manual/DotNet3.5</packageSourceUrl>
+    <owners>Aurocosh, Matt Wrock</owners>
     <title>Dot Net 3.5</title>
+    <authors>Microsoft</authors>
+    <projectUrl>http://go.microsoft.com/fwlink/?LinkId=296822</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/DotNet3.5/img/icon.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This installs the .net framework version 3.5 (includes versions 2.0 and 3.0). This package does not directly download any software. It uses the Windows Features and functionality of the operating system to enable the feature. Depending on your OS version, it may download this software via the windows update service. You may want to use this package as a dependency package for packages requiring .net 3.5. If .net 3.5 is already enabled or installed, this package will do nothing.</description>
+    <tags>DotNet3.5 Microsoft .net Framework 3.5</tags>
     <summary>The Microsoft .NET Framework 3.5</summary>
-    <tags>Microsoft .net Framework 3.5</tags>
+    <description>This installs the .net framework version 3.5 (includes versions 2.0 and 3.0). This package does not directly download any software. It uses the Windows Features and functionality of the operating system to enable the feature. Depending on your OS version, it may download this software via the windows update service. You may want to use this package as a dependency package for packages requiring .net 3.5. If .net 3.5 is already enabled or installed, this package will do nothing.</description>
   </metadata>
 </package>

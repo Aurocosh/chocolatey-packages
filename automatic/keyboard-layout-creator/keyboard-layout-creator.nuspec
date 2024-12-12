@@ -27,6 +27,9 @@ The Microsoft Keyboard Layout Creator extends the international functionality of
 - Modify an existing keyboard layout (.KLC) file and build a new layout from it
 - Package the resulting keyboard layouts for subsequent deployment and installation.
 </description>
+    <dependencies>
+      <dependency id="DotNet3.5"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

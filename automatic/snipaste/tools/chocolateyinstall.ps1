@@ -16,6 +16,7 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
+icacls $installPath /grant "Authenticated Users:(OI)(CI)(M)"
 
 $PackageParameters = Get-PackageParameters
 

@@ -1,12 +1,12 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'SourceGit*'
-  url64bit       = 'https://github.com/sourcegit-scm/sourcegit/releases/download/v8.36/sourcegit_8.36.win-x64.zip'
-  checksum64     = '1704c77c8d118d9e7385fe514964c3b645d4c28b2ed8892a838427fa2fc7dd5a'
+  url64bit       = 'https://github.com/sourcegit-scm/sourcegit/releases/download/v8.43/sourcegit_8.43.win-x64.zip'
+  checksum64     = '3e552bb9461fb973a209ffef636ebf10b4083c86fb5c02c4e2f99725c54521e9'
   checksumType64 = 'sha256'
 }
 

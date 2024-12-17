@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'houdoku*'
-  url64bit       = 'https://github.com/xgi/houdoku/releases/download/v2.15.0/Houdoku-2.15.0-win.zip'
-  checksum64     = 'af6bce5ea2cdae6aaf1e84a4d57ebf22db856936dc0794f980e66fb4929ca591'
+  url64bit       = 'https://github.com/xgi/houdoku/releases/download/v2.16.0/Houdoku-2.16.0-win.zip'
+  checksum64     = 'f7791f1af7b6dd2df938cd4e919eb5311fbd04fcf857a8bfe5374ae0170f945a'
   checksumType64 = 'sha256'
 }
 

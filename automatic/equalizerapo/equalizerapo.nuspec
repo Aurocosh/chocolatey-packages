@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>equalizerapo</id>
-    <version>1.4</version>
+    <version>1.4.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/equalizerapo</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Equalizer APO (Install)</title>
@@ -37,7 +37,7 @@ Please have a look at the Wiki (http://sourceforge.net/p/equalizerapo/wiki/) for
 </description>
     <releaseNotes>https://sourceforge.net/projects/equalizerapo/files/</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

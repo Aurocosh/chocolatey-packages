@@ -21,8 +21,8 @@ function global:au_GetLatest {
     Write-Host $version
     
     if ($version) {
-        $url32 = "https://sourceforge.net/projects/equalizerapo/files/$version/EqualizerAPO32-$version.exe/download"
-        $url64 = "https://sourceforge.net/projects/equalizerapo/files/$version/EqualizerAPO64-$version.exe/download"
+        $url32 = "https://sourceforge.net/projects/equalizerapo/files/$version/EqualizerAPO-x86-$version.exe/download"
+        $url64 = "https://sourceforge.net/projects/equalizerapo/files/$version/EqualizerAPO-x64-$version.exe/download"
     }
 
     @{

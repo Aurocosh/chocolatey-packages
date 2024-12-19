@@ -14,8 +14,19 @@ $packageArgs = @{
   silentArgs     = '/S'
 }
 
+#Create monitor for "DeviceSelector" ahead of actually installing the software
+$DeviceSelectorScriptBlock = {
+  #Wait for DeviceSelector.exe to start running
+  $device_selector_open = $false;
+  while (!$device_selector_open) {
+    Start-Sleep -Seconds 5;
+    $device_selector_open = (Get-Process 'DeviceSelector' -ErrorAction:SilentlyContinue).count -eq 1;
+  } #loop ends when we find the process running
+  Get-Process 'DeviceSelector' | Stop-Process;
+}
+
 #Create monitor for "Configurator" ahead of actually installing the software
-$ScriptBlock = {
+$ConfiguratorScriptBlock = {
   #Wait for Configurator.exe to start running
   $configurator_open = $false;
   while (!$configurator_open) {
@@ -25,8 +36,10 @@ $ScriptBlock = {
   Get-Process 'configurator' | Stop-Process;
 }
 
-Start-Job -Name "Kill Configurator.exe" -ScriptBlock $ScriptBlock | Out-Null;
+Start-Job -Name "Kill DeviceSelector.exe" -ScriptBlock $DeviceSelectorScriptBlock | Out-Null;
+Start-Job -Name "Kill Configurator.exe" -ScriptBlock $ConfiguratorScriptBlock | Out-Null;
 #Install the package
 Install-ChocolateyPackage @packageArgs;
 #Cleanup the Job
+Remove-Job -Name "Kill DeviceSelector.exe" -Force | Out-Null;
 Remove-Job -Name "Kill Configurator.exe" -Force | Out-Null;

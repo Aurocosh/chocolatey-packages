@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
-$urlOptimized64 = 'https://github.com/zen-browser/desktop/releases/download/1.0.2-b.2/zen.installer.exe'
-$checksumOptimized64 = '0050f7b7afae70b50f6de2b52742c92626030d75638cc1cc4178163cebee9eef'
+$urlOptimized64 = 'https://github.com/zen-browser/desktop/releases/download/1.0.2-b.3/zen.installer.exe'
+$checksumOptimized64 = 'ca10d32b545a23388503ad997e8f6dd2f6b75937ccc0e415d7b1dd0f9ec1b10b'
 
-$urlGeneric64 = 'https://github.com/zen-browser/desktop/releases/download/1.0.2-b.2/zen.installer-generic.exe'
-$checksumGeneric64 = 'e30a39666a4711e49822f090ad93165450b5699ba0e23f0ea7ee329c01af77bc'
+$urlGeneric64 = 'https://github.com/zen-browser/desktop/releases/download/1.0.2-b.3/zen.installer-generic.exe'
+$checksumGeneric64 = '4a6b1bd8dd99cce3d69f644dff05b5de75e1582e523c94bfa710c6cb8305da4f'
 
 $PackageParameters = Get-PackageParameters
 

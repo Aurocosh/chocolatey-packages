@@ -1,11 +1,11 @@
 ﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
-$url64msvc = 'https://github.com/fujiapple852/trippy/releases/download/0.12.0/trippy-0.12.0-x86_64-pc-windows-msvc.zip'
-$checksum64msvc = '081e668f58abd00940bb7244ea547bd3f499844a499de79e1494df9063442eb5'
+$url64msvc = 'https://github.com/fujiapple852/trippy/releases/download/0.12.1/trippy-0.12.1-x86_64-pc-windows-msvc.zip'
+$checksum64msvc = '0d288450f828585c114a14241c0be25710291e12913b7a0742cd69becc5c789d'
 
-$url64gnu = 'https://github.com/fujiapple852/trippy/releases/download/0.12.0/trippy-0.12.0-x86_64-pc-windows-gnu.zip'
-$checksum64gnu = 'd9d4e5ece1f56e715d6e8b91ff1bec1eb4dc8f93e361da782bfc9a28430ddb52'
+$url64gnu = 'https://github.com/fujiapple852/trippy/releases/download/0.12.1/trippy-0.12.1-x86_64-pc-windows-gnu.zip'
+$checksum64gnu = '0bdb55bf03443671b8f5e2563041532f6c0a83dd6c5f124d0c850a817c7295f1'
 
 $PackageParameters = Get-PackageParameters
 

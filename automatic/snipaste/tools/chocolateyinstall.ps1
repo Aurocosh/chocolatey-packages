@@ -1,6 +1,4 @@
-﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$packagePath = $(Split-Path -parent $toolsDir)
-$installPath = Join-Path $packagePath 'files'
+﻿$installPath = Join-Path (Get-ToolsLocation) 'snipaste'
 $exeFile = Join-Path $installPath 'Snipaste.exe'
 
 $packageArgs = @{

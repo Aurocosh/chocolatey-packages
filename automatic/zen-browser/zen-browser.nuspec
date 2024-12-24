@@ -24,13 +24,6 @@ We care about your experience, not your data.
 
 ![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/screenshot.png)
 
-## Package Parameters:
- - `/Optimized` Install optimized version. By default generic version is installed.
-
-eg. `choco install -y zen-browser --package-parameters="/Optimized"`
-
-## Differences between the optimized and generic builds
-The optimized version of Zen leverages Advanced Vector Extensions 2 (AVX2), a CPU instruction set that enhances performance for certain computational tasks. This instruction set is only available on modern processors.
 </description>
     <releaseNotes>https://github.com/zen-browser/desktop/releases</releaseNotes>
   </metadata>

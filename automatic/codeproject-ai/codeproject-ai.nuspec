@@ -9,12 +9,12 @@
     <owners>Aurocosh</owners>
     <title>CodeProject.AI (Install)</title>
     <authors>CodeProject</authors>
-    <projectUrl>https://www.codeproject.com/ai/index.aspx</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/icon.png</iconUrl>
+    <projectUrl>https://codeproject.github.io</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/36ceab67c5879c95bd37612db413608cc62948fb/automatic/codeproject-ai/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/codeproject/CodeProject.AI-Server/blob/main/LICENCE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/codeproject/CodeProject.AI-Server</projectSourceUrl>
-    <docsUrl>https://www.codeproject.com/ai/docs/index.html</docsUrl>
+    <docsUrl>https://codeproject.github.io/codeproject.ai/index.html</docsUrl>
     <bugTrackerUrl>https://github.com/codeproject/CodeProject.AI-Server/issues</bugTrackerUrl>
     <tags>codeproject-ai ai cross-platform machine-learning open-source</tags>
     <summary>CodeProject.AI is an AI Server you install locally</summary>
@@ -24,7 +24,7 @@ A standalone, self-hosted, fast, free and Open Source Artificial Intelligence mi
 platform, any language. It can be installed locally, required no off-device or out of network data
 transfer, and is easy to use.
 
-![Detection](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/detection.png)
+![Detection](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/36ceab67c5879c95bd37612db413608cc62948fb/automatic/codeproject-ai/img/detection.png)
     </description>
     <releaseNotes>https://github.com/codeproject/CodeProject.AI-Server/releases</releaseNotes>
   </metadata>

@@ -2,7 +2,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
-$archiveFile = Join-Path $packagePath 'CodeProject.AI.zip'
+$archiveFile = (Get-ChildItem $packagePath -filter "CodeProject.AI-Server_*_win_x64.zip" -File | Select-Object -First 1).FullName
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -17,7 +17,7 @@ Get-ChocolateyWebFile @packageArgs
 Get-ChocolateyUnzip -FileFullPath $archiveFile -Destination $packagePath -DisableLogging
 Remove-Item -Path $archiveFile -Force
 
-$installerExe = (Get-ChildItem $packagePath -filter "CodeProject.AI-Server-win-x64-*.exe" -File | Select-Object -First 1).FullName
+$installerExe = (Get-ChildItem $packagePath -filter "CodeProject.AI-Server_*_win_x64.exe" -File | Select-Object -First 1).FullName
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

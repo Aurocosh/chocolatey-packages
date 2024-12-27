@@ -10,17 +10,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases = 'https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way'
+    $releases = 'https://codeproject.github.io'
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $urlRegex = "CodeProject.AI-Server-win-x64-(\d+\.\d+\.\d+)\.zip"
+    $urlRegex = "CodeProject.AI-Server_(\d+\.\d+\.\d+)_win_x64.zip"
     $url64 = $download_page.links | Where-Object href -match $urlRegex | Select-Object -First 1 -expand href
     $version = $matches[1]
     
-    if ($url64) {
-        $url64 = 'https://www.codeproject.com' + $url64
-    }
-
     @{
         URL64   = $url64
         Version = $version
@@ -29,4 +25,7 @@ function global:au_GetLatest {
 
 update -ChecksumFor 64
 
-Remove-Item -Path "$PSScriptRoot/CodeProject.AI.zip" -Force -ErrorAction SilentlyContinue
+$archiveFile = (Get-ChildItem $PSScriptRoot -filter "CodeProject.AI-Server_*_win_x64.zip" -File | Select-Object -First 1).FullName
+if($archiveFile) {
+    Remove-Item -Path $archiveFile -Force -ErrorAction SilentlyContinue
+}

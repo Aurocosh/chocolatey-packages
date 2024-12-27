@@ -31,7 +31,7 @@ What can be added to the USB disk using WinSetupFromUSB:
 - Syslinux boot menu and optionally single source which uses Syslinux or Isolinux as boot loader
 - WinSetupFromUSB can also prepare Windows XP (2000, 2003) setup files to be installed from USB disk onto the same or another USB disk. Please refer to the FAQ and Tutorials pages for details.
 
-Note: A few antivirus programs keep detecting a couple of the included files as viruses. **This is false positive**. These vendors were informed numerous times and the serious companies such as DrWeb and Kaspersky, update their signatures to remove the false detection within a few hours after being informed. Others, such as McAfee, despite [all the efforts](http://www.msfn.org/board/topic/141734-virus-suspected-in-xp-inst-v047z/page-2#entry944478) and contacts, don’t do anything to update their signatures. For a few unknown ones, which use third party signatures, there is no way to contact them or they simply don’t respond. This program will never knowingly distribute any kind of malware.  
+Note: The original author of this software is aware of the high rate of antivirus false positives. You can read authors full statement about this issue at the top of the official download page: http://www.winsetupfromusb.com/downloads/.
 
 </description>
     <releaseNotes>http://www.winsetupfromusb.com/downloads/</releaseNotes>

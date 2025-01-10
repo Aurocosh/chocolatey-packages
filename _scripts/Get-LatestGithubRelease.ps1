@@ -29,7 +29,7 @@ function Get-LatestGithubRelease {
   }
 
   $response = Invoke-RestMethod -Uri $githubUrl -Headers $headers
-  $versionRegex = "(\d+(?:\.\d+){0,3})(\-[a-z]+\.?(?:[0-9]+)?)?$";
+  $versionRegex = "(\d+(?:\.\d+){0,3})(\-?[a-z]+\.?(?:[0-9]+)?)?$";
   $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1
   
   if (!$release) {

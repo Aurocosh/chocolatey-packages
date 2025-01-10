@@ -36,7 +36,11 @@ function Get-LatestGithubRelease {
     return @{};
   }
 
-  $version = $matches[1] + "-" + ($matches[2] -replace "\.", "")
+  $version = $matches[1]
+  $betaPart = $matches[2] -replace "\.", ""
+  if($betaPart){
+    $version += "-" + $betaPart
+  }
 
   $releaseData = @{
     Name         = $release.name

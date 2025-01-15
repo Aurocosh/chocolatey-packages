@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser yorukot `
         -RepoName superfile `
-        -MainUrl64Regex "superfile-windows-v\d+\.\d+\.\d+-amd64.zip"
+        -MainUrl64Regex "superfile-windows-v\d+\.\d+\.\d+(?:\.\d+)?-amd64.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

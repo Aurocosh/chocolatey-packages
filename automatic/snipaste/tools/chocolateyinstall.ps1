@@ -7,7 +7,7 @@ $packageArgs = @{
   softwareName   = 'Snipaste*'
   checksumType   = 'sha256'
   url64bit       = 'https://dl.snipaste.com/win-x64'
-  checksum64     = 'b56507c858d112b5983a49f775e185e2849aa38f3735a5a1ecc684975211b4e1'
+  checksum64     = '88ab0b43f5bb6a3df0beca82cafec8b631dac75de6fa7a3c62e09cd7e7e8bd52'
   checksumType64 = 'sha256'
 }
 

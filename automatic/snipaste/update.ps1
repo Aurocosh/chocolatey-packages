@@ -1,4 +1,5 @@
 import-module au
+import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     @{
@@ -10,21 +11,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.snipaste.com/download.html'
+    $regex64 = "Snipaste-(\d+\.\d+(?:\.\d+))(-Beta)?-x64.zip"
 
-    $versionRegex = "<h4><b>v(\d+\.\d+\.\d+)<\/b>"
-    if ($download_page.content -match $versionRegex) {
-        $version = $matches[1]
-    }
+    $release64 = Get-LatestBitbucketDownloads `
+        -UserName liule `
+        -RepoName snipaste `
+        -NameRegex $regex64 `
+        -FirstOnly
 
-    $re64 = "\/\/dl.snipaste.com\/win-x64(-beta)?"
-    $url64 = $download_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
-    
-    $isBeta = $matches[1]
-    
-    if ($url64) {
-        $url64 = "https:" + $url64
-    }
+    $release64.name -Match $regex64
+    $version = $matches[1]
+    $isBeta = $matches[2]
+
+    $url64 = $release64.links.self.href
+
     if ($version -and $isBeta) {
         $version += "-Beta"
     }

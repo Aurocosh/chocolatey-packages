@@ -1,5 +1,6 @@
 $funcs = @(
   'Get-LatestGithubRelease'
+  'Get-LatestBitbucketDownloads'
   'Get-RedirectedUrl'
   'Set-ReplaceMarkersInFile'
 )

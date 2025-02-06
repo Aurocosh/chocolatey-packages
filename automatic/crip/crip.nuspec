@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>crip</id>
-    <version>2.3.0</version>
+    <version>2.4.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/crip</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Certificate Ripper (Portable)</title>
@@ -48,7 +48,7 @@ Commands:
 </description>
     <releaseNotes>https://github.com/Hakky54/certificate-ripper/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>miru</id>
-    <version>5.5.9</version>
+    <version>5.5.10</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/miru</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Miru (Install)</title>

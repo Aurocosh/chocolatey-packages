@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser cdgriffith `
         -RepoName FastFlix `
-        -MainUrl64Regex "FastFlix_\d+\.\d+\.\d+_installer\.exe"
+        -MainUrl64Regex "FastFlix_\d+\.\d+\.\d+_installer\.zip"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

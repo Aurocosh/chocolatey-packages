@@ -17,7 +17,8 @@ function global:au_GetLatest {
         -GitUser rigaya `
         -RepoName NVEnc `
         -MainUrl32Regex "NVEncC_\d+\.\d+_Win32.7z" `
-        -MainUrl64Regex "NVEncC_\d+\.\d+_x64.7z"
+        -MainUrl64Regex "NVEncC_\d+\.\d+_x64.7z" `
+        -VersionRegex "^(\d+(?:\.\d+){0,3})$"
     @{
         URL32   = $release.MainUrl32
         URL64   = $release.MainUrl64

@@ -12,25 +12,31 @@ function Get-LatestGithubRelease {
     [string]$MainUrl32Regex,
     [string]$MainUrl64Regex,
     [string]$PortableUrl32Regex,
-    [string]$PortableUrl64Regex
+    [string]$PortableUrl64Regex,
+    [string]$VersionRegex
   )
   
   $githubUrl = "https://api.github.com/repos/$($GitUser)/$($RepoName)/releases"
-  if ($UsePreRelease) {
-    $githubUrl += "?per_page=1"
+
+  if(!$VersionRegex)
+  {
+    $VersionRegex = "(\d+(?:\.\d+){0,3})\-?([a-z]+\.?(?:[0-9]+)?)?$"
+
+    if ($UsePreRelease) {
+      $githubUrl += "?per_page=1"
+    }
+    else {
+      $githubUrl += "/latest"
+    }
   }
-  else {
-    $githubUrl += "/latest"
-  }
-  
+
   $headers = @{}
   if (Test-Path Env:\github_api_key) {
     $headers.Authorization = "token " + $env:github_api_key
   }
 
   $response = Invoke-RestMethod -Uri $githubUrl -Headers $headers
-  $versionRegex = "(\d+(?:\.\d+){0,3})\-?([a-z]+\.?(?:[0-9]+)?)?$";
-  $release = $response | Where-Object tag_name -Match $versionRegex | Select-Object -First 1
+  $release = $response | Where-Object tag_name -Match $VersionRegex | Select-Object -First 1
   
   if (!$release) {
     return @{};

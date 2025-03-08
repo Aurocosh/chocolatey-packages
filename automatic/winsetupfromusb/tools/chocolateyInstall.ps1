@@ -5,15 +5,7 @@ $packagePath = $(Split-Path -parent $toolsDir)
 
 $archiveFile = (Get-ChildItem $toolsDir -filter "WinSetupFromUSB-*-*.exe" -File | Select-Object -First 1).FullName
 
-$packageArgs = @{
-  packageName            = $env:ChocolateyPackageName
-  file                   = $archiveFile
-  checksum               = 'F1F2DB8CC6E02A8C7ABD3E91A7AAD23D1F3730EB16763B9041E73A55B817A7EB'
-  checksumType           = 'sha256'
-  unzipLocation          = $packagePath
-}
-Install-ChocolateyZipPackage @packageArgs
-
+Get-ChocolateyUnzip -FileFullPath $archiveFile -Destination $packagePath -DisableLogging
 Remove-Item -Path $archiveFile -Force
 
 $installPath = (Get-ChildItem $packagePath -filter "WinSetupFromUSB-*-*" -Directory | Select-Object -First 1).FullName

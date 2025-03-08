@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zen-browser</id>
-    <version>1.8.2-b</version>
+    <version>1.9-b</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/zen-browser</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Zen Browser (Install)</title>

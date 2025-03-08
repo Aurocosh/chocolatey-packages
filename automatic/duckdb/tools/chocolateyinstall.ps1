@@ -1,7 +1,6 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'files'
-$exeFile = Join-Path $installPath 'duckdb.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

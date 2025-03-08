@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>duckdb</id>
+    <version>1.2.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/duckdb</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>DuckDB (Portable)</title>
+    <authors>DuckDB</authors>
+    <projectUrl>https://duckdb.org</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/duckdb/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/duckdb/duckdb/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/duckdb/duckdb</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/duckdb/duckdb/issues</bugTrackerUrl>
+    <tags>duckdb analytics database embedded-database olap sql</tags>
+    <summary>DuckDB is an analytical in-process SQL database management system</summary>
+    <description>![Logo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/duckdb/img/logo.png) 
+
+## DuckDB
+
+DuckDB is a high-performance analytical database system. It is designed to be fast, reliable, portable, and easy to use. DuckDB provides a rich SQL dialect, with support far beyond basic SQL. DuckDB supports arbitrary and nested correlated subqueries, window functions, collations, complex types (arrays, structs, maps), and [several extensions designed to make SQL easier to use](https://duckdb.org/docs/guides/sql_features/friendly_sql).
+
+</description>
+    <releaseNotes>https://github.com/duckdb/duckdb/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

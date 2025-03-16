@@ -10,7 +10,7 @@
     <title>Azahar (Portable)</title>
     <authors>Azahar Emulator</authors>
     <projectUrl>https://github.com/azahar-emu/azahar</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/azahar.portable/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/595b064d816eb610e3b20cbda12205a2850df4ed/automatic/azahar.portable/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/azahar-emu/azahar/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/azahar-emu/azahar</projectSourceUrl>
@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/azahar-emu/azahar/issues</bugTrackerUrl>
     <tags>azahar gaming emulator 3ds portable</tags>
     <summary>An open-source 3DS emulator project based on Citra.</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/azahar.portable/img/banner.png)
+    <description>![Banner](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/595b064d816eb610e3b20cbda12205a2850df4ed/automatic/azahar.portable/img/banner.png)
 
 Azahar is an open-source 3DS emulator project based on Citra.
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>forkgram</id>
+    <version>5.12.5</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/forkgram</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Forkgram (Portable)</title>
+    <authors>ForkGram</authors>
+    <projectUrl>https://github.com/forkgram/tdesktop</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/forkgram/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/forkgram/tdesktop/blob/dev/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/forkgram/tdesktop</projectSourceUrl>
+    <docsUrl>https://github.com/forkgram/tdesktop/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/forkgram/tdesktop/issues</bugTrackerUrl>
+    <tags>forkgram fork forkgram messenger telegram telegram-desktop portable</tags>
+    <summary>Fork of Telegram Desktop messaging app.</summary>
+    <description># Forkgram
+![Preview](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/forkgram/img/preview.png) 
+
+Forkgram is the fork of the official Telegram Desktop application.
+This fork does not fundamentally change the official client and adds only some useful small features.
+</description>
+    <releaseNotes>https://github.com/forkgram/tdesktop/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

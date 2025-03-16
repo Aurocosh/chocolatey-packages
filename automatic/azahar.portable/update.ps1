@@ -18,7 +18,7 @@ function global:au_GetLatest {
         -UsePreRelease
     @{
         URL64   = $release.MainUrl64
-        Version = $release.Version
+        Version = '0.' + $release.Version
     }
 }
 

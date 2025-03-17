@@ -16,6 +16,7 @@ function global:au_GetLatest {
     $regex = "MediaMonkey-\d+_Setup.exe"
     $Url32 = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
     
+    $regex = "MediaMonkey_(\d+\.\d+\.\d+\.\d+)\."
     $RedirectedUrl32 = Get-RedirectedUrl -URL $Url32
     $RedirectedUrl32 -match $regex | Out-Null
     

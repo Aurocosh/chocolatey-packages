@@ -24,9 +24,6 @@
 
 Manage small to large collections of audio files, videos and playlists (100,000+), whether on a hard drive, network, or CDs. Rip CDs, download podcasts, lookup artwork and other missing information online, tag almost any audio or video format, and automatically rename/re-organize files on your hard drive.
     </description>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
     <releaseNotes>http://www.ventismedia.com/mantis/changelog_page.php</releaseNotes>
   </metadata>
   <files>

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mediamonkey</id>
-    <version>5.0.0.2431</version>
+    <version>2024.0.0.3082</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/mediamonkey</packageSourceUrl>
     <owners>Aurocosh, Oliver Kötter, Grobi</owners>
     <title>Mediamonkey (Install)</title>

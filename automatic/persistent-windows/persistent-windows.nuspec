@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>persistent-windows</id>
+    <version>5.61</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/persistent-windows</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>PersistentWindows (Portable)</title>
+    <authors>Kangyu-California</authors>
+    <projectUrl>https://github.com/kangyu-california/PersistentWindows</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/persistent-windows/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/kangyu-california/PersistentWindows/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kangyu-california/PersistentWindows</projectSourceUrl>
+    <docsUrl>https://www.github.com/kangyu-california/PersistentWindows/blob/master/Help.md</docsUrl>
+    <bugTrackerUrl>https://github.com/kangyu-california/PersistentWindows/issues</bugTrackerUrl>
+    <tags>persistent-windows windows persistent fullscreen</tags>
+    <summary>Fixes window repositioning issues caused by fullscreen changes or monitor setup changes.</summary>
+    <description># PersistentWindows
+This project addresses a long-standing issue in Windows 7, 10, and 11, where windows get repositioned after events such as the system waking up, external monitor connections or disconnections, changes in monitor resolution (e.g., exiting full-screen gaming), or during RDP reconnections.
+
+## Key Features
+- Auto restore: Keeps track of window position changes, and automatically restores the desktop layout, including the taskbar position, to the last matching monitor setup.
+- Supports remote desktop sessions with multiple display configurations.
+- Capture windows to disk: manually saves desktop layout capture to hard drive in liteDB format, so that closed windows can be restored to corresponding virtual desktop after PC reboot.
+- Capture snapshot: manually saves desktop layout to ram. The window Z-order is preserved in the snapshot. Up to 36 snapshots ([0-9a-z]) can be taken for each display configuration.
+- Automatically persists the location history of all windows (alive and closed) to hard drive in xml format, so that manual-restore-point (aka snapshot) and auto-restore-point will continue to function smoothly upon app upgrade/restart, even after PC reboot.
+- Webpage commander to improve the efficiency of web browsing for all major web browsers using one-letter commands like in vi editor.
+- Efficient window switching between foreground and background dual positions.
+- Pause/resume auto restore.
+- Automatic upgrade support.
+
+</description>
+    <releaseNotes>https://github.com/kangyu-california/PersistentWindows/releases</releaseNotes>
+
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

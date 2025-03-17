@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>r.studio</id>
+    <title>R.Studio</title>
+    <version>2023.12.1.20240219</version>
+    <authors>R Studio Team</authors>
+    <owners>Elliando Dias</owners>
+    <summary>RStudio is a free and open source integrated development environment (IDE) for R. You can run it on your desktop</summary>
+    <description>RStudio is a free and open source integrated development environment (IDE) for R. You can run it on your desktop</description>
+    <projectUrl>https://posit.co/</projectUrl>
+    <projectSourceUrl>https://github.com/rstudio/rstudio</projectSourceUrl>
+    <docsUrl>https://docs.posit.co/ide/user/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <iconUrl>https://gitea.chaaban.berlin/Saad/chocolatey-packages/raw/branch/main/r.studio/logo.png</iconUrl>
+    <packageSourceUrl>https://gitea.chaaban.berlin/Saad/chocolatey-packages/src/branch/main/r.studio</packageSourceUrl>
+    <tags>r.project r.studio statistics admin</tags>
+    <copyright>© 2023 RStudio, Inc</copyright>
+    <licenseUrl>http://www.gnu.org/licenses/agpl-3.0-standalone.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="R.Project" />
+    </dependencies>
+    <releaseNotes>https://docs.posit.co/ide/news/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

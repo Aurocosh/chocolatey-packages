@@ -10,7 +10,7 @@
     <title>Cherrytree (Install)</title>
     <authors>Giuseppe Penone</authors>
     <projectUrl>https://github.com/giuspen/cherrytree</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cherrytree/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/d0e87fdb4b73fd86f0f6cd4d324b9aa248a86aed/automatic/cherrytree/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/giuspen/cherrytree/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/giuspen/cherrytree</projectSourceUrl>
@@ -18,7 +18,7 @@
     <tags>cherrytree notes foss</tags>
     <summary>A hierarchical note taking application</summary>
     <description># Cherrytree
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cherrytree/img/screenshot.png)
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/d0e87fdb4b73fd86f0f6cd4d324b9aa248a86aed/automatic/cherrytree/img/screenshot.png)
 A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in either a single file (xml or sqlite) or multiple files and directories. 
 </description>
     <releaseNotes>https://github.com/giuspen/cherrytree/releases</releaseNotes>

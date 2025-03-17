@@ -1,31 +1,31 @@
 import-module au
-
-$NoCheckChocoVersion = 'true'
-$url = 'https://www.mediamonkey.com/MediaMonkey-5_Setup'
-$forumsticky = "https://www.mediamonkey.com/forum/viewtopic.php?f=3&t=8811"
-
+import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $forumsticky
+    $download_page = Invoke-WebRequest -Uri 'https://www.mediamonkey.com/download'
+
+    $regex = "MediaMonkey-\d+_Setup.exe"
+    $Url32 = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
     
-    $content = $download_page.tostring() -split "[`r`n]" | select-string "MediaMonkey: 5." | Select-Object -First 1
-    [regex]$regex = '[0-9][0-9]?[.][0-9][0-9]?[.][0-9][0-9]?[.][0-9][0-9][0-9][0-9]?'
-    $versiontemp = $regex.Matches($content) |ForEach-Object {$_.Value}
-    $version = $versiontemp[0]
+    $RedirectedUrl32 = Get-RedirectedUrl -URL $Url32
+    $RedirectedUrl32 -match $regex | Out-Null
+    
+    $version = $matches[1]
 	
     @{
-        URL32   = $url + ".exe"
+        URL32   = $RedirectedUrl32
         Version = $version
     }
 }
 
 
-update
+update -ChecksumFor 32

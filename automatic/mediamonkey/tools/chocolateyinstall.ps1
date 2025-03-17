@@ -1,17 +1,14 @@
-﻿#$ErrorActionPreference = 'Stop';
-$packageName= 'mediamonkey'
-#$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://www.mediamonkey.com/MediaMonkey_Setup.exe'
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
+
 $packageArgs = @{
-  packageName   = $packageName
-  # unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url           = $url
-  silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  # validExitCodes= @(0)
-  softwareName  = 'mediamonkey*'
-  checksum      = '3580c5bee97860fabd5ccdcbdb532de2c2ab31689d5643291d46b1adc3f1a26c'
-  checksumType  = 'sha256'
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'exe'
+  softwareName   = 'Dorion*'
+  url            = 'https://github.com/SpikeHD/Dorion/releases/download/v6.5.0/Dorion_6.5.0_x64-setup.exe'
+  checksum       = '3580c5bee97860fabd5ccdcbdb532de2c2ab31689d5643291d46b1adc3f1a26c'
+  checksumType   = 'sha256'
+  validExitCodes = @(0, 3010, 1641)
+  silentArgs     = '/S'  # NSIS
 }
 
 Install-ChocolateyPackage @packageArgs

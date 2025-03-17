@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>mediamonkey</id>
-    <title>Mediamonkey (Install)</title>
     <version>5.0.0.2431</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/mediamonkey</packageSourceUrl>
+    <owners>Aurocosh, Oliver Kötter, Grobi</owners>
+    <title>Mediamonkey (Install)</title>
     <authors>Ventis Media</authors>
-    <owners>Oliver Kötter, Grobi</owners>
-    <summary>Mediamonkey</summary>
-    <description>*MediaMonkey: The Media Organizer for Serious Collectors*
-
-Manage small to large collections of audio files, videos and playlists (100,000+), whether on a hard drive, network, or CDs. Rip CDs, download podcasts, lookup artwork and other missing information online, tag almost any audio or video format, and automatically rename/re-organize files on your hard drive.
-    </description>
     <projectUrl>https://www.mediamonkey.com/</projectUrl>
-    <packageSourceUrl>https://github.com/Grobi2010/au-chocolatey/tree/master/garmin-express</packageSourceUrl>
-    <tags>media audio video grabber library burn podcast convert party visualize organize rename tag manage mediamonkey admin</tags>
+    <iconUrl>https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/mediamonkey/img/icon.png</iconUrl>
     <copyright>© Copyright 2018 Ventis Media</copyright>
     <licenseUrl>https://www.mediamonkey.com/sw/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/TomOne/various/5385eb7b6e3f7a06aa2fc85c7f025d6f89f7f57f/mediamonkey.png</iconUrl>
+    <docsUrl>https://www.mediamonkey.com/wiki/Main_Page</docsUrl>
+    <bugTrackerUrl>https://www.mediamonkey.com/support</bugTrackerUrl>
+    <tags>mediamonkey media audio video library podcast convert organize tag manage</tags>
+    <summary>The Media Organizer for Serious Collectors</summary>
+    <description>*MediaMonkey: The Media Organizer for Serious Collectors*
+
+![Overview](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/mediamonkey/img/overview.webp) 
+
+Manage small to large collections of audio files, videos and playlists (100,000+), whether on a hard drive, network, or CDs. Rip CDs, download podcasts, lookup artwork and other missing information online, tag almost any audio or video format, and automatically rename/re-organize files on your hard drive.
+    </description>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

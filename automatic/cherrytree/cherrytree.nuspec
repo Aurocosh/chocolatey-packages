@@ -9,7 +9,7 @@
     <owners>Aurocosh, ao123123</owners>
     <title>Cherrytree (Install)</title>
     <authors>Giuseppe Penone</authors>
-    <projectUrl>https://github.com/giuspen/cherrytree</projectUrl>
+    <projectUrl>https://www.giuspen.net/cherrytree</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/d0e87fdb4b73fd86f0f6cd4d324b9aa248a86aed/automatic/cherrytree/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/giuspen/cherrytree/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

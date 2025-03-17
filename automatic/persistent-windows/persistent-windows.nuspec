@@ -10,7 +10,7 @@
     <title>PersistentWindows (Portable)</title>
     <authors>Kangyu-California</authors>
     <projectUrl>https://github.com/kangyu-california/PersistentWindows</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/persistent-windows/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/f863ed02e4e4f8493e99a95f991b10d8a5250afe/automatic/persistent-windows/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/kangyu-california/PersistentWindows/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/kangyu-california/PersistentWindows</projectSourceUrl>
@@ -34,15 +34,6 @@ This project addresses a long-standing issue in Windows 7, 10, and 11, where win
 
 </description>
     <releaseNotes>https://github.com/kangyu-california/PersistentWindows/releases</releaseNotes>
-
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

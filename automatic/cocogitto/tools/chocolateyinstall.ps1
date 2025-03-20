@@ -9,8 +9,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archiveFile
   softwareName   = 'cog'
-  url64bit       = 'https://github.com/cocogitto/cocogitto/releases/download/6.2.0/cocogitto-6.2.0-x86_64-pc-windows-msvc.tar.gz'
-  checksum64     = '3cd95fae1a3dc2f18c592eaee8ab7cf8dbd19cdc1254f16ad31397073bd9acf4'
+  url64bit       = 'https://github.com/cocogitto/cocogitto/releases/download/6.3.0/cocogitto-6.3.0-x86_64-pc-windows-msvc.tar.gz'
+  checksum64     = 'df66dc5cc1bc79c0b44ef2ef631824c59e00b00951c8add61d7c6b076ef907f2'
   checksumType64 = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs

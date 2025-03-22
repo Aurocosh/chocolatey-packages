@@ -14,8 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser azahar-emu `
         -RepoName azahar `
-        -MainUrl64Regex "azahar-\d+(?:\.\d+)?-rc\d+-windows-msvc-installer.exe" `
-        -UsePreRelease
+        -MainUrl64Regex "azahar-\d+(?:\.\d+)?(-rc\d+)?-windows-msvc-installer.exe"
     @{
         URL64   = $release.MainUrl64
         Version = "0." + $release.Version

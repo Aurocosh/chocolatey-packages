@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cherrytree</id>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cherrytree</packageSourceUrl>
     <owners>Aurocosh, ao123123</owners>
     <title>Cherrytree (Install)</title>

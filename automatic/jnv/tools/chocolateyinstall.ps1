@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'jnv'
-  url64bit       = 'https://github.com/ynqa/jnv/releases/download/v0.5.0/jnv-x86_64-pc-windows-msvc.zip'
-  checksum64     = '71a1736348a2ddfe6af48c757125d4b55b567fbc123ce10652caeab6a9173acb'
+  url64bit       = 'https://github.com/ynqa/jnv/releases/download/v0.6.0/jnv-x86_64-pc-windows-msvc.zip'
+  checksum64     = '091b1bc53616b0804a503cdcfb3f85aece1299868bd94a0e51c7d4a9563a5120'
   checksumType64 = 'sha256'
 }
 

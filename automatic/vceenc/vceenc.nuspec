@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vceenc</id>
-    <version>8.34</version>
+    <version>8.35</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/vceenc</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>VCEEnc (Portable)</title>

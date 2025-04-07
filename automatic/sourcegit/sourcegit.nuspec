@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sourcegit</id>
-    <version>2025.11</version>
+    <version>2025.12</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/sourcegit</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>SourceGit (Portable)</title>

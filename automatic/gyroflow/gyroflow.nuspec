@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gyroflow</id>
-    <version>1.6.0</version>
+    <version>1.6.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/gyroflow</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Gyroflow (Portable)</title>
@@ -59,7 +59,7 @@ Gyroflow is an application that can stabilize your video by using motion data fr
 </description>
     <releaseNotes>https://github.com/gyroflow/gyroflow/releases</releaseNotes>
     <dependencies>
-      <dependency id="vcredist140"/>
+      <dependency id="vcredist140" />
     </dependencies>
   </metadata>
   <files>

@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'files'
 $exeFile = Join-Path $installPath 'Gyroflow.exe'
@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Gyroflow*'
-  url64bit       = 'https://github.com/gyroflow/gyroflow/releases/download/v1.6.0/Gyroflow-windows64.zip'
-  checksum64     = 'a4e73237fbc6df392f7982d2f08b00cb95d4224240a4c9bd9247462dfa52f8ca'
+  url64bit       = 'https://github.com/gyroflow/gyroflow/releases/download/v1.6.1/Gyroflow-windows64.zip'
+  checksum64     = '3b32b7c946d32e68e3381573478042b4522f7a82ca0778e7088d6a91b7c2d7ef'
   checksumType64 = 'sha256'
 }
 

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rainmeter</id>
-    <version>4.5.22</version>
+    <version>4.5.23</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rainmeter</packageSourceUrl>
     <owners>Aurocosh, figgycity50, doc</owners>
     <title>Rainmeter (Install)</title>

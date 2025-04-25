@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ab-download-manager</id>
-    <version>1.5.4</version>
+    <version>1.5.5</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/ab-download-manager</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>AB Download Manager (Install)</title>

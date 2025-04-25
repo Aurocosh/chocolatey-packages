@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installPath
   softwareName  = 'PhotoDemon*'
-  url           = 'https://github.com/tannerhelland/PhotoDemon/releases/download/v2024.12/PhotoDemon-2024.12.zip'
-  checksum      = '89a405442fa346900348176265718ad874f65e3ad073d76dd5b1d57179afc7bd'
+  url           = 'https://github.com/tannerhelland/PhotoDemon/releases/download/v2025.4/PhotoDemon-2025.4.zip'
+  checksum      = '4e2c536e10645261a5dee75434a3198064982f2a2f5c9da31992c2ce1371ae2b'
   checksumType  = 'sha256'
 }
 

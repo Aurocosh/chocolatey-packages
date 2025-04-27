@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qsvenc</id>
-    <version>7.87</version>
+    <version>7.88</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/qsvenc</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>QSVEnc (Portable)</title>

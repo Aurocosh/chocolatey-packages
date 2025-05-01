@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'files'
 $exeFile = Join-Path $installPath 'PersistentWindows.exe'
@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'PersistentWindows*'
-  url            = 'https://github.com/kangyu-california/PersistentWindows/releases/download/5.61/PersistentWindows5.61.zip'
-  checksum       = '602fef743e300ec282d295eb3f4a59aa956dc079f7c7265f1d4cfdb8bd62f385'
+  url            = 'https://github.com/kangyu-california/PersistentWindows/releases/download/5.63/PersistentWindows5.63.zip'
+  checksum       = '6373afedc5bb4fd27cb0e1a9cc318d2c6b37a21ce573b4f484735f4231c97671'
   checksumType   = 'sha256'
 }
 

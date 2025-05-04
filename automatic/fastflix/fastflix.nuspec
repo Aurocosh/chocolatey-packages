@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fastflix</id>
-    <version>5.11.0</version>
+    <version>5.12.0</version>
     <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>FastFlix (Install)</title>

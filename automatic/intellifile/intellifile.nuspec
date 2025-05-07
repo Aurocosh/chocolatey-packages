@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>intellifile</id>
-    <version>1.39</version>
+    <version>1.40</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/intellifile</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>IntelliFile (Install)</title>

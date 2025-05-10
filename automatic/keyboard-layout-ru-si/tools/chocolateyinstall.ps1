@@ -15,8 +15,8 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$packageArgs.file = Join-Path $tempPath "Ru_SI_i386.msi"
-$packageArgs.file64 = Join-Path $tempPath "Ru_SI_amd64.msi"
+$packageArgs.file = Join-Path $tempPath "RuSi_i386.msi"
+$packageArgs.file64 = Join-Path $tempPath "RuSi_amd64.msi"
 $packageArgs.fileType = 'msi'
 
 Install-ChocolateyInstallPackage @packageArgs

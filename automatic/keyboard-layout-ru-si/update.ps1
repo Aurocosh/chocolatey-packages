@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser Aurocosh `
         -RepoName keyboard-layout-ru-si `
-        -MainUrl32Regex "ru_si-\d+\.\d+\.\d+.zip"
+        -MainUrl32Regex "kl-ru-si-\d+\.\d+\.\d+-\d+\.zip"
     @{
         URL32   = $release.MainUrl32
         Version = $release.Version

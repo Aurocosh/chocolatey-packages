@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop' # stop on all errors
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $tempPath = Join-Path $env:temp $env:ChocolateyPackageName
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     unzipLocation  = $tempPath
     softwareName   = 'Russian - Phonetic - SI*'
-    url            = 'https://github.com/Aurocosh/keyboard-layout-ru-si/releases/download/1.0.0/ru_si-1.0.0.zip'
-    checksum       = 'c9082a50f49fe53bd99c0b3de09815c03a500093ddaea73fb9f5644e0488bd8a'
+    url            = 'https://github.com/Aurocosh/keyboard-layout-ru-si/releases/download/2.0.0/kl-ru-si-2.0.0-1.zip'
+    checksum       = '534f84a2a51d71493c9489105473b9ba097e11371c9ab8b2c35950df8997165f'
     checksumType   = 'sha256'
     validExitCodes = @(0, 3010, 1641)
     silentArgs     = '/quiet /qn /norestart'  # MSI

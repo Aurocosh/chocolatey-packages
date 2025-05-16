@@ -24,7 +24,10 @@ function global:au_GetLatest {
     @{
         URL32   = $url
         Version = $version
+        Options = @{
+            Headers = @{"User-Agent" = "Chocolatey AU update check. https://chocolatey.org"}
+        }
     }
 }
 
-update -ChecksumFor 32 -NoCheckUrl
+update -ChecksumFor 32

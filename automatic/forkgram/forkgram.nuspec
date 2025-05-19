@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>forkgram</id>
-    <version>5.14.2</version>
+    <version>5.14.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/forkgram</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Forkgram (Portable)</title>

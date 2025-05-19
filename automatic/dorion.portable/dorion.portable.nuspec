@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dorion.portable</id>
-    <version>6.6.2</version>
+    <version>6.6.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dorion.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Dorion (Portable)</title>

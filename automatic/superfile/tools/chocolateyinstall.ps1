@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'spf*'
-  url64bit       = 'https://github.com/yorukot/superfile/releases/download/v1.3.0/superfile-windows-v1.3.0-amd64.zip'
-  checksum64     = 'f91716ee727e8014eed4b25f0d3016d505e6477f3a8b49390d68439cbfe9ad79'
+  url64bit       = 'https://github.com/yorukot/superfile/releases/download/v1.3.1/superfile-windows-v1.3.1-amd64.zip'
+  checksum64     = '933e4d3b6903cfb0be377f5bf25f078e89411bca3363dac1575eeab5b88e134a'
   checksumType64 = 'sha256'
 }
 

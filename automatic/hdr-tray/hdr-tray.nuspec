@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hdr-tray</id>
+    <version>0.5.4</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/hdr-tray</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>HDRTray (Portable)</title>
+    <authors>Frank Richter</authors>
+    <projectUrl>https://github.com/res2k/HDRTray</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/hdr-tray/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/res2k/HDRTray/blob/main/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/res2k/HDRTray</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/res2k/HDRTray/issues</bugTrackerUrl>
+    <tags>hdr-tray hdr windows windows-10 display portable</tags>
+    <summary>Windows Notification Area icon to show and change HDR status</summary>
+    <description>HDRTray
+=======
+Windows Notification Area icon to show and change HDR status.
+
+Useful if you quickly want to check the current setting, maybe because it might been changed automatically by some applications, or maybe just because you're forgetful.
+
+Also allows quick toggling.
+
+</description>
+    <releaseNotes>https://github.com/res2k/HDRTray/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

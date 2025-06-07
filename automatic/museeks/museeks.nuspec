@@ -10,7 +10,7 @@
     <title>Museeks (Install)</title>
     <authors>Pierre de la Martiniere</authors>
     <projectUrl>https://museeks.io</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/museeks/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/ebeec8c729a864633b5945ba5b38606fb1d0373e/automatic/museeks/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/martpie/museeks/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/martpie/museeks</projectSourceUrl>
@@ -21,7 +21,7 @@
 
 A simple, clean and cross-platform music player.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/museeks/img/screenshot.png) 
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/ebeec8c729a864633b5945ba5b38606fb1d0373e/automatic/museeks/img/screenshot.png) 
 
 ## Features
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>museeks</id>
+    <version>0.20.9</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/museeks</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Museeks (Install)</title>
+    <authors>Pierre de la Martiniere</authors>
+    <projectUrl>https://museeks.io</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/museeks/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/martpie/museeks/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/martpie/museeks</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/martpie/museeks/issues</bugTrackerUrl>
+    <tags>museeks cross-platform electron museeks music music-player react</tags>
+    <summary>A simple, clean and cross-platform music player</summary>
+    <description># Museeks
+
+A simple, clean and cross-platform music player.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/museeks/img/screenshot.png) 
+
+## Features
+
+Museeks aims to be a simple and easy to use music player with a clean UI. You will not find tons of features, as it goal is not to compete with more complete and more famous music players.
+
+Here is a little preview though:
+- 💻 Cross-platform music player (Linux, macOS and Windows)
+- 🎧 Supported formats: mp3, mp4, m4a/aac, flac, wav, ogg, 3gpp
+- 🔄 Library auto-refresh
+- 🌟 Playlists
+- 🎼 Queue management
+- ➰ Shuffle, loop
+- 🌄 Covers
+- 🤓 Dark theme
+- 🚤 Playback speed control
+- 😴 Sleep mode blocker
+- 📥 `.m3u` import/export
+
+</description>
+    <releaseNotes>https://github.com/martpie/museeks/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

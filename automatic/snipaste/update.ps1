@@ -11,24 +11,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $regex64 = "Snipaste-(\d+\.\d+(?:\.\d+))(-Beta)?-x64.zip"
+    $url64 = Get-RedirectedUrl -URL "https://dl.snipaste.com/win-x64"
 
-    $release64 = Get-LatestBitbucketDownloads `
-        -UserName liule `
-        -RepoName snipaste `
-        -NameRegex $regex64 `
-        -FirstOnly
-
-    $release64.name -Match $regex64
-    $version = $matches[1]
-    $isBeta = $matches[2]
-
-    $url64 = $release64.links.self.href
-
-    if ($version -and $isBeta) {
-        $version += "-Beta"
+    $versionRegex = ".*Snipaste-(\d+.\d+(?:\.\d+)?)-x64.zip"
+    if ($url64 -match $versionRegex) {
+	    $version = $matches[1]
     }
-    
+
     @{
         URL64   = $url64
         Version = $version

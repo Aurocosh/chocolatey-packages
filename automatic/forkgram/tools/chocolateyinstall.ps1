@@ -7,11 +7,11 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Telegram*'
-  url            = 'https://github.com/forkgram/tdesktop/releases/download/v5.15.2/Telegram_x86.zip'
-  checksum       = '0368222867385bfaaf5380ff0982996f14e3d82d9dbf58a7629f6b9b2147c97a'
+  url            = 'https://github.com/forkgram/tdesktop/releases/download/v5.15.3/Telegram_x86.zip'
+  checksum       = '92e1df80d11478fdc528f0a2cbb70fc5b526550b34665cf2289f15bef7aed481'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/forkgram/tdesktop/releases/download/v5.15.2/Telegram.zip'
-  checksum64     = 'dd3cf8bde04875c9192716dededd99ab0a6e917ff536af92b40b82e332b32648'
+  url64bit       = 'https://github.com/forkgram/tdesktop/releases/download/v5.15.3/Telegram.zip'
+  checksum64     = 'a21a4717d54035ae12f189223ecb5ac833bf863b374710a615e36f27f7358876'
   checksumType64 = 'sha256'
 }
 

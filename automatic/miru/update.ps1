@@ -14,7 +14,7 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser ThaUnknown `
         -RepoName miru `
-        -MainUrl64Regex "win-Miru-\d+\.\d+\.\d+-installer.exe"
+        -MainUrl64Regex "win-hayase-\d+\.\d+\.\d+-installer.exe"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

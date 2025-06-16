@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rustscan</id>
+    <version>2.4.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rustscan</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>RustScan (Portable)</title>
+    <authors>Autumn (Bee)</authors>
+    <projectUrl>https://github.com/bee-san/RustScan</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rustscan/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/bee-san/RustScan/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/bee-san/RustScan</projectSourceUrl>
+    <docsUrl>https://github.com/bee-san/RustScan/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/bee-san/RustScan/issues</bugTrackerUrl>
+    <tags>rustscan docker hacking networking nmap pentesting port rust scanning security security-tools</tags>
+    <summary>The Modern Port Scanner</summary>
+    <description># RustScan
+The Modern Port Scanner. **Find ports quickly (3 seconds at its fastest)**. Run scripts through our scripting engine (Python, Lua, Shell supported).
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rustscan/img/demo.gif)
+
+</description>
+    <releaseNotes>https://github.com/bee-san/RustScan/releases</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

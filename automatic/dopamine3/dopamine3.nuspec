@@ -10,19 +10,17 @@
     <title>Dopamine (Install)</title>
     <authors>Digimezzo</authors>
     <projectUrl>https://github.com/digimezzo/dopamine</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/9fd602c00bd8166c4134eb779da97fb9baf1da09/automatic/dopamine3/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/digimezzo/dopamine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
     <bugTrackerUrl>https://github.com/digimezzo/dopamine/issues</bugTrackerUrl>
     <tags>dopamine3 dopamine electron linux mac music music-player windows</tags>
     <summary>The audio player that keeps it simple</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/banner.png)
-
-# Dopamine 3
+    <description># Dopamine 3
 Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. This version is written using Electron, Angular and Typescript.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/screenshot.png)
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/9fd602c00bd8166c4134eb779da97fb9baf1da09/automatic/dopamine3/img/screenshot.png)
 
 </description>
     <releaseNotes>https://github.com/digimezzo/dopamine/releases</releaseNotes>

@@ -9,7 +9,8 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser digimezzo `
         -RepoName dopamine-windows `
-        -MainUrl32Regex "Dopamine.\d+\.\d+\.\d+.Release.msi"
+        -MainUrl32Regex "Dopamine.\d+\.\d+\.\d+.Release.msi" `
+        -VersionRegex "^v(\d+\.\d+\.\d+)\.\d+$"
     @{
         Version = $release.Version
     }

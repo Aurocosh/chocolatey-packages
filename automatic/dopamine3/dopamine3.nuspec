@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dopamine3</id>
+    <version>3.0.0-preview38</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine3</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Dopamine (Install)</title>
+    <authors>Digimezzo</authors>
+    <projectUrl>https://github.com/digimezzo/dopamine</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/digimezzo/dopamine/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/digimezzo/dopamine/issues</bugTrackerUrl>
+    <tags>dopamine3 dopamine electron linux mac music music-player windows</tags>
+    <summary>The audio player that keeps it simple</summary>
+    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/banner.png)
+
+# Dopamine 3
+Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. This version is written using Electron, Angular and Typescript.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/screenshot.png)
+
+</description>
+    <releaseNotes>https://github.com/digimezzo/dopamine/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

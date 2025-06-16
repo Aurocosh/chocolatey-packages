@@ -1,0 +1,15 @@
+import-module au
+import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+
+function global:au_GetLatest {
+    $release = Get-LatestGithubRelease `
+        -GitUser digimezzo `
+        -RepoName dopamine-windows `
+        -MainUrl32Regex "Dopamine.\d+\.\d+\.\d+.Release.msi"
+    @{
+        Version = $release.Version
+    }
+}
+
+update -ChecksumFor none
+

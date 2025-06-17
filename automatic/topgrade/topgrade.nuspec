@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>topgrade</id>
-    <version>16.0.3</version>
+    <version>16.0.4</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/topgrade</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Topgrade (Portable)</title>

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opencomic</id>
-    <version>1.4.1</version>
+    <version>1.5.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/opencomic</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>OpenComic (Install)</title>

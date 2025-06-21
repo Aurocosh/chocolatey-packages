@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azahar.portable</id>
-    <version>0.2122</version>
+    <version>0.2122.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/azahar.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Azahar (Portable)</title>

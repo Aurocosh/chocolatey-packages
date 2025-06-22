@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine3</id>
-    <version>3.0.0-preview38</version>
+    <version>3.0.0-preview39</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine3</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Dopamine 3 (Install)</title>

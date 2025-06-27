@@ -36,11 +36,6 @@
 ![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.jpg)
 #### Gruvbox Dark
 ![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.jpg)
-
-## Package Parameters:
- - `/Legacy` - Install a legacy version for Windows 7 and Windows 8.1.
-
-eg. `choco install -y lutgen-rs --package-parameters="/Legacy"`
 </description>
     <releaseNotes>https://github.com/ozwaldorf/lutgen-rs/releases</releaseNotes>
     <dependencies>

@@ -15,7 +15,7 @@ function global:au_GetLatest {
         -GitUser ozwaldorf `
         -RepoName lutgen-rs `
         -MainUrl64Regex "lutgen-cli-v-x86_64-pc-windows-msvc.exe" `
-        -VersionRegex "^lutgen-v(\d+\.\d+\.\d+(?:\.\d+)?)$"
+        -VersionRegex "^lutgen-(?:studio-)?v(\d+\.\d+\.\d+(?:\.\d+)?)$"
     @{
         URL64   = $release.MainUrl64
         Version = $release.Version

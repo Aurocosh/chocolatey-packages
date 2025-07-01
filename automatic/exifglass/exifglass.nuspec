@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>exifglass</id>
+    <version>1.8.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/exifglass</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>ExifGlass (Portable)</title>
+    <authors>D2</authors>
+    <projectUrl>https://github.com/d2phap/ExifGlass</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/exifglass/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/d2phap/ExifGlass/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/d2phap/ExifGlass</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/d2phap/ExifGlass/issues</bugTrackerUrl>
+    <tags>exifglass avalonia avaloniaui dotnet exif exif-data-extraction exif-metadata exif-reader exiftool metadata-extraction imageglass portable</tags>
+    <summary>EXIF metadata viewing tool</summary>
+    <description># ExifGlass - EXIF Metadata Viewing Tool
+
+ExifGlass is an EXIF metadata viewing tool, designed to work seamlessly with [ImageGlass 9](https://imageglass.org), but can also be used as a standalone software on your computer. To use ExifGlass, you need to have [ExifTool by Phil Harvey](https://exiftool.org) installed on your system.
+
+With ExifGlass, you can easily access a comprehensive overview of the technical details associated with your images, including camera settings, location data, and more. This tool is particularly useful for professional photographers or anyone interested in the technical aspects of digital photography. Whether you use ExifGlass as a standalone software or in conjunction with ImageGlass, it provides a convenient and efficient way to view and manage the metadata associated with your images.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/exifglass/img/screenshot.png)
+
+    </description>
+    <releaseNotes>https://github.com/d2phap/ExifGlass/releases</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet-9.0-desktopruntime"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

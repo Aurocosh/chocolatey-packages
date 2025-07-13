@@ -20,7 +20,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: Aurocosh/chocolatey-packages
   github_api_key:
-    secure: USuAQfURHV79duTPIF/ofrzyqVSYtb3nSoETbaWt/JdUMjmjeir3U1Dg2vWhvFQlBwopLGuN37rniNbmSYpkI/kmrV6+Vf2aKG1ET1+iFPoYA+hxWDr+7iEZz5DJpQmh #https://ci.appveyor.com/tools/encrypt
+    secure: USuAQfURHV79duTPIF/ofr6Y1nyltoyd4aYgJjYcMajjhbQ4J3GDpRUkU6Bc3ByHw+f0MZPsVf8J+YCctXzkWa8OHIFbViwuW8Nqm96e6HSWN9WNf01flv4XrH6/FUZr #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications

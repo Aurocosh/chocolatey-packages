@@ -10,7 +10,7 @@
     <title>Vibe (Install)</title>
     <authors>Thewh1teagle</authors>
     <projectUrl>https://github.com/thewh1teagle/vibe</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vibe/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/a29308e0a81d9b83dd41828081fe7889d80aefc1/automatic/vibe/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/thewh1teagle/vibe/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/thewh1teagle/vibe</projectSourceUrl>
@@ -21,7 +21,7 @@
 ⌨️ Transcribe audio/video offline using OpenAI Whisper
 
 # Screenshots
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vibe/img/screenshot.png) 
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/a29308e0a81d9b83dd41828081fe7889d80aefc1/automatic/vibe/img/screenshot.png) 
 
 </description>
     <releaseNotes>https://github.com/thewh1teagle/vibe/releases</releaseNotes>

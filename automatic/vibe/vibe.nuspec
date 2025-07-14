@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vibe</id>
+    <version>3.0.5</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/vibe</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Vibe (Install)</title>
+    <authors>Thewh1teagle</authors>
+    <projectUrl>https://github.com/thewh1teagle/vibe</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vibe/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/thewh1teagle/vibe/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/thewh1teagle/vibe</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/thewh1teagle/vibe/issues</bugTrackerUrl>
+    <tags>vibe ai cross-platform desktop openai rust transcribe whisper</tags>
+    <summary>Transcribe on your own!</summary>
+    <description># Vibe - Transcribe on your own!
+⌨️ Transcribe audio/video offline using OpenAI Whisper
+
+# Screenshots
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vibe/img/screenshot.png) 
+
+</description>
+    <releaseNotes>https://github.com/thewh1teagle/vibe/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -6,8 +6,8 @@ $exeFile = Join-Path $packagePath 'lutgen-cli.exe'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $exeFile
-  url64bit       = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/lutgen-v1.0.0/lutgen-cli-v-x86_64-pc-windows-msvc.exe'
-  checksum64     = '721cc8d1aeb65ff3506b26ec7097cd90ef9b735d972f0835eb0128da11f8eff7'
+  url64bit       = 'https://github.com/ozwaldorf/lutgen-rs/releases/download/lutgen-studio-v0.2.1/lutgen-cli-v1.0.1-x86_64-pc-windows-msvc.exe'
+  checksum64     = '436e99e6f873df80b955e0ab8f10b40c1bd493cbbda52872066c76dfd57215f9'
   checksumType64 = 'sha256'
 }
 

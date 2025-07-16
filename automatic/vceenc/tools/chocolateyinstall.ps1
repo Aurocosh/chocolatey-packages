@@ -6,11 +6,11 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'VCEEnc*'
-  url            = 'https://github.com/rigaya/VCEEnc/releases/download/8.37/VCEEncC_8.37_Win32.7z'
-  checksum       = '1149975786cef87dc064d6e7cacd9081d8ed3ad54c77afa6bbe3ccb6df68a905'
+  url            = 'https://github.com/rigaya/VCEEnc/releases/download/8.38/VCEEncC_8.38_Win32.7z'
+  checksum       = 'cb5908e1b10e5fe1af36203886145183d171b9045e4b1ce9762c0ab13b51035b'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/rigaya/VCEEnc/releases/download/8.37/VCEEncC_8.37_x64.7z'
-  checksum64     = 'f4bd9f7df92537f1036de8c123ef6d3e9fd616898558a02dd1d8baf5883813ef'
+  url64bit       = 'https://github.com/rigaya/VCEEnc/releases/download/8.38/VCEEncC_8.38_x64.7z'
+  checksum64     = 'c5242538a2531784bc4a941f8b06f66cf4e110efae0e7fedf23830e363b68ce8'
   checksumType64 = 'sha256'
 }
 

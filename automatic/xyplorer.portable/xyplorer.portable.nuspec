@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xyplorer.portable</id>
-    <version>27.10.0000</version>
+    <version>27.10.0200</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/xyplorer.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>XYplorer (Portable)</title>

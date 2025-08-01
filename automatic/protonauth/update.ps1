@@ -10,15 +10,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://proton.me/authenticator/download'
-
-    $regex64 = "ProtonAuthenticator_(\d+\.\d+\.\d+)_x64_en-US.msi"
-    $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
-    $version = $matches[1]
+    $response = Invoke-WebRequest -Uri "https://proton.me/download/authenticator/windows/version.json" -Method Get
+    $jsonValue = ConvertFrom-Json $response.Content
 	
     @{
-        URL64   = $url64
-        Version = $version
+        URL64   = $jsonValue.Releases[0].File.Url
+        Version = $jsonValue.Releases[0].Version
     }
 }
 

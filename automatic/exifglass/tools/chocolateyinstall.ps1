@@ -1,12 +1,12 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'ExifGlass*'
-  url64bit       = 'https://github.com/d2phap/ExifGlass/releases/download/1.8.0.0/ExifGlass_1.8.0.0_x64.zip'
-  checksum64     = '71bd37399dbe541bd9e416a3bf130def6a8c7a27b71220591ce960622577a268'
+  url64bit       = 'https://github.com/d2phap/ExifGlass/releases/download/1.9.0.0/ExifGlass_1.9.0.0_x64.zip'
+  checksum64     = '11de3afe01a30b07bda14041ad65ba09aead1cabcef7e75466083881f236ed6e'
   checksumType64 = 'sha256'
 }
 

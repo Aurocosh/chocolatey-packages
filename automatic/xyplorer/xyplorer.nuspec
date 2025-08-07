@@ -13,6 +13,9 @@
     <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <copyright>Copyright © 2024 Cologne Code Company</copyright>
+    <docsUrl>https://www.xyplorer.com/quickstart.php</docsUrl>
+    <mailingListUrl>https://www.xyplorer.com/xyfc/index.php</mailingListUrl>
+    <bugTrackerUrl>https://www.xyplorer.com/xyfc/viewforum.php?f=2</bugTrackerUrl>
     <tags>xyplorer file-manager file-management dual-panel explorer script</tags>
     <summary>XYplorer is a file manager for Windows.</summary>
     <description>XYplorer is a file manager for Windows. It features tabbed browsing, a powerful file search, a versatile preview, a highly customizable interface, optional dual pane, and a large array of unique ways to efficiently automate frequently recurring tasks. It's fast and light, it's innovative, and it's portable.

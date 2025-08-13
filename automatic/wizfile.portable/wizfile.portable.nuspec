@@ -6,7 +6,7 @@
     <version>3.13</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wizfile.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>WizFile (Install)</title>
+    <title>WizFile (Portable)</title>
     <authors>Antibody Software</authors>
     <projectUrl>https://antibody-software.com/wizfile</projectUrl>
     <iconUrl>https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/icon.png</iconUrl>
@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://antibody-software.com/wizfile/quick-start</docsUrl>
     <bugTrackerUrl>https://antibody-software.com/contact?app=WizFile</bugTrackerUrl>
-    <tags>wizfile search file folder wildcard file-system indexing freeware ntfs donationware</tags>
+    <tags>wizfile search file folder wildcard file-system indexing freeware ntfs donationware portable</tags>
     <summary>An extremely fast file finder</summary>
     <description># WizFile
 

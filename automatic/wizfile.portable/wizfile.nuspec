@@ -2,14 +2,14 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>wizfile</id>
+    <id>wizfile.portable</id>
     <version>3.13</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wizfile</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wizfile.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>WizFile (Install)</title>
     <authors>Antibody Software</authors>
     <projectUrl>https://antibody-software.com/wizfile</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/57d4e25a3fde5718d72700b558603c73fc449506/automatic/wizfile/img/icon.png</iconUrl>
+    <iconUrl>https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/icon.png</iconUrl>
     <copyright>Copyright © 2025 Antibody Software Limited. All Rights Reserved</copyright>
     <licenseUrl>https://antibody-software.com/wizfile/eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -30,7 +30,7 @@ WizFile also supports non NTFS hard drives, network drives, USB drives and indiv
 When scanning NTFS formatted hard drives for files (most modern hard drives use this format), WizFile reads the hard drive's Master File Table (MFT) directly from the disk. The MFT is a special hidden file used by the NTFS file system to keep track of all files and folders on a hard drive. Scanning for files this way completely bypasses the operating system (Windows) and provides a huge performance boost. Scanning this way allows WizFile to build it's internal file database very quickly so it's ready for use in as short a time as possible after it's started.
 
 # Screenshots
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/57d4e25a3fde5718d72700b558603c73fc449506/automatic/wizfile/img/screenshot.png) 
+![Screenshot](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/screenshot.png) 
 
 # Features
 - Instant, Live File Search

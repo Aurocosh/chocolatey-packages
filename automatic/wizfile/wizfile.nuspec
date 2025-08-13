@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wizfile</id>
+    <version>3.13</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wizfile</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>WizFile (Install)</title>
+    <authors>Antibody Software</authors>
+    <projectUrl>https://antibody-software.com/wizfile</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/automatic/wizfile/icon/icon.png</iconUrl>
+    <copyright>Copyright © 2025 Antibody Software Limited. All Rights Reserved</copyright>
+    <licenseUrl>https://antibody-software.com/wizfile/eula</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://antibody-software.com/wizfile/quick-start</docsUrl>
+    <bugTrackerUrl>https://antibody-software.com/contact?app=WizFile</bugTrackerUrl>
+    <tags>wizfile search file folder wildcard file-system indexing freeware ntfs donationware</tags>
+    <summary>An extremely fast file finder</summary>
+    <description># WizFile
+
+An extremely fast file finder for Windows
+What is WizFile?
+
+# Screenshots
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/automatic/wizfile/icon/screenshot.png) 
+
+# Description
+WizFile is an extremely high speed file finder utility for Windows. You can search every file on your hard drive by name, path, size and date and the search results are displayed almost instantly. WizFile monitors your file system for changes and will always display the most up to date file information. Displayed search results will update in real time as changes are detected.
+
+WizFile uses a highly efficient and compact internal file database which uses minimal system resources, so it has negligible impact on the performance of your PC.
+
+WizFile also supports non NTFS hard drives, network drives, USB drives and individual directories.
+
+# Features
+- Instant, Live File Search
+- Search the entire file path
+- Multiple Search Terms
+- Extremely Fast!
+- Custom Filters
+- No Database File
+
+# What makes WizFile so fast?
+
+When scanning NTFS formatted hard drives for files (most modern hard drives use this format), WizFile reads the hard drive's Master File Table (MFT) directly from the disk. The MFT is a special hidden file used by the NTFS file system to keep track of all files and folders on a hard drive. Scanning for files this way completely bypasses the operating system (Windows) and provides a huge performance boost. Scanning this way allows WizFile to build it's internal file database very quickly so it's ready for use in as short a time as possible after it's started.
+    
+</description>
+    <releaseNotes>https://antibody-software.com/wizfile/download</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -19,18 +19,18 @@
     <summary>An extremely fast file finder</summary>
     <description># WizFile
 
-An extremely fast file finder for Windows
-What is WizFile?
-
-# Screenshots
-![Screenshot](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile/img/screenshot.png) 
-
-# Description
 WizFile is an extremely high speed file finder utility for Windows. You can search every file on your hard drive by name, path, size and date and the search results are displayed almost instantly. WizFile monitors your file system for changes and will always display the most up to date file information. Displayed search results will update in real time as changes are detected.
 
 WizFile uses a highly efficient and compact internal file database which uses minimal system resources, so it has negligible impact on the performance of your PC.
 
 WizFile also supports non NTFS hard drives, network drives, USB drives and individual directories.
+
+# What makes WizFile so fast?
+
+When scanning NTFS formatted hard drives for files (most modern hard drives use this format), WizFile reads the hard drive's Master File Table (MFT) directly from the disk. The MFT is a special hidden file used by the NTFS file system to keep track of all files and folders on a hard drive. Scanning for files this way completely bypasses the operating system (Windows) and provides a huge performance boost. Scanning this way allows WizFile to build it's internal file database very quickly so it's ready for use in as short a time as possible after it's started.
+
+# Screenshots
+![Screenshot](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile/img/screenshot.png) 
 
 # Features
 - Instant, Live File Search
@@ -40,10 +40,6 @@ WizFile also supports non NTFS hard drives, network drives, USB drives and indiv
 - Custom Filters
 - No Database File
 
-# What makes WizFile so fast?
-
-When scanning NTFS formatted hard drives for files (most modern hard drives use this format), WizFile reads the hard drive's Master File Table (MFT) directly from the disk. The MFT is a special hidden file used by the NTFS file system to keep track of all files and folders on a hard drive. Scanning for files this way completely bypasses the operating system (Windows) and provides a huge performance boost. Scanning this way allows WizFile to build it's internal file database very quickly so it's ready for use in as short a time as possible after it's started.
-    
 </description>
     <releaseNotes>https://antibody-software.com/wizfile/download</releaseNotes>
   </metadata>

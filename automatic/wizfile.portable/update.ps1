@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://antibody-software.com/wizfile/download'
 
-    $regex64 = "wizfile_(\d+_\d+)_portable.exe"
+    $regex64 = "wizfile_(\d+_\d+)_portable.zip"
     $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
     $version = $matches[1] -replace "_", "."
 

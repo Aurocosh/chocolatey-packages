@@ -9,7 +9,7 @@
     <title>WizFile (Install)</title>
     <authors>Antibody Software</authors>
     <projectUrl>https://antibody-software.com/wizfile</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/automatic/wizfile/icon/icon.png</iconUrl>
+    <iconUrl>https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile/img/icon.png</iconUrl>
     <copyright>Copyright © 2025 Antibody Software Limited. All Rights Reserved</copyright>
     <licenseUrl>https://antibody-software.com/wizfile/eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -23,7 +23,7 @@ An extremely fast file finder for Windows
 What is WizFile?
 
 # Screenshots
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/automatic/wizfile/icon/screenshot.png) 
+![Screenshot](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile/img/screenshot.png) 
 
 # Description
 WizFile is an extremely high speed file finder utility for Windows. You can search every file on your hard drive by name, path, size and date and the search results are displayed almost instantly. WizFile monitors your file system for changes and will always display the most up to date file information. Displayed search results will update in real time as changes are detected.

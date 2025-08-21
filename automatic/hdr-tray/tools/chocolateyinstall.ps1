@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'files'
 $exeFile = Join-Path $installPath 'HDRTray.exe'
@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'HDRTray*'
-  url64bit       = 'https://github.com/res2k/HDRTray/releases/download/v0.5.4/HDRTray-v0.5.4.zip'
-  checksum64     = '637a1a1a7db792beaf2665e4f8a09e315e9129c2f37847e06b6b9ad1d3885757'
+  url64bit       = 'https://github.com/res2k/HDRTray/releases/download/v0.5.5/HDRTray-v0.5.5.zip'
+  checksum64     = '62de6da11bef91e2ca25e9eb6e818d25336970bbf1d864680dc58d7f656fc617'
   checksumType64 = 'sha256'
 }
 

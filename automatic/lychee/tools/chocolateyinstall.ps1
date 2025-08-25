@@ -6,8 +6,8 @@ $exeFile = Join-Path $packagePath 'lychee.exe'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $exeFile
-  url64bit       = 'https://github.com/lycheeverse/lychee/releases/download/lychee-v0.20.0/lychee-x86_64-windows.exe'
-  checksum64     = '238f89068c28a3d14ab6515ec71a974770b248bef1b1d08b8454941ea21b8291'
+  url64bit       = 'https://github.com/lycheeverse/lychee/releases/download/lychee-v0.20.1/lychee-x86_64-windows.exe'
+  checksum64     = 'dbd2f1ba07ef1725b37aa5069121365a2a96fbaa84a9905d678add623ff021df'
   checksumType64 = 'sha256'
 }
 

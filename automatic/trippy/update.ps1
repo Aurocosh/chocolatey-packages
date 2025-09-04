@@ -1,5 +1,5 @@
-import-module au
-import-module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     $checksumMSVC = Get-RemoteChecksum $Latest.URL_MSVC

@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $downloadApi = 'https://api.audiorelay.net/downloads'
 

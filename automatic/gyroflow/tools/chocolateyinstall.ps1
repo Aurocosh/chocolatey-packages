@@ -8,7 +8,7 @@ $packageArgs = @{
   unzipLocation  = $installPath
   softwareName   = 'Gyroflow*'
   url64bit       = 'https://github.com/gyroflow/gyroflow/releases/download/v1.6.2/Gyroflow-windows64.zip'
-  checksum64     = '785e5593e37f30a7b4ffb8722c88c642b9109cf106a552326cfdbafe22474666'
+  checksum64     = 'de2239b112b5237562c8d6ef90d081744bfa7de6ac0cf6aca91ca620f0d267ff'
   checksumType64 = 'sha256'
 }
 

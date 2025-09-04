@@ -1,6 +1,11 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+$release = Get-LatestGithubRelease `
+    -GitUser emuell `
+    -RepoName restic-browser `
+    -MainUrl64Regex "Restic-Browser-v\d+\.\d+\.\d+-windows\.zip"
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
@@ -11,14 +16,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = Get-LatestGithubRelease `
-        -GitUser emuell `
-        -RepoName restic-browser `
-        -MainUrl64Regex "Restic-Browser-v\d+\.\d+\.\d+-windows\.zip"
     @{
-        URL64   = $release.MainUrl64
-        Version = $release.Version
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor $release.ChocoChecksumFor

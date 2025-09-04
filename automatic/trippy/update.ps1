@@ -1,9 +1,22 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+$release = Get-LatestGithubRelease `
+    -GitUser fujiapple852 `
+    -RepoName trippy `
+    -MainUrl32Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-msvc\.zip" `
+    -MainUrl64Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-gnu\.zip"
+
 function global:au_SearchReplace {
-    $checksumMSVC = Get-RemoteChecksum $Latest.URL_MSVC
-    $checksumGNU = Get-RemoteChecksum $Latest.URL_GNU
+    $checksumMSVC = $Latest.Checksum_MSVC
+    if (-not $checksumMSVC){
+        $checksumMSVC = Get-RemoteChecksum $Latest.URL_MSVC
+    }
+    
+    $checksumGNU = $Latest.Checksum_GNU
+    if (-not $checksumGNU){
+        $checksumGNU = Get-RemoteChecksum $Latest.URL_GNU
+    }
 
     Write-Host "Checksum MSVC: $checksumMSVC"
     Write-Host "Checksum GNU: $checksumGNU"
@@ -18,15 +31,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = Get-LatestGithubRelease `
-        -GitUser fujiapple852 `
-        -RepoName trippy `
-        -MainUrl32Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-msvc\.zip" `
-        -MainUrl64Regex "trippy-\d+\.\d+\.\d+-x86_64-pc-windows-gnu\.zip"
     @{
-        URL_MSVC = $release.MainUrl32
-        URL_GNU  = $release.MainUrl64
-        Version  = $release.Version
+        URL_MSVC        = $release.MainUrl32
+        Checksum_MSVC   = $release.MainUrl32_Sha256
+        URL_GNU         = $release.MainUrl64
+        Checksum_GNU    = $release.MainUrl64_Sha256
+        Version         = $release.Version
     }
 }
 

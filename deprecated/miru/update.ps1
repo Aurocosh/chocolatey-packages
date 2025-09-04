@@ -1,24 +1,26 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+$release = Get-LatestGithubRelease `
+    -GitUser ThaUnknown `
+    -RepoName miru `
+    -MainUrl64Regex "win-hayase-\d+\.\d+\.\d+-installer.exe"
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
             "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    $release = Get-LatestGithubRelease `
-        -GitUser ThaUnknown `
-        -RepoName miru `
-        -MainUrl64Regex "win-hayase-\d+\.\d+\.\d+-installer.exe"
     @{
-        URL64   = $release.MainUrl64
-        Version = $release.Version
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor $release.ChocoChecksumFor

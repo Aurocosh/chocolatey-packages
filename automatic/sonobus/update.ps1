@@ -1,6 +1,11 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+$release = Get-LatestGithubRelease `
+    -GitUser sonosaurus `
+    -RepoName sonobus `
+    -MainUrl64Regex "sonobus-\d+\.\d+\.\d+-win\.exe"
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
@@ -11,14 +16,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = Get-LatestGithubRelease `
-        -GitUser sonosaurus `
-        -RepoName sonobus `
-        -MainUrl64Regex "sonobus-\d+\.\d+\.\d+-win\.exe"
     @{
-        URL64   = $release.MainUrl64
-        Version = $release.Version
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor $release.ChocoChecksumFor

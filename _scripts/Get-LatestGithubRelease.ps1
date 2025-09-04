@@ -66,19 +66,64 @@ function Get-LatestGithubRelease {
   if ($IncludeReleaseBody) {
     $releaseData["Body"] = $release.body
   }
+
+  $requireShaMain32 = $true
+  $requireShaMain64 = $true
+  $requireShaPortable32 = $true
+  $requireShaPortable64 = $true
   
   if ($MainUrl32Regex) {
-    $releaseData["MainUrl32"] = ($release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1).browser_download_url
+    $asset = $release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1
+    $releaseData["MainUrl32"] = $asset.browser_download_url
+    $remoteSha = $asset.digest -replace "^sha256:"
+    if ($remoteSha) {
+      $releaseData["MainUrl32_Sha256"] = $remoteSha
+      $requireShaMain32 = $false
+    }
   }
   if ($MainUrl64Regex) {
-    $releaseData["MainUrl64"] = ($release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1).browser_download_url
+    $asset = $release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1
+    $releaseData["MainUrl64"] = $asset.browser_download_url
+    $remoteSha = $asset.digest -replace "^sha256:"
+    if ($remoteSha) {
+      $releaseData["MainUrl64_Sha256"] = $remoteSha
+      $requireShaMain64 = $false
+    }
   }
   
   if ($PortableUrl32Regex) {
-    $releaseData["PortableUrl32"] = ($release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1).browser_download_url
+    $asset = $release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1
+    $releaseData["PortableUrl32"] = $asset.browser_download_url
+    $remoteSha = $asset.digest -replace "^sha256:"
+    if ($remoteSha) {
+      $releaseData["PortableUrl32_Sha256"] = $remoteSha
+      $requireShaPortable32 = $false
+    }
   }
   if ($PortableUrl64Regex) {
-    $releaseData["PortableUrl64"] = ($release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1).browser_download_url
+    $asset = $release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1
+    $releaseData["PortableUrl64"] = $asset.browser_download_url
+    $remoteSha = $asset.digest -replace "^sha256:"
+    if ($remoteSha) {
+      $releaseData["PortableUrl64_Sha256"] = $remoteSha
+      $requireShaPortable64 = $false
+    }
   }
+
+  $requireShaFor32 = $requireShaMain32 -or $requireShaPortable32
+  $requireShaFor64 = $requireShaMain64 -or $requireShaPortable64
+
+  $chocoChecksumFor = 'none'
+  if ($requireShaFor32 -and $requireShaFor64) {
+    $chocoChecksumFor = 'all'
+  }
+  elseif ($requireShaFor32) {
+    $chocoChecksumFor = '32'
+  }
+  elseif ($requireShaFor64) {
+    $chocoChecksumFor = '64'
+  }
+  
+  $releaseData["ChocoChecksumFor"] = $chocoChecksumFor
   return $releaseData
 }

@@ -3,7 +3,7 @@ Import-Module Chocolatey-AU
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.Url32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
@@ -22,7 +22,7 @@ function global:au_GetLatest {
     }
 
     @{
-        URL32   = $url
+        Url32   = $url
         Version = $version
         Options = @{
             Headers = @{"User-Agent" = "Chocolatey AU update check. https://chocolatey.org"}

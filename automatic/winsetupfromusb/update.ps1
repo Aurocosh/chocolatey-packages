@@ -45,9 +45,6 @@ function global:au_SearchReplace {
     Write-Host "Checksum md5: $md5"
 
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($sha256)'"
-        }
     }
 }
 

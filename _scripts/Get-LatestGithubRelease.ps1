@@ -67,27 +67,22 @@ function Get-LatestGithubRelease {
     $releaseData["Body"] = $release.body
   }
 
-  $requireShaMain32 = $true
-  $requireShaMain64 = $true
-  $requireShaPortable32 = $true
-  $requireShaPortable64 = $true
-  
   if ($MainUrl32Regex) {
     $asset = $release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1
     $releaseData["MainUrl32"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
+    $requireShaMain32 = [string]::IsNullOrEmpty($remoteSha)
     if ($remoteSha) {
       $releaseData["MainUrl32_Sha256"] = $remoteSha
-      $requireShaMain32 = $false
     }
   }
   if ($MainUrl64Regex) {
     $asset = $release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1
     $releaseData["MainUrl64"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
+    $requireShaMain64 = [string]::IsNullOrEmpty($remoteSha)
     if ($remoteSha) {
       $releaseData["MainUrl64_Sha256"] = $remoteSha
-      $requireShaMain64 = $false
     }
   }
   
@@ -95,18 +90,18 @@ function Get-LatestGithubRelease {
     $asset = $release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1
     $releaseData["PortableUrl32"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
+    $requireShaPortable32 = [string]::IsNullOrEmpty($remoteSha)
     if ($remoteSha) {
       $releaseData["PortableUrl32_Sha256"] = $remoteSha
-      $requireShaPortable32 = $false
     }
   }
   if ($PortableUrl64Regex) {
     $asset = $release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1
     $releaseData["PortableUrl64"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
+    $requireShaPortable64 = [string]::IsNullOrEmpty($remoteSha)
     if ($remoteSha) {
       $releaseData["PortableUrl64_Sha256"] = $remoteSha
-      $requireShaPortable64 = $false
     }
   }
 

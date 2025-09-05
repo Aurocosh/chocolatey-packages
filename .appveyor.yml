@@ -72,7 +72,7 @@ install:
 - git --version
 - choco --version
 - ps: |
-    choco install chocolatey-au --version $Env:au_version -y
+    choco install chocolatey-au --version $Env:au_version -y --no-progress
 
 - ps: |
     "Build info"

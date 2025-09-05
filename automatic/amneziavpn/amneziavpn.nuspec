@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>amneziavpn</id>
+    <version>4.8.10.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/amneziavpn</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Amnezia VPN (Install)</title>
+    <authors>Amnezia VPN</authors>
+    <projectUrl>https://amnezia.org</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/amneziavpn/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/amnezia-vpn/amnezia-client/blob/dev/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/amnezia-vpn/amnezia-client</projectSourceUrl>
+    <docsUrl>https://docs.amnezia.org</docsUrl>
+    <bugTrackerUrl>https://github.com/amnezia-vpn/amnezia-client/issues</bugTrackerUrl>
+    <tags>amneziavpn cloak gfw ikev2 openvpn shadowsocks vpn vpn-client vpn-server wireguard</tags>
+    <summary>Amnezia VPN Client</summary>
+    <description># Amnezia VPN
+
+Amnezia is an open-source VPN client, with a key feature that enables you to deploy your own VPN server on your server.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/amneziavpn/img/banner.png) 
+
+## Features
+
+- Very easy to use - enter your IP address, SSH login, password and Amnezia will automatically install VPN docker containers to your server and connect to the VPN.
+- Classic VPN-protocols: OpenVPN, WireGuard and IKEv2 protocols.
+- Protocols with traffic Masking (Obfuscation): OpenVPN over [Cloak](https://github.com/cbeuw/Cloak) plugin, Shadowsocks (OpenVPN over Shadowsocks), [AmneziaWG](https://docs.amnezia.org/documentation/amnezia-wg/) and XRay.
+- Split tunneling support - add any sites to the client to enable VPN only for them or add Apps (only for Android and Desktop).
+- Windows, MacOS, Linux, Android, iOS releases.
+
+</description>
+    <releaseNotes>https://github.com/amnezia-vpn/amnezia-client/releases</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

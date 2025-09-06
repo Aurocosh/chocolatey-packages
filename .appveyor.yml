@@ -57,13 +57,15 @@ install:
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
       'chocolatey' = $chocoVersion
+      'chocolatey-au' = $au_version
        # Uncomment and input the version if you are using any of these in AU scripts
        #      'wormies-au-helpers' = 'VERSION_HERE'
        #      'chocolatey-core.extension' = 'VERSION_HERE'
        #      'autohotkey.install' = 'VERSION_HERE'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
-      if ($_.Key -eq 'chocolatey') { choco upgrade $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
+      if ($_.Key -eq 'chocolatey-au') { }
+      elseif ($_.Key -eq 'chocolatey') { choco upgrade $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
       else { choco install $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
     }
     rm "$env:ChocolateyInstall\logs\*.log"
@@ -72,7 +74,7 @@ install:
 - git --version
 - choco --version
 - ps: |
-    choco install chocolatey-au --version $Env:au_version -y --no-progress
+    choco install chocolatey-au --version $Env:au_version -y --no-progress --source ${env:nupkg_cache_path}
 
 - ps: |
     "Build info"

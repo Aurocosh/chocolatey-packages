@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvenc</id>
-    <version>9.02</version>
+    <version>9.03</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/nvenc</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>NVEnc (Portable)</title>

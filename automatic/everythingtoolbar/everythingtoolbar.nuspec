@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>everythingtoolbar</id>
+    <version>1.5.5</version>
+    <title>EverythingToolbar</title>
+    <authors>Stephan Rumswinkel</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://github.com/stnkl/EverythingToolbar/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/stnkl/EverythingToolbar</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+Features
+- Instant search results using Everything
+- Quick navigation via keyboard shortcuts
+- Light and dark theme (or custom themes)
+- Customizable open with commands
+- Rules for opening files
+- Uses filters defined within Everything
+</description>
+    <summary>Everything integration for the Windows taskbar</summary>
+    <copyright>2020 Stephan Rumswinkel</copyright>
+    <tags>everything search admin</tags>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/everythingtoolbar</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/stnkl/EverythingToolbar/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/stnkl/EverythingToolbar/releases</releaseNotes>
+    <dependencies>
+      <dependency id="everything" version="1.4.1" />
+      <dependency id="dotnetfx" version="4.7.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

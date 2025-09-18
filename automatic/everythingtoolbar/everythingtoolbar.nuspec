@@ -10,7 +10,7 @@
     <title>EverythingToolbar (Install)</title>
     <authors>Stephan Rumswinkel</authors>
     <projectUrl>https://github.com/srwi/EverythingToolbar</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/everythingtoolbar/img/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/bd3e9e25968e51ca39d857fa1199f7b801662a76/automatic/everythingtoolbar/img/icon.png</iconUrl>
     <copyright>2025 Stephan Rumswinkel</copyright>
     <licenseUrl>https://github.com/srwi/EverythingToolbar/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
     <description># Description
     Instant file search integration for the Windows taskbar powered by Everything.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/everythingtoolbar/img/screenshot.png)
+![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/bd3e9e25968e51ca39d857fa1199f7b801662a76/automatic/everythingtoolbar/img/screenshot.png)
     
 # Features
 - Instant search results using Everything
@@ -40,7 +40,7 @@
  </description>
     <releaseNotes>https://github.com/srwi/EverythingToolbar/releases</releaseNotes>
     <dependencies>
-      <dependency id="everything"/>
+      <dependency id="everything" />
     </dependencies>
   </metadata>
   <files>

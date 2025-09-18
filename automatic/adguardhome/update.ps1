@@ -1,24 +1,32 @@
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
+Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+
+$release = Get-LatestGithubRelease `
+    -GitUser AdguardTeam `
+    -RepoName AdGuardHome `
+    -MainUrl32Regex "AdGuardHome_windows_386.zip" `
+    -MainUrl64Regex "AdGuardHome_windows_amd64.zip"
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*url64\s*=\s*)('.*')"     = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"   = "`$1'$($Latest.Url32)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    Get-GithubRepoInfo -User 'AdguardTeam' -Repo 'AdGuardHome'
-
     @{
-        URL32 = $($links -match 'windows_386').browser_download_url
-        URL64 = $($links -match 'windows_amd64').browser_download_url
-        Version = $tag -replace 'v'
+        Url32       = $release.MainUrl32
+        Checksum32  = $release.MainUrl32_Sha256
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
     }
 }
 
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'update_common.ps1')
+update -ChecksumFor $release.ChocoChecksumFor
+

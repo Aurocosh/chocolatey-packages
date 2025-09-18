@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adguardhome</id>
-    <version>0.107.63</version>
-    <title>AdGuard Home</title>
-    <authors>AdGuard Software Limited</authors>
-    <owners>niks255</owners>
+    <version>0.107.66</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/adguardhome</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>AdGuardHome (Portable)</title>
+    <authors>AdGuard, niks255</authors>
+    <projectUrl>https://github.com/AdguardTeam/AdGuardHome</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/adguardhome/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/AdguardTeam/AdGuardHome/blob/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://adguard.com/en/adguard-home/overview.html</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/adguardhome/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
-It operates as a DNS server that re-routes tracking domains to a "black hole", thus preventing your devices from connecting to those servers. It's based on software we use for our public AdGuard DNS servers - both share a lot of common code.</description>
-    <summary>Free and open source, powerful network-wide ads and trackers blocking DNS server.</summary>
-    <docsUrl>https://github.com/AdguardTeam/AdGuardHome/wiki</docsUrl>
     <projectSourceUrl>https://github.com/AdguardTeam/AdGuardHome</projectSourceUrl>
+    <docsUrl>https://github.com/AdguardTeam/AdGuardHome/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/AdguardTeam/AdGuardHome/issues</bugTrackerUrl>
-    <copyright>AdGuard, 2009–2021</copyright>
-    <tags>adguard dns adblock admin</tags>
-    <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/blob/master/CHANGELOG.md</releaseNotes>
-    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/adguardhome</packageSourceUrl>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.3.4" />
-    </dependencies>
+    <tags>adguardhome adblock adguard dns dns-over-https dns-over-quic dns-over-tls dnscrypt golang open-source privacy portable</tags>
+    <summary>Network-wide ads trackers blocking DNS server</summary>
+    <description>AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that.
+
+It operates as a DNS server that re-routes tracking domains to a “black hole”, thus preventing your devices from connecting to those servers. It's based on software we use for our public AdGuard DNS servers, and both share a lot of code.
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/adguardhome/img/screenshot.png)
+
+    </description>
+    <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/releases</releaseNotes>
   </metadata>
   <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
   </files>
 </package>
+

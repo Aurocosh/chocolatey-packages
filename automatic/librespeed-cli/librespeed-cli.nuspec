@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>librespeed-cli</id>
+    <version>1.0.12</version>
+    <title>LibreSpeed command line tool</title>
+    <authors>LibreSpeed</authors>
+    <owners>niks255</owners>
+    <licenseUrl>https://github.com/librespeed/speedtest-cli/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/librespeed-cli/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a command line interface for LibreSpeed speed test backends, written in Go.
+
+Features
+- Ping
+- Jitter
+- Download
+- Upload
+- IP address
+- ISP Information
+- Result sharing (telemetry) [optional]
+- Test with multiple servers in a single run
+- Use your own server list or telemetry endpoints
+- Tested with PHP and Go backends
+
+NOTE: Some antivirus software may flag this program as a malware. It is a false positive. 
+This is a known issue https://github.com/librespeed/speedtest-cli/issues/29 
+</description>
+    <summary>Command line client for LibreSpeed.</summary>
+    <projectUrl>https://github.com/librespeed/speedtest-cli</projectUrl>
+    <projectSourceUrl>https://github.com/librespeed/speedtest-cli</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/librespeed/speedtest-cli/issues</bugTrackerUrl>
+    <copyright>LibreSpeed</copyright>
+    <tags>speedtest librespeed</tags>
+    <releaseNotes>https://github.com/librespeed/speedtest-cli/releases</releaseNotes>
+    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/librespeed-cli</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

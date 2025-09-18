@@ -1,13 +1,15 @@
-﻿$ErrorActionPreference = 'Stop'; 
+$ErrorActionPreference = 'Stop' # stop on all errors
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileType       = 'msi'
-  url64          = 'https://github.com/srwi/EverythingToolbar/releases/download/1.5.5/EverythingToolbar-1.5.5.msi'
-  checksum64     = 'ca617b34a6ca89b4410613112265eeabd5726c62291601836003bbb2f2078803'
-  checksumtype64 = 'sha256'
-  SilentArgs     = "/qn /norestart"
-  ValidExitCodes = @(0, 3010, 1641)
+  fileType       = 'exe'
+  softwareName   = 'EverythingToolbar*'
+  url64bit       = 'https://github.com/srwi/EverythingToolbar/releases/download/2.0.4/EverythingToolbar-2.0.4-x64.exe'
+  checksum64     = '6353b2b4313718d4875f921d88c3de3f15191f7e9bcbfbc9bf52a02ac214fc55'
+  checksumType64 = 'sha256'
+  validExitCodes = @(0, 3010, 1641)
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
 }
 
 Install-ChocolateyPackage @packageArgs
+

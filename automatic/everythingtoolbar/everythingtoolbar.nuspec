@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>everythingtoolbar</id>
-    <version>1.5.5</version>
-    <title>EverythingToolbar</title>
+    <version>2.0.4</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/everythingtoolbar</packageSourceUrl>
+    <owners>Aurocosh, niks255</owners>
+    <title>EverythingToolbar (Install)</title>
     <authors>Stephan Rumswinkel</authors>
-    <owners>niks255</owners>
-    <licenseUrl>https://github.com/stnkl/EverythingToolbar/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/stnkl/EverythingToolbar</projectUrl>
+    <projectUrl>https://github.com/srwi/EverythingToolbar</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/everythingtoolbar/img/icon.png</iconUrl>
+    <copyright>2025 Stephan Rumswinkel</copyright>
+    <licenseUrl>https://github.com/srwi/EverythingToolbar/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>
-Features
+    <projectSourceUrl>https://github.com/srwi/EverythingToolbar</projectSourceUrl>
+    <docsUrl>https://github.com/srwi/EverythingToolbar/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/srwi/EverythingToolbar/issues</bugTrackerUrl>
+    <tags>everythingtoolbar everything everything-search taskbar taskbar-application toolbar windows windows-taskbar wpf</tags>
+    <summary>Everything integration for the Windows taskbar.</summary>
+    <description># Description
+    Instant file search integration for the Windows taskbar powered by Everything.
+
+![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/everythingtoolbar/img/screenshot.png)
+    
+# Features
 - Instant search results using Everything
 - Quick navigation via keyboard shortcuts
 - Light and dark theme (or custom themes)
 - Customizable open with commands
 - Rules for opening files
 - Uses filters defined within Everything
-</description>
-    <summary>Everything integration for the Windows taskbar</summary>
-    <copyright>2020 Stephan Rumswinkel</copyright>
-    <tags>everything search admin</tags>
-    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/everythingtoolbar</packageSourceUrl>
-    <bugTrackerUrl>https://github.com/stnkl/EverythingToolbar/issues</bugTrackerUrl>
-    <releaseNotes>https://github.com/stnkl/EverythingToolbar/releases</releaseNotes>
+- RegEx-Powered File Actions
+- Access EverythingToolbar instantly via customizable global shortcut
+- Drag and drop files directly from search results
+- Preview files with QuickLook or Seer integration
+- Support for custom Everything instance names
+
+ </description>
+    <releaseNotes>https://github.com/srwi/EverythingToolbar/releases</releaseNotes>
     <dependencies>
-      <dependency id="everything" version="1.4.1" />
-      <dependency id="dotnetfx" version="4.7.0.0" />
+      <dependency id="everything"/>
     </dependencies>
   </metadata>
   <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
   </files>
 </package>
+

@@ -1,21 +1,27 @@
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
+Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+
+$release = Get-LatestGithubRelease `
+    -GitUser srwi `
+    -RepoName EverythingToolbar `
+    -MainUrl64Regex "EverythingToolbar-\d+\.\d+\.\d+-x64.exe"
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    Get-GithubRepoInfo -User 'stnkl' -Repo 'EverythingToolbar'
-
     @{
-        URL64 = $($links -match '.msi').browser_download_url
-        Version = $tag
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
     }
 }
 
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'update_common.ps1')
+update -ChecksumFor $release.ChocoChecksumFor
+

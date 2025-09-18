@@ -1,13 +1,2 @@
-﻿$ErrorActionPreference = 'Stop'
-
-try {
-    Remove-Item "$([Environment]::GetFolderPath('ApplicationData'))\\TagScanner Portable" -recurse
-} catch {
-    Write-host("Package folder has already been removed by other means, skipping...")
-}
-
-try {
-    Remove-Item "$([Environment]::GetFolderPath('Desktop'))\\TagScanner Portable.lnk"
-} catch {
-    Write-host("Desktop shortcut couldn't be removed, skipping...")
-}
+﻿Remove-Item -Path "$env:ALLUSERSPROFILE\Desktop\Tagscan.lnk" -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Tagscan.lnk" -ErrorAction SilentlyContinue

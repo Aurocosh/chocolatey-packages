@@ -1,27 +1,34 @@
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'common.ps1')
+Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
-   @{
+    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*url64\s*=\s*)('.*')"     = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.Url32)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    $domain="https://www.xdlab.ru"
-    $download_page = Invoke-WebRequest -Uri "$domain/download.htm" -UseBasicParsing
-    $links = $download_page.links | ? href -match 'tagscan.*\.zip$' | select -First 2 -expand href;
-    $version  = $links -notmatch 'x64'  -split '-' -replace '.zip' | Select -Last 1
+    $download_page = Invoke-WebRequest -Uri 'https://www.xdlab.ru/en/download.htm'
+
+    $regex32 = "tagscan-(\d+\.\d+\.\d+)\.zip"
+    $url32 = $download_page.links | Where-Object href -match $regex32 | Select-Object -First 1 -expand href
+
+    $regex64 = "tagscan-(\d+\.\d+\.\d+)_x64\.zip"
+    $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
+
+    $version = $matches[1]
+    $baseUrl = 'https://www.xdlab.ru'
 
     @{
-        URL32 = "$domain$($links -notmatch 'x64')"
-        URL64 = "$domain$($links -match 'x64')"
+        Url32   = $baseUrl + $url32
+        Url64   = $baseUrl + $url64
         Version = $version
     }
 }
 
-. $(Join-Path -Path "$(Split-Path -parent $PSScriptRoot)" -ChildPath 'update_common.ps1')
+update -ChecksumFor all

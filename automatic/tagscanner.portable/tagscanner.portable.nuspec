@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
     <version>6.1.20</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/tagscanner.portable</packageSourceUrl>
+    <owners>Aurocosh, niks255</owners>
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
-    <owners>niks255</owners>
-    <projectUrl>http://www.xdlab.ru/en/</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/niks255/ChocolateyPackages/master/tagscanner.portable/icon.png</iconUrl>
+    <projectUrl>http://www.xdlab.ru/en</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/tagscanner.portable/img/icon.png</iconUrl>
+    <copyright>(c) 1999-2025 Sergey Serkov</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TagScanner is a multifunction program for organizing and managing your music collection. It can edit tags of most modern audio formats, rename files according to information from the tags, generate tag information from filenames, and perform any transformations of the text from tags and filenames. Also you may get album info and cd-covers via online databases like freedb, Amazon or Discogs. Supports ID3v1/v2, Vorbis comments, APEv2, WindowsMedia and MP4(iTunes) tags. Powerful TAG editor with batch functions and special features. Playlists generator with ability to export playlists to HTML or Excel. Easy-to-use multilanguage interface. Built-in music player.
-
-Features:
-
-Rename files based on the tag and file information
-Powerful multiple files tag editor
-Import tag information and album art from online databases like freedb or Amazon
-Generate tag information from file/foldernames
-Tag fields formatting and rearrangement
-Words replacement and case conversion from tags and filenames
-Supports MP3, OGG, FLAC, WMA, MPEG-4, Opus, Musepack, Monkey's Audio, AAC, OptimFROG, SPEEX, WavPack, TrueAudio, Direct Stream Digital files
-Supports ID3 1.0/1.1/2.2/2.3/2.4 tags, APE v1 and v2 tags, Vorbis Comments, WMA tags and MP4(iTunes) metadata
-Supports for embedded lyrics and cover art
-Resize cover art for portable devices on the fly
-TAGs versions conversions
-Quick playlists creation
-Export information to HTML, XML CSV or any user-defined format
-Full support for Unicode
-Multilanguage interface
-Built-in multiformat player</description>
+    <tags>tagscanner tag mp3 scanner id3 portable</tags>
     <summary>TagScanner is a multifunction program for organizing and managing your music collection.</summary>
+    <description># Description
+    
+    TagScanner is a multifunction program for organizing and managing your music collection. It can edit tags of most modern audio formats, rename files according to information from the tags, generate tag information from filenames, and perform any transformations of the text from tags and filenames. Also you may get album info and cd-covers via online databases like freedb, Amazon or Discogs. Supports ID3v1/v2, Vorbis comments, APEv2, WindowsMedia and MP4(iTunes) tags. Powerful TAG editor with batch functions and special features. Playlists generator with ability to export playlists to HTML or Excel. Easy-to-use multilanguage interface. Built-in music player.
+
+[Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/tagscanner.portable/img/screenshot.png)
+
+# Features
+
+- Rename files based on the tag and file information
+- Powerful multiple files tag editor
+- Import tag information and album art from online databases like freedb or Amazon
+- Generate tag information from file/foldernames
+- Tag fields formatting and rearrangement
+- Words replacement and case conversion from tags and filenames
+- Supports MP3, OGG, FLAC, WMA, MPEG-4, Opus, Musepack, Monkey's Audio, AAC, OptimFROG, SPEEX, WavPack, TrueAudio, Direct Stream Digital files
+- Supports ID3 1.0/1.1/2.2/2.3/2.4 tags, APE v1 and v2 tags, Vorbis Comments, WMA tags and MP4(iTunes) metadata
+- Supports for embedded lyrics and cover art
+- Resize cover art for portable devices on the fly
+- TAGs versions conversions
+- Quick playlists creation
+- Export information to HTML, XML CSV or any user-defined format
+- Full support for Unicode
+- Multilanguage interface
+- Built-in multiformat player
+
+    </description>
     <releaseNotes>https://www.xdlab.ru/en/history.htm</releaseNotes>
-    <packageSourceUrl>https://github.com/niks255/ChocolateyPackages/tree/master/tagscanner.portable</packageSourceUrl>
-    <copyright>(c) 1999-2019 Sergey Serkov</copyright>
-    <tags>tagscanner tag mp3 scanner id3</tags>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

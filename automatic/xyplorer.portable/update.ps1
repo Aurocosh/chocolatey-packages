@@ -3,8 +3,8 @@ Import-Module Chocolatey-AU
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.Url32)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"      = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -19,13 +19,20 @@ function global:au_GetLatest {
     $majorVersion = $matches[2]
     
     if ($majorVersion) {
-        $url = "https://www.xyplorer.com/free-zer/$majorVersion/xyplorer_full_noinstall.zip"
+        $url64 = "https://www.xyplorer.com/free-zer/$majorVersion/xyplorer64_full_noinstall.zip"
+
+        $checksumUrl = "https://www.xyplorer.com/download/XYHash64-$version.txt"
+        $response = Invoke-WebRequest -Uri $checksumUrl
+
+        $response.Content -match "(?s)File: xyplorer64_full_noinstall.zip.*?SHA-256\s*?([a-fA-F0-9]{64})"
+        $checksum64 = $matches[1]
     }
 
     @{
-        Url32   = $url
-        Version = $version
+        Url64       = $url64
+        Checksum64  = $checksum64
+        Version     = $version
     }
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none

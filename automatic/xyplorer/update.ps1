@@ -24,7 +24,7 @@ function global:au_GetLatest {
         $checksumUrl = "https://www.xyplorer.com/download/XYHash64-$version.txt"
         $response = Invoke-WebRequest -Uri $checksumUrl
 
-        $response.Content -match "(?s)File: xyplorer64_full.zip.*SHA-256\s*([a-fA-F0-9]{64})"
+        $response.Content -match "(?s)File: xyplorer64_full.zip.*?SHA-256\s*?([a-fA-F0-9]{64})"
         $checksum64 = $matches[1]
     }
 

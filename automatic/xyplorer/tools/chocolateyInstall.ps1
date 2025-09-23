@@ -16,7 +16,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$installerExe = (Get-ChildItem $tempPath -filter "XYplorer_*_Install.exe" -File | Select-Object -First 1).FullName
+$installerExe = (Get-ChildItem $tempPath -filter "XYplorer64_*_Install.exe" -File | Select-Object -First 1).FullName
 $packageArgs.file = $installerExe
 Install-ChocolateyInstallPackage @packageArgs
 

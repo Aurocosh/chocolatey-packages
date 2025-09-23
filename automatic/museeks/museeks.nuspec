@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>museeks</id>
-    <version>0.23.0</version>
+    <version>0.23.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/museeks</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Museeks (Install)</title>

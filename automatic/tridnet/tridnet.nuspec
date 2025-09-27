@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tridnet</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/tridnet</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>TrIDNet (Portable)</title>
+    <authors>Marco Pontello</authors>
+    <projectUrl>https://mark0.net/soft-tridnet-e.html</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tridnet/img/icon.png</iconUrl>
+    <copyright>(C) 2003-16 By Marco Pontello</copyright>
+    <tags>tridnet binary identity mime cli freeware cross-platform gui portable</tags>
+    <summary>TRIDNet is the GUI version of TrID</summary>
+    <description># Description
+TRIDNet is the GUI version of TrID, probably more practical to use than the CLI version, especially for those not very familiar with the command line prompt.
+In addition, with a simple double click, it have the ability to display a series of information about every match listed: the definition's file name, its author &amp; e-mail address (if provided), a clickable link to a reference URL, remarks, etc. 
+
+# Screenshot
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tridnet/img/screenshot.png)
+
+    </description>
+    <releaseNotes>https://mark0.net/soft-tridnet-e.html</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

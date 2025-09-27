@@ -15,7 +15,7 @@
     <tags>tridnet binary identity mime cli freeware cross-platform gui portable</tags>
     <summary>TRIDNet is the GUI version of TrID</summary>
     <description># Description
-TRIDNet is the GUI version of TrID, probably more practical to use than the CLI version, especially for those not very familiar with the command line prompt.
+TrIDNet is the GUI version of TrID, probably more practical to use than the CLI version, especially for those not very familiar with the command line prompt.
 In addition, with a simple double click, it have the ability to display a series of information about every match listed: the definition's file name, its author &amp; e-mail address (if provided), a clickable link to a reference URL, remarks, etc. 
 
 # Screenshot

@@ -1,15 +1,15 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'AdGuardHome*'
-  url            = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.66/AdGuardHome_windows_386.zip'
-  checksum       = '1ebc9d3a2a3226976254a1ecab94f2050cb705fcf2418560c433cea9c1be9c18'
+  url            = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.67/AdGuardHome_windows_386.zip'
+  checksum       = '6ef49bb1801653dbae411f3cf932fc0ea306e19610bb3960e73c81fa2cb1a823'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.66/AdGuardHome_windows_amd64.zip'
-  checksum64     = '0b0653fa608adfbaa30624ae1c427c45a0d80992c3c4c105743eb2487b659ad9'
+  url64bit       = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.67/AdGuardHome_windows_amd64.zip'
+  checksum64     = '4164e0f805e23ee2c0ae87f6069913ed0ee40f68dd4888bd9618b660af0bdd33'
   checksumType64 = 'sha256'
 }
 

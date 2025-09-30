@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adguardhome</id>
-    <version>0.107.66</version>
+    <version>0.107.67</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/adguardhome</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>AdGuardHome (Portable)</title>

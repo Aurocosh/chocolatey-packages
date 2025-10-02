@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>everythingtoolbar</id>
-    <version>2.0.4</version>
+    <version>2.1.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/everythingtoolbar</packageSourceUrl>
     <owners>Aurocosh, niks255</owners>
     <title>EverythingToolbar (Install)</title>

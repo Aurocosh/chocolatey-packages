@@ -1,16 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>glasswire</id>
     <version>3.5.821</version>
-    <title>GlassWire</title>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/glasswire</packageSourceUrl>
+    <owners>Aurocosh, MANICX100, dtgm, Sanshiro</owners>
+    <title>GlassWire (Install)</title>
     <authors>GlassWire</authors>
-    <owners>MANICX100, dtgm, Sanshiro</owners>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://www.glasswire.com</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/glasswire/img/icon.png</iconUrl>
+    <copyright>© 2025 GlassWire</copyright>
     <licenseUrl>https://www.glasswire.com/license</licenseUrl>
-    <projectUrl>https://www.glasswire.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/MANICX100/chocolatey/a2a73f354e6504643e2b8db2148b25d29db2eb78/glasswire/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.glasswire.com/help</docsUrl>
+    <bugTrackerUrl>https://forum.glasswire.com</bugTrackerUrl>
+    <tags>glasswire visualize network traffic monitor firewall malware freeware admin</tags>
+    <summary>Firewall and network monitor that visualizes network data over time to assist in malware discovery</summary>
     <description>GlassWire is a free network monitor and security tool with a built in firewall. GlassWire displays your network activity on an easy to understand graph while searching for unusual Internet behavior that could indicate malware or violations of your privacy. Once unusual network activity is discovered you're instantly alerted with detailed information so you can protect your computer, privacy, and data.
+
+#### Screenshot
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/glasswire/img/screenshot.webp)
 
 #### [Features](https://www.glasswire.com/features/)
 
@@ -26,12 +37,13 @@
 * [Forum](https://forum.glasswire.com/)
 * [Facebook](https://www.facebook.com/glasswirelabs)
 * [Google+](https://plus.google.com/+glasswire)
-* [Twitter](https://twitter.com/GlassWireLabs)</description>
-    <summary>Firewall and network monitor that visualizes network data over time to assist in malware discovery</summary>
+* [Twitter](https://twitter.com/GlassWireLabs)
+
+    </description>
     <releaseNotes>#### Program
 * [News](https://blog.glasswire.com/)
-* [Changelog](https://www.glasswire.com/changes/)</releaseNotes>
-    <copyright>© 2021 GlassWire</copyright>
-    <tags>visualize network traffic monitor firewall malware freeware admin</tags>
+* [Changelog](https://www.glasswire.com/changes/)
+
+    </releaseNotes>
   </metadata>
 </package>

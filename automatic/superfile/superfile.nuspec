@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>superfile</id>
-    <version>1.3.3</version>
+    <version>1.4.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/superfile</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Superfile (Portable)</title>

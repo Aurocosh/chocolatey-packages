@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Dorion*'
-  url64bit       = 'https://github.com/SpikeHD/Dorion/releases/download/v6.10.0/Dorion_6.10.0_win64_portable.zip'
-  checksum64     = '3033de3f7c9bf3967ccb8b3af6aaef5a47ab105e2b6d6a4a02c739b3b3780c36'
+  url64bit       = 'https://github.com/SpikeHD/Dorion/releases/download/v6.11.0/Dorion_6.11.0_win64_portable.zip'
+  checksum64     = 'ea61d14c5697269752e2125f78729875f9fc9be466cb003450918135e033e8b5'
   checksumType64 = 'sha256'
 }
 

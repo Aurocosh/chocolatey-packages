@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hayase</id>
-    <version>6.4.33</version>
+    <version>6.4.34</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/hayase</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Hayase (Install)</title>

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>restic-browser</id>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/restic-browser</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Restic Browser (Portable)</title>

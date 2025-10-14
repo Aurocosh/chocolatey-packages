@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Restic Browser*'
-  url64bit       = 'https://github.com/emuell/restic-browser/releases/download/v0.3.2/Restic-Browser-v0.3.2-windows.zip'
-  checksum64     = '62603e4629895591caec57310a14ee1eaadd641bae08fde5de332062046d253d'
+  url64bit       = 'https://github.com/emuell/restic-browser/releases/download/v0.3.3/Restic-Browser-v0.3.3-windows.zip'
+  checksum64     = '1a5315992e58cef937278482ed9363c95d72154c908ed53f0fc94b50635989ef'
   checksumType64 = 'sha256'
 }
 

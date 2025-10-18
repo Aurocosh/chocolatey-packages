@@ -13,7 +13,9 @@ function Get-LatestGithubRelease {
     [string]$MainUrl64Regex,
     [string]$PortableUrl32Regex,
     [string]$PortableUrl64Regex,
-    [string]$VersionRegex
+    [string]$VersionRegex,
+		[ValidateSet('browser_download_url', 'name', 'label')]
+		[string]$AassetRegexParameter = 'browser_download_url'
   )
   
   $githubUrl = "https://api.github.com/repos/$($GitUser)/$($RepoName)/releases"
@@ -68,7 +70,7 @@ function Get-LatestGithubRelease {
   }
 
   if ($MainUrl32Regex) {
-    $asset = $release.assets | Where-Object name -match $MainUrl32Regex | Select-Object -First 1
+    $asset = $release.assets | Where-Object $AassetRegexParameter -match $MainUrl32Regex | Select-Object -First 1
     $releaseData["MainUrl32"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
     $requireShaMain32 = [string]::IsNullOrEmpty($remoteSha)
@@ -77,7 +79,7 @@ function Get-LatestGithubRelease {
     }
   }
   if ($MainUrl64Regex) {
-    $asset = $release.assets | Where-Object name -match $MainUrl64Regex | Select-Object -First 1
+    $asset = $release.assets | Where-Object $AassetRegexParameter -match $MainUrl64Regex | Select-Object -First 1
     $releaseData["MainUrl64"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
     $requireShaMain64 = [string]::IsNullOrEmpty($remoteSha)
@@ -87,7 +89,7 @@ function Get-LatestGithubRelease {
   }
   
   if ($PortableUrl32Regex) {
-    $asset = $release.assets | Where-Object name -match $PortableUrl32Regex | Select-Object -First 1
+    $asset = $release.assets | Where-Object $AassetRegexParameter -match $PortableUrl32Regex | Select-Object -First 1
     $releaseData["PortableUrl32"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
     $requireShaPortable32 = [string]::IsNullOrEmpty($remoteSha)
@@ -96,7 +98,7 @@ function Get-LatestGithubRelease {
     }
   }
   if ($PortableUrl64Regex) {
-    $asset = $release.assets | Where-Object name -match $PortableUrl64Regex | Select-Object -First 1
+    $asset = $release.assets | Where-Object $AassetRegexParameter -match $PortableUrl64Regex | Select-Object -First 1
     $releaseData["PortableUrl64"] = $asset.browser_download_url
     $remoteSha = $asset.digest -replace "^sha256:"
     $requireShaPortable64 = [string]::IsNullOrEmpty($remoteSha)

@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/achristmascarl/rainfrog/issues</bugTrackerUrl>
     <tags>rainfrog database-management mysql postgresql ratatui rust sql sqlite terminal portable</tags>
     <summary>A database tool for the terminal</summary>
-    <description>#Rainfrog
+    <description># Rainfrog
 A database tool for the terminal
 
 The goal for rainfrog is to provide a lightweight, terminal-based tool for interacting with databases.

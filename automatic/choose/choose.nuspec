@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>choose</id>
+    <version>1.3.7</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/choose</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Choose (Portable)</title>
+    <authors>Ryan Geary</authors>
+    <projectUrl>https://github.com/theryangeary/choose</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/choose/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/theryangeary/choose/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/theryangeary/choose</projectSourceUrl>
+    <docsUrl>https://github.com/theryangeary/choose/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/theryangeary/choose/issues</bugTrackerUrl>
+    <tags>choose cut cli awk portable</tags>
+    <summary>A human-friendly and fast alternative to cut (and sometimes awk)</summary>
+    <description># Choose
+
+This is `choose`, a human-friendly and fast alternative to `cut` and (sometimes) `awk`
+
+# Demo
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/choose/img/screenshot.png)
+
+# Features
+
+- Terse field selection syntax similar to Python's list slices
+- Negative indexing from end of line
+- Optional start/end index
+- Zero-indexed
+- Reverse ranges
+- Slightly faster than `cut` for sufficiently long inputs, much faster than `awk`
+- Regular expression field separators using Rust's regex syntax
+
+</description>
+    <releaseNotes>https://github.com/theryangeary/choose/releases/tag/v1.3.7</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

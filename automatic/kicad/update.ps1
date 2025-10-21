@@ -1,33 +1,32 @@
-import-module chocolatey-au
-. (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'Get-GitHubLatestReleaseLinks.ps1')
+Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
+
+$release = Get-LatestGithubRelease `
+    -GitUser KiCad `
+    -RepoName kicad-source-mirror `
+    -MainUrl64Regex "kicad-\d+\.\d+\.\d+-x86_64.exe"
 
 function global:au_SearchReplace {
     @{
         "$($Latest.PackageName).nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
-      
-        ".\tools\chocolateyinstall.ps1" = @{
-          "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-          "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+
+        ".\tools\chocolateyInstall.ps1" = @{
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
 
-
 function global:au_GetLatest {
-    $download_page = Get-GitHubLatestReleaseLinks -User "KiCad" -Repository "kicad-source-mirror"
-    
-    $regex = '_64.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
-
-    $version = $url -split '/' | select -Last 1 -Skip 1
-    
     @{
-        URL64 = $url
-        Version = $version
-        ReleaseNotes = "https://github.com/KiCad/kicad-source-mirror/releases/tag/${version}"
+        Url64       = $release.MainUrl64
+        Checksum64  = $release.MainUrl64_Sha256
+        Version     = $release.Version
+        ReleaseNotes = "https://github.com/KiCad/kicad-source-mirror/releases/tag/${$release.Version}"
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor $release.ChocoChecksumFor
+

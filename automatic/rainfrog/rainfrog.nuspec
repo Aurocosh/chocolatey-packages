@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rainfrog</id>
+    <version>0.3.8</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rainfrog</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Rainfrog (Portable)</title>
+    <authors>Carl Liu</authors>
+    <projectUrl>https://github.com/achristmascarl/rainfrog</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainfrog/img/icon.png</iconUrl>
+    <copyright>Copyright (c) 2025 Carl Liu</copyright>
+    <licenseUrl>https://github.com/achristmascarl/rainfrog/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/achristmascarl/rainfrog</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/achristmascarl/rainfrog/issues</bugTrackerUrl>
+    <tags>rainfrog database-management mysql postgresql ratatui rust sql sqlite terminal portable</tags>
+    <summary>A database tool for the terminal</summary>
+    <description>#Rainfrog
+A database tool for the terminal
+
+The goal for rainfrog is to provide a lightweight, terminal-based tool for interacting with databases.
+
+# Demo
+
+![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainfrog/img/demo.gif)
+
+# Features
+
+- Efficient navigation via vim-like keybindings and mouse controls
+- Query editor with keyword highlighting, session history, and favorites
+- Quickly copy data, filter tables, and switch between schemas
+- Shortcuts to view table metadata and properties
+- Cross-platform (macOS, linux, windows, android via termux)
+
+    </description>
+    <releaseNotes>https://github.com/achristmascarl/rainfrog/releases/tag/v0.3.8</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

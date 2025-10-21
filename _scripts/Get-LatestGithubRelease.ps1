@@ -52,6 +52,7 @@ function Get-LatestGithubRelease {
 
   $releaseData = @{
     Name         = $release.name
+    ReleaseUrl   = $release.html_url
     Version      = $version
     IsPreRelease = $release.prerelease -eq "true"
   };

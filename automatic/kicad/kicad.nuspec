@@ -38,7 +38,7 @@
     ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_3dviewer.png)
 
     </description>
-    <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases</releaseNotes>
+    <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/9.0.5</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -24,7 +24,7 @@ function global:au_GetLatest {
         Url64       = $release.MainUrl64
         Checksum64  = $release.MainUrl64_Sha256
         Version     = $release.Version
-        ReleaseNotes = "https://github.com/KiCad/kicad-source-mirror/releases/tag/${$release.Version}"
+        ReleaseNotes = "https://github.com/KiCad/kicad-source-mirror/releases/tag/$($release.Version)"
     }
 }
 

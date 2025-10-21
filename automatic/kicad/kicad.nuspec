@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kicad</id>
-    <version>9.0.5</version>
+    <version>9.0.5.20251021</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/kicad</packageSourceUrl>
     <owners>Aurocosh,jtcmedia</owners>
     <title>KiCad (Install)</title>

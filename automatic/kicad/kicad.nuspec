@@ -22,20 +22,20 @@
     <summary>A Cross Platform and Open Source Electronics Design Automation Suite</summary>
     <description># KiCad EDA
 
-    ### Schematic Capture
-    With the schematic editor you can create your design without limit; there are no paywalls to unlock features. An official library for schematic symbols and a built-in schematic symbol editor help you get started quickly with your designs.
+### Schematic Capture
+With the schematic editor you can create your design without limit; there are no paywalls to unlock features. An official library for schematic symbols and a built-in schematic symbol editor help you get started quickly with your designs.
 
-    ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_eeschema.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_eeschema.png)
 
-    ### PCB Layout
-    Make professional PCB layouts with up to 32 copper layers. KiCad now has a push and shove router which is capable of routing differential pairs and interactively tuning trace lengths.
+### PCB Layout
+Make professional PCB layouts with up to 32 copper layers. KiCad now has a push and shove router which is capable of routing differential pairs and interactively tuning trace lengths.
 
-    ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_pcbnew.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_pcbnew.png)
 
-    ### 3D Viewer
-    KiCad includes a 3D viewer which you can use to inspect your design in an interactive canvas. You can rotate and pan around to inspect details that are difficult to inspect on a 2D view. Multiple rendering options allow you to modify the aesthetic appearance of the board or to hide and show features for easier inspection.
+### 3D Viewer
+KiCad includes a 3D viewer which you can use to inspect your design in an interactive canvas. You can rotate and pan around to inspect details that are difficult to inspect on a 2D view. Multiple rendering options allow you to modify the aesthetic appearance of the board or to hide and show features for easier inspection.
 
-    ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_3dviewer.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_3dviewer.png)
 
     </description>
     <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/9.0.5</releaseNotes>

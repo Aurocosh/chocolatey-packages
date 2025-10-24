@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- PACKAGE -->
     <id>tea</id>
     <version>0.9.2</version>
-    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/tea</packageSourceUrl>
-    <owners>Indrek Haav</owners>
-
-    <!-- SOFTWARE -->
-    <title>tea</title>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/tea</packageSourceUrl>
+    <owners>Aurocosh,Indrek Haav</owners>
+    <title>Tea (Portable)</title>
     <authors>The Gitea Authors</authors>
     <projectUrl>https://gitea.io</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/1b8775481d616ad436c57e0117fce5d391ad8ac0/icons/tea.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tea/img/icon.png</iconUrl>
     <licenseUrl>https://gitea.com/gitea/tea/src/branch/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://gitea.com/gitea/tea</projectSourceUrl>
     <bugTrackerUrl>https://gitea.com/gitea/tea/issues</bugTrackerUrl>
-    <tags>git</tags>
+    <tags>tea git gitea cli portable</tags>
     <summary>A command line tool to interact with Gitea servers</summary>
-    <description>tea is a productivity helper for Gitea. It can be used to manage most entities on one or multiple Gitea instances and provides local helpers like 'tea pull checkout'. tea makes use of context provided by the repository in $PWD if available, but is still usable independently of $PWD. Configuration is persisted in $XDG_CONFIG_HOME/tea.</description>
-    <releaseNotes>https://gitea.com/gitea/tea/src/branch/master/CHANGELOG.md</releaseNotes>
+    <description>#Tea
+
+Tea is a productivity helper for Gitea. It can be used to manage most entities on one or multiple Gitea instances and provides local helpers like 'tea pull checkout'. 
+    
+Тea makes use of context provided by the repository in $PWD if available, but is still usable independently of $PWD. Configuration is persisted in $XDG_CONFIG_HOME/tea.
+    
+# Demo
+
+![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tea/img/demo.gif)
+    
+    </description>
+    <releaseNotes>https://gitea.com/gitea/tea/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

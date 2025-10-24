@@ -18,7 +18,7 @@ function global:au_GetLatest {
     $jsonValue = ConvertFrom-Json $response.Content
 
     $regex64 = "tea-(\d+\.\d+\.\d+)-windows-amd64\.exe"
-    $url64 = $jsonValue.assets | Where-Object browser_download_url -match $regex64 | Select-Object -First 1 -expand href
+    $url64 = $jsonValue.assets | Where-Object browser_download_url -match $regex64 | Select-Object -First 1 -expand browser_download_url
     $version = $matches[1]
 	
     @{

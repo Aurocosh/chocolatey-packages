@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $exeFile = Join-Path $packagePath 'Buckets.exe'
 
@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $exeFile
   softwareName   = 'Buckets*'
-  url            = 'https://github.com/buckets/application/releases/download/v0.75.0/Buckets-0.75.0.exe'
-  checksum       = '7D456008196EEB2BCF29665A0C3CBE4DF9539CC37808F9F3170D85F12A3B0571'
+  url            = 'https://github.com/buckets/application/releases/download/v0.80.0/Buckets-0.80.0.exe'
+  checksum       = 'dc7a4b1429dc20689da58abcad3d6c127811d600c6a26ed35896c726898f78dc'
   checksumType   = 'sha256'
 }
 

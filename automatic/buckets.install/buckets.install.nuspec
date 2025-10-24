@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>buckets.install</id>
-    <version>0.75.0</version>
+    <version>0.80.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/buckets.install</packageSourceUrl>
     <owners>Aurocosh,Indrek Haav</owners>
     <title>Buckets (Install)</title>
@@ -26,7 +26,7 @@ Buckets has an unlimited free trial and [a one-time license cost](https://www.bu
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets.install/img/screenshot.png)
 
     </description>
-    <releaseNotes>https://github.com/buckets/application/releases</releaseNotes>
+    <releaseNotes>https://github.com/buckets/application/releases/tag/v0.80.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

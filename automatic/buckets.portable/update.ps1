@@ -30,3 +30,4 @@ function global:au_GetLatest {
 
 update -ChecksumFor $release.ChocoChecksumFor
 
+Remove-Item -Path "$PSScriptRoot/Buckets.exe" -Force -ErrorAction SilentlyContinue

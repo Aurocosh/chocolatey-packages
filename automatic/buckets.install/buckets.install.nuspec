@@ -15,16 +15,18 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.budgetwithbuckets.com/guide</docsUrl>
     <bugTrackerUrl>https://github.com/buckets/application/issues</bugTrackerUrl>
-    <tags>buckets.install finance budget</tags>
+    <tags>buckets finance budget</tags>
     <summary>Buckets makes budgeting fast, simple and private</summary>
-    <description> #
+    <description># Buckets
 
 Buckets is a simple family budgeting app based on the envelope method. It is built with privacy in mind - your financial data stays on your computer and under your control. Sharing the budget between multiple devices, including smartphones, is supported, and there are multiple advanced features like macros, bank import and Amazon reconciliation.
 
 Buckets has an unlimited free trial and [a one-time license cost](https://www.budgetwithbuckets.com/buy/).
 
-![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets.install/img/screenshot.png) </description>
-    <releaseNotes>https://github.com/buckets/application/releases/tag/v0.80.0</releaseNotes>
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets.install/img/screenshot.png)
+
+    </description>
+    <releaseNotes>https://github.com/buckets/application/releases</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

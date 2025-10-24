@@ -29,3 +29,5 @@ function global:au_GetLatest {
 }
 
 update -ChecksumFor 64
+
+Remove-Item -Path "$PSScriptRoot/tea.exe" -Force -ErrorAction SilentlyContinue

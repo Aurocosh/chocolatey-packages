@@ -7,7 +7,7 @@
     <version>0.80.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/buckets</packageSourceUrl>
     <owners>Aurocosh,Indrek Haav</owners>
-    <title>Buckets (Install)</title>
+    <title>Buckets</title>
     <authors>Matt Haggard</authors>
     <projectUrl>https://www.budgetwithbuckets.com</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets/img/icon.png</iconUrl>

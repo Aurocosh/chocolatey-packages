@@ -15,7 +15,7 @@
     <bugTrackerUrl>https://gitea.com/gitea/tea/issues</bugTrackerUrl>
     <tags>tea git gitea cli portable</tags>
     <summary>A command line tool to interact with Gitea servers</summary>
-    <description>#Tea
+    <description># Tea
 
 Tea is a productivity helper for Gitea. It can be used to manage most entities on one or multiple Gitea instances and provides local helpers like 'tea pull checkout'. 
 

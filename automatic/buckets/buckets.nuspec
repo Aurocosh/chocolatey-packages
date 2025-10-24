@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- PACKAGE -->
     <id>buckets</id>
     <version>0.75.0</version>
-    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/buckets</packageSourceUrl>
-    <owners>Indrek Haav</owners>
-
-    <!-- SOFTWARE -->
-    <title>Buckets</title>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/buckets</packageSourceUrl>
+    <owners>Aurocosh,Indrek Haav</owners>
+    <title>Buckets (Install)</title>
     <authors>Matt Haggard</authors>
-    <projectUrl>https://www.budgetwithbuckets.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/1b8775481d616ad436c57e0117fce5d391ad8ac0/icons/buckets.png</iconUrl>
-    <licenseUrl>https://www.budgetwithbuckets.com/guide/eula/</licenseUrl>
+    <projectUrl>https://www.budgetwithbuckets.com</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets/img/icon.png</iconUrl>
+    <licenseUrl>https://www.budgetwithbuckets.com/guide/eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://www.budgetwithbuckets.com/guide/</docsUrl>
+    <docsUrl>https://www.budgetwithbuckets.com/guide</docsUrl>
     <bugTrackerUrl>https://github.com/buckets/application/issues</bugTrackerUrl>
-    <tags>finance</tags>
-    <summary>Buckets makes budgeting fast, simple and private.</summary>
-    <description><![CDATA[
+    <tags>buckets finance budget</tags>
+    <summary>Buckets makes budgeting fast, simple and private</summary>
+    <description># Buckets
+
 Buckets is a simple family budgeting app based on the envelope method. It is built with privacy in mind - your financial data stays on your computer and under your control. Sharing the budget between multiple devices, including smartphones, is supported, and there are multiple advanced features like macros, bank import and Amazon reconciliation.
 
 Buckets has an unlimited free trial and [a one-time license cost](https://www.budgetwithbuckets.com/buy/).
-]]></description>
-    <releaseNotes>https://github.com/buckets/application/blob/master/CHANGELOG.md</releaseNotes>
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/buckets/img/screenshot.png)
+
+    </description>
+    <releaseNotes>https://github.com/buckets/application/releases</releaseNotes>
     <dependencies>
       <dependency id="buckets.install" version="[0.75.0]" />
     </dependencies>
@@ -31,3 +34,4 @@ Buckets has an unlimited free trial and [a one-time license cost](https://www.bu
   <files>
   </files>
 </package>
+

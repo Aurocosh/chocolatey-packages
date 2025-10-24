@@ -18,13 +18,13 @@
     <description>#Tea
 
 Tea is a productivity helper for Gitea. It can be used to manage most entities on one or multiple Gitea instances and provides local helpers like 'tea pull checkout'. 
-    
+
 Tea makes use of context provided by the repository in $PWD if available, but is still usable independently of $PWD. Configuration is persisted in $XDG_CONFIG_HOME/tea.
-    
+
 # Demo
 
 ![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tea/img/demo.gif)
-    
+
     </description>
     <releaseNotes>https://gitea.com/gitea/tea/releases</releaseNotes>
   </metadata>

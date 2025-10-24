@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- PACKAGE -->
+    <id>buckets</id>
+    <version>0.75.0</version>
+    <packageSourceUrl>https://github.com/IndrekHaav/chocolatey-packages/tree/main/packages/buckets</packageSourceUrl>
+    <owners>Indrek Haav</owners>
+
+    <!-- SOFTWARE -->
+    <title>Buckets</title>
+    <authors>Matt Haggard</authors>
+    <projectUrl>https://www.budgetwithbuckets.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/IndrekHaav/chocolatey-packages/1b8775481d616ad436c57e0117fce5d391ad8ac0/icons/buckets.png</iconUrl>
+    <licenseUrl>https://www.budgetwithbuckets.com/guide/eula/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.budgetwithbuckets.com/guide/</docsUrl>
+    <bugTrackerUrl>https://github.com/buckets/application/issues</bugTrackerUrl>
+    <tags>finance</tags>
+    <summary>Buckets makes budgeting fast, simple and private.</summary>
+    <description><![CDATA[
+Buckets is a simple family budgeting app based on the envelope method. It is built with privacy in mind - your financial data stays on your computer and under your control. Sharing the budget between multiple devices, including smartphones, is supported, and there are multiple advanced features like macros, bank import and Amazon reconciliation.
+
+Buckets has an unlimited free trial and [a one-time license cost](https://www.budgetwithbuckets.com/buy/).
+]]></description>
+    <releaseNotes>https://github.com/buckets/application/blob/master/CHANGELOG.md</releaseNotes>
+    <dependencies>
+      <dependency id="buckets.install" version="[0.75.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+  </files>
+</package>

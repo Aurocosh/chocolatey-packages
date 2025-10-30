@@ -65,7 +65,7 @@ if ($RenamedFiles.Count -gt 0) {
             git add $Item.UnsuspendedFile
 		}
 
-		git commit -m "Updates unsuspended"
+		git commit -m "Updates unsuspended: $($RenamedFiles.Count)"
 		git push -q
         Pop-Location
 	}

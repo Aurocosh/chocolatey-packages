@@ -30,7 +30,9 @@ Get-ChildItem -Path $PackagesPath -Directory | ForEach-Object {
                 $NewFilePath = Join-Path $Subfolder "update.ps1"
                 Write-Host "Unsuspending updates for $($PackageName): $($File.Name) -> update.ps1"
                 Rename-Item -Path $File.FullName -NewName "update.ps1" -Force
-                $RenamedFiles += $NewFilePath
+                $RenamedFiles += [PSCustomObject]@{
+                    OriginalFile = $File.FullName
+                    UnsuspendedFile = $NewFilePath
             }
 			else {
                 Write-Host "Updates for $($PackageName) are suspended"
@@ -56,11 +58,11 @@ if ($RenamedFiles.Count -gt 0) {
         git pull -q origin $Branch
 	
 		Write-Host "Creating Git commit for the following files:`n"
-		$RenamedFiles | ForEach-Object { Write-Host "  $_" }
+        $RenamedFiles | ForEach-Object { Write-Host " $($_.OriginalFile) -> $($_.UnsuspendedFile)" }
 
-		foreach ($FilePath in $RenamedFiles) {
-			$RelativePath = Resolve-Path -Relative $FilePath
-			git add $RelativePath
+        foreach ($Item in $RenamedFiles) {
+            git rm --cached -q $Item.OriginalFile
+            git add $Item.UnsuspendedFile
 		}
 
 		git commit -m "Updates unsuspended"

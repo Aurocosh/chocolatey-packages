@@ -64,8 +64,8 @@ if ($RenamedFiles.Count -gt 0) {
             git rm --cached -q $Item.OriginalFile
             git add $Item.UnsuspendedFile
 		}
-
-		git commit -m "Updates unsuspended: $($RenamedFiles.Count)"
+		$PackageNames = $RenamedFiles | ForEach-Object {$_.UnsuspendedFile.Split('\')[-2]} | Sort-Object -Unique | Out-String -Join ', '
+        git commit -m "AU: $($RenamedFiles.Count) unsuspended - $($PackageNames)"
 		git push -q
         Pop-Location
 	}

@@ -13,14 +13,14 @@ Get-ChildItem -Path $PackagesPath -Directory | ForEach-Object {
 	$PackageName = $_.Name
 
     # Pattern: update--suspended-to-YYYY-MM-DD.ps1
-    $Pattern = "update--suspended-to-(\d{4}-\d{2}-\d{2})\.ps1"
+    $Pattern = "update--suspended-to-(\d{4}-\d{1,2}-\d{1,2})\.ps1"
     $Files = Get-ChildItem -Path $Subfolder -Filter "update--suspended-to-*.ps1" -File
 
     foreach ($File in $Files) {
         if ($File.Name -match $Pattern) {
             $DateString = $matches[1]
             try {
-                $SuspendedUntil = [datetime]::ParseExact($DateString, "yyyy-MM-dd", $null)
+                $SuspendedUntil = [datetime]::ParseExact($DateString, "yyyy-M-d", $null)
             } catch {
                 Write-Warning "Skipping invalid date format in file: $($File.FullName)"
                 continue

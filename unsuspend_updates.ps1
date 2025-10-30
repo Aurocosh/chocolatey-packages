@@ -42,9 +42,18 @@ Get-ChildItem -Path $PackagesPath -Directory | ForEach-Object {
 if ($RenamedFiles.Count -gt 0) {
 	$Password = $Env:github_api_key
 	if ($Password) {
+        Push-Location $PSScriptRoot
+        $origin  = git config --get remote.origin.url
+        $origin -match '(?<=:/+)[^/]+' | Out-Null
+        $machine = $Matches[0]
+
 		Write-Host "Setting oauth token for: $machine"
 		git config --global credential.helper store
 		Add-Content "$env:USERPROFILE\.git-credentials" "https://${Password}:x-oauth-basic@$machine`n"
+
+        $Branch = 'master'
+        git checkout -q -B $Branch
+        git pull -q origin $Branch
 	
 		Write-Host "Creating Git commit for the following files:`n"
 		$RenamedFiles | ForEach-Object { Write-Host "  $_" }
@@ -56,6 +65,7 @@ if ($RenamedFiles.Count -gt 0) {
 
 		git commit -m "Updates unsuspended"
 		git push
+        Pop-Location
 	}
 	else {
 		Write-Host "Cannot unsuspend. Git credentials are not provided"

@@ -33,10 +33,11 @@ Get-ChildItem -Path $PackagesPath -Directory | ForEach-Object {
                 $RenamedFiles += [PSCustomObject]@{
                     OriginalFile = $File.FullName
                     UnsuspendedFile = $NewFilePath
+                }
+			    else {
+                    Write-Host "Updates for $($PackageName) are suspended"
+			    }
             }
-			else {
-                Write-Host "Updates for $($PackageName) are suspended"
-			}
         }
     }
 }

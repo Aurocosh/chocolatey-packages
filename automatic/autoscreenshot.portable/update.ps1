@@ -9,7 +9,7 @@ $release = Get-LatestGithubRelease `
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.Url32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
         "$($Latest.PackageName).nuspec" = @{

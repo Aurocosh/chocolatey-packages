@@ -8,13 +8,12 @@ $release = Get-LatestGithubRelease `
 
 function global:au_SearchReplace {
     @{
-        "$($Latest.PackageName).nuspec" = @{
-          "(?i)(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-        }
-		
         ".\tools\chocolateyInstall.ps1" = @{
             "(?i)(^\s*url\s*=\s*)('.*')"   = "`$1'$($Latest.Url32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+        }
+        "$($Latest.PackageName).nuspec" = @{
+          "(?i)(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
     }
 }

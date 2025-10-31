@@ -27,6 +27,9 @@ function global:au_SearchReplace {
             "(?i)(url64gnu\s*=\s*)('.*')"       = "`$1'$($Latest.URL_GNU)'"
             "(?i)(checksum64gnu\s*=\s*)('.*')"  = "`$1'$checksumGNU'"
         }
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
     }
 }
 
@@ -37,6 +40,7 @@ function global:au_GetLatest {
         URL_GNU         = $release.MainUrl64
         Checksum_GNU    = $release.MainUrl64_Sha256
         Version         = $release.Version
+        ReleaseNotes    = $release.ReleaseUrl
     }
 }
 

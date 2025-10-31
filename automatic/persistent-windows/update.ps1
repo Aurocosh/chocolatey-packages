@@ -12,14 +12,18 @@ function global:au_SearchReplace {
             "(?i)(^\s*url\s*=\s*)('.*')"   = "`$1'$($Latest.Url32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
     }
 }
 
 function global:au_GetLatest {
     @{
-        Url32       = $release.MainUrl32
-        Checksum32  = $release.MainUrl32_Sha256
-        Version     = $release.Version
+        Url32        = $release.MainUrl32
+        Checksum32   = $release.MainUrl32_Sha256
+        Version      = $release.Version
+        ReleaseNotes = $release.ReleaseUrl
     }
 }
 

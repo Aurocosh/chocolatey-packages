@@ -10,7 +10,7 @@
     <title>ExifGlass (Portable)</title>
     <authors>D2</authors>
     <projectUrl>https://github.com/d2phap/ExifGlass</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/fb96a8734e782fc5dd549b91883ada9bd7f34da6/automatic/exifglass/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/exifglass/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/d2phap/ExifGlass/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/d2phap/ExifGlass</projectSourceUrl>
@@ -23,7 +23,7 @@ ExifGlass is an EXIF metadata viewing tool, designed to work seamlessly with [Im
 
 With ExifGlass, you can easily access a comprehensive overview of the technical details associated with your images, including camera settings, location data, and more. This tool is particularly useful for professional photographers or anyone interested in the technical aspects of digital photography. Whether you use ExifGlass as a standalone software or in conjunction with ImageGlass, it provides a convenient and efficient way to view and manage the metadata associated with your images.
 
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/fb96a8734e782fc5dd549b91883ada9bd7f34da6/automatic/exifglass/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/exifglass/img/screenshot.png)
 
     </description>
     <releaseNotes>https://github.com/d2phap/ExifGlass/releases</releaseNotes>

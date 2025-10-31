@@ -10,7 +10,7 @@
     <title>Lime3DS (Install)</title>
     <authors>Lime3DS</authors>
     <projectUrl>https://github.com/Lime3DS/Lime3DS</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lime3ds/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lime3ds/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/Lime3DS/Lime3DS/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Lime3DS/Lime3DS</projectSourceUrl>

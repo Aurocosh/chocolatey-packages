@@ -10,7 +10,7 @@
     <title>Rainmeter (Install)</title>
     <authors>Rainmeter</authors>
     <projectUrl>https://www.rainmeter.net/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/rainmeter/rainmeter/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rainmeter/rainmeter</projectSourceUrl>
@@ -24,11 +24,11 @@ Rainmeter allows you to display customizable skins on your desktop, from hardwar
 You are only limited by your imagination and creativity.
 
 ## Community Showcase
-![Geometry](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/geometry.png)
+![Geometry](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/geometry.png)
 
-![Momento](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/momento.png)
+![Momento](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/momento.png)
 
-![Rime](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/rime.png)
+![Rime](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/rime.png)
 </description>
     <releaseNotes>https://github.com/rainmeter/rainmeter/releases</releaseNotes>
   </metadata>

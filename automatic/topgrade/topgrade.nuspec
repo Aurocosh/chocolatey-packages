@@ -10,14 +10,14 @@
     <title>Topgrade (Portable)</title>
     <authors>topgrade-rs</authors>
     <projectUrl>https://github.com/topgrade-rs/topgrade</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/topgrade-rs/topgrade/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/topgrade-rs/topgrade</projectSourceUrl>
     <bugTrackerUrl>https://github.com/topgrade-rs/topgrade/issues</bugTrackerUrl>
     <tags>topgrade package automatic updater cli admin portable</tags>
     <summary>Topgrade is a cli program update utility</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/banner.png "Banner")
+    <description>![Banner](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/banner.png "Banner")
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Keeping your system up to date usually involves invoking multiple package manage
 This results in big, non-portable shell one-liners saved in your shell.
 To remedy this, **Topgrade** detects which tools you use and runs the appropriate commands to update them.
 
-![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/topgrade_demo.gif "Demo")
+![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/topgrade/img/topgrade_demo.gif "Demo")
 
 ## Usage
 

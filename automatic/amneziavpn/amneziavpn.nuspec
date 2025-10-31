@@ -10,7 +10,7 @@
     <title>Amnezia VPN (Install)</title>
     <authors>Amnezia VPN</authors>
     <projectUrl>https://amnezia.org</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/3784909e02eeea30284622c6612d145c127eb7fa/automatic/amneziavpn/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/amneziavpn/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/amnezia-vpn/amnezia-client/blob/dev/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/amnezia-vpn/amnezia-client</projectSourceUrl>
@@ -22,7 +22,7 @@
 
 Amnezia is an open-source VPN client, with a key feature that enables you to deploy your own VPN server on your server.
 
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/3784909e02eeea30284622c6612d145c127eb7fa/automatic/amneziavpn/img/screenshot.png) 
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/amneziavpn/img/screenshot.png) 
 
 ## Features
 

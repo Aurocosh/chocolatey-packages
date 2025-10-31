@@ -10,7 +10,7 @@
     <title>SourceGit (Portable)</title>
     <authors>SourceGit</authors>
     <projectUrl>https://github.com/sourcegit-scm/sourcegit</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2024 sourcegit</copyright>
     <licenseUrl>https://github.com/sourcegit-scm/sourcegit/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -61,10 +61,10 @@ Opensource Git GUI client.
 ## Screenshots
 
 * Dark Theme
-  ![Theme Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_dark.png) 
+  ![Theme Dark](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_dark.png) 
 
 * Light Theme
-  ![Theme Light](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)
+  ![Theme Light](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)
 </description>
     <releaseNotes>https://github.com/sourcegit-scm/sourcegit/releases</releaseNotes>
   </metadata>

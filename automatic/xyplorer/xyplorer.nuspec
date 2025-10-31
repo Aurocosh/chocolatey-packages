@@ -9,7 +9,7 @@
     <title>XYplorer (Install)</title>
     <authors>Cologne Code Company</authors>
     <projectUrl>http://www.xyplorer.com</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/xyplorer/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/xyplorer/img/icon.png</iconUrl>
     <licenseUrl>http://www.xyplorer.com/LicenseXY.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <copyright>Copyright © 2024 Cologne Code Company</copyright>

@@ -10,7 +10,7 @@
     <title>Gyroflow (Portable)</title>
     <authors>Elvin Chen, Adrian Eddy</authors>
     <projectUrl>https://gyroflow.xyz</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/gyroflow/gyroflow/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gyroflow/gyroflow</projectSourceUrl>
@@ -21,7 +21,7 @@
 Gyroflow is an application that can stabilize your video by using motion data from a gyroscope and optionally an accelerometer. Modern cameras record that data internally (GoPro, Sony, Insta360 etc), and this application stabilizes the captured footage precisely by using them. It can also use gyro data from an external source (eg. from Betaflight blackbox).
 
 ## Screenshot
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/screenshot.jpg)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/gyroflow/img/screenshot.jpg)
 
 ## Features
 - Real-time preview, parameter adjustments and all calculations

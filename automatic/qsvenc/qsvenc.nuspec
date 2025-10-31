@@ -10,7 +10,7 @@
     <title>QSVEnc (Portable)</title>
     <authors>rigaya</authors>
     <projectUrl>https://github.com/rigaya/QSVEnc</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/qsvenc/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/qsvenc/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2011-2016 rigaya</copyright>
     <licenseUrl>https://github.com/rigaya/QSVEnc/blob/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

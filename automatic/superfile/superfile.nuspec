@@ -10,7 +10,7 @@
     <title>Superfile (Portable)</title>
     <authors>Yorukot</authors>
     <projectUrl>https://superfile.netlify.app</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/superfile/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/superfile/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2024-2024 Yorukot</copyright>
     <licenseUrl>https://github.com/yorukot/superfile/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -21,7 +21,7 @@
     <summary>Pretty fancy and modern terminal file manager</summary>
     <description>Pretty fancy and modern terminal file manager
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/superfile/img/screenshot.png) </description>
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/superfile/img/screenshot.png) </description>
     <releaseNotes>https://github.com/yorukot/superfile/releases</releaseNotes>
   </metadata>
   <files>

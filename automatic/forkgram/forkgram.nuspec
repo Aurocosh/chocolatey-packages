@@ -10,7 +10,7 @@
     <title>Forkgram (Portable)</title>
     <authors>ForkGram</authors>
     <projectUrl>https://github.com/forkgram/tdesktop</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/7c6a6652c22d16cd0198c8264d428e30e1f6577f/automatic/forkgram/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/forkgram/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/forkgram/tdesktop/blob/dev/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/forkgram/tdesktop</projectSourceUrl>
@@ -19,7 +19,7 @@
     <tags>forkgram fork forkgram messenger telegram telegram-desktop portable</tags>
     <summary>Fork of Telegram Desktop messaging app.</summary>
     <description># Forkgram
-![Preview](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/7c6a6652c22d16cd0198c8264d428e30e1f6577f/automatic/forkgram/img/preview.png) 
+![Preview](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/forkgram/img/preview.png) 
 
 Forkgram is the fork of the official Telegram Desktop application.
 This fork does not fundamentally change the official client and adds only some useful small features.

@@ -10,7 +10,7 @@
     <title>DRA (Portable)</title>
     <authors>Cosimo Matteini</authors>
     <projectUrl>https://github.com/devmatteini/dra</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dra/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dra/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2021 - present Cosimo Matteini</copyright>
     <licenseUrl>https://github.com/devmatteini/dra/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
 
 A command line tool to download release assets from GitHub.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dra/img/demo.gif)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dra/img/demo.gif)
 
 ## Why should I use dra?
 

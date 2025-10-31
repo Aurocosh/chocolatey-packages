@@ -10,7 +10,7 @@
     <title>Cocogitto (Portable)</title>
     <authors>Paul Delafosse</authors>
     <projectUrl>https://docs.cocogitto.io/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cocogitto/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/cocogitto/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/cocogitto/cocogitto/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/cocogitto/cocogitto</projectSourceUrl>

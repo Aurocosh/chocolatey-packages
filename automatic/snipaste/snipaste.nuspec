@@ -10,7 +10,7 @@
     <title>Snipaste (Portable)</title>
     <authors>Snipaste</authors>
     <projectUrl>https://www.snipaste.com/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/icon.png</iconUrl>
     <copyright>2016-2024</copyright>
     <docsUrl>https://docs.snipaste.com/</docsUrl>
     <bugTrackerUrl>https://github.com/Snipaste/feedback/issues</bugTrackerUrl>
@@ -27,7 +27,7 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 ----------
 
 ### Intuitive snipping
-![Snipping](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/snipping.png "Snipping")
+![Snipping](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/snipping.png "Snipping")
 
 -   Auto detect UI elements
 -   Pixel-level control
@@ -39,7 +39,7 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 ----------
 
 ### Paste images as topmost floating windows
-![Windows](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/windows.png "Windows")
+![Windows](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/windows.png "Windows")
 
 -   The source (in the clipboard) could be
     -   Image
@@ -64,7 +64,7 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 ----------
 
 ### Easy image annotation
-![Annotation](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/annotation.png "Annotation")
+![Annotation](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/annotation.png "Annotation")
 
 -   Rich shapes
     -   Rectangle
@@ -83,7 +83,7 @@ Snipaste is easy and intuitive to use, but there are also many hidden features t
 ----------
 
 ### Customization
-![Customization](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/customization.png "Customization")
+![Customization](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/snipaste/img/customization.png "Customization")
 
 -   Theme color, interface font, tray icon, and more
 -   Hot keys

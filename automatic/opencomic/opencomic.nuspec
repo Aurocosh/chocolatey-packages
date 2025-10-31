@@ -10,7 +10,7 @@
     <title>OpenComic (Install)</title>
     <authors>Oleguer Llopart (ollm)</authors>
     <projectUrl>https://github.com/ollm/OpenComic/releases</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/opencomic/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/opencomic/img/icon.png</iconUrl>
     <copyright>2017-2024</copyright>
     <licenseUrl>https://github.com/ollm/OpenComic/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
 
 ## Screenshot
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/opencomic/img/screenshot.png "Screenshot")
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/opencomic/img/screenshot.png "Screenshot")
 
 More [Screenshots 📸](https://github.com/ollm/OpenComic/blob/master/SCREENSHOTS.MD)
 

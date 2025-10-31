@@ -10,7 +10,7 @@
     <title>RustScan (Portable)</title>
     <authors>Autumn (Bee)</authors>
     <projectUrl>https://github.com/bee-san/RustScan</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/309aa8917c378a2c074e93cfcaff9eb01e32c6f9/automatic/rustscan/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rustscan/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/bee-san/RustScan/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/bee-san/RustScan</projectSourceUrl>
@@ -21,7 +21,7 @@
     <description># RustScan
 The Modern Port Scanner. **Find ports quickly (3 seconds at its fastest)**. Run scripts through our scripting engine (Python, Lua, Shell supported).
 
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/309aa8917c378a2c074e93cfcaff9eb01e32c6f9/automatic/rustscan/img/demo.gif)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rustscan/img/demo.gif)
 
 </description>
     <releaseNotes>https://github.com/bee-san/RustScan/releases</releaseNotes>

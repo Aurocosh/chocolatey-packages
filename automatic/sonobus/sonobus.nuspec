@@ -10,7 +10,7 @@
     <title>SonoBus</title>
     <authors>Sonosaurus LLC</authors>
     <projectUrl>https://sonobus.net/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sonobus/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sonobus/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/sonosaurus/sonobus/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/sonosaurus/sonobus</projectSourceUrl>
@@ -29,7 +29,7 @@ Works as a standalone application on macOS, Windows, iOS, and Linux, and as an a
 
 Easy to setup and use, yet still provides all the details that audio nerds want to see. Audio quality can be instantly adjusted from full uncompressed PCM (16, 24, or 32 bit) or with various compressed bitrates (16-256 kbps per channel) using the low-latency Opus codec, and you can do this independently for any of the users you are connected with in a group.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/sonobus/img/screenshot.png "Screenshot")
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sonobus/img/screenshot.png "Screenshot")
 
 IMPORTANT TIPS
 

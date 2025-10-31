@@ -10,7 +10,7 @@
     <title>VCEEnc (Portable)</title>
     <authors>rigaya</authors>
     <projectUrl>https://github.com/rigaya/VCEEnc</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/vceenc/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/vceenc/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2014-2017 rigaya</copyright>
     <licenseUrl>https://github.com/rigaya/VCEEnc/blob/master/VCEEnc_license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

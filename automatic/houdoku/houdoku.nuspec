@@ -10,7 +10,7 @@
     <title>Houdoku (Install)</title>
     <authors>xgi</authors>
     <projectUrl>https://houdoku.org/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/xgi/houdoku/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/xgi/houdoku</projectSourceUrl>
@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/xgi/houdoku/issues</bugTrackerUrl>
     <tags>houdoku comics comic webtoon manga image images reader viewer cbr cbz cb7 jpeg png webp</tags>
     <summary>Houdoku is a free and open source manga reader for the desktop</summary>
-    <description>![Houdoku Header](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/houdoku_header.png "Houdoku Header")
+    <description>![Houdoku Header](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/houdoku_header.png "Houdoku Header")
 
 Houdoku is a free and open source manga reader for the desktop.
 
@@ -34,8 +34,8 @@ Houdoku is a free and open source manga reader for the desktop.
 
 ---
 
-![Screenshots1](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots1.png "Screenshots1")
-![Screenshots2](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots2.png "Screenshots2")
+![Screenshots1](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots1.png "Screenshots1")
+![Screenshots2](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/houdoku/img/screenshots2.png "Screenshots2")
 
 ---
 

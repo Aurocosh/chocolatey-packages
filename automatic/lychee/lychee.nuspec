@@ -10,18 +10,18 @@
     <title>Lychee (Install)</title>
     <authors>The lychee maintainers</authors>
     <projectUrl>https://github.com/lycheeverse/lychee</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lychee/img/icon.png</iconUrl>
     <projectSourceUrl>https://github.com/lycheeverse/lychee</projectSourceUrl>
     <bugTrackerUrl>https://github.com/lycheeverse/lychee/issues</bugTrackerUrl>
     <tags>lychee url cli markdown html rst website</tags>
     <summary>A fast, async, stream-based link checker written in Rust</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/banner.svg "Banner")
+    <description>![Banner](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lychee/img/banner.svg "Banner")
 
 ⚡ A fast, async, stream-based link checker written in Rust.\
 Finds broken hyperlinks and mail addresses inside Markdown, HTML,
 reStructuredText, or any other text file or website!
 
-![Screencast](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lychee/img/screencast.svg "Screencast")
+![Screencast](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lychee/img/screencast.svg "Screencast")
 </description>
     <releaseNotes>https://github.com/lycheeverse/lychee/releases</releaseNotes>
   </metadata>

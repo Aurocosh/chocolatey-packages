@@ -10,7 +10,7 @@
     <title>CDisplayEx (Install)</title>
     <authors>Henri Gourvest, Progdigy Software S.A.R.L</authors>
     <projectUrl>https://www.cdisplayex.com/desktop/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/icon.png</iconUrl>
     <licenseUrl>https://www.cdisplayex.com/desktop/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.cdisplayex.com/desktop/faq/</docsUrl>
@@ -20,7 +20,7 @@
 
 Light, Efficient CBR Reader. It is the most popular comic book reader. It is able to read all comic book formats (.cbr file, .cbz, .pdf, etc..) and Manga. Everything is designed to give you the best reading experience, it load comic books immediately, reading is fluid and comfortable.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/cdisplayex/img/screenshot.png)
 </description>
   </metadata>
   <files>

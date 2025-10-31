@@ -10,7 +10,7 @@
     <title>Mediamonkey (Install)</title>
     <authors>Ventis Media</authors>
     <projectUrl>https://www.mediamonkey.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/d44c7520ce00710b38ce311575973db538a77b44/automatic/mediamonkey/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/mediamonkey/img/icon.png</iconUrl>
     <copyright>© Copyright 2018 Ventis Media</copyright>
     <licenseUrl>https://www.mediamonkey.com/sw/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,7 +20,7 @@
     <summary>The Media Organizer for Serious Collectors</summary>
     <description>*MediaMonkey: The Media Organizer for Serious Collectors*
 
-![Overview](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/d44c7520ce00710b38ce311575973db538a77b44/automatic/mediamonkey/img/overview.webp) 
+![Overview](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/mediamonkey/img/overview.webp) 
 
 Manage small to large collections of audio files, videos and playlists (100,000+), whether on a hard drive, network, or CDs. Rip CDs, download podcasts, lookup artwork and other missing information online, tag almost any audio or video format, and automatically rename/re-organize files on your hard drive.
     </description>

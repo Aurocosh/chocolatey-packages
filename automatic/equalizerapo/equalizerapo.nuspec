@@ -10,7 +10,7 @@
     <title>Equalizer APO (Install)</title>
     <authors>jthedering</authors>
     <projectUrl>http://sourceforge.net/projects/equalizerapo/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/equalizerapo/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/equalizerapo/img/icon.png</iconUrl>
     <projectSourceUrl>https://sourceforge.net/p/equalizerapo/code/HEAD/tree/</projectSourceUrl>
     <licenseUrl>http://sourceforge.net/directory/license:gpl/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

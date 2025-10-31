@@ -9,14 +9,14 @@
     <title>Regedix (Portable)</title>
     <authors>Stéphane Graziano</authors>
     <projectUrl>https://regedix.webrox.fr</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/regedix/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/regedix/img/icon.png</iconUrl>
     <tags>regedix regedit registry admin portable</tags>
     <summary>Advanced registry editor</summary>
     <description>Regedix is an advanced registry editor.
 
 ## Screenshot
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/regedix/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/regedix/img/screenshot.png)
 
 ## Features
 

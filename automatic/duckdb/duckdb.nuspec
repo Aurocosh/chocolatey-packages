@@ -10,14 +10,14 @@
     <title>DuckDB (Portable)</title>
     <authors>DuckDB</authors>
     <projectUrl>https://duckdb.org</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/bc8a72345a92fb1a3c7da5c37f892ed83b88910d/automatic/duckdb/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/duckdb/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/duckdb/duckdb/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/duckdb/duckdb</projectSourceUrl>
     <bugTrackerUrl>https://github.com/duckdb/duckdb/issues</bugTrackerUrl>
     <tags>duckdb analytics database embedded-database olap sql portable</tags>
     <summary>DuckDB is an analytical in-process SQL database management system</summary>
-    <description>![Logo](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/bc8a72345a92fb1a3c7da5c37f892ed83b88910d/automatic/duckdb/img/logo.png) 
+    <description>![Logo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/duckdb/img/logo.png) 
 
 ## DuckDB
 

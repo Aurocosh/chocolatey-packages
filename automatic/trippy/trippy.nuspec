@@ -10,7 +10,7 @@
     <title>Trippy (Portable)</title>
     <authors>fujiapple852</authors>
     <projectUrl>https://github.com/fujiapple852/trippy</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/trippy/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/trippy/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/fujiapple852/trippy/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/fujiapple852/trippy</projectSourceUrl>
@@ -23,7 +23,7 @@
 Trippy combines the functionality of traceroute and ping and is designed to assist with the analysis of networking
 issues.
 
-![Demo gif](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/trippy/img/trippy.gif)
+![Demo gif](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/trippy/img/trippy.gif)
 
 ## Features
 

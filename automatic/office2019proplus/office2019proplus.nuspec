@@ -10,7 +10,7 @@
     <title>Microsoft Office 2019 ProPlus</title>
     <authors>Microsoft</authors>
     <projectUrl>http://office.microsoft.com/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/office2019proplus/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/office2019proplus/img/icon.png</iconUrl>
     <copyright>Microsoft</copyright>
     <licenseUrl>https://docs.microsoft.com/en-en/DeployOffice/overview-of-licensing-and-activation-in-office-365-proplus?redirectSourcePath=%252fen-us%252farticle%252f1096c33e-a6f2-44c8-9821-3cba07ec5750</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

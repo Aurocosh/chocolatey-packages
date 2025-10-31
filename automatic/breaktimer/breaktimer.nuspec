@@ -10,7 +10,7 @@
     <title>BreakTimer (Install)</title>
     <authors>Tom Watson</authors>
     <projectUrl>https://breaktimer.app</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/icon.png</iconUrl>
     <copyright></copyright>
     <licenseUrl>https://github.com/tom-james-watson/breaktimer-app/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -31,11 +31,11 @@ BreakTimer allows you to customize:
 
 ## Screenshots
 
-## ![break panel](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/break.png)
+## ![break panel](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/break.png)
 
-## ![settings panel](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/settings.png)
+## ![settings panel](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/settings.png)
 
-![notification](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/notification.png)
+![notification](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/breaktimer/img/notification.png)
 
 </description>
     <releaseNotes>https://github.com/tom-james-watson/breaktimer-app/releases</releaseNotes>

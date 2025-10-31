@@ -10,7 +10,7 @@
     <title>Certificate Ripper (Portable)</title>
     <authors>Hakan Altındağ</authors>
     <projectUrl>https://github.com/Hakky54/certificate-ripper</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/crip/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/crip/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/Hakky54/certificate-ripper/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Hakky54/certificate-ripper</projectSourceUrl>
@@ -21,7 +21,7 @@
 A CLI tool to extract server certificates
 
 ## Demo
-![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/crip/img/demo.gif?raw=true)
+![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/crip/img/demo.gif?raw=true)
 
 ## Advantages
 - It is fast

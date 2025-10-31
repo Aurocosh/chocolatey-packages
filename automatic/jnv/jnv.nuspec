@@ -10,7 +10,7 @@
     <title>jnv (Portable)</title>
     <authors>jnv authors</authors>
     <projectUrl>https://github.com/ynqa/jnv</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/jnv/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/jnv/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2024 jnv authors</copyright>
     <licenseUrl>https://github.com/ynqa/jnv/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -18,7 +18,7 @@
     <bugTrackerUrl>https://github.com/ynqa/jnv/issues</bugTrackerUrl>
     <tags>jnv json filter interactive cli portable</tags>
     <summary>Interactive JSON filter using jq</summary>
-    <description>![Banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/jnv/img/banner.png)
+    <description>![Banner](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/jnv/img/banner.png)
     
     jnv is designed for navigating JSON, offering an interactive JSON viewer and jq filter editor.</description>
     <releaseNotes>https://github.com/ynqa/jnv/releases</releaseNotes>

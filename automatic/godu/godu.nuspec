@@ -10,7 +10,7 @@
     <title>Godu (Portable)</title>
     <authors>Tomas Vik</authors>
     <projectUrl>https://github.com/viktomas/godu</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/godu/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/godu/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2016-present Tomas Vik</copyright>
     <licenseUrl>https://github.com/viktomas/godu/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,7 +20,7 @@
     <summary>Simple golang utility helping to discover large files/folders.</summary>
     <description>Find the files that are taking up your space.
 
-![Demo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/godu/img/demo.gif)
+![Demo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/godu/img/demo.gif)
 
 Do you want something that:
 * can do the job

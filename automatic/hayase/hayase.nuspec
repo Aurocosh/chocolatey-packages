@@ -10,7 +10,7 @@
     <title>Hayase (Install)</title>
     <authors>ThaUnknown</authors>
     <projectUrl>https://miru.watch/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/hayase/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/hayase/img/icon.png</iconUrl>
     <copyright>© 2020-2024 ThaUnknown</copyright>
     <licenseUrl>https://github.com/ThaUnknown/hayase/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -26,7 +26,7 @@ This app is meant to feel look, work and perform like a streaming website/app, w
 
 Unlike qBit's sequential, seeking into undownloaded data will prioritise downloading that data, instead of flat out closing MPV.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/hayase/img/main.gif)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/hayase/img/main.gif)
 
 ## **Rebrand**
 Formerly known as Miru and later rebranded as Hayase.

@@ -6,6 +6,9 @@ function global:au_SearchReplace {
             "(?i)(^\s*url64bit\s*=\s*)('.*')"      = "`$1'$($Latest.Url64)'"
             "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
     }
 }
 
@@ -23,15 +26,18 @@ function global:au_GetLatest {
 
         $checksumUrl = "https://www.xyplorer.com/download/XYHash64-$version.txt"
         $response = Invoke-WebRequest -Uri $checksumUrl
+        
+        $releaseNotesUrl = "https://www.xyplorer.com/release_$majorVersion.php"
 
         $response.Content -match "(?s)File: xyplorer64_full.zip.*?SHA-256\s*?([a-fA-F0-9]{64})"
         $checksum64 = $matches[1]
     }
 
     @{
-        Url64       = $url64
-        Checksum64  = $checksum64
-        Version     = $version
+        Url64        = $url64
+        Checksum64   = $checksum64
+        Version      = $version
+        ReleaseNotes = $releaseNotesUrl
     }
 }
 

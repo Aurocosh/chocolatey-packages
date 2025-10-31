@@ -10,14 +10,14 @@
     <title>IntelliFile (Portable)</title>
     <authors>mihaimoga</authors>
     <projectUrl>https://github.com/mihaimoga/IntelliFile</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/intellifile.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/intellifile.portable/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/mihaimoga/IntelliFile/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/mihaimoga/IntelliFile</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mihaimoga/IntelliFile/issues</bugTrackerUrl>
     <tags>intellifile file-manager file-management dual-panel explorer portable</tags>
     <summary>Alternative Windows version to the famous Total Commander</summary>
-    <description>![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/intellifile.portable/img/screenshot.png)
+    <description>![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/intellifile.portable/img/screenshot.png)
 
 ## Introduction
 

@@ -10,7 +10,7 @@
     <title>TagScanner (Portable)</title>
     <authors>Sergey Serkov</authors>
     <projectUrl>http://www.xdlab.ru/en</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/59aaa39560ea60fafd7401d19637f7be0d57ea07/automatic/tagscanner.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tagscanner.portable/img/icon.png</iconUrl>
     <copyright>(c) 1999-2025 Sergey Serkov</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>tagscanner tag mp3 scanner id3 portable</tags>
@@ -19,7 +19,7 @@
     
     TagScanner is a multifunction program for organizing and managing your music collection. It can edit tags of most modern audio formats, rename files according to information from the tags, generate tag information from filenames, and perform any transformations of the text from tags and filenames. Also you may get album info and cd-covers via online databases like freedb, Amazon or Discogs. Supports ID3v1/v2, Vorbis comments, APEv2, WindowsMedia and MP4(iTunes) tags. Powerful TAG editor with batch functions and special features. Playlists generator with ability to export playlists to HTML or Excel. Easy-to-use multilanguage interface. Built-in music player.
 
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/59aaa39560ea60fafd7401d19637f7be0d57ea07/automatic/tagscanner.portable/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/tagscanner.portable/img/screenshot.png)
 
 # Features
 

@@ -10,7 +10,7 @@
     <title>Dorion (Portable)</title>
     <authors>SpikeHD</authors>
     <projectUrl>https://github.com/SpikeHD/Dorion</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/dorion.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dorion.portable/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/SpikeHD/Dorion/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/SpikeHD/Dorion</projectSourceUrl>

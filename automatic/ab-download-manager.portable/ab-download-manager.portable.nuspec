@@ -10,14 +10,14 @@
     <title>AB Download Manager (Portable)</title>
     <authors>amir1376</authors>
     <projectUrl>https://abdownloadmanager.com/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/amir1376/ab-download-manager/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/amir1376/ab-download-manager</projectSourceUrl>
     <bugTrackerUrl>https://github.com/amir1376/ab-download-manager/issues</bugTrackerUrl>
     <tags>ab-download-manager download manager free web files foss cross-platform portable</tags>
     <summary>AB Download Manager is a desktop app which lets you manage and organize your download files better than before</summary>
-    <description>![App banner](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app_banner.png) 
+    <description>![App banner](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app_banner.png) 
 ## Description
 
 AB Download Manager is a desktop app which lets you manage and organize your download files better than before
@@ -32,8 +32,8 @@ AB Download Manager is a desktop app which lets you manage and organize your dow
 - ❤️ Free and Open Source
 
 ## Screenshots
-![App home](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app-home_dark.png) 
-![App download](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app-download_dark.png) 
+![App home](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app-home_dark.png) 
+![App download](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/ab-download-manager.portable/img/app-download_dark.png) 
 </description>
     <releaseNotes>https://github.com/amir1376/ab-download-manager/releases</releaseNotes>
   </metadata>

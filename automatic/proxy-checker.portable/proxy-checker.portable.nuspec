@@ -9,7 +9,7 @@
     <title>Proxy Checker (Portable)</title>
     <authors>Vovsoft</authors>
     <projectUrl>https://vovsoft.com/software/proxy-checker</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/proxy-checker.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/proxy-checker.portable/img/icon.png</iconUrl>
     <copyright>vovsoft.com © 2015-2024</copyright>
     <licenseUrl>https://vovsoft.com/eula/proxy-checker</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -17,7 +17,7 @@
     <bugTrackerUrl>https://vovsoft.com/contact/</bugTrackerUrl>
     <tags>proxy-checker proxy http socks5 freeware portable</tags>
     <summary>Bulk proxy validation tool</summary>
-    <description>![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/proxy-checker.portable/img/screenshot.png)
+    <description>![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/proxy-checker.portable/img/screenshot.png)
 
 ## Description
 **Vovsoft Proxy Checker** is a powerful tool designed to validate and manage your proxy server lists with ease. Supporting a wide range of proxy types, including SOCKS5, SOCKS4, and HTTP proxy servers, this software caters to all your proxy testing needs. Its intuitive interface allows you to effortlessly load and save your proxy lists, ensuring convenient management and quick access to your proxies.

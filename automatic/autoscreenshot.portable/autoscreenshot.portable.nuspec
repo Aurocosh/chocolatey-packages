@@ -10,7 +10,7 @@
     <title>Auto Screenshot (Portable)</title>
     <authors>artem78</authors>
     <projectUrl>https://github.com/artem78/AutoScreenshot</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/icon.png</iconUrl>
     <projectSourceUrl>https://github.com/artem78/AutoScreenshot</projectSourceUrl>
     <docsUrl>https://github.com/artem78/AutoScreenshot/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/artem78/AutoScreenshot/issues</bugTrackerUrl>
@@ -32,7 +32,7 @@ An application for automatically taking screenshots at specified time intervals.
 * Absolutely free and open source
 
 ## Screenshots
-![Main program window in Windows 7](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/screenshot.png "Main program window in Windows 7")
+![Main program window in Windows 7](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/screenshot.png "Main program window in Windows 7")
 </description>
     <releaseNotes>https://github.com/artem78/AutoScreenshot/releases</releaseNotes>
   </metadata>

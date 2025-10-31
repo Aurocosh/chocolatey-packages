@@ -5,12 +5,12 @@
   <metadata>
     <id>fastflix.portable</id>
     <version>5.12.4</version>
-    <packageSourceUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>FastFlix (Portable)</title>
     <authors>Chris Griffith</authors>
     <projectUrl>https://github.com/cdgriffith/FastFlix</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</iconUrl>
     <copyright>2019-2024</copyright>
     <licenseUrl>https://github.com/cdgriffith/FastFlix/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -21,7 +21,7 @@
     <summary>FastFlix is a handy GUI for encoding videos</summary>
     <description>FastFlix is a handy GUI for encoding videos. 
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/screenshot.png)
 
 It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
 

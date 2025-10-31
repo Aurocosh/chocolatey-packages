@@ -10,7 +10,7 @@
     <title>librespeed-cli (Portable)</title>
     <authors>LibreSpeed</authors>
     <projectUrl>https://github.com/librespeed/speedtest-cli</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/fd11975580546cdfe1b17a77686d57d7a8d37bcd/automatic/librespeed-cli/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/librespeed-cli/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/librespeed/speedtest-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/librespeed/speedtest-cli</projectSourceUrl>

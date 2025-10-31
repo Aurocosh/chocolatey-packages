@@ -10,7 +10,7 @@
     <title>Lan Mouse (Portable)</title>
     <authors>Ferdinand Schober</authors>
     <projectUrl>https://github.com/feschber/lan-mouse</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/feschber/lan-mouse/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/feschber/lan-mouse</projectSourceUrl>
@@ -22,7 +22,7 @@ Lan Mouse is a mouse and keyboard sharing software similar to universal-control 
 It allows for using multiple pcs with a single set of mouse and keyboard.
 This is also known as a Software KVM switch.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/screenshot.png)</description>
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lan-mouse/img/screenshot.png)</description>
     <releaseNotes>https://github.com/feschber/lan-mouse/releases</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />

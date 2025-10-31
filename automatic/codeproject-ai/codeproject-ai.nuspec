@@ -10,7 +10,7 @@
     <title>CodeProject.AI (Install)</title>
     <authors>CodeProject</authors>
     <projectUrl>https://codeproject.github.io</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/36ceab67c5879c95bd37612db413608cc62948fb/automatic/codeproject-ai/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/codeproject/CodeProject.AI-Server/blob/main/LICENCE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/codeproject/CodeProject.AI-Server</projectSourceUrl>
@@ -24,7 +24,7 @@ A standalone, self-hosted, fast, free and Open Source Artificial Intelligence mi
 platform, any language. It can be installed locally, required no off-device or out of network data
 transfer, and is easy to use.
 
-![Detection](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/36ceab67c5879c95bd37612db413608cc62948fb/automatic/codeproject-ai/img/detection.png)
+![Detection](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/codeproject-ai/img/detection.png)
     </description>
     <releaseNotes>https://github.com/codeproject/CodeProject.AI-Server/releases</releaseNotes>
   </metadata>

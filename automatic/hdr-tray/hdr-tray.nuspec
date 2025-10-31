@@ -10,7 +10,7 @@
     <title>HDRTray (Portable)</title>
     <authors>Frank Richter</authors>
     <projectUrl>https://github.com/res2k/HDRTray</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/2c25238957d39874bc9c6040a91304b352cfb6e9/automatic/hdr-tray/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/hdr-tray/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/res2k/HDRTray/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/res2k/HDRTray</projectSourceUrl>

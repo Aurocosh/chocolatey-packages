@@ -10,7 +10,7 @@
     <title>Lutgen (Portable)</title>
     <authors>Ossian Mapes</authors>
     <projectUrl>https://github.com/ozwaldorf/lutgen-rs</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2023 Ossian Mapes</copyright>
     <licenseUrl>https://github.com/ozwaldorf/lutgen-rs/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

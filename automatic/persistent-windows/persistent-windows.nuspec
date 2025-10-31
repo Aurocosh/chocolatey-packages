@@ -10,7 +10,7 @@
     <title>PersistentWindows (Portable)</title>
     <authors>Kangyu-California</authors>
     <projectUrl>https://github.com/kangyu-california/PersistentWindows</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/1a68ab50041ac9931d40d994f3b34d65ca6ab354/automatic/persistent-windows/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/persistent-windows/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/kangyu-california/PersistentWindows/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/kangyu-california/PersistentWindows</projectSourceUrl>

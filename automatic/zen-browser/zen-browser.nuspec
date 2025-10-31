@@ -10,7 +10,7 @@
     <title>Zen Browser (Install)</title>
     <authors>Zen Browser</authors>
     <projectUrl>https://zen-browser.app</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/icon.png</iconUrl>
     <copyright>Copyright © 2024 Zen Browser</copyright>
     <licenseUrl>https://github.com/zen-browser/desktop/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
 Beautifully designed, privacy-focused, and packed with features.
 We care about your experience, not your data.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/screenshot.png)
 
 </description>
     <releaseNotes>https://github.com/zen-browser/desktop/releases</releaseNotes>

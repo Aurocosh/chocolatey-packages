@@ -10,14 +10,14 @@
     <title>Restic Browser (Portable)</title>
     <authors>emuell</authors>
     <projectUrl>https://github.com/emuell/restic-browser</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/emuell/restic-browser/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/emuell/restic-browser</projectSourceUrl>
     <bugTrackerUrl>https://github.com/emuell/restic-browser/issues</bugTrackerUrl>
     <tags>restic-browser backup file encryption browser</tags>
     <summary>A simple, cross-platform restic backup GUI for browsing and restoring restic repositories</summary>
-    <description>![Logo](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/logo.png)
+    <description>![Logo](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/logo.png)
 
 ---
 
@@ -32,7 +32,7 @@ This is not a fullblown restic backup GUI - it only allows you to *browse* exist
 * *Restores* selected files or folders to a desired location.
 * *Opens* selected files by moving them to TEMP, then opens them with your operating system's default programs.
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/restic-browser/img/screenshot.png)
 
 ### Package Parameters:
 

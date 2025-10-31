@@ -10,7 +10,7 @@
     <title>PhotoDemon (Portable)</title>
     <authors>Tanner Helland and Contributors</authors>
     <projectUrl>https://photodemon.org</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/icon.png</iconUrl>
     <copyright>Copyright (c) 2024 by Tanner Helland and Contributors</copyright>
     <licenseUrl>https://github.com/tannerhelland/PhotoDemon/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,7 +20,7 @@
     <summary>A free portable photo editor focused on pro-grade features, high performance, and maximum usability.</summary>
     <description>PhotoDemon is a portable photo editor.  It is 100% free and 100% open-source
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/screenshot.png) 
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/photo-demon/img/screenshot.png) 
 
 PhotoDemon provides a comprehensive photo editor in a 15 MB download. It runs on any Windows PC (XP through Win 11) and it does not require installation.
 

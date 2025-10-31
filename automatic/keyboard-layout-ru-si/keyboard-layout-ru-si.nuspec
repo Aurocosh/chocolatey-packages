@@ -10,7 +10,7 @@
     <title>Keyboard layout RuSI (Install)</title>
     <authors>Aurocosh</authors>
     <projectUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/Aurocosh/keyboard-layout-ru-si/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Aurocosh/keyboard-layout-ru-si</projectSourceUrl>
@@ -22,13 +22,13 @@
 Custom Cyrillic phonetic layout based on the standard QWERTY keyboard layout. Windows keyboard layout is created with Microsoft Keyboard Layout Creator.
 
 ## Keyboard layout
-![Layout normal](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/1089450fe3c5c3707e0e5f7c6f139483564e47e0/automatic/keyboard-layout-ru-si/img/RuSi.jpg)
+![Layout normal](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/RuSi.jpg)
 
 ## Keyboard layout (Shift)
-![Layout shift](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/1089450fe3c5c3707e0e5f7c6f139483564e47e0/automatic/keyboard-layout-ru-si/img/RuSiShft.jpg)
+![Layout shift](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/RuSiShft.jpg)
 
 ## Keyboard layout (AltGr)
-![Layout AltGr](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/1089450fe3c5c3707e0e5f7c6f139483564e47e0/automatic/keyboard-layout-ru-si/img/RuSiAltGr.jpg)
+![Layout AltGr](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-ru-si/img/RuSiAltGr.jpg)
 
 </description>
     <releaseNotes>https://github.com/Aurocosh/keyboard-layout-ru-si/releases</releaseNotes>

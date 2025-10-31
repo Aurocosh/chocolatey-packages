@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>exifglass</id>
-    <version>1.9.0</version>
+    <version>1.10.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/exifglass</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>ExifGlass (Portable)</title>
@@ -26,7 +26,7 @@ With ExifGlass, you can easily access a comprehensive overview of the technical 
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/exifglass/img/screenshot.png)
 
     </description>
-    <releaseNotes>https://github.com/d2phap/ExifGlass/releases</releaseNotes>
+    <releaseNotes>https://github.com/d2phap/ExifGlass/releases/tag/1.10.0.0</releaseNotes>
     <dependencies>
       <dependency id="dotnet-9.0-desktopruntime" />
     </dependencies>

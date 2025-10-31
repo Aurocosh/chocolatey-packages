@@ -24,18 +24,18 @@
 
 ### Hald Cluts
 #### Catppuccin Mocha
-![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha-hald-clut.png)
+![Catppuccin Mocha](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha-hald-clut.png)
 #### Gruvbox Dark
-![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark-hald-clut.png)
+![Gruvbox Dark](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark-hald-clut.png)
 
 ### Color Corrections
 
 #### Original
-![Original](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/example-image.jpg)
+![Original](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/example-image.jpg)
 #### Catppuccin Mocha
-![Catppuccin Mocha](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.jpg)
+![Catppuccin Mocha](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/catppuccin-mocha.jpg)
 #### Gruvbox Dark
-![Gruvbox Dark](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.jpg)
+![Gruvbox Dark](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lutgen-rs/img/gruvbox-dark.jpg)
 </description>
     <releaseNotes>https://github.com/ozwaldorf/lutgen-rs/releases</releaseNotes>
     <dependencies>

@@ -9,7 +9,7 @@
     <title>Proton Authenticator (Install)</title>
     <authors>Proton Technologies AG</authors>
     <projectUrl>https://proton.me/authenticator</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/2f18b28ed82930bca31f77b2ad08a9731fa0f267/automatic/protonauth/icon/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/protonauth/img/icon.png</iconUrl>
     <copyright>© 2025 Proton AG. All rights reserved</copyright>
     <licenseUrl>https://proton.me/legal/terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -22,7 +22,7 @@
 Proton Authenticator is an open source and end-to-end encrypted 2FA app that's simple and free to use. It is available on all platforms, including desktop. Easily sync or back up your 2FA codes so you never lose access to your accounts.
 
 # Screenshots
-![Screenshot](https://rawcdn.githack.com/Aurocosh/chocolatey-packages/2f18b28ed82930bca31f77b2ad08a9731fa0f267/automatic/protonauth/icon/screenshot.png) 
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/protonauth/img/screenshot.png) 
 
 # Features
 - Securely sync and backup your 2FA codes easily.

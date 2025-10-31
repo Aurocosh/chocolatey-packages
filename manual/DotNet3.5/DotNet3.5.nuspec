@@ -8,7 +8,7 @@
     <title>Dot Net 3.5</title>
     <authors>Microsoft</authors>
     <projectUrl>http://go.microsoft.com/fwlink/?LinkId=296822</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Aurocosh/chocolatey-packages/8b35708e1f6b3b78e8a23d5c3f1704998fcb65d8/manual/DotNet3.5/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/manual/DotNet3.5/img/icon.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>DotNet3.5 Microsoft .net Framework 3.5</tags>

@@ -9,7 +9,7 @@
     <title>WizFile (Portable)</title>
     <authors>Antibody Software</authors>
     <projectUrl>https://antibody-software.com/wizfile</projectUrl>
-    <iconUrl>https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/icon.png</iconUrl>
     <copyright>Copyright © 2025 Antibody Software Limited. All Rights Reserved</copyright>
     <licenseUrl>https://antibody-software.com/wizfile/eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -30,7 +30,7 @@ WizFile also supports non NTFS hard drives, network drives, USB drives and indiv
 When scanning NTFS formatted hard drives for files (most modern hard drives use this format), WizFile reads the hard drive's Master File Table (MFT) directly from the disk. The MFT is a special hidden file used by the NTFS file system to keep track of all files and folders on a hard drive. Scanning for files this way completely bypasses the operating system (Windows) and provides a huge performance boost. Scanning this way allows WizFile to build it's internal file database very quickly so it's ready for use in as short a time as possible after it's started.
 
 # Screenshots
-![Screenshot](https://raw.githack.com/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/screenshot.png) 
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/wizfile.portable/img/screenshot.png) 
 
 # Features
 - Instant, Live File Search

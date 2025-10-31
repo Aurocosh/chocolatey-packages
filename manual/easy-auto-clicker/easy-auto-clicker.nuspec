@@ -10,7 +10,7 @@
     <title>Easy Auto Clicker (Portable)</title>
     <authors>eauc</authors>
     <projectUrl>https://sourceforge.net/projects/hf-auto-clicker/</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/easy-auto-clicker/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/manual/easy-auto-clicker/img/icon.png</iconUrl>
     <projectSourceUrl>https://sourceforge.net/projects/hf-auto-clicker/</projectSourceUrl>
     <tags>easy-auto-clicker automate mouse click hotkeys automation portable</tags>
     <summary>Extremely simple auto clicker</summary>
@@ -26,7 +26,7 @@
 
 ## Screenshots
 
-![Screenshot](http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/manual/easy-auto-clicker/img/screenshot.png "Screenshot")
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/manual/easy-auto-clicker/img/screenshot.png "Screenshot")
 </description>
   </metadata>
   <files>

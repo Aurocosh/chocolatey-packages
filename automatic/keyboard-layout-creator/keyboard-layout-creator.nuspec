@@ -11,7 +11,7 @@
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=102134</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-creator/img/icon.png</iconUrl>
     <copyright>Copyright © 2007 Microsoft Corporation</copyright>
-    <licenseUrl>http://rawcdn.githack.com/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-creator/license.txt</licenseUrl>
+    <licenseUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/keyboard-layout-creator/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>keyboard-layout-creator keyboard layout keys</tags>
     <summary>Custom keyboard layout creation for Windows</summary>

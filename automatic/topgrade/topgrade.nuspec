@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>topgrade</id>
-    <version>16.0.4</version>
+    <version>16.1.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/topgrade</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Topgrade (Portable)</title>
@@ -36,7 +36,7 @@ Just run `topgrade`.
 See `config.example.toml` for an example configuration file.
  Configuration Path on Windows: `%APPDATA%`
 </description>
-    <releaseNotes>https://github.com/topgrade-rs/topgrade/releases</releaseNotes>
+    <releaseNotes>https://github.com/topgrade-rs/topgrade/releases/tag/v16.1.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
     </dependencies>

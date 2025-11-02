@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>xyplorer</id>
-    <version>28.00.0500</version>
+    <version>27.20.0200</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/xyplorer</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>XYplorer (Install)</title>
@@ -23,7 +23,7 @@
   This is a commercial product, with a 30 day trial. For pricing go to: http://www.xyplorer.com/#buy
 
   **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
-    <releaseNotes>http://www.xyplorer.com/whatsnew.php#current</releaseNotes>
+    <releaseNotes>https://www.xyplorer.com/release_27.20.php</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

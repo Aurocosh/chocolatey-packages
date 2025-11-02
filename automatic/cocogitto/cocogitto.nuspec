@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cocogitto</id>
-    <version>6.4.0</version>
+    <version>6.5.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cdisplayex</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Cocogitto (Portable)</title>
@@ -67,7 +67,7 @@ It strives to be a set of simple, modern and fast command line interfaces.
 This readme is a quick tour of what you can do with Cocogitto, for an in-depth guide please refer
 to [the documentation](https://docs.cocogitto.io).
 </description>
-    <releaseNotes>https://github.com/cocogitto/cocogitto/releases</releaseNotes>
+    <releaseNotes>https://github.com/cocogitto/cocogitto/releases/tag/6.5.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
     </dependencies>

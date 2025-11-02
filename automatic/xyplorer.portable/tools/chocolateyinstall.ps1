@@ -7,9 +7,9 @@ $packageArgs = @{
   packageName     = $env:ChocolateyPackageName
   unzipLocation   = $installPath
   softwareName    = 'XYPlorer*'
-  url64bit        = 'https://www.xyplorer.com/free-zer/27.20/xyplorer_full_noinstall.zip'
-  checksum64      = '3b545b99cdc485ade1a019112a82922e0725143ede85b29d6ab58b071fc55b08'
-  checksumType64  = 'sha256'
+  url             = 'https://www.xyplorer.com/free-zer/27.20/xyplorer_full_noinstall.zip'
+  checksum        = '3b545b99cdc485ade1a019112a82922e0725143ede85b29d6ab58b071fc55b08'
+  checksumType    = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs

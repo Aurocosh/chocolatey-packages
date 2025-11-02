@@ -3,8 +3,8 @@ Import-Module Chocolatey-AU
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url64bit\s*=\s*)('.*')"      = "`$1'$($Latest.Url)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
+            "(?i)(^\s*url\s*=\s*)('.*')"      = "`$1'$($Latest.Url)'"
+            "(?i)(^\s*checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
         }
         "$($Latest.PackageName).nuspec" = @{
             "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"

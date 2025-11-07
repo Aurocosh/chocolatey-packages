@@ -14,7 +14,6 @@
     <licenseUrl>https://github.com/digimezzo/dopamine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
-    <docsUrl>https://github.com/digimezzo/dopamine-windows/blob/master/Dopamine%202%20Documentation.pdf</docsUrl>
     <bugTrackerUrl>https://github.com/digimezzo/dopamine/issues</bugTrackerUrl>
     <tags>dopamine3 dopamine electron linux mac music music-player windows</tags>
     <summary>Audio player which tries to make organizing and listening to music as simple and pretty as possible.</summary>

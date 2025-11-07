@@ -7,22 +7,21 @@
     <version>2.0.10</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Dopamine 2 (Install)</title>
+    <title>Dopamine 3 (Install)</title>
     <authors>Digimezzo</authors>
-    <projectUrl>https://github.com/digimezzo/dopamine-windows</projectUrl>
+    <projectUrl>https://github.com/digimezzo/dopamine</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine2/img/icon.png</iconUrl>
-    <licenseUrl>https://github.com/digimezzo/dopamine-windows/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/digimezzo/dopamine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/digimezzo/dopamine-windows</projectSourceUrl>
+    <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
     <docsUrl>https://github.com/digimezzo/dopamine-windows/blob/master/Dopamine%202%20Documentation.pdf</docsUrl>
-    <bugTrackerUrl>https://github.com/digimezzo/dopamine-windows/issues</bugTrackerUrl>
-    <tags>dopamine2 dopamine electron linux mac music music-player windows</tags>
+    <bugTrackerUrl>https://github.com/digimezzo/dopamine/issues</bugTrackerUrl>
+    <tags>dopamine3 dopamine electron linux mac music music-player windows</tags>
     <summary>Audio player which tries to make organizing and listening to music as simple and pretty as possible.</summary>
-    <description># Dopamine 2
+    <description># Dopamine 3
+Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. This version is written using Electron, Angular and Typescript.
 
-Dopamine is an audio player which tries to make organizing and listening to music as simple and pretty as possible. It is written in C# and is powered by the [CSCore sound library](https://github.com/filoe/cscore).
-
-![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine2/img/screenshot.png)
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/screenshot.png)
 
 </description>
     <releaseNotes>https://github.com/digimezzo/dopamine-windows/releases</releaseNotes>

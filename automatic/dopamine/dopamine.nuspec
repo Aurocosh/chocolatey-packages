@@ -16,7 +16,7 @@
     <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
     <bugTrackerUrl>https://github.com/digimezzo/dopamine/issues</bugTrackerUrl>
     <tags>dopamine3 dopamine electron linux mac music music-player windows</tags>
-    <summary>Audio player which tries to make organizing and listening to music as simple and pretty as possible.</summary>
+    <summary>The audio player that keeps it simple</summary>
     <description># Dopamine 3
 Dopamine is an elegant audio player which tries to make organizing and listening to music as simple and pretty as possible. This version is written using Electron, Angular and Typescript.
 

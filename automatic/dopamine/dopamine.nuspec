@@ -10,7 +10,7 @@
     <title>Dopamine 3 (Install)</title>
     <authors>Digimezzo</authors>
     <projectUrl>https://github.com/digimezzo/dopamine</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine2/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/digimezzo/dopamine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/digimezzo/dopamine</projectSourceUrl>
@@ -29,8 +29,6 @@ Dopamine is an elegant audio player which tries to make organizing and listening
     </dependencies>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="tools\**" target="tools" />
   </files>
 </package>
 

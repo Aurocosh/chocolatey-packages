@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine</id>
-    <version>2.0.10</version>
+    <version>3.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Dopamine 3 (Install)</title>
@@ -23,9 +23,9 @@ Dopamine is an elegant audio player which tries to make organizing and listening
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/screenshot.png)
 
 </description>
-    <releaseNotes>https://github.com/digimezzo/dopamine-windows/releases</releaseNotes>
+    <releaseNotes>https://github.com/digimezzo/dopamine/releases/tag/v3.0.0</releaseNotes>
     <dependencies>
-      <dependency id="dopamine3" version="[2.0.10]"/>
+      <dependency id="dopamine3" version="[3.0.0]" />
     </dependencies>
   </metadata>
   <files>

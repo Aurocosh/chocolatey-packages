@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine3</id>
-    <version>3.0.0-preview40</version>
+    <version>3.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine3</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Dopamine 3 (Install)</title>
@@ -23,7 +23,7 @@ Dopamine is an elegant audio player which tries to make organizing and listening
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/screenshot.png)
 
 </description>
-    <releaseNotes>https://github.com/digimezzo/dopamine/releases</releaseNotes>
+    <releaseNotes>https://github.com/digimezzo/dopamine/releases/tag/v3.0.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

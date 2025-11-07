@@ -5,7 +5,7 @@ function global:au_SearchReplace {
     @{
         "$($Latest.PackageName).nuspec" = @{
             "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-            "(?i)(\<dependency id=`"dopamine3`" version=`"\[).*?(\]`" /\>)" = "`${1}$($Latest.Version)`$2"
+            "(?i)(\<dependency id=`"dopamine[23]`" version=`"\[).*?(\]`" /\>)" = "`${1}$($Latest.Version)`$2"
         }
     }
 }

@@ -7,7 +7,7 @@
     <version>3.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>Dopamine 3 (Install)</title>
+    <title>Dopamine 3</title>
     <authors>Digimezzo</authors>
     <projectUrl>https://github.com/digimezzo/dopamine</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dopamine3/img/icon.png</iconUrl>

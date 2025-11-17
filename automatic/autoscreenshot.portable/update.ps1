@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser artem78 `
     -RepoName AutoScreenshot `
-    -MainUrl32Regex "AutoScreenshot_v\d+\.\d+_Windows_portable\.zip"
+    -MainUrl32Regex "AutoScreenshot_v\d+\.\d+(?:\.\d+)?_Windows_portable\.zip"
 
 function global:au_SearchReplace {
     @{

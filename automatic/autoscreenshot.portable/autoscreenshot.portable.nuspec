@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>autoscreenshot.portable</id>
-    <version>1.16</version>
+    <version>1.16.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/autoscreenshot.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Auto Screenshot (Portable)</title>
@@ -34,7 +34,7 @@ An application for automatically taking screenshots at specified time intervals.
 ## Screenshots
 ![Main program window in Windows 7](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/autoscreenshot.portable/img/screenshot.png "Main program window in Windows 7")
 </description>
-    <releaseNotes>https://github.com/artem78/AutoScreenshot/releases</releaseNotes>
+    <releaseNotes>https://github.com/artem78/AutoScreenshot/releases/tag/v1.16.1</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

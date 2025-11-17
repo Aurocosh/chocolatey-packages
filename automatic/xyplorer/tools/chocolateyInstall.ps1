@@ -7,7 +7,7 @@ $packageArgs = @{
   unzipLocation  = $tempPath
   softwareName   = 'XYPlorer*'
   url            = 'https://www.xyplorer.com/free-zer/27.20/xyplorer_full.zip'
-  checksum       = 'b5273599c9464aea0e2da512cb3bfcda41156133e380f17688c4f353df90b0f5'
+  checksum       = '649e263aec271414496b5a860ccc540e1fa02c0e49df950d6a92a27d9a557073'
   checksumType   = 'sha256'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = '/S'  # NSIS
@@ -16,7 +16,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$installerExe = (Get-ChildItem $tempPath -filter "XYplorer64_*_Install.exe" -File | Select-Object -First 1).FullName
+$installerExe = (Get-ChildItem $tempPath -filter "XYplorer*_*_Install.exe" -File | Select-Object -First 1).FullName
 $packageArgs.file = $installerExe
 Install-ChocolateyInstallPackage @packageArgs
 

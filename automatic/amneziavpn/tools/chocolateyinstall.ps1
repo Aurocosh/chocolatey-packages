@@ -1,11 +1,11 @@
-$ErrorActionPreference = 'Stop' # stop on all errors
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
   softwareName   = 'AmneziaVPN*'
-  url64bit       = 'https://github.com/amnezia-vpn/amnezia-client/releases/download/4.8.10.0/AmneziaVPN_4.8.10.0_windows_x64.exe'
-  checksum64     = 'f541646b4b2b5be4394d695a9b94f71f1a36d1869027ab8256d7048185c7df78'
+  url64bit       = 'https://github.com/amnezia-vpn/amnezia-client/releases/download/4.8.11.4/AmneziaVPN_4.8.11.4_x64.exe'
+  checksum64     = '0d5d6c08c1cc97c14e732c14135d17535e61465f779ac8cd4ba5704740cf611d'
   checksumType64 = 'sha256'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = 'install --confirm-command --accept-messages'

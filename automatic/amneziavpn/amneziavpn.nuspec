@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>amneziavpn</id>
-    <version>4.8.10.0</version>
+    <version>4.8.11.4</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/amneziavpn</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Amnezia VPN (Install)</title>
@@ -33,7 +33,7 @@ Amnezia is an open-source VPN client, with a key feature that enables you to dep
 - Windows, MacOS, Linux, Android, iOS releases.
 
 </description>
-    <releaseNotes>https://github.com/amnezia-vpn/amnezia-client/releases</releaseNotes>
+    <releaseNotes>https://github.com/amnezia-vpn/amnezia-client/releases/tag/4.8.11.4</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser amnezia-vpn `
     -RepoName amnezia-client `
-    -MainUrl64Regex "AmneziaVPN_\d+\.\d+\.\d+\.\d+_windows_x64.exe"
+    -MainUrl64Regex "AmneziaVPN_\d+\.\d+\.\d+\.\d+_x64.exe"
 
 function global:au_SearchReplace {
     @{

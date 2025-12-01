@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rainfrog</id>
-    <version>0.3.8</version>
+    <version>0.3.10</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rainfrog</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Rainfrog (Portable)</title>
@@ -36,7 +36,7 @@ The goal for rainfrog is to provide a lightweight, terminal-based tool for inter
 - Cross-platform (macOS, linux, windows, android via termux)
 
     </description>
-    <releaseNotes>https://github.com/achristmascarl/rainfrog/releases/tag/v0.3.8</releaseNotes>
+    <releaseNotes>https://github.com/achristmascarl/rainfrog/releases/tag/v0.3.10</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
     </dependencies>

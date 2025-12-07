@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'crip*'
-  url64bit       = 'https://github.com/Hakky54/certificate-ripper/releases/download/2.5.0/crip-windows-amd64.zip'
-  checksum64     = 'db99c81779122d2abb1f848228528b54b1e2122035543193baefe5c0ae23f2d6'
+  url64bit       = 'https://github.com/Hakky54/certificate-ripper/releases/download/v2.6.0/crip-windows-amd64.zip'
+  checksum64     = '479c33a877049d66f19febd606793e8c8635d3079ca3f4a9562f56b7efc1f742'
   checksumType64 = 'sha256'
 }
 

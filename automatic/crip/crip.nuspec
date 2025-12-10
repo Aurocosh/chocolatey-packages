@@ -46,7 +46,7 @@ Commands:
   export pem        Export the extracted certificate to a base64 encoded string also known as PEM
 ```
 </description>
-    <releaseNotes>https://github.com/Hakky54/certificate-ripper/releases/tag/v2.6.0</releaseNotes>
+    <releaseNotes>https://github.com/Hakky54/certificate-ripper/releases/tag/2.6.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
     </dependencies>

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>office2019proplus</id>
-    <version>2019.1808.0.20251119</version>
+    <version>2019.1808.0.20251213</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/office2019proplus</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Microsoft Office 2019 ProPlus</title>

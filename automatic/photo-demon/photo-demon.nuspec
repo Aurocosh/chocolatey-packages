@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>photo-demon</id>
-    <version>2025.4</version>
+    <version>2025.12</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/photo-demon</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>PhotoDemon (Portable)</title>
@@ -26,7 +26,7 @@ PhotoDemon provides a comprehensive photo editor in a 15 MB download. It runs on
 
 PhotoDemon is open-source and available under a permissive BSD license. Contributors have translated the program into more than a dozen languages.
 </description>
-    <releaseNotes>https://github.com/tannerhelland/PhotoDemon/releases</releaseNotes>
+    <releaseNotes>https://github.com/tannerhelland/PhotoDemon/releases/tag/v2025.12</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zen-browser</id>
-    <version>1.17.13-b</version>
+    <version>1.17.14-b</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/zen-browser</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Zen Browser (Install)</title>
@@ -25,7 +25,7 @@ We care about your experience, not your data.
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/zen-browser/img/screenshot.png)
 
 </description>
-    <releaseNotes>https://github.com/zen-browser/desktop/releases/tag/1.17.13b</releaseNotes>
+    <releaseNotes>https://github.com/zen-browser/desktop/releases/tag/1.17.14b</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

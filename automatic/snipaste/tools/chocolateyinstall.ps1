@@ -6,8 +6,8 @@ $packageArgs = @{
   unzipLocation  = $installPath
   softwareName   = 'Snipaste*'
   checksumType   = 'sha256'
-  url64bit       = 'https://download.snipaste.com/archives/Snipaste-2.11-x64.zip'
-  checksum64     = 'e5d6d78376a09f4f86424eb113bbcee787cf8dcac377a77392f31160e265a56d'
+  url64bit       = 'https://download.snipaste.com/archives/Snipaste-2.11.2-x64.zip'
+  checksum64     = '594a32928e88b365b95560a68c2ca43a43dcfeb3c3429fe990da26c90749bbd8'
   checksumType64 = 'sha256'
 }
 

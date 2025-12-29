@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sourcegit</id>
-    <version>2025.40</version>
+    <version>2025.41</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/sourcegit</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>SourceGit (Portable)</title>
@@ -66,7 +66,7 @@ Opensource Git GUI client.
 * Light Theme
   ![Theme Light](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/sourcegit/img/theme_light.png)
 </description>
-    <releaseNotes>https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.40</releaseNotes>
+    <releaseNotes>https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.41</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kicad</id>
-    <version>9.0.6</version>
+    <version>9.0.7</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/kicad</packageSourceUrl>
     <owners>Aurocosh,jtcmedia</owners>
     <title>KiCad (Install)</title>
@@ -38,7 +38,7 @@ KiCad includes a 3D viewer which you can use to inspect your design in an intera
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/kicad/img/kicad_3dviewer.png)
 
     </description>
-    <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/9.0.6</releaseNotes>
+    <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/9.0.7</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>qsvenc</id>
-    <version>8.03</version>
+    <version>8.04</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/qsvenc</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>QSVEnc (Portable)</title>
@@ -35,7 +35,7 @@
 - VP9
 - AV1
 </description>
-    <releaseNotes>https://github.com/rigaya/QSVEnc/releases/tag/8.03</releaseNotes>
+    <releaseNotes>https://github.com/rigaya/QSVEnc/releases/tag/8.04</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

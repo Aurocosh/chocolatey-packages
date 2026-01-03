@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vceenc</id>
-    <version>9.02</version>
+    <version>9.03</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/vceenc</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>VCEEnc (Portable)</title>
@@ -32,7 +32,7 @@
 - VP9
 - VC-1
 </description>
-    <releaseNotes>https://github.com/rigaya/VCEEnc/releases/tag/9.02</releaseNotes>
+    <releaseNotes>https://github.com/rigaya/VCEEnc/releases/tag/9.03</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

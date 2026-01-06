@@ -4,8 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser forkgram `
     -RepoName tdesktop `
-    -MainUrl32Regex "Telegram_x86_win10.+\.zip" `
-    -MainUrl64Regex "Telegram_win10.+\.zip"
+    -MainUrl32Regex "Telegram_x86.zip" `
+    -MainUrl64Regex "Telegram.zip"
 
 function global:au_SearchReplace {
     @{

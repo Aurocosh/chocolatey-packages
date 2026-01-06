@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>forkgram</id>
-    <version>6.3.10.20251226</version>
+    <version>6.4.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/forkgram</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Forkgram (Portable)</title>
@@ -24,7 +24,7 @@
 Forkgram is the fork of the official Telegram Desktop application.
 This fork does not fundamentally change the official client and adds only some useful small features.
 </description>
-    <releaseNotes>https://github.com/forkgram/tdesktop/releases/tag/v6.3.10</releaseNotes>
+    <releaseNotes>https://github.com/forkgram/tdesktop/releases/tag/v6.4.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

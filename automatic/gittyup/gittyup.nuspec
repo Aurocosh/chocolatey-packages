@@ -5,7 +5,7 @@
   <metadata>
     <id>gittyup</id>
     <version>1.4.0</version>
-    <packageSourceUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/gittyup/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/gittyup</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Gittyup (Install)</title>
     <authors>Scientific Toolworks, Inc.</authors>

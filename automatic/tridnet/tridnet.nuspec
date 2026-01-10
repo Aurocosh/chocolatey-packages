@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tridnet</id>
-    <version>1.95.260106</version>
+    <version>1.95.260109</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/tridnet</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>TrIDNet - File Identifier (Portable)</title>

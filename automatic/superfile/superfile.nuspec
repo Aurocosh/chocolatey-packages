@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>superfile</id>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/superfile</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Superfile (Portable)</title>
@@ -22,7 +22,7 @@
     <description>Pretty fancy and modern terminal file manager
 
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/superfile/img/screenshot.png) </description>
-    <releaseNotes>https://github.com/yorukot/superfile/releases</releaseNotes>
+    <releaseNotes>https://github.com/yorukot/superfile/releases/tag/v1.5.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cherrytree</id>
-    <version>1.6.2</version>
+    <version>1.6.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/cherrytree</packageSourceUrl>
     <owners>Aurocosh, ao123123</owners>
     <title>Cherrytree (Install)</title>
@@ -21,7 +21,7 @@
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/cherrytree/img/screenshot.png)
 A hierarchical note taking application, featuring rich text and syntax highlighting, storing data in either a single file (xml or sqlite) or multiple files and directories. 
 </description>
-    <releaseNotes>https://github.com/giuspen/cherrytree/releases</releaseNotes>
+    <releaseNotes>https://github.com/giuspen/cherrytree/releases/tag/v1.6.3</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

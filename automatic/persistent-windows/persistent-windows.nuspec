@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>persistent-windows</id>
-    <version>5.73</version>
+    <version>5.74</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/persistent-windows</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>PersistentWindows (Portable)</title>
@@ -33,7 +33,7 @@ This project addresses a long-standing issue in Windows 7, 10, and 11, where win
 - Automatic upgrade support.
 
 </description>
-    <releaseNotes>https://github.com/kangyu-california/PersistentWindows/releases/tag/5.73</releaseNotes>
+    <releaseNotes>https://github.com/kangyu-california/PersistentWindows/releases/tag/5.74</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

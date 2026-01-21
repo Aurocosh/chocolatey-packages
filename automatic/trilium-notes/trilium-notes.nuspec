@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>trilium-notes</id>
+    <version>0.101.3</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/trilium-notes</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Trilium (Install)</title>
+    <authors>Zadam, Trilium contributors</authors>
+    <projectUrl>https://triliumnotes.org</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/trilium-notes/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/TriliumNext/Trilium/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/TriliumNext/Trilium</projectSourceUrl>
+    <docsUrl>https://docs.triliumnotes.org</docsUrl>
+    <bugTrackerUrl>https://github.com/TriliumNext/Trilium/issues</bugTrackerUrl>
+    <tags>trilium-notes electron notebook notes scriptable self-hosted wiki</tags>
+    <summary>Build your personal knowledge base with Trilium Notes</summary>
+    <description># Trilium Notes
+
+Trilium Notes is a free and open-source, cross-platform hierarchical note taking application with focus on building large personal knowledge bases.
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/trilium-notes/img/screenshot.png)
+
+## 🎁 Features
+
+* Notes can be arranged into arbitrarily deep tree. Single note can be placed into multiple places in the tree
+* Rich WYSIWYG note editor including e.g. tables, images and math with markdown autoformat
+* Support for editing notes with source code
+* Fast and easy navigation between notes, full text search and note hoisting
+* Seamless note versioning
+* Note attributes can be used for note organization, querying and advanced scripting
+* UI available in English, German, Spanish, French, Romanian, and Chinese (simplified and traditional)
+* Direct OpenID and TOTP integration for more secure login
+* Synchronization with self-hosted sync server
+* Sharing (publishing) notes to public internet
+* Strong note encryption with per-note granularity
+* Sketching diagrams, based on Excalidraw (note type "canvas")
+* Relation maps and note/link maps for visualizing notes and their relations
+* Mind maps, based on Mind Elixir
+* Geo maps with location pins and GPX tracks
+* Scripting
+* REST API for automation
+* Scales well in both usability and performance upwards of 100 000 notes
+* Touch optimized mobile frontend for smartphones and tablets
+* Built-in dark theme, support for user themes
+* Evernote and Markdown import &amp; export
+* Web Clipper for easy saving of web content
+* Customizable UI (sidebar buttons, user-defined widgets, ...)
+* Metrics, along with a Grafana Dashboard.
+
+ </description>
+    <releaseNotes>https://github.com/TriliumNext/Trilium/releases/tag/v0.101.3</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

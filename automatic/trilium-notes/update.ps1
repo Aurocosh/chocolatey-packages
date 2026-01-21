@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser TriliumNext `
     -RepoName Trilium `
-    -MainUrl64Regex "TriliumNotes-v\d+\.\d+\.\d+-windows-x64.exe"
+    -MainUrl64Regex "TriliumNotes-v\d+\.\d+\.\d+-windows-x64.zip"
 
 function global:au_SearchReplace {
     @{

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>handy</id>
+    <version>0.7.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/handy</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Handy (Install)</title>
+    <authors>CJ Pais</authors>
+    <projectUrl>https://handy.computer</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/handy/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/cjpais/Handy/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/cjpais/Handy</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/cjpais/Handy/issues</bugTrackerUrl>
+    <tags>handy accessibility cross-platform speech-to-text tauri-v2</tags>
+    <summary>A free, open source, and extensible speech-to-text application that works completely offline</summary>
+    <description>## Handy
+Speak into any text field. The free and open source app for speech to text.
+
+- Free
+- Open Source
+- Private
+- Simple
+
+One tool, one job. Transcribe what you say and put it into a text box. 
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/handy/img/screenshot.png)
+
+</description>
+    <releaseNotes>https://github.com/cjpais/Handy/releases/tag/v0.7.0</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

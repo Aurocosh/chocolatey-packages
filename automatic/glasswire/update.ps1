@@ -10,18 +10,46 @@ function global:au_SearchReplace {
     }
 }
 
+# function global:au_GetLatest {
+#     $download_page = Invoke-WebRequest -Uri 'https://www.glasswire.com/changes' -UseBasicParsing
+
+#     $regex32 = 'glasswire-setup-(\d+\.\d+\.\d+)-full\.exe'
+#     $url32 = $download_page.links | Where-Object href -match $regex32 | Select-Object -First 1 -expand href
+
+#     $version = $matches[1]
+
+#     @{
+#         Url32   = $url32
+#         Version = $version
+#     }
+# }
+
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://www.glasswire.com/changes'
+    $response = Invoke-WebRequest -Uri "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/GlassWire/GlassWire" -Method Get -UseBasicParsing
+    $jsonValue = ConvertFrom-Json $response.Content
 
-    $regex32 = 'glasswire-setup-(\d+\.\d+\.\d+)-full\.exe'
-    $url32 = $download_page.links | Where-Object href -match $regex32 | Select-Object -First 1 -expand href
+    for ($ia = $jsonValue.length; $ia -gt -1; $ia--) {
+        $version = $jsonValue[$ia].name
+        if($version -match "^\d+(?:\.\d+){1,2}$")
+        {
+            break
+        }
+    }
 
-    $version = $matches[1]
+    $manifestUrl = "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GlassWire/GlassWire/$version/GlassWire.GlassWire.installer.yaml"
+    $response = Invoke-WebRequest -Uri $manifestUrl -UseBasicParsing
 
+    $response.Content -match "InstallerUrl:\s*(https://download.glasswire.com/f/[^\s]*\.exe)"
+    $url32 = $matches[1]
+
+    $response.Content -match "InstallerSha256:\s*([a-fA-F0-9]{64})"
+    $sha256 =  $matches[1].toLower()
+	
     @{
-        Url32   = $url32
+        URL32   = $url32
         Version = $version
+        Checksum32 = $sha256
     }
 }
 
-update -ChecksumFor all
+update -ChecksumFor none -NoCheckUrl

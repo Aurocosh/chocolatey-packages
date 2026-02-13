@@ -10,9 +10,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://jugglinglab.org'
+    $download_page = Invoke-WebRequest -Uri 'https://jugglinglab.org' -UseBasicParsing
 
-    $regex32 = "https://storage.googleapis.com/jugglinglab-dl/JugglingLab-(\d+\.\d+\.\d+).exe"
+    $regex32 = "https://storage.googleapis.com/jugglinglab-dl/JugglingLab-(\d+\.\d+(?:\.\d+)?).exe"
     $url32 = $download_page.links | Where-Object href -match $regex32 | Select-Object -First 1 -expand href
 
     $version = $matches[1]

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>museeks</id>
-    <version>0.23.1</version>
+    <version>0.23.2</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/museeks</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Museeks (Install)</title>
@@ -41,7 +41,7 @@ Here is a little preview though:
 - 📥 `.m3u` import/export
 
 </description>
-    <releaseNotes>https://github.com/martpie/museeks/releases</releaseNotes>
+    <releaseNotes>https://github.com/martpie/museeks/releases/tag/0.23.2</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

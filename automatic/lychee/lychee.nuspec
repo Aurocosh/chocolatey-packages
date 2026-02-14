@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>lychee</id>
-    <version>0.22.0</version>
+    <version>0.23.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/lychee</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Lychee (Install)</title>
@@ -23,7 +23,7 @@ reStructuredText, or any other text file or website!
 
 ![Screencast](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/lychee/img/screencast.svg "Screencast")
 </description>
-    <releaseNotes>https://github.com/lycheeverse/lychee/releases/tag/lychee-v0.22.0</releaseNotes>
+    <releaseNotes>https://github.com/lycheeverse/lychee/releases/tag/lychee-v0.23.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

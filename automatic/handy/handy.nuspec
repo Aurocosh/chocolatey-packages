@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handy</id>
-    <version>0.7.5</version>
+    <version>0.7.6</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/handy</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Handy (Install)</title>
@@ -30,7 +30,7 @@ One tool, one job. Transcribe what you say and put it into a text box.
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/handy/img/screenshot.png)
 
 </description>
-    <releaseNotes>https://github.com/cjpais/Handy/releases/tag/v0.7.5</releaseNotes>
+    <releaseNotes>https://github.com/cjpais/Handy/releases/tag/v0.7.6</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

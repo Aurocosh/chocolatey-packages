@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>r.studio</id>
-    <version>2026.01.0</version>
+    <version>2026.01.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/r.studio</packageSourceUrl>
     <owners>Aurocosh, Elliando Dias</owners>
     <title>R.Studio (Install)</title>
@@ -23,7 +23,7 @@
     <dependencies>
       <dependency id="r.project" />
     </dependencies>
-    <releaseNotes>https://docs.posit.co/ide/news/#rstudio-2026.01.0</releaseNotes>
+    <releaseNotes>https://docs.posit.co/ide/news/#rstudio-2026.01.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

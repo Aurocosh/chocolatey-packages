@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fastflix.portable</id>
-    <version>5.12.4.20251101</version>
+    <version>6.1.0</version>
     <packageSourceUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix.portable/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>FastFlix (Portable)</title>
@@ -32,7 +32,7 @@ It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the 
  
 eg. `choco install -y fastflix.portable --package-parameters="/NoDesktopShortcut /NoStartMenuShortcut"`
 </description>
-    <releaseNotes>https://github.com/cdgriffith/FastFlix/releases/tag/5.12.4</releaseNotes>
+    <releaseNotes>https://github.com/cdgriffith/FastFlix/releases/tag/6.1.0</releaseNotes>
     <dependencies>
       <dependency id="ffmpeg-full" />
     </dependencies>

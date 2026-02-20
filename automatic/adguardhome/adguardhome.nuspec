@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>adguardhome</id>
-    <version>0.107.71</version>
+    <version>0.107.72</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/adguardhome</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>AdGuardHome (Portable)</title>
@@ -25,7 +25,7 @@ It operates as a DNS server that re-routes tracking domains to a â€œblack holeâ€
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/adguardhome/img/screenshot.png)
 
     </description>
-    <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.71</releaseNotes>
+    <releaseNotes>https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.72</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

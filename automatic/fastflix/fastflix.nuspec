@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fastflix</id>
-    <version>5.12.4.20251101</version>
+    <version>6.1.0</version>
     <packageSourceUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>FastFlix (Install)</title>
@@ -25,7 +25,7 @@
 
 It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
 </description>
-    <releaseNotes>https://github.com/cdgriffith/FastFlix/releases/tag/5.12.4</releaseNotes>
+    <releaseNotes>https://github.com/cdgriffith/FastFlix/releases/tag/6.1.0</releaseNotes>
     <dependencies>
       <dependency id="ffmpeg-full" />
     </dependencies>

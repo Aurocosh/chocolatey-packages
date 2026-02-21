@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vibe</id>
-    <version>3.0.12</version>
+    <version>3.0.13</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/vibe</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Vibe (Install)</title>
@@ -24,7 +24,7 @@
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/vibe/img/screenshot.png) 
 
 </description>
-    <releaseNotes>https://github.com/thewh1teagle/vibe/releases/tag/v3.0.12</releaseNotes>
+    <releaseNotes>https://github.com/thewh1teagle/vibe/releases/tag/v3.0.13</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

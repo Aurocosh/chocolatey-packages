@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>trilium-notes</id>
-    <version>0.101.3</version>
+    <version>0.102.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/trilium-notes</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Trilium (Install)</title>
@@ -52,7 +52,7 @@ Trilium Notes is a free and open-source, cross-platform hierarchical note taking
 * Metrics, along with a Grafana Dashboard.
 
  </description>
-    <releaseNotes>https://github.com/TriliumNext/Trilium/releases/tag/v0.101.3</releaseNotes>
+    <releaseNotes>https://github.com/TriliumNext/Trilium/releases/tag/v0.102.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

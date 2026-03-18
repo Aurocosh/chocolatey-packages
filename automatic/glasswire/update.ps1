@@ -39,7 +39,7 @@ function global:au_GetLatest {
     $manifestUrl = "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GlassWire/GlassWire/$version/GlassWire.GlassWire.installer.yaml"
     $response = Invoke-WebRequest -Uri $manifestUrl -UseBasicParsing
 
-    $response.Content -match "InstallerUrl:\s*(https://download.glasswire.com/f/[^\s]*\.exe)"
+    $response.Content -match "InstallerUrl:\s*(https://.*?.exe)"
     $url32 = $matches[1]
 
     $response.Content -match "InstallerSha256:\s*([a-fA-F0-9]{64})"

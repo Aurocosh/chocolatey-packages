@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>glasswire</id>
-    <version>3.7.880</version>
+    <version>3.8.1033</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/glasswire</packageSourceUrl>
     <owners>Aurocosh, MANICX100, dtgm, Sanshiro</owners>
     <title>GlassWire (Install)</title>

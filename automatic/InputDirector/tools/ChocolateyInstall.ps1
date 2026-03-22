@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  url            = 'https://inputdirector.com/downloads/InputDirector.v2.3.zip'
-  checksum       = '51316c7993058fb7973f2a24523aabe7da66c08e89511486fc924f030c9af538'
+  url            = 'https://inputdirector.com/downloads/InputDirector.v2.4.zip'
+  checksum       = '61906a72291dbc428e01fc064bf7ace54e2db78f5d35caa5ffab9e5d061830a5'
   checksumType   = 'sha256'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = '/S'  # NSIS

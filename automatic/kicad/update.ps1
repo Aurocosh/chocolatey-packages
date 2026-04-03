@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser KiCad `
     -RepoName kicad-source-mirror `
-    -MainUrl64Regex "kicad-\d+\.\d+\.\d+-x86_64.exe"
+    -MainUrl64Regex "kicad-\d+\.\d+\.\d+(?:-\d+)?-x86_64.exe"
 
 function global:au_SearchReplace {
     @{

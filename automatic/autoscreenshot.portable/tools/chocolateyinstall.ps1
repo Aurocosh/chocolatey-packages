@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $packagePath
   softwareName  = 'Auto Screenshot*'
-  url           = 'https://github.com/artem78/AutoScreenshot/releases/download/v1.16.1/AutoScreenshot_v1.16.1_Windows_portable.zip'
-  checksum      = '31e2ee4ee1df363c2975fb1c022cee8c71e694efbad28957a0ba5e7f992bf51b'
+  url           = 'https://github.com/artem78/AutoScreenshot/releases/download/v1.16.2/AutoScreenshot_v1.16.2_Windows_portable.zip'
+  checksum      = '83ebaa47471819f3f72ec969b0de976067bfd7042eb91797ecf904bc9883d602'
   checksumType  = 'sha256'
 }
 

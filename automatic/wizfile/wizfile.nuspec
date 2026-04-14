@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wizfile</id>
-    <version>3.13</version>
+    <version>3.14</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/wizfile</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>WizFile (Install)</title>

@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser lycheeverse `
     -RepoName lychee `
-    -MainUrl64Regex "lychee-x86_64-windows.exe"
+    -MainUrl64Regex "lychee-lychee-v\d+\.\d+\.\d+-x86_64-pc-windows-msvc.zip"
 
 function global:au_SearchReplace {
     @{
@@ -13,7 +13,7 @@ function global:au_SearchReplace {
             "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         "$($Latest.PackageName).nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+          "(?i)(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
     }
 }
@@ -29,4 +29,3 @@ function global:au_GetLatest {
 
 update -ChecksumFor $release.ChocoChecksumFor
 
-Remove-Item -Path "$PSScriptRoot/lychee.exe" -Force -ErrorAction SilentlyContinue

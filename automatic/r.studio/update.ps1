@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://posit.co/download/rstudio-desktop/'
+    $download_page = Invoke-WebRequest -Uri 'https://live-rstudio.pantheonsite.io/download/rstudio-desktop/' -UseBasicParsing
 
     $regex64 = "RStudio-(\d+\.\d+\.\d+)-\d+\.exe"
     $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href

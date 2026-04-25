@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser lycheeverse `
     -RepoName lychee `
-    -MainUrl64Regex "lychee-lychee-v\d+\.\d+\.\d+-x86_64-pc-windows-msvc.zip"
+    -MainUrl64Regex "lychee-x86_64-pc-windows-msvc.zip"
 
 function global:au_SearchReplace {
     @{

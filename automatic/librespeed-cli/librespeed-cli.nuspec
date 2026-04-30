@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>librespeed-cli</id>
-    <version>1.0.12</version>
+    <version>1.0.13</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/librespeed-cli</packageSourceUrl>
     <owners>Aurocosh, niks255</owners>
     <title>librespeed-cli (Portable)</title>
@@ -36,7 +36,7 @@ NOTE: Some antivirus software may flag this program as a malware. It is a false 
 This is a known issue https://github.com/librespeed/speedtest-cli/issues/29
 
     </description>
-    <releaseNotes>https://github.com/librespeed/speedtest-cli/releases</releaseNotes>
+    <releaseNotes>https://github.com/librespeed/speedtest-cli/releases/tag/v1.0.13</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

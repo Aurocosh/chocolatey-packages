@@ -1,11 +1,11 @@
 ﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
-$installPath = Join-Path $packagePath 'files'
+$installPath = Join-Path $packagePath 'PhotoDemon'
 $exeFile = Join-Path $installPath 'PhotoDemon.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $installPath
+  unzipLocation = $packagePath
   softwareName  = 'PhotoDemon*'
   url           = 'https://github.com/tannerhelland/PhotoDemon/releases/download/v2025.12/PhotoDemon-2025.12.zip'
   checksum      = '269095087093575a975a66a9588cd8bcc18ff356d20fd4b2851f7e1088df75a1'

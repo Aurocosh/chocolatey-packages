@@ -8,8 +8,8 @@ $packageArgs = @{
   packageName    = $Env:ChocolateyPackageName
   fileFullPath   = $exeFile
   softwareName   = 'tea*'
-  url64bit       = 'https://gitea.com/gitea/tea/releases/download/v0.14.0/tea-0.14.0-windows-amd64.exe'
-  checksum64     = '5f5315a8e0e520e92c0fd8f27c027c26717f68c3f4ee5d33c08a75cfa26f1e0e'
+  url64bit       = 'https://gitea.com/gitea/tea/releases/download/v0.14.1/tea-0.14.1-windows-amd64.exe'
+  checksum64     = 'f4cb89a18601bd2efb5ef49b6fc75db275c46a0bad09a5d2ecf84ba1147fdf77'
   checksumType64 = 'sha256'
 }
 

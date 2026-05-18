@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'SourceGit*'
-  url64bit       = 'https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.10/sourcegit_2026.10.win-x64.zip'
-  checksum64     = '8fc0e3b365a8e930aa561ffa11b7ac7416090106e1974119b9b22a945f0058d8'
+  url64bit       = 'https://github.com/sourcegit-scm/sourcegit/releases/download/v2026.11/sourcegit_2026.11.win-x64.zip'
+  checksum64     = '538e097a2e526a4de5981b037f1748bd9dffc82986d31ed54d47b4df941a5d6f'
   checksumType64 = 'sha256'
 }
 

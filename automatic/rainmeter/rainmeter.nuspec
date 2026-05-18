@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rainmeter</id>
-    <version>4.5.24</version>
+    <version>4.5.25</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/rainmeter</packageSourceUrl>
     <owners>Aurocosh, figgycity50, doc</owners>
     <title>Rainmeter (Install)</title>
@@ -30,7 +30,7 @@ You are only limited by your imagination and creativity.
 
 ![Rime](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/rainmeter/img/rime.png)
 </description>
-    <releaseNotes>https://github.com/rainmeter/rainmeter/releases/tag/v4.5.24.3857</releaseNotes>
+    <releaseNotes>https://github.com/rainmeter/rainmeter/releases/tag/v4.5.25.3881</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

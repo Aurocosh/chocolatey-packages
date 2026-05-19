@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pixieditor.portable</id>
+    <version>2.1.1.4</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/pixieditor.portable</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>PixiEditor (Portable)</title>
+    <authors>Pixieditor</authors>
+    <projectUrl>https://pixieditor.net</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/PixiEditor/PixiEditor/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/PixiEditor/PixiEditor</projectSourceUrl>
+    <docsUrl>https://pixieditor.net/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/PixiEditor/PixiEditor/issues</bugTrackerUrl>
+    <tags>pixieditor 2d editor game-development graphics graphics-editor painting pixel-art pixi procedural-drawing procedural-generation raster-graphics sprites tabs vector-graphics portable</tags>
+    <summary>PixiEditor is a Universal Editor for all your 2D needs</summary>
+    <description>## The All-in-One Editor for 2D
+
+**PixiEditor** is a universal 2D editor that was made to provide you with tools and features for all your 2D needs. Create beautiful sprites for your games, animations, edit images, create logos. All packed up in an intuitive and familiar interface.
+
+### Toolsets for any scenario
+
+PixiEditor 2.0 comes by default with 3 toolsets: 
+- **Pixel art** - it contains tool suited for pixel-perfect scenarios
+- **Painting** - basic painting tools, soft brushes, anti aliased shapes
+- **Vector** - shapes and paths for creating vectors
+
+All **toolsets can be used on one canvas**. Mix vector with raster. Export to png, jpg, svg, gif, mp4 and more!
+
+![Palettes](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/palettes.png) 
+
+![Vector](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/vector.png) 
+
+### Animations
+
+Version 2.0 comes with a timeline and animation capabilities. You can create frame by frame animations or use nodes to animate your custom shaders.
+Key frame animations with vectors are on our roadmap.
+
+![Animation](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/anim.png) 
+
+### Nodes
+
+Node render system is what powers such extensive capabilities. All layers, effects and the layer structure are nodes or a result of its connections. PixiEditor exposes node graph for every document, so you are free to customize your image however you want and create procedural art/animations!
+
+![Graph](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/graph.png) 
+</description>
+    <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.4</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

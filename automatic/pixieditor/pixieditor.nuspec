@@ -22,10 +22,6 @@
 
 **PixiEditor** is a universal 2D editor that was made to provide you with tools and features for all your 2D needs. Create beautiful sprites for your games, animations, edit images, create logos. All packed up in an intuitive and familiar interface.
 
-![Palettes](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/palettes.png) 
-
-![Vector](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/vector.png) 
-
 ### Toolsets for any scenario
 
 PixiEditor 2.0 comes by default with 3 toolsets: 
@@ -34,6 +30,10 @@ PixiEditor 2.0 comes by default with 3 toolsets:
 - **Vector** - shapes and paths for creating vectors
 
 All **toolsets can be used on one canvas**. Mix vector with raster. Export to png, jpg, svg, gif, mp4 and more!
+
+![Palettes](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/palettes.png) 
+
+![Vector](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/vector.png) 
 
 ### Animations
 

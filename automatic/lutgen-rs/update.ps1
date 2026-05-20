@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser ozwaldorf `
     -RepoName lutgen-rs `
-    -MainUrl64Regex "lutgen-cli-v\d+\.\d+(?:\.\d+)?-x86_64-pc-windows-msvc.exe" `
+    -MainUrl64Regex "lutgen-cli-v(\d+\.\d+(?:\.\d+)?)?-x86_64-pc-windows-msvc.exe" `
     -VersionRegex "^lutgen-v(\d+\.\d+\.\d+(?:\.\d+)?)$"
 
 function global:au_SearchReplace {

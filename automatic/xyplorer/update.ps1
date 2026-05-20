@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     @{
@@ -14,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $releaseUrl = "https://www.xyplorer.com/download.php?bit=32"
-    $response = Invoke-WebRequest -Uri $releaseUrl -UseBasicParsing
+    $response = Invoke-WebRequestRetry -Uri $releaseUrl -UseBasicParsing -RetryDelaySec 5 -MaxRetries 10 -Like "*429*" -Regex ".*(Overloaded|Too Many Requests).*"
 
     $response.Content -match "<td class=`"dl`">(\d+\.\d+)\.(\d+) \(32-bit, \d+-\w+-\d+\)</td>"
     $majorVersion = $matches[1]
@@ -24,19 +25,22 @@ function global:au_GetLatest {
     $downloadUrl = "https://www.xyplorer.com/free-zer/$majorVersion/xyplorer_full.zip"
     $releaseNotesUrl = "https://www.xyplorer.com/release_$majorVersion.php"
 
-    # Start-Sleep -Seconds 5
-    # $hashUrl = "https://www.xyplorer.com/download/XYHash-$version.txt"
-    # $response = Invoke-WebRequest -Uri $hashUrl
+    $hashUrl = "https://www.xyplorer.com/download/XYHash-$version.txt"
+    $response = Invoke-WebRequestRetry -Uri $hashUrl -UseBasicParsing -RetryDelaySec 5 -MaxRetries 10 -Like "*429*" -Regex ".*(Overloaded|Too Many Requests).*"
 
-    # $response.Content -match "File: xyplorer_full.zip.+SHA-256\s+([a-fA-F0-9]{64})"
-    # $sha256 = $matches[1]
+    if ($response.Content -match "(?s)File: xyplorer_full.zip.+?SHA-256\s+?([a-fA-F0-9]{64})") {
+        $sha256 = $matches[1]
+    }
+    else {
+        throw
+    }
 
     @{
         Url32        = $downloadUrl
         Version      = $version
         ReleaseNotes = $releaseNotesUrl
-        # Checksum32   = $sha256
+        Checksum32   = $sha256
     }
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none -NoCheckUrl

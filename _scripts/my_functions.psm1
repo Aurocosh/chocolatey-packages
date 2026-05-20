@@ -3,6 +3,7 @@ $funcs = @(
   'Get-LatestBitbucketDownloads'
   'Get-RedirectedUrl'
   'Set-ReplaceMarkersInFile'
+  'Invoke-WebRequestRetry'
 )
 
 $funcs | ForEach-Object {

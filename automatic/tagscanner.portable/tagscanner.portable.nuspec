@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tagscanner.portable</id>
-    <version>6.1.20</version>
+    <version>6.1.21</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/tagscanner.portable</packageSourceUrl>
     <owners>Aurocosh, niks255</owners>
     <title>TagScanner (Portable)</title>

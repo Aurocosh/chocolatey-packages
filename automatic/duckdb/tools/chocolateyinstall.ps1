@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'duckdb*'
-  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v1.5.2/duckdb_cli-windows-amd64.zip'
-  checksum64     = 'd7b4f5774419c2e9eb14cb7361d3488821ef0244f8af461fd2c6fcb6f43bc3e0'
+  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v1.5.3/duckdb_cli-windows-amd64.zip'
+  checksum64     = '2aba634fab91b3cb3f88cb7a75a9539b47ef240a76f4d4ff8d1e48821c8ccd7f'
   checksumType64 = 'sha256'
 }
 

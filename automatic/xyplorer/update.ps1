@@ -13,45 +13,29 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases = 'https://www.xyplorer.com/freezer.php'
-    $response = Invoke-WebRequest -Uri $releases
+    $releaseUrl = "https://www.xyplorer.com/download.php?bit=32"
+    $response = Invoke-WebRequest -Uri $releaseUrl -UseBasicParsing
 
-    foreach ($link in $response.links | Where-Object href -match "\?ver=((\d+\.\d+)\.\d+)" | Select-Object -expand href) {
-        $link -match "\?ver=((\d+\.\d+)\.\d+)"
-        $version = $matches[1]
-        $majorVersion = $matches[2]
+    $response.Content -match "<td class=`"dl`">(\d+\.\d+)\.(\d+) \(32-bit, \d+-\w+-\d+\)</td>"
+    $majorVersion = $matches[1]
+    $buildVersion = $matches[2]
+    $version = "$majorVersion.$buildVersion"
 
-        $fullLink = "https://www.xyplorer.com/freezer.php$link"
-        Write-Host "link $fullLink"
-        $subResponse = Invoke-WebRequest -Uri $fullLink
+    $downloadUrl = "https://www.xyplorer.com/free-zer/$majorVersion/xyplorer_full.zip"
+    $releaseNotesUrl = "https://www.xyplorer.com/release_$majorVersion.php"
 
-        $downloadFullUrl = $subResponse.links | Where-Object href -match "xyplorer(64)?_full.zip" | Select-Object -First 1 -expand href
-        if (-not $downloadFullUrl) {
-            throw 'Download full url was not found'
-        }
-        $downloadFullUrl = "https://www.xyplorer.com/$downloadFullUrl"
+    # Start-Sleep -Seconds 5
+    # $hashUrl = "https://www.xyplorer.com/download/XYHash-$version.txt"
+    # $response = Invoke-WebRequest -Uri $hashUrl
 
-        $bit64MarkerFull = $matches[1]
-        if ($bit64MarkerFull -eq '64') {
-            continue;
-        }
-
-        Write-Host $version
-        Write-Host $majorVersion
-
-        $releaseNotesUrl = $subResponse.links | Where-Object href -match "release_[\d\.]+.php" | Select-Object -First 1 -expand href
-        if (-not $releaseNotesUrl) {
-            throw 'Release url was not found'
-        }
-        $releaseNotesUrl = "https://www.xyplorer.com/$releaseNotesUrl"
-
-        break;
-    }
+    # $response.Content -match "File: xyplorer_full.zip.+SHA-256\s+([a-fA-F0-9]{64})"
+    # $sha256 = $matches[1]
 
     @{
-        Url32        = $downloadFullUrl
+        Url32        = $downloadUrl
         Version      = $version
         ReleaseNotes = $releaseNotesUrl
+        # Checksum32   = $sha256
     }
 }
 

@@ -5,11 +5,11 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'AdGuardHome*'
-  url            = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.76/AdGuardHome_windows_386.zip'
-  checksum       = 'c3ad01d1eef8e1e28168c6e0059e8c94253bb4ce8fbd4601c11918b8b8f3f93c'
+  url            = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.77/AdGuardHome_windows_386.zip'
+  checksum       = 'c085d5429d3064226a34a20badb931e934645bdfa1c29c20bd7c0822b24f15f1'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.76/AdGuardHome_windows_amd64.zip'
-  checksum64     = '80748442082f07dfdf9c1cdaeeb88e522e99afcdf1aedca3848338ce42c23ee6'
+  url64bit       = 'https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.77/AdGuardHome_windows_amd64.zip'
+  checksum64     = 'd0fe5a41e13558e7dce22b7810d354745d870b31eeb2d4eb63207f918c0e66b8'
   checksumType64 = 'sha256'
 }
 

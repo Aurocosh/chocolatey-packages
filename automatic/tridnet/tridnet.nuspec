@@ -23,9 +23,9 @@ In addition, with a simple double click, it have the ability to display a series
 
     </description>
     <releaseNotes>https://mark0.net/soft-tridnet-e.html</releaseNotes>
-    <dependencies>
+    <!-- <dependencies>
       <dependency id="dotnet" />
-    </dependencies>
+    </dependencies> -->
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

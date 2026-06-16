@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser feschber `
     -RepoName lan-mouse `
-    -MainUrl64Regex "lan-mouse-windows.zip"
+    -MainUrl64Regex "lan-mouse-windows-x86_64.zip"
 
 function global:au_SearchReplace {
     @{

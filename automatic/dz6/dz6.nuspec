@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dz6</id>
+    <version>0.7.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dz6</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>dz6 (Portable)</title>
+    <authors>Mente Binaria</authors>
+    <projectUrl>https://github.com/mentebinaria/dz6</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dz6/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/mentebinaria/dz6/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mentebinaria/dz6</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/mentebinaria/dz6/issues</bugTrackerUrl>
+    <tags>dz6 elf file-editor file-inspection forensics hex-editing hex-editor malware-analysis pe-file reverse-engineering vim-like</tags>
+    <summary>Fast Vim-inspired TUI hex editor</summary>
+    <description># dz6
+
+Fast Vim-inspired TUI hex editor
+
+## Features
+
+- Fast, even when editing large files
+- Runs in the terminal / Text User Interface (TUI)
+- Vim-like key bindings
+- Configurable options
+- Edit in hex or ASCII
+- String list with regex filtering
+- Multiple smart ways to navigate through a file
+- Find strings and hex bytes
+- Cross-platform
+- Open source
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dz6/img/screenshot.png)
+
+</description>
+    <releaseNotes>https://github.com/mentebinaria/dz6/releases/tag/v0.7.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

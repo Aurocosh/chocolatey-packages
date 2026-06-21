@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-	<id>yacreader</id>
-	<version>9.15.0.20250201</version>
-	<packageSourceUrl>https://github.com/drone621/chocolatey-packages/tree/master/manual/yacreader</packageSourceUrl>
-	<owners>drone621</owners>
-	<title>YACReader</title>
-	<authors>Luis Ángel San Martín</authors>
-	<projectUrl>https://www.yacreader.com/</projectUrl>
-	<iconUrl>https://cdn.jsdelivr.net/gh/drone621/chocolatey-packages@master/manual/assets/YACreader.svg</iconUrl>
-	<licenseUrl>https://github.com/YACReader/yacreader/blob/develop/COPYING.txt</licenseUrl>
-	<requireLicenseAcceptance>true</requireLicenseAcceptance>
-	<projectSourceUrl>https://github.com/YACReader/yacreader</projectSourceUrl>
-	<bugTrackerUrl>https://github.com/YACReader/yacreader/issues</bugTrackerUrl>
-	<tags>yacreader yac ecomic comic YACReaderLibrary manga foss image rar zip cbr cbz tar pdf 7z cb7 jpeg gif png tiff bmp</tags>
-	<summary>A simple, yet versatile comic book library and reader."</summary>
-	<description>YACReader *(Yet Another Comic Reader) allows you to read, browse, and manage your comics collection.
+    <id>yacreader</id>
+    <version>10.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/yacreader</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>YACReader (Install)</title>
+    <authors>Luis Ángel San Martín</authors>
+    <projectUrl>https://www.yacreader.com</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/yacreader/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/YACReader/yacreader/blob/develop/COPYING.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/YACReader/yacreader</projectSourceUrl>
+    <docsUrl>https://github.com/YACReader/yacreader/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/YACReader/yacreader/issues</bugTrackerUrl>
+    <tags>yacreader yac comic YACReaderLibrary manga foss image rar zip cbr cbz tar pdf 7z cb7 jpeg gif png tiff bmp</tags>
+    <summary>A simple, yet versatile comic book library and reader.</summary>
+    <description>YACReader *(Yet Another Comic Reader)* allows you to read, browse, and manage your comics collection.
 
-# Features
-* Browse a comic collections using beautiful, customizable and smooth "comic flow" transitions
-* Support for a wide variety of comic files and image types.
-	* rar, zip, cbr, cbz, tar, pdf, 7z, cb7, jpeg, gif, png, tiff, and bmp
+## Screenshot
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/yacreader/img/screenshot.jpg)
 
-* Configurable page viewing options.
-	* Jump to page
-	* Double page mode
-	* Multiple page zoom modes
-	* Fullscreen mode
-	* Bookmarks
-	* Image rotation
-	* Customizable background color
-	* Various eye candy
-	* and more
-* Image adjustments and improvements with brightness, contrast, and gamma sliders.
+## Features
+* Browse a comic collection using customizable comic flow transitions
+* Support for a wide variety of comic files and image types: rar, zip, cbr, cbz, tar, pdf, 7z, cb7, jpeg, gif, png, tiff, and bmp
+* Configurable page viewing options: jump to page, double page mode, zoom modes, fullscreen, bookmarks, image rotation, and more
+* Image adjustments with brightness, contrast, and gamma sliders
 
 ## YACReaderLibrary
 * Search through your comic collection
-* Track your reading progress through comics
-* Tag your comics using Comic Vine
-	* Title, number, volume, authors, and more.
+* Track reading progress
+* Tag comics using Comic Vine metadata
 
-# Package Installation Details
-* This version includes the 64-bit version of yacreader, if you wish to continue using the 32-bit version you need to pass `--x86` when calling `choco install/update`
-* The default installation location will be in your 'Program Files' or 'Program Files (x86)' folder, for the 64 and 32 bit versions respectively.
-* If any setup command line paramaters need to be passed, please know that the installation system used is Inno Setup. The silent arguments used may be found in the package source repo.
 </description>
-	<releaseNotes>https://github.com/YACReader/yacreader/releases</releaseNotes>
-
-	<dependencies>
-	<dependency id="chocolatey-core.extension" version="1.1.0" />
-	</dependencies>
-
+    <releaseNotes>https://github.com/YACReader/yacreader/releases/tag/10.0.0</releaseNotes>
   </metadata>
   <files>
-	<file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>

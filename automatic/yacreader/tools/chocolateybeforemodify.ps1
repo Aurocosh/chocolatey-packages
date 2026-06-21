@@ -1,4 +1,4 @@
-﻿$processName = 'YACReader*'
+$processName = 'YACReader*'
 $process = Get-Process -Name $processName
 
 if ($process) {

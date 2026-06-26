@@ -37,7 +37,7 @@ function global:au_GetLatest {
     $version = $matches[1]
 
     if ($url -and ($url -ne $currentUrl)) {
-        $version = '1.0.' + (Get-Date).ToString('yyyyMMdd')
+        $version = '3.5.' + (Get-Date).ToString('yyyyMMdd')
     }
 
     @{

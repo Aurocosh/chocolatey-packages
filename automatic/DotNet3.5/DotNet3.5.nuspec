@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DotNet3.5</id>
-    <version>1.0.20260626</version>
+    <version>3.5.20260626</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/DotNet3.5</packageSourceUrl>
     <owners>Aurocosh, Matt Wrock</owners>
     <title>Dot Net 3.5</title>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DotNet3.5</id>
+    <version>1.0.20260626</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/DotNet3.5</packageSourceUrl>
+    <owners>Aurocosh, Matt Wrock</owners>
+    <title>Dot Net 3.5</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://dotnet.microsoft.com/en-us/download/dotnet-framework/net35-sp1</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/DotNet3.5/img/icon.png</iconUrl>
+    <licenseUrl>https://msdn.microsoft.com/en-US/cc300389</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>DotNet3.5 Microsoft .net Framework 3.5</tags>
+    <summary>The Microsoft .NET Framework 3.5</summary>
+    <description>This installs the .NET Framework version 3.5 (includes versions 2.0 and 3.0). You may want to use this package as a dependency for packages requiring .NET 3.5. If .NET 3.5 is already installed, this package does nothing.
+
+On Windows builds below 28000, .NET 3.5 is enabled via DISM as a Windows optional component. Depending on your OS version, Windows may download components via Windows Update.
+
+On Windows 11 26H1 (build 28000) and later, .NET 3.5 is no longer a Windows optional component. On those systems this package downloads and runs the Microsoft standalone installer.</description>
+    <releaseNotes>https://dotnet.microsoft.com/en-us/download/dotnet-framework/net35-sp1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

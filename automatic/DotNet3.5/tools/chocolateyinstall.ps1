@@ -11,7 +11,7 @@ if ($build -ge 28000) {
   $packageArgs = @{
     packageName      = $env:ChocolateyPackageName
     fileType         = 'exe'
-    softwareName     = 'Microsoft .NET Framework 3.5*'
+    softwareName     = 'Microsoft .NET Framework 3.5 (*)'
     url64bit         = 'https://go.microsoft.com/fwlink/?LinkID=2337635'
     checksum64       = 'b969d1d0a662bdfd20f42aed9f0ede21122723fbbcee545f16da7150ff01926d'
     checksumType64   = 'sha256'

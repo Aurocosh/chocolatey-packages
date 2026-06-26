@@ -10,17 +10,20 @@ $build = [int](Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVers
 if ($build -ge 28000) {
   $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
-    softwareName   = 'Microsoft .NET Framework 3.5*'
+    softwareName   = 'Microsoft .NET Framework 3.5 (*)'
     fileType       = 'EXE'
     silentArgs     = '/uninstall /q /norestart'
     validExitCodes = @(0, 3010, 1641, 1605, 1614)
   }
 
-  [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+  $parentDisplayNamePattern = '^Microsoft \.NET Framework 3\.5 \(\d+\)$'
+  [array]$key = @(Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName'] |
+      Where-Object { $_.DisplayName -match $parentDisplayNamePattern })
 
   if ($key.Count -eq 1) {
     $key | ForEach-Object {
-      $packageArgs['file'] = "$($_.UninstallString)"
+      $uninstallerPath = $_.UninstallString -replace '/modify'
+      $packageArgs['file'] = "$($uninstallerPath)" #NOTE: You may need to split this if it contains spaces, see below
       Uninstall-ChocolateyPackage @packageArgs
     }
   }

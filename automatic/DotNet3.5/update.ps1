@@ -1,10 +1,12 @@
 Import-Module Chocolatey-AU
 
 function global:au_SearchReplace {
+    $checksum64 = Get-RemoteChecksum $Latest.Url64
+
     @{
         ".\tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$checksum64'"
         }
         ".\DotNet3.5.nuspec" = @{
             "(?i)(^\s*<releaseNotes>)[^<]*(</releaseNotes>)`$" = "`${1}$($Latest.ReleaseNotes)`${2}"
@@ -47,4 +49,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none

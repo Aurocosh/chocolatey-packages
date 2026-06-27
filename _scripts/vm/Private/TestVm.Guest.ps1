@@ -65,7 +65,13 @@ exit `$exitCode
                 Write-MyChVagrantOutputLine -Line $line
             }
         } else {
-            & vagrant powershell -e -c $command
+            $prevEap = $ErrorActionPreference
+            $ErrorActionPreference = 'Continue'
+            try {
+                $null = & vagrant powershell -e -c $command 2>&1
+            } finally {
+                $ErrorActionPreference = $prevEap
+            }
         }
         if ($null -eq $LASTEXITCODE) { return 0 }
         return [int]$LASTEXITCODE

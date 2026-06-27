@@ -5,6 +5,9 @@ function Stage-MyChTestPackage {
         [string]$Vagrant
     )
 
+    Clear-MyChPackageArtifacts
+    Clear-MyChTestVmPackages -Vagrant $Vagrant
+    
     $vagrantPath = Get-MyChVagrantPath -Vagrant $Vagrant
     $Nu = Resolve-MyChNupkg -Nu $Nu
 

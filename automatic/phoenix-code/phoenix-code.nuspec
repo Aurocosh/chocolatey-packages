@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>phoenix-code</id>
+    <version>5.1.24</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/phoenix-code</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Phoenix Code (Install)</title>
+    <authors>Phoenix Code</authors>
+    <projectUrl>https://phcode.io</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/phoenix-code/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/phcode-dev/phoenix-desktop/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/phcode-dev/phoenix-desktop</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/phcode-dev/phoenix-desktop/issues</bugTrackerUrl>
+    <tags>phoenix-code code-editor brackets web-development html css javascript markdown electron</tags>
+    <summary>Free open-source code editor and official successor to Adobe Brackets</summary>
+    <description># Phoenix Code
+
+Phoenix Code is a free, open-source code editor and the official successor to Adobe Brackets. It is a visual editor for websites, web apps, and Markdown with live preview that updates as you type.
+
+## Screenshots
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/phoenix-code/img/screenshot.png)
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/phoenix-code/img/screenshot-2.png)
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/phoenix-code/img/screenshot-3.png)
+
+## Features
+
+- Live preview for HTML, CSS, JavaScript, and Markdown
+- Design Mode — edit text, images, and layout directly in the preview
+- Built-in terminal and Git integration
+- Smart code completion and fast project-wide search
+- Extensions and themes
+
+Phoenix Pro adds AI assistance with visual and runtime context from the rendered page.
+
+</description>
+    <releaseNotes>https://github.com/phcode-dev/phoenix-desktop/releases/tag/prod-app-v5.1.24</releaseNotes>
+    <dependencies>
+      <dependency id="webview2-runtime" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

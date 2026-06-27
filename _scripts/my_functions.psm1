@@ -2,8 +2,10 @@ $funcs = @(
   'Get-LatestGithubRelease'
   'Get-LatestBitbucketDownloads'
   'Get-RedirectedUrl'
+  'Get-NuspecMetadata'
   'Set-ReplaceMarkersInFile'
   'Invoke-WebRequestRetry'
+  'Update-NuspecMetadata'
 )
 
 $funcs | ForEach-Object {

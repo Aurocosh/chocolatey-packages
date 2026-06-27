@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>smassh</id>
+    <version>3.2.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/smassh</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Smassh (Portable)</title>
+    <authors>Murli Tawari</authors>
+    <projectUrl>https://github.com/kraanzu/smassh</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/smassh/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/kraanzu/smassh/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kraanzu/smassh</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/kraanzu/smassh/issues</bugTrackerUrl>
+    <tags>smassh monkeytype tui typing typingspeed terminal textual portable</tags>
+    <summary>Smassh your Keyboard, TUI Edition</summary>
+    <description># Smassh
+
+Smassh is a TUI based typing test application inspired by MonkeyType — a popular online web-based typing application.
+
+Smassh tries to be a full-fledged typing test experience without missing out on looks and feel.
+
+**Note:** Smassh uses [Nerd Fonts](https://www.nerdfonts.com/) for icons by default. If a Nerd Font is not installed, icons may display incorrectly.
+
+# Screenshots
+
+![Screenshot 1](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/smassh/img/screenshot1.png)
+
+![Screenshot 2](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/smassh/img/screenshot2.png)
+
+![Screenshot 3](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/smassh/img/screenshot3.png)
+
+![Screenshot 4](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/smassh/img/screenshot4.png)
+
+# Features
+
+- Interactive and beautiful UI
+- Words and time modes for typing
+- Real-time comparison of speed carets
+- Change styles and settings on the fly
+- Multiple theme support
+- Multiple language support
+- Lots of options to tweak
+
+# Tweaks
+
+| Tweak | Description |
+| ----- | ----------- |
+| Blind mode | You would not be able to see your mistakes |
+| Capital Letters | Some letters in your tasks will be capitalized |
+| Caret Style | Caret style matters |
+| Confidence mode | Try typing without backspace |
+| Cursor Buddy | Set up your cursor buddy to run along with you |
+| Difficulty | Choose how strict smassh should be with wrong keypresses |
+| Force Correct | You cannot continue without clearing mistakes |
+| Min Accuracy | Fall below this average accuracy and you fail |
+| Min Burst | Fall below this average burst for even a word and you fail |
+| Min Speed | Fall below this average speed and you fail |
+| Tab Reset | Reset the test quickly with Tab |
+
+</description>
+    <releaseNotes>https://github.com/kraanzu/smassh/releases/tag/v3.2.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

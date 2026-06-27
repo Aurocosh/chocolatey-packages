@@ -3,6 +3,9 @@
 $script:DefaultVmName = 'choco-test-vm'
 $script:ChocoPackagesRoot = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 $script:WinRmPort = 55985
+$script:GuestWinRmPort = 5985
+$script:WinRmTarget = $null
+$script:GuestTestAllPackagesScript = '& "$env:USERPROFILE/TestAllPackages.ps1"'
 
 function Get-MyChTestVmName {
     if ($Env:au_TestVmName) { return $Env:au_TestVmName }
@@ -77,7 +80,12 @@ function Resolve-MyChNupkg {
         if (-not $Nu) {
             $Nu = Get-ChildItem -LiteralPath $dir.FullName -Filter '*.nuspec' -File | Select-Object -First 1
         }
-        if (-not $Nu) { throw "Can't find nupkg or nuspec file in the directory: $($dir.FullName)" }
+        if (-not $Nu) {
+            throw @"
+Can't find nupkg or nuspec file in the directory: $($dir.FullName)
+Run from a package folder (e.g. automatic\<id>) or pass -Nu with a path to a .nupkg, .nuspec, or package directory.
+"@
+        }
     }
 
     if ($Nu.Extension -eq '.nuspec') {
@@ -93,6 +101,144 @@ function Resolve-MyChNupkg {
     }
 
     return $Nu
+}
+
+function Test-MyChWinRmPortOpen {
+    param(
+        [string]$ComputerName = '127.0.0.1',
+        [int]$Port = $script:WinRmPort
+    )
+
+    $client = $null
+    try {
+        $client = New-Object System.Net.Sockets.TcpClient
+        $connect = $client.BeginConnect($ComputerName, $Port, $null, $null)
+        if (-not $connect.AsyncWaitHandle.WaitOne(2000, $false)) {
+            return $false
+        }
+        $client.EndConnect($connect)
+        return $true
+    } catch {
+        return $false
+    } finally {
+        if ($client) { $client.Close() }
+    }
+}
+
+function Get-MyChTestVmWinRmTargets {
+    $targets = [System.Collections.Generic.List[hashtable]]::new()
+
+    $vm = Get-MyChTestVm
+    $ips = @(Get-VMNetworkAdapter -VM $vm -ErrorAction SilentlyContinue |
+        ForEach-Object { $_.IPAddresses } |
+        Where-Object { $_ -match '^(?:\d{1,3}\.){3}\d{1,3}$' -and $_ -notmatch '^169\.254\.' } |
+        Select-Object -Unique)
+
+    foreach ($ip in $ips) {
+        $targets.Add(@{
+            ComputerName = $ip
+            Port         = $script:GuestWinRmPort
+            Via          = 'hyperv'
+        })
+    }
+
+    $targets.Add(@{
+        ComputerName = '127.0.0.1'
+        Port         = $script:WinRmPort
+        Via          = 'forwarded'
+    })
+
+    return $targets
+}
+
+function Wait-MyChTestVmWinRm {
+    param(
+        [int]$TimeoutSeconds = 120,
+        [int]$IntervalSeconds = 3
+    )
+
+    $script:WinRmTarget = $null
+    $deadline = (Get-Date).AddSeconds($TimeoutSeconds)
+    Write-Host "Waiting for guest WinRM (up to ${TimeoutSeconds}s)..."
+
+    while ((Get-Date) -lt $deadline) {
+        $targets = @(Get-MyChTestVmWinRmTargets)
+        if ($targets.Count -eq 0) {
+            Write-Host '  no WinRM targets resolved yet'
+        }
+
+        foreach ($target in $targets) {
+            Write-Host "  probing $($target.Via) $($target.ComputerName):$($target.Port)..."
+            if (-not (Test-MyChWinRmPortOpen -ComputerName $target.ComputerName -Port $target.Port)) {
+                continue
+            }
+
+            try {
+                $secPassword = ConvertTo-SecureString 'vagrant' -AsPlainText -Force
+                $credential = New-Object System.Management.Automation.PSCredential('vagrant', $secPassword)
+                $sessionOption = New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck
+                $session = New-PSSession `
+                    -ComputerName $target.ComputerName `
+                    -Port $target.Port `
+                    -Credential $credential `
+                    -SessionOption $sessionOption `
+                    -ErrorAction Stop
+                Remove-PSSession -Session $session -ErrorAction SilentlyContinue
+                $script:WinRmTarget = $target
+                Write-Host "WinRM is ready ($($target.Via): $($target.ComputerName):$($target.Port))."
+                return
+            } catch {
+                Write-Host "  WinRM session failed: $($_.Exception.Message)"
+            }
+        }
+        Start-Sleep -Seconds $IntervalSeconds
+    }
+
+    throw @"
+Timed out waiting for guest WinRM after ${TimeoutSeconds}s.
+Direct WinRM from the host often does not work with Hyper-V (firewall / no port forward).
+Use Test-MyChPackageVm without -ShowOutput, or rely on vagrant powershell (-ShowOutput uses vagrant on Hyper-V).
+"@
+}
+
+function Invoke-MyChTestVmScriptViaVagrant {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Script,
+        [string]$Vagrant,
+        [switch]$ShowOutput
+    )
+
+    $vagrantPath = Get-MyChVagrantPath -Vagrant $Vagrant
+    $command = if ($ShowOutput) {
+        @"
+`$exitCode = 0
+try {
+    & { $Script; if (`$null -ne `$LASTEXITCODE) { `$exitCode = `$LASTEXITCODE } } *>&1 | ForEach-Object {
+        if (`$_ -is [System.Management.Automation.ErrorRecord]) { `$_.ToString() } else { "`$_" }
+    }
+} catch {
+    `$_.Exception.Message
+    `$exitCode = 1
+}
+exit `$exitCode
+"@
+    } else {
+        $Script
+    }
+
+    Push-Location $vagrantPath
+    try {
+        if ($ShowOutput) {
+            & vagrant powershell -e -c $command | ForEach-Object { Write-Host $_ }
+        } else {
+            & vagrant powershell -e -c $command
+        }
+        if ($null -eq $LASTEXITCODE) { return 0 }
+        return [int]$LASTEXITCODE
+    } finally {
+        Pop-Location
+    }
 }
 
 function Start-MyChTestVm {
@@ -201,27 +347,20 @@ function Stage-MyChTestPackage {
     Write-Host "Copied to $packagesDir"
 }
 
-function Invoke-MyChTestVmScript {
+function Invoke-MyChTestVmWinRm {
     param(
         [Parameter(Mandatory)]
         [string]$Script,
-        [string]$Vagrant
+        [switch]$ShowOutput
     )
 
-    $vagrantPath = Get-MyChVagrantPath -Vagrant $Vagrant
+    Wait-MyChTestVmWinRm
 
-    Push-Location $vagrantPath
-    try {
-        & vagrant powershell -e -c $Script
-        $exitCode = $LASTEXITCODE
-        if ($exitCode -eq 0 -or $null -eq $exitCode) {
-            return $exitCode
-        }
-        Write-Warning "vagrant powershell exited with $exitCode; trying direct WinRM..."
-    } finally {
-        Pop-Location
+    if (-not $script:WinRmTarget) {
+        throw 'WinRM target was not resolved.'
     }
 
+    $target = $script:WinRmTarget
     $secPassword = ConvertTo-SecureString 'vagrant' -AsPlainText -Force
     $credential = New-Object System.Management.Automation.PSCredential('vagrant', $secPassword)
     $sessionOption = New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck
@@ -229,25 +368,78 @@ function Invoke-MyChTestVmScript {
     $session = $null
     try {
         $session = New-PSSession `
-            -ComputerName 'localhost' `
-            -Port $script:WinRmPort `
-            -UseSSL `
+            -ComputerName $target.ComputerName `
+            -Port $target.Port `
             -Credential $credential `
             -SessionOption $sessionOption `
             -ErrorAction Stop
 
-        Invoke-Command -Session $session -ScriptBlock {
+        if ($ShowOutput) {
+            $items = Invoke-Command -Session $session -ScriptBlock {
+                param($Command)
+                $exitCode = 0
+                & {
+                    Invoke-Expression $Command
+                    $exitCode = $LASTEXITCODE
+                } 2>&1 | ForEach-Object {
+                    if ($_ -is [System.Management.Automation.ErrorRecord]) {
+                        $_.ToString()
+                    } else {
+                        "$_"
+                    }
+                }
+                [PSCustomObject]@{ __MyChExitCode = $exitCode }
+            } -ArgumentList $Script
+
+            $exitCode = 1
+            foreach ($item in $items) {
+                if ($item -is [PSCustomObject] -and $null -ne $item.PSObject.Properties['__MyChExitCode']) {
+                    $exitCode = $item.__MyChExitCode
+                } elseif ($null -ne $item -and "$item" -ne '') {
+                    Write-Host $item
+                }
+            }
+            return $exitCode
+        }
+
+        $result = Invoke-Command -Session $session -ScriptBlock {
             param($Command)
             Invoke-Expression $Command
-            exit $LASTEXITCODE
+            [PSCustomObject]@{ __MyChExitCode = $LASTEXITCODE }
         } -ArgumentList $Script
-        return $LASTEXITCODE
-    } catch {
-        throw "Guest command failed via vagrant and WinRM fallback: $_"
+
+        if ($null -eq $result.__MyChExitCode) { return 0 }
+        return $result.__MyChExitCode
     } finally {
         if ($session) {
             Remove-PSSession -Session $session -ErrorAction SilentlyContinue
         }
+    }
+}
+
+function Invoke-MyChTestVmScript {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Script,
+        [string]$Vagrant,
+        [switch]$ShowOutput
+    )
+
+    if ($ShowOutput) {
+        # Hyper-V: vagrant reaches WinRM reliably; direct host WinRM often never connects.
+        return Invoke-MyChTestVmScriptViaVagrant -Script $Script -Vagrant $Vagrant -ShowOutput
+    }
+
+    $exitCode = Invoke-MyChTestVmScriptViaVagrant -Script $Script -Vagrant $Vagrant
+    if ($exitCode -eq 0) {
+        return $exitCode
+    }
+
+    Write-Warning "vagrant powershell exited with $exitCode; trying direct WinRM..."
+    try {
+        return Invoke-MyChTestVmWinRm -Script $Script
+    } catch {
+        throw "Guest command failed via vagrant and WinRM fallback: $_"
     }
 }
 
@@ -277,6 +469,7 @@ function Test-MyChPackageVm {
     param(
         $Nu,
         [switch]$UninstallAfterInstall,
+        [switch]$ShowOutput,
         [string]$Snapshot,
         [string]$Vagrant
     )
@@ -284,22 +477,26 @@ function Test-MyChPackageVm {
     $exitCode = 1
     $snap = Get-MyChTestVmSnapshot -Snapshot $Snapshot
     $snapName = $snap.Name
+    $restoredForTest = $false
 
     try {
-        Restore-MyChTestVm -Snapshot $snapName
-        Start-MyChTestVm
         Stage-MyChTestPackage -Nu $Nu -Vagrant $Vagrant
+        Restore-MyChTestVm -Snapshot $snapName
+        $restoredForTest = $true
+        Start-MyChTestVm
 
-        $remote = "& '$HOME\TestAllPackages.ps1'"
+        $remote = $script:GuestTestAllPackagesScript
         if ($UninstallAfterInstall) {
-            $remote = "& '$HOME/TestAllPackages.ps1' -UninstallAfterInstall"
+            $remote = '& "$env:USERPROFILE/TestAllPackages.ps1" -UninstallAfterInstall'
         }
 
-        Invoke-MyChTestVmScript -Script $remote -Vagrant $Vagrant
-        $exitCode = $LASTEXITCODE
+        $exitCode = Invoke-MyChTestVmScript -Script $remote -Vagrant $Vagrant -ShowOutput:$ShowOutput
         if ($null -eq $exitCode) { $exitCode = 0 }
+        $exitCode = [int]$exitCode
     } finally {
-        Restore-MyChTestVm -Snapshot $snapName
+        if ($restoredForTest) {
+            Restore-MyChTestVm -Snapshot $snapName
+        }
     }
 
     if ($exitCode -ne 0) {

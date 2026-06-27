@@ -30,7 +30,7 @@ From this repo root, load the test module and run from a package directory:
 . .\Import-TestVmModule.ps1
 cd automatic\<id>
 Start-MyChTestPackageManual              # semi-auto: stage, restore checkpoint, start VM
-Test-MyChPackageVm -UninstallAfterInstall # full auto with checkpoint rollback
+Test-MyChPackageVm -UninstallAfterInstall -ShowOutput # full auto with checkpoint rollback
 Stop-MyChTestVmCleanUp                   # stop VM and clear .nupkg artifacts
 ```
 

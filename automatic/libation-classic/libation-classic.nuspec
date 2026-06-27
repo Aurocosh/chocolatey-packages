@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>libation-classic</id>
+    <version>13.5.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/libation-classic</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Libation Classic (Install)</title>
+    <authors>Rmcrackan</authors>
+    <projectUrl>https://getlibation.com</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/libation-classic/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/rmcrackan/Libation/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rmcrackan/Libation</projectSourceUrl>
+    <docsUrl>https://getlibation.com/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/rmcrackan/Libation/issues</bugTrackerUrl>
+    <tags>libation libation-classic audible audiobook audio-book drm admin</tags>
+    <summary>Libation: Liberate your Library</summary>
+    <description>Libation is a free, open-source application for downloading and managing your Audible audiobooks. It decrypts your library, removes DRM, and lets you own your audiobooks forever.
+
+## Libation Classic
+
+Classic and Chardonnay have the same features. Classic is Windows-only with a compact "grey boxes" design that fits more information on screen. It uses older, mature technology with built-in screen reader support.
+
+## Features
+
+- **Unlock Your Library**: Download and remove DRM from your audiobooks.
+- **Region Support**: Works with Audible regions US, UK, Canada, Germany, France, Australia, Japan, India, and Spain.
+- **Advanced Organization**: Search, filter, and tag your books.
+- **Fast &amp; Efficient**: Powered by AAXClean for fast decryption without heavy dependencies like ffmpeg.
+- **Import**: Easily import your existing library, including cover art.
+
+## Screenshots
+
+![screenshot-1](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/libation-classic/img/screenshot-1.png)
+![screenshot-2](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/libation-classic/img/screenshot-2.png)
+![screenshot-3](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/libation-classic/img/screenshot-3.png)
+
+</description>
+    <releaseNotes>https://github.com/rmcrackan/Libation/releases/tag/v13.5.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

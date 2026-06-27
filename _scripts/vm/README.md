@@ -141,7 +141,7 @@ Start-MyChTestPackageManual
 
 #### `Test-MyChPackageVm`
 
-Automated test: stage → restore checkpoint → start VM → run `TestAllPackages.ps1` in guest → restore checkpoint again.
+Automated test: stage → restore checkpoint → start VM → run `TestAllPackages.ps1` in guest → restore checkpoint again → **clear test-env `packages/` and repo `*.nupkg` artifacts** (always, pass or fail).
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -161,6 +161,20 @@ Test-MyChPackageVm -UninstallAfterInstall -ShowOutput
 ---
 
 ### Cleanup
+
+#### `Clear-MyChTestVmPackages`
+
+Delete `*.nupkg` and `*.xml` in the test-environment `packages/` folder (`{au_Vagrant}/packages`).
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `-Vagrant` | string | Override `$Env:au_Vagrant` path |
+
+```powershell
+Clear-MyChTestVmPackages
+```
+
+---
 
 #### `Clear-MyChPackageArtifacts`
 

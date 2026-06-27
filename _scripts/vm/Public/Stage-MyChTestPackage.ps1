@@ -24,9 +24,7 @@ function Stage-MyChTestPackage {
     }
 
     if (-not $NoClear) {
-        Write-Host 'Removing existing vagrant packages'
-        Remove-Item (Join-Path $packagesDir '*.nupkg') -Force -ErrorAction SilentlyContinue
-        Remove-Item (Join-Path $packagesDir '*.xml') -Force -ErrorAction SilentlyContinue
+        Clear-MyChTestVmPackages -Vagrant $Vagrant
     }
 
     Copy-Item -LiteralPath $Nu.FullName -Destination $packagesDir -Force

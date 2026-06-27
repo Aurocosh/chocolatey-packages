@@ -27,6 +27,7 @@ Export-ModuleMember -Function @(
     'Start-MyChTestPackageManual',
     'Test-MyChPackageVm',
     'Clear-MyChPackageArtifacts',
+    'Clear-MyChTestVmPackages',
     'Start-MyChTestPackageCleanUp',
     'Stop-MyChTestVmCleanUp'
 )

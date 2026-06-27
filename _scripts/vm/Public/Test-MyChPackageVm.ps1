@@ -30,6 +30,8 @@ function Test-MyChPackageVm {
         if ($restoredForTest) {
             Restore-MyChTestVm -Snapshot $snapName
         }
+        Clear-MyChTestVmPackages -Vagrant $Vagrant
+        Clear-MyChPackageArtifacts
     }
 
     if ($exitCode -ne 0) {

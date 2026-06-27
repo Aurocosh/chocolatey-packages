@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     @{
@@ -18,10 +19,10 @@ function global:au_GetLatest {
     (Get-Content -Path $installScriptPath -Raw) -Match "url\s*=\s*'([^']*)'"
     $url = $matches[1]
 
-    $nuspecFile = "$PSScriptRoot/keyboard-layout-creator.nuspec"
-    (Get-Content -Path $nuspecFile -Raw) -Match '<version>((\d+\.\d+).*)<\/version>'
-    $version = $matches[1]
-    $baseVersion = $matches[2]
+    $version = Get-NuspecMetadata -key version
+    if ($version -match '^(\d+\.\d+)') {
+        $baseVersion = $matches[1]
+    }
 
     if ($remoteUrl -and ($remoteUrl -ne $url)) {
         $url = $remoteUrl

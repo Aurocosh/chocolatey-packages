@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 function global:au_SearchReplace {
     $checksum64 = Get-RemoteChecksum $Latest.Url64
@@ -34,10 +35,7 @@ function global:au_GetLatest {
     (Get-Content -Path $installScriptPath -Raw) -match "(?i)url64bit\s*=\s*'([^']*)'"
     $currentUrl = $matches[1]
 
-    $nuspecFile = "$PSScriptRoot/DotNet3.5.nuspec"
-    (Get-Content -Path $nuspecFile -Raw) -match '<version>([^<]*)<\/version>'
-    $version = $matches[1]
-
+    $version = Get-NuspecMetadata -key version
     if ($url -and ($url -ne $currentUrl)) {
         $version = '3.5.' + (Get-Date).ToString('yyyyMMdd')
     }

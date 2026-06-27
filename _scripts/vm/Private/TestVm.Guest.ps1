@@ -1,3 +1,36 @@
+function Get-MyChSanitizedVagrantOutput {
+    param([string]$Line)
+
+    if ($null -eq $Line) { return $null }
+
+    # Vagrant meta lines (command echo, success banner) — not guest stdout
+    if ($Line -match '^\s*==>') { return $null }
+
+    # Strip repeated machine prefixes, e.g. "    default: message" or nested "default: default: ..."
+    $content = $Line
+    $previous = $null
+    while ($content -ne $previous -and $content -match '^\s*\S+:\s?(.*)$') {
+        $previous = $content
+        $content = $Matches[1]
+    }
+
+    # Trailing machine prefix fragments from merged vagrant lines
+    $content = $content -replace '(\s+\S+:\s*)+$', ''
+
+    if ($content -match '^\s*$') { return $null }
+
+    return $content
+}
+
+function Write-MyChVagrantOutputLine {
+    param([string]$Line)
+
+    $text = Get-MyChSanitizedVagrantOutput -Line $Line
+    if ($null -ne $text) {
+        Write-Host $text
+    }
+}
+
 function Invoke-MyChTestVmScriptViaVagrant {
     param(
         [Parameter(Mandatory)]
@@ -27,7 +60,10 @@ exit `$exitCode
     Push-Location $vagrantPath
     try {
         if ($ShowOutput) {
-            & vagrant powershell -e -c $command | ForEach-Object { Write-Host $_ }
+            & vagrant powershell -e -c $command 2>&1 | ForEach-Object {
+                $line = if ($_ -is [System.Management.Automation.ErrorRecord]) { $_.ToString() } else { "$_" }
+                Write-MyChVagrantOutputLine -Line $line
+            }
         } else {
             & vagrant powershell -e -c $command
         }

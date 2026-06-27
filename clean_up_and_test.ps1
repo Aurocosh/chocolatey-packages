@@ -1,6 +1,3 @@
-Write-Host "Cleaning up" -ForegroundColor Green
-& "$PSScriptRoot/clean_up.ps1"
-
-Write-Host ""
-Write-Host "Testing package" -ForegroundColor Green
-Test-Package
+Write-Host 'Clean up and manual package test' -ForegroundColor Green
+Import-Module "$PSScriptRoot\_scripts\vm\TestVm.psm1" -Force
+Start-MyChTestPackageCleanUp @args

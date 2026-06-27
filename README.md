@@ -22,7 +22,23 @@ To create a new package see [Creating the package updater script](https://github
 
 ## Testing the package
 
-In a package directory run: `Test-Package`. This function can be used to start testing in [chocolatey-test-environment](https://github.com/majkinetor/chocolatey-test-environment) via `Vagrant` parameter or it can test packages locally.
+### VM testing (recommended)
+
+From this repo root, load the test module and run from a package directory:
+
+```powershell
+. .\Import-TestVmModule.ps1
+cd automatic\<id>
+Start-MyChTestPackageManual              # semi-auto: stage, restore checkpoint, start VM
+Test-MyChPackageVm -UninstallAfterInstall # full auto with checkpoint rollback
+Stop-MyChTestVmCleanUp                   # stop VM and clear .nupkg artifacts
+```
+
+See `my-package-tools/docs/user/` for Hyper-V Administrators setup and full command reference.
+
+### Legacy: Test-Package
+
+In a package directory run: `Test-Package`. This Chocolatey-AU function packs, copies to the test environment, and runs `vagrant up`. Prefer the module workflow above.
 
 
 ## Automatic package update

@@ -6,7 +6,6 @@ $installerType = "EXE"
 $silentArgs = "/S"
 $validExitCodes = @(0)
 
-$uninstalled = $false
 [array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
 
 if ($key.Count -eq 1) {

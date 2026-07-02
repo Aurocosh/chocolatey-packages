@@ -1,5 +1,7 @@
-$url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-x64.exe"
-$exeFile = Join-Path $env:TEMP "UnityHubSetup-x64.exe"
+Import-Module Chocolatey-AU
+
+$releaseNotesUrl = 'https://unity.com/unity-hub/release-notes'
+$url64 = 'https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-x64.exe'
 
 function global:au_SearchReplace {
     @{
@@ -11,9 +13,28 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    (New-Object Net.WebClient).DownloadFile($url64, $exeFile)
-    $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($exeFile).FileVersion
-    return @{ Version = $version; URL64 = $url64 }
+    $page = Invoke-WebRequest -Uri $releaseNotesUrl -UseBasicParsing
+
+    $version = [regex]::Match(
+        $page.Content,
+        'whitespace-nowrap[^>]*>(\d+\.\d+\.\d+)<'
+    ).Groups[1].Value
+
+    if (-not $version) {
+        $version = [regex]::Match(
+            $page.Content,
+            'mango-text-heading-xl[^>]*>(\d+\.\d+\.\d+)</h2>'
+        ).Groups[1].Value
+    }
+
+    if (-not $version) {
+        throw "Could not find Unity Hub version on $releaseNotesUrl"
+    }
+
+    @{
+        Version = $version
+        URL64   = $url64
+    }
 }
 
 update -ChecksumFor 64

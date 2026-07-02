@@ -20,6 +20,8 @@
     <summary>Firewall and network monitor that visualizes network data over time to assist in malware discovery</summary>
     <description>GlassWire is a free network monitor and security tool with a built in firewall. GlassWire displays your network activity on an easy to understand graph while searching for unusual Internet behavior that could indicate malware or violations of your privacy. Once unusual network activity is discovered you're instantly alerted with detailed information so you can protect your computer, privacy, and data.
 
+Starting with GlassWire 3.9.1102, the upstream installer is 64-bit only and no longer supports 32-bit Windows, Windows 7, or Windows Server. **This package automatically installs GlassWire 3.8.1061 on those unsupported platforms** (the last release that supports them). Supported desktop editions (Windows 8 and later, 64-bit, non-Server) receive the current upstream version.
+
 #### Screenshot
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/glasswire/img/screenshot.webp)
 

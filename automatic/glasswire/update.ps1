@@ -4,8 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.Url32)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*url64bit\s*=\s*)('.*')"        = "`$1'$($Latest.Url64)'"
+            "(?i)(^\s*checksum64\s*=\s*)('.*')"      = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -40,15 +40,15 @@ function global:au_GetLatest {
     $response = Invoke-WebRequest -Uri $manifestUrl -UseBasicParsing
 
     $response.Content -match "InstallerUrl:\s*(https://.*?.exe)"
-    $url32 = $matches[1]
+    $url64 = $matches[1]
 
     $response.Content -match "InstallerSha256:\s*([a-fA-F0-9]{64})"
-    $sha256 =  $matches[1].toLower()
-	
+    $sha256 = $matches[1].ToLower()
+
     @{
-        URL32   = $url32
-        Version = $version
-        Checksum32 = $sha256
+        Url64      = $url64
+        Version    = $version
+        Checksum64 = $sha256
     }
 }
 

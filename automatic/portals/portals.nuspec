@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>portals</id>
+    <version>3.4.0.0</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/portals</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Portals: Desktop Organization (Install)</title>
+    <authors>Ross Patterson</authors>
+    <projectUrl>https://portals-app.com</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/portals/img/icon.png</iconUrl>
+    <licenseUrl>https://portals-app.com</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://portals-app.com</docsUrl>
+    <bugTrackerUrl>https://github.com/Ross-Patterson/Portals-Desktop-Organization/issues</bugTrackerUrl>
+    <tags>portals desktop organization productivity windows foss</tags>
+    <summary>A free, simple, lightweight and customizable tool for desktop organization on Windows.</summary>
+    <description>Declutter your digital life. Unlock the power of productivity with **Portals: Desktop Organization** — where clutter-free desktops become a reality.
+
+## Screenshot
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/portals/img/screenshot.png)
+
+## Customize to your heart's content
+
+Pretty much everything is customizable. Change colors, fonts, borders, margins, header position, icon sizes and even use images as backgrounds if you wish.
+
+## Organize your way
+
+Set the header position, keep the portals minimized, use custom or pre-defined sort orders and even have multiple tabs linked to separate folders in the same portal allowing you to organize exactly how you want.
+
+## Features
+
+* **Desktop Portals** — Create Portals on your desktop to display the contents of selected folders directly on your desktop, unlocking productivity without clutter.
+* **Lightweight** — Minimal resource usage. Portals runs efficiently in the background without slowing down your system.
+* **Deep Customization** — Customize size, position, colors, transparency, fonts, icon sizes, borders, margins and much more.
+* **Per-Portal Overrides** — Make each Portal unique by overriding specific settings (colors, fonts etc.) per-portal.
+* **Layouts** — Save sets of Portals into layouts, which can be applied automatically as your display setups change.
+* **Settings Profiles** — Save the customizations you create as settings profiles and quickly switch between them. Even link them to your layouts.
+</description>
+    <releaseNotes>https://raw.githubusercontent.com/Ross-Patterson/Portals-Desktop-Organization/refs/heads/main/prod/release-notes_v3-4-0-0.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

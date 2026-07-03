@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>websocat</id>
+    <version>1.14.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/websocat</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Websocat (Portable)</title>
+    <authors>Vitaly Shukela</authors>
+    <projectUrl>https://github.com/vi/websocat</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/websocat/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/vi/websocat/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/vi/websocat</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/vi/websocat/issues</bugTrackerUrl>
+    <tags>cli command-line command-line-tool curl netcat proxy rfc-6455 socat websocket-client websocket-server websockets portable</tags>
+    <summary>Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions</summary>
+    <description>## Description
+
+**websocat** is a command-line client for WebSockets — like netcat or curl for `ws://` and `wss://`, with advanced socat-like functions.
+
+Connect to echo servers, serve WebSocket endpoints, proxy TCP to WebSocket (and back), broadcast messages between clients, pipe stdin/stdout through WebSocket links, and more.
+
+## Features
+
+- Connect to and serve WebSockets from the command line
+- Run external programs and bridge stdin/stdout to WebSocket
+- Text and binary modes; line- or record-based message conversion
+- SOCKS5 proxy support for outbound WebSocket connections
+- Auto-reconnect and connection-reuse modes
+- Cross-platform; Windows builds included
+
+See the [project wiki](https://github.com/vi/websocat/wiki) and [more examples](https://github.com/vi/websocat/blob/master/moreexamples.md) for usage details.
+</description>
+    <releaseNotes>https://github.com/vi/websocat/releases/tag/v1.14.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-hub</id>
-    <version>3.19.2</version>
+    <version>3.19.3</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/unity-hub</packageSourceUrl>
     <owners>Aurocosh, jtcmedia</owners>
     <title>Unity Hub (Install)</title>

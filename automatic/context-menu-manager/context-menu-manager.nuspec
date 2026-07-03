@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>context-menu-manager</id>
+    <version>3.3.3.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/context-menu-manager</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Context Menu Manager (Portable)</title>
+    <authors>BluePointLilac</authors>
+    <projectUrl>https://github.com/BluePointLilac/ContextMenuManager</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/context-menu-manager/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/BluePointLilac/ContextMenuManager/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/BluePointLilac/ContextMenuManager</projectSourceUrl>
+    <docsUrl>https://github.com/BluePointLilac/ContextMenuManager/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/BluePointLilac/ContextMenuManager/issues</bugTrackerUrl>
+    <tags>context-menu-manager context menu manager windows right-click registry portable foss admin</tags>
+    <summary>A program to manage the Windows right-click context menu.</summary>
+    <description>A program to manage the Windows right-click context menu.
+
+## Screenshot
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/context-menu-manager/img/screenshot.png)
+
+## Key features
+
+* Enable and disable context menu options for files, folders, submenus (e.g. open, send to), Internet Explorer, and Win+X
+* Modify menu names and icons
+* Delete context menu entries
+* Navigate menus in the registry or File Explorer
+* Add custom menu items and commands
+
+## Supported systems
+
+* Windows Vista, 7, 8, 8.1, 10
+* 32 and 64 bit operating systems
+* Support for display scaling, optimal at 150% DPI
+* Localization support
+
+This package installs the .NET 3.5 build (`ContextMenuManager.NET.3.5.exe`) and requires the [.NET Framework 3.5](https://community.chocolatey.org/packages/DotNet3.5) feature on Windows 8 and later.
+</description>
+    <releaseNotes>https://github.com/BluePointLilac/ContextMenuManager/releases/tag/3.3.3.1</releaseNotes>
+    <dependencies>
+      <dependency id="DotNet3.5"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

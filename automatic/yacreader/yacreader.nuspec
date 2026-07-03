@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>yacreader</id>
-    <version>10.0.0</version>
+    <version>10.1.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/yacreader</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>YACReader (Install)</title>
@@ -35,7 +35,7 @@
 * Tag comics using Comic Vine metadata
 
 </description>
-    <releaseNotes>https://github.com/YACReader/yacreader/releases/tag/10.0.0</releaseNotes>
+    <releaseNotes>https://github.com/YACReader/yacreader/releases/tag/10.1.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

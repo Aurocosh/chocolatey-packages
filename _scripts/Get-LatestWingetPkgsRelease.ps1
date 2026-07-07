@@ -10,13 +10,14 @@ function Get-LatestWingetPkgsRelease {
     [string]$Branch = 'master'
   )
 
-  $headers = @{}
-  if (Test-Path Env:\github_api_key) {
-    $headers.Authorization = "token " + $env:github_api_key
+  $apiHeaders = @{}
+  if ($env:github_api_key) {
+    $apiHeaders.Authorization = "token " + $env:github_api_key
   }
 
   $apiUrl = "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/$ManifestPath"
-  $entries = @(Invoke-RestMethod -Uri $apiUrl -Headers $headers | Where-Object type -eq 'dir')
+  $apiResponse = Invoke-RestMethod -Uri $apiUrl -Headers $apiHeaders
+  $entries = @($apiResponse | Where-Object type -eq 'dir')
 
   $candidates = if ($VersionRegex) {
     $entries | Where-Object name -match $VersionRegex
@@ -31,15 +32,20 @@ function Get-LatestWingetPkgsRelease {
   }
 
   $version = $versionEntry.name
-  $manifestUrl = "https://raw.githubusercontent.com/microsoft/winget-pkgs/$Branch/manifests/$ManifestPath/$version/$InstallerManifest"
-  $response = Invoke-WebRequest -Uri $manifestUrl -UseBasicParsing
+  $manifestHeaders = @{ Accept = 'application/vnd.github.raw' }
+  if ($env:github_api_key) {
+    $manifestHeaders.Authorization = "token " + $env:github_api_key
+  }
 
-  if ($response.Content -notmatch $InstallerUrlRegex) {
+  $manifestUrl = "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/$ManifestPath/$version/$InstallerManifest"
+  $manifestContent = Invoke-RestMethod -Uri $manifestUrl -Headers $manifestHeaders
+
+  if ($manifestContent -notmatch $InstallerUrlRegex) {
     return @{}
   }
   $url64 = $Matches[1]
 
-  if ($response.Content -notmatch 'InstallerSha256:\s*([a-fA-F0-9]{64})') {
+  if ($manifestContent -notmatch 'InstallerSha256:\s*([a-fA-F0-9]{64})') {
     return @{}
   }
 

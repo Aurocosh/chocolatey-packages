@@ -1,5 +1,6 @@
 $funcs = @(
   'Get-LatestGithubRelease'
+  'Get-LatestWingetPkgsRelease'
   'Get-LatestBitbucketDownloads'
   'Get-RedirectedUrl'
   'Get-NuspecMetadata'

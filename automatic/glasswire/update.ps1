@@ -25,31 +25,11 @@ function global:au_SearchReplace {
 # }
 
 function global:au_GetLatest {
-    $response = Invoke-WebRequest -Uri "https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/g/GlassWire/GlassWire" -Method Get -UseBasicParsing
-    $jsonValue = ConvertFrom-Json $response.Content
-
-    for ($ia = $jsonValue.length; $ia -gt -1; $ia--) {
-        $version = $jsonValue[$ia].name
-        if($version -match "^\d+(?:\.\d+){1,2}$")
-        {
-            break
-        }
-    }
-
-    $manifestUrl = "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GlassWire/GlassWire/$version/GlassWire.GlassWire.installer.yaml"
-    $response = Invoke-WebRequest -Uri $manifestUrl -UseBasicParsing
-
-    $response.Content -match "InstallerUrl:\s*(https://.*?.exe)"
-    $url64 = $matches[1]
-
-    $response.Content -match "InstallerSha256:\s*([a-fA-F0-9]{64})"
-    $sha256 = $matches[1].ToLower()
-
-    @{
-        Url64      = $url64
-        Version    = $version
-        Checksum64 = $sha256
-    }
+    Get-LatestWingetPkgsRelease `
+        -ManifestPath 'g/GlassWire/GlassWire' `
+        -InstallerManifest 'GlassWire.GlassWire.installer.yaml' `
+        -InstallerUrlRegex 'InstallerUrl:\s*(https://.*?.exe)' `
+        -VersionRegex '^\d+(?:\.\d+){1,2}$'
 }
 
 update -ChecksumFor none -NoCheckUrl

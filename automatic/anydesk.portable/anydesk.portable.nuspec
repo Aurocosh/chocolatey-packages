@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk.portable</id>
-    <version>9.7.8</version>
+    <version>9.7.9</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/anydesk.portable</packageSourceUrl>
     <owners>Aurocosh,TheCakeIsNaOH</owners>
     <title>AnyDesk (Portable)</title>
@@ -36,7 +36,7 @@ To pass parameters, use `--params "''"` (e.g. `choco install anydesk.install [ot
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
     <releaseNotes>http://download.anydesk.com/changelog.txt</releaseNotes>
     <dependencies>
-      <dependency id="anydesk.install" version="[9.7.8]" />
+      <dependency id="anydesk.install" version="[9.7.9]" />
     </dependencies>
   </metadata>
   <files>

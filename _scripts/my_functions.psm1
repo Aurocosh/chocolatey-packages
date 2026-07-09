@@ -6,6 +6,7 @@ $funcs = @(
   'Get-NuspecMetadata'
   'Set-ReplaceMarkersInFile'
   'Invoke-WebRequestRetry'
+  'Get-RemoteBufferedChecksum'
   'Update-NuspecMetadata'
 )
 

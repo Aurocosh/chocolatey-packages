@@ -5,10 +5,12 @@ $changelogUrl = 'https://download.anydesk.com/changelog.txt'
 $url32        = 'https://download.anydesk.com/AnyDesk.exe'
 
 function global:au_SearchReplace {
+    $checksum32 = Get-RemoteBufferedChecksum -Uri $url32 -MaxRetries 5 -RetryDelaySec 15 -CumulativeDelay
+
     @{
         "tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*[$]url32\s*=\s*)('.*')"       = "`$1'$($Latest.Url32)'"
-            "(?i)(^\s*[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*[$]checksum32\s*=\s*)('.*')" = "`$1'$checksum32'"
         }
     }
 }
@@ -28,5 +30,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 32
+    update -ChecksumFor none
 }

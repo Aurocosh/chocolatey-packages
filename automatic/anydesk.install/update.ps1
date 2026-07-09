@@ -1,34 +1,37 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
-$changelogUrl = 'https://download.anydesk.com/changelog.txt'
-$url32        = 'https://download.anydesk.com/AnyDesk.exe'
+function Get-AnydeskWingetRelease {
+    Get-LatestWingetPkgsRelease `
+        -ManifestPath 'a/AnyDesk/AnyDesk' `
+        -InstallerManifest 'AnyDesk.AnyDesk.installer.yaml' `
+        -InstallerUrlRegex 'InstallerUrl:\s*(https://\S+)' `
+        -VersionRegex '^\d+(?:\.\d+){1,2}$'
+}
 
 function global:au_SearchReplace {
-    $checksum32 = Get-RemoteBufferedChecksum -Uri $url32 -MaxRetries 5 -RetryDelaySec 15 -CumulativeDelay
-
     @{
         "tools\chocolateyinstall.ps1" = @{
             "(?i)(^\s*[$]url32\s*=\s*)('.*')"       = "`$1'$($Latest.Url32)'"
-            "(?i)(^\s*[$]checksum32\s*=\s*)('.*')" = "`$1'$checksum32'"
+            "(?i)(^\s*[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
 
 function global:au_GetLatest {
-    $changelog = (Invoke-WebRequestRetry -Uri $changelogUrl -UseBasicParsing -Buffered 60).Content
-    $match = [regex]::Match($changelog, '(?m)^\d{2}\.\d{2}\.\d{4} - (\d+\.\d+\.\d+) \(Windows\)')
+    $release = Get-AnydeskWingetRelease
 
-    if (-not $match.Success) {
-        throw "Could not find Windows version in $changelogUrl"
+    if (-not $release.Version) {
+        throw 'Could not find AnyDesk release in winget-pkgs'
     }
 
     @{
-        Version = $match.Groups[1].Value
-        URL32   = $url32
+        Version    = $release.Version
+        Url32      = $release.Url64
+        Checksum32 = $release.Checksum64
     }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor none
+    update -ChecksumFor none -NoCheckUrl
 }

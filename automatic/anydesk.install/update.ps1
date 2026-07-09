@@ -1,4 +1,5 @@
 Import-Module Chocolatey-AU
+Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
 $changelogUrl = 'https://download.anydesk.com/changelog.txt'
 $url32        = 'https://download.anydesk.com/AnyDesk.exe'
@@ -13,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $changelog = (Invoke-WebRequest -Uri $changelogUrl -UseBasicParsing).Content
+    $changelog = (Invoke-WebRequestRetry -Uri $changelogUrl -UseBasicParsing -Buffered 60).Content
     $match = [regex]::Match($changelog, '(?m)^\d{2}\.\d{2}\.\d{4} - (\d+\.\d+\.\d+) \(Windows\)')
 
     if (-not $match.Success) {

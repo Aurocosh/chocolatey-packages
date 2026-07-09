@@ -1,3 +1,5 @@
+. "$PSScriptRoot\BufferFileLock.ps1"
+
 function Get-RemoteBufferedChecksum {
     [CmdletBinding()]
     param(
@@ -15,7 +17,9 @@ function Get-RemoteBufferedChecksum {
 
     $bufferFile = Get-RemoteBufferedChecksumBufferFile -Uri $Uri
 
-    $cachedChecksum = Get-RemoteBufferedChecksumCached -BufferFile $bufferFile -BufferedMinutes $Buffered
+    $cachedChecksum = Invoke-WithBufferFileLock -BufferFile $bufferFile -ScriptBlock {
+        Get-RemoteBufferedChecksumCached -BufferFile $bufferFile -BufferedMinutes $Buffered
+    }
     if ($null -ne $cachedChecksum) {
         return $cachedChecksum
     }
@@ -27,9 +31,15 @@ function Get-RemoteBufferedChecksum {
         try {
             $checksum = Get-RemoteChecksum $Uri
 
-            Save-RemoteBufferedChecksum -BufferFile $bufferFile -Checksum $checksum
+            return Invoke-WithBufferFileLock -BufferFile $bufferFile -ScriptBlock {
+                $cachedChecksum = Get-RemoteBufferedChecksumCached -BufferFile $bufferFile -BufferedMinutes $Buffered
+                if ($null -ne $cachedChecksum) {
+                    return $cachedChecksum
+                }
 
-            return $checksum
+                Save-RemoteBufferedChecksum -BufferFile $bufferFile -Checksum $checksum
+                return $checksum
+            }
         }
         catch {
             $errorMessage = $_.Exception.Message

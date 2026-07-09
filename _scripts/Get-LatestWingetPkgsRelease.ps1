@@ -1,3 +1,5 @@
+. "$PSScriptRoot\BufferFileLock.ps1"
+
 function Get-LatestWingetPkgsRelease {
   param(
     [Parameter(Mandatory = $true)]
@@ -14,10 +16,37 @@ function Get-LatestWingetPkgsRelease {
   $cacheKey = @($ManifestPath, $InstallerManifest, $InstallerUrlRegex, $VersionRegex, $Branch) -join '|'
   $bufferFile = Get-LatestWingetPkgsReleaseBufferFile -CacheKey $cacheKey
 
-  $cachedResult = Get-LatestWingetPkgsReleaseBuffered -BufferFile $bufferFile -BufferedMinutes $Buffered
-  if ($null -ne $cachedResult) {
-    return $cachedResult
-  }
+  return Invoke-BufferedCacheLookup `
+    -BufferFile $bufferFile `
+    -TryGetCached {
+      Get-LatestWingetPkgsReleaseBuffered -BufferFile $bufferFile -BufferedMinutes $Buffered
+    } `
+    -FetchFresh {
+      Get-LatestWingetPkgsReleaseFresh `
+        -ManifestPath $ManifestPath `
+        -InstallerManifest $InstallerManifest `
+        -InstallerUrlRegex $InstallerUrlRegex `
+        -VersionRegex $VersionRegex
+    } `
+    -SaveCached {
+      param($Result)
+
+      if ($Result.Version) {
+        Save-LatestWingetPkgsReleaseBuffered -BufferFile $bufferFile -Result $Result
+      }
+    }
+}
+
+function Get-LatestWingetPkgsReleaseFresh {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$ManifestPath,
+    [Parameter(Mandatory = $true)]
+    [string]$InstallerManifest,
+    [Parameter(Mandatory = $true)]
+    [string]$InstallerUrlRegex,
+    [string]$VersionRegex
+  )
 
   $apiHeaders = @{}
   if ($env:github_api_key) {
@@ -58,15 +87,11 @@ function Get-LatestWingetPkgsRelease {
     return @{}
   }
 
-  $result = @{
+  @{
     Url64      = $url64
     Version    = $version
     Checksum64 = $Matches[1].ToLower()
   }
-
-  Save-LatestWingetPkgsReleaseBuffered -BufferFile $bufferFile -Result $result
-
-  return $result
 }
 
 function Get-LatestWingetPkgsReleaseBufferFile {

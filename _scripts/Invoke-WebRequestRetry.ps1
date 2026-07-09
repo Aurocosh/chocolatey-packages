@@ -1,3 +1,5 @@
+. "$PSScriptRoot\BufferFileLock.ps1"
+
 function Invoke-WebRequestRetry {
     [CmdletBinding(DefaultParameterSetName = 'Standard')]
     param(
@@ -69,7 +71,10 @@ function Invoke-WebRequestRetry {
 
     if ($PSBoundParameters.ContainsKey('Buffered')) {
         $bufferFile = Get-InvokeWebRequestRetryBufferFile -Uri $Uri
-        $cachedResponse = Get-InvokeWebRequestRetryBufferedResponse -BufferFile $bufferFile -BufferedMinutes $Buffered
+
+        $cachedResponse = Invoke-WithBufferFileLock -BufferFile $bufferFile -ScriptBlock {
+            Get-InvokeWebRequestRetryBufferedResponse -BufferFile $bufferFile -BufferedMinutes $Buffered
+        }
         if ($null -ne $cachedResponse) {
             return $cachedResponse
         }
@@ -83,7 +88,15 @@ function Invoke-WebRequestRetry {
             $response = Invoke-WebRequest @params
 
             if ($PSBoundParameters.ContainsKey('Buffered')) {
-                Save-InvokeWebRequestRetryBufferedResponse -BufferFile $bufferFile -Response $response
+                return Invoke-WithBufferFileLock -BufferFile $bufferFile -ScriptBlock {
+                    $cachedResponse = Get-InvokeWebRequestRetryBufferedResponse -BufferFile $bufferFile -BufferedMinutes $Buffered
+                    if ($null -ne $cachedResponse) {
+                        return $cachedResponse
+                    }
+
+                    Save-InvokeWebRequestRetryBufferedResponse -BufferFile $bufferFile -Response $response
+                    return ConvertFrom-InvokeWebRequestRetryCacheEntry -CacheEntry (ConvertTo-InvokeWebRequestRetryCacheEntry -Response $response)
+                }
             }
 
             return $response

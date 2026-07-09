@@ -10,6 +10,8 @@ $funcs = @(
   'Update-NuspecMetadata'
 )
 
+. "$PSScriptRoot\BufferFileLock.ps1"
+
 $funcs | ForEach-Object {
   if (Test-Path "$PSScriptRoot\$_.ps1") {
     . "$PSScriptRoot\$_.ps1"

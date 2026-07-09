@@ -21,14 +21,22 @@
     <description>Connect to a computer remotely, be it from the other end of the office or halfway around the world.
 AnyDesk ensures secure and reliable remote desktop connections for IT professionals and on-the-go individuals alike.
 
-### If you want to install AnyDesk, you can either provide parameters to the [anydesk.portable package](https://chocolatey.org/packages/anydesk.portable) or install the [anydesk.install package](https://chocolatey.org/packages/anydesk.install).
+**This is a virtual package.** It installs [anydesk.install](https://chocolatey.org/packages/anydesk.install).
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/PATH:installdirectory` - Install the package to a custom directory
+ * `/NOAUTOSTART` - Do not start AnyDesk at bootup
+ * `/NOSTARTMENU` - Do not create a Start Menu shortcut
+ * `/DESKTOPICON` - Create a desktop shortcut
+ * `/UPDATETYPE:type` - Set update mode to `manually`, `disabled`, or `auto` (defaults to disabled)
+
+To pass parameters, use `--params "''"` (e.g. `choco install anydesk.install [other options] --params="'/PATH:C:\Tools\AnyDesk /DESKTOPICON'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.</description>
     <releaseNotes>http://download.anydesk.com/changelog.txt</releaseNotes>
     <dependencies>
-      <dependency id="anydesk.portable" version="[9.7.8]" />
+      <dependency id="anydesk.install" version="[9.7.8]" />
     </dependencies>
   </metadata>
   <files>

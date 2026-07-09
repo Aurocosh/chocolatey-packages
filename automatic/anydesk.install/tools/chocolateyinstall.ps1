@@ -1,39 +1,61 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32                 = 'https://download.anydesk.com/AnyDesk.msi'
-$checksum32            = '9f32cda20cac7afab4bf2ecfd2b080cc4f1f700dff13566468da69059b7ebf03'
+$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url32        = 'https://download.anydesk.com/AnyDesk.exe'
+$checksum32   = 'e6b3182a15c35ab18d8f8e8fa79a8fa069588414b826280df9cb1b733ed971cb'
+$pp           = Get-PackageParameters
+$fileFullPath = (Join-Path $toolsDir 'AnyDesk.exe')
 
-$packageArgs = @{
+$downloadArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'MSI'
-  softwareName  = 'AnyDesk MSI'
-  validExitCodes= @(0, 3010, 1641)
-}
-
-$packageArgsInst = @{
-  url           = $url32 
+  fileType      = 'EXE'
+  url           = $url32
+  softwareName  = 'AnyDesk'
   checksum      = $checksum32
   checksumType  = 'sha256'
-  silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  fileFullPath  = $fileFullPath
+  ForceDownload = $true
 }
 
-Write-Host -ForegroundColor green "Trying to uninstall older versions of $packageName due to a limitation in the installer"
-[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
-if ($key.Count -eq 1) {
-  $key | % {
-    $packageArgsUninst = @{
-        silentArgs = "$($_.PSChildName) /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiUninstall.log`""
-        file = ''
-    }
-    Uninstall-ChocolateyPackage @packageArgs @packageArgsUninst
-  }
-} elseif ($key.Count -eq 0) {
-  Write-Host -ForegroundColor green "$packageName is not installed, continuing on to install"
-} elseif ($key.Count -gt 1) {
-  Write-Warning "$($key.Count) matches found!"
-  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
-  Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | % {Write-Warning "- $($_.DisplayName)"}
+Get-ChocolateyWebFile @downloadArgs
+
+$installArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'EXE'
+  silentArgs     = ' '
+  file           = $fileFullPath
+  validExitCodes = @(0)
 }
 
- Install-ChocolateyPackage @packageArgs @packageArgsInst
+$silentArgs = ' --install '
+
+if ($pp['path']) {
+  $silentArgs = $silentArgs + ' ' + $pp['path'] + ' '
+} else {
+  $silentArgs = $silentArgs + ' "C:\Program Files (x86)\AnyDesk" '
+}
+
+if (!$pp['noautostart']) {
+  $silentArgs = $silentArgs + ' --start-with-win '
+}
+
+$silentArgs = $silentArgs + ' --silent --remove-first '
+
+if (!$pp['nostartmenu']) {
+  $silentArgs = $silentArgs + ' --create-shortcuts '
+}
+
+if ($pp['desktopicon']) {
+  $silentArgs = $silentArgs + ' --create-desktop-icon '
+}
+
+if ((!$pp['updatetype']) -or ($pp['updatetype'] -ieq 'disabled')) {
+  $silentArgs = $silentArgs + ' --update-disabled'
+} elseif ($pp['updatetype'] -ieq 'manually') {
+  $silentArgs = $silentArgs + ' --update-manually'
+} elseif ($pp['updatetype'] -ieq 'auto') {
+  $silentArgs = $silentArgs + ' --update-auto'
+}
+
+$installArgs['silentArgs'] = $silentArgs
+
+Install-ChocolateyInstallPackage @installArgs

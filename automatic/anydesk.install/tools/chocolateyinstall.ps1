@@ -4,6 +4,7 @@ $url32        = 'https://download.anydesk.com/AnyDesk.exe'
 $checksum32   = 'e6b3182a15c35ab18d8f8e8fa79a8fa069588414b826280df9cb1b733ed971cb'
 $pp           = Get-PackageParameters
 $fileFullPath = (Join-Path $toolsDir 'AnyDesk.exe')
+$defaultInstallDir = Join-Path ([Environment]::GetFolderPath('ProgramFilesX86')) 'AnyDesk'
 
 $downloadArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -31,7 +32,7 @@ $silentArgs = ' --install '
 if ($pp['path']) {
   $silentArgs = $silentArgs + ' ' + $pp['path'] + ' '
 } else {
-  $silentArgs = $silentArgs + ' "C:\Program Files (x86)\AnyDesk" '
+  $silentArgs = $silentArgs + ' "' + $defaultInstallDir + '" '
 }
 
 if (!$pp['noautostart']) {

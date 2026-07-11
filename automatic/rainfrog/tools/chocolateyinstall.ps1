@@ -9,8 +9,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archiveFile
   softwareName   = 'rainfrog*'
-  url64bit       = 'https://github.com/achristmascarl/rainfrog/releases/download/v0.3.19/rainfrog-v0.3.19-x86_64-pc-windows-msvc.tar.gz'
-  checksum64     = '5cb8fd69203c8e11b29a7bcaa4f71b76992a835b486b7109bdfc1c3c5f2c1ce0'
+  url64bit       = 'https://github.com/achristmascarl/rainfrog/releases/download/v0.3.20/rainfrog-v0.3.20-x86_64-pc-windows-msvc.tar.gz'
+  checksum64     = '430e4bbb503e6aab7e76873a2dd985348214850001c7d133b14a8b8044b9cf76'
   checksumType64 = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs

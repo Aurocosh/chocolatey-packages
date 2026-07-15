@@ -3,14 +3,14 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>pixieditor</id>
+    <id>pixieditor.install</id>
     <version>2.1.1.4</version>
-    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/pixieditor</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/pixieditor.install</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>PixiEditor</title>
+    <title>PixiEditor (Install)</title>
     <authors>Pixieditor</authors>
     <projectUrl>https://pixieditor.net</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/icon.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/icon.png</iconUrl>
     <licenseUrl>https://github.com/PixiEditor/PixiEditor/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/PixiEditor/PixiEditor</projectSourceUrl>
@@ -22,8 +22,6 @@
 
 **PixiEditor** is a universal 2D editor that was made to provide you with tools and features for all your 2D needs. Create beautiful sprites for your games, animations, edit images, create logos. All packed up in an intuitive and familiar interface.
 
-**This is a virtual package.** It installs [pixieditor.install](https://chocolatey.org/packages/pixieditor.install).
-
 ### Toolsets for any scenario
 
 PixiEditor 2.0 comes by default with 3 toolsets: 
@@ -33,29 +31,28 @@ PixiEditor 2.0 comes by default with 3 toolsets:
 
 All **toolsets can be used on one canvas**. Mix vector with raster. Export to png, jpg, svg, gif, mp4 and more!
 
-![Palettes](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/palettes.png) 
+![Palettes](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/palettes.png) 
 
-![Vector](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/vector.png) 
+![Vector](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/vector.png) 
 
 ### Animations
 
 Version 2.0 comes with a timeline and animation capabilities. You can create frame by frame animations or use nodes to animate your custom shaders.
 Key frame animations with vectors are on our roadmap.
 
-![Animation](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/anim.png) 
+![Animation](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/anim.png) 
 
 ### Nodes
 
 Node render system is what powers such extensive capabilities. All layers, effects and the layer structure are nodes or a result of its connections. PixiEditor exposes node graph for every document, so you are free to customize your image however you want and create procedural art/animations!
 
-![Graph](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/graph.png) 
+![Graph](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/graph.png) 
 
 </description>
     <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.4</releaseNotes>
-    <dependencies>
-      <dependency id="pixieditor.install" version="[2.1.1.4]" />
-    </dependencies>
   </metadata>
   <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
   </files>
 </package>

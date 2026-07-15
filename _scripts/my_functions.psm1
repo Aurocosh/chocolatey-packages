@@ -1,11 +1,12 @@
 $funcs = @(
+  'Invoke-WebRequestRetry'
+  'Invoke-RestMethodRetry'
   'Get-LatestGithubRelease'
   'Get-LatestWingetPkgsRelease'
   'Get-LatestBitbucketDownloads'
   'Get-RedirectedUrl'
   'Get-NuspecMetadata'
   'Set-ReplaceMarkersInFile'
-  'Invoke-WebRequestRetry'
   'Get-RemoteBufferedChecksum'
   'Update-NuspecMetadata'
 )

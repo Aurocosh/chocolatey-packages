@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser digimezzo `
     -RepoName dopamine `
-    -MainUrl64Regex "Dopamine-\d+\.\d+\.\d+.exe"
+    -MainUrl64Regex "Dopamine-\d+\.\d+\.\d+.exe" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

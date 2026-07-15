@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser xgi `
     -RepoName houdoku `
-    -MainUrl64Regex "Houdoku-Setup-\d+\.\d+\.\d+\.exe"
+    -MainUrl64Regex "Houdoku-Setup-\d+\.\d+\.\d+\.exe" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

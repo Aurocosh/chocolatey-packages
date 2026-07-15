@@ -5,7 +5,8 @@ $release = Get-LatestGithubRelease `
     -GitUser artem78 `
     -RepoName AutoScreenshot `
     -MainUrl32Regex "AutoScreenshot_v\d+\.\d+\.\d+_Windows_x86_portable.zip" `
-    -MainUrl64Regex "AutoScreenshot_v\d+\.\d+\.\d+_Windows_x64_portable.zip"
+    -MainUrl64Regex "AutoScreenshot_v\d+\.\d+\.\d+_Windows_x64_portable.zip" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

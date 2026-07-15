@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser rmcrackan `
     -RepoName Libation `
-    -MainUrl64Regex "Libation-Classic.\d+\.\d+\.\d+-windows-classic-x64-setup.exe"
+    -MainUrl64Regex "Libation-Classic.\d+\.\d+\.\d+-windows-classic-x64-setup.exe" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

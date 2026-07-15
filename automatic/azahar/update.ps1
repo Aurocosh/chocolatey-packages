@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser azahar-emu `
     -RepoName azahar `
-    -MainUrl64Regex "azahar-windows-msvc-\d+(?:\.\d+){0,2}(-rc\d+)?-installer.exe"
+    -MainUrl64Regex "azahar-windows-msvc-\d+(?:\.\d+){0,2}(-rc\d+)?-installer.exe" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

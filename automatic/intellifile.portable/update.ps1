@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser mihaimoga `
     -RepoName IntelliFile `
-    -MainUrl64Regex "IntelliFile.zip"
+    -MainUrl64Regex "IntelliFile.zip" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

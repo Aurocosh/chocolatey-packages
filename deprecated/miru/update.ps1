@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser ThaUnknown `
     -RepoName miru `
-    -MainUrl64Regex "win-hayase-\d+\.\d+\.\d+-installer.exe"
+    -MainUrl64Regex "win-hayase-\d+\.\d+\.\d+-installer.exe" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

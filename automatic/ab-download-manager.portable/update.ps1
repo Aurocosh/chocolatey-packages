@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser amir1376 `
     -RepoName ab-download-manager `
-    -MainUrl64Regex "ABDownloadManager_\d+\.\d+\.\d+_windows_x64.zip"
+    -MainUrl64Regex "ABDownloadManager_\d+\.\d+\.\d+_windows_x64.zip" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

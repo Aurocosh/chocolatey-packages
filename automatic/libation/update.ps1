@@ -13,7 +13,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser rmcrackan `
-        -RepoName Libation
+        -RepoName Libation `
+        -Buffered 60
     @{
         Version      = $release.Version
         ReleaseNotes = $release.ReleaseUrl

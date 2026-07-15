@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser SpikeHD `
     -RepoName Dorion `
-    -MainUrl64Regex "Dorion_\d+\.\d+\.\d+_win64_portable.zip"
+    -MainUrl64Regex "Dorion_\d+\.\d+\.\d+_win64_portable.zip" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

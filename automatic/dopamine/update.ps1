@@ -14,7 +14,8 @@ function global:au_GetLatest {
     $release = Get-LatestGithubRelease `
         -GitUser digimezzo `
         -RepoName dopamine `
-        -MainUrl64Regex "Dopamine-\d+\.\d+\.\d+.exe"
+        -MainUrl64Regex "Dopamine-\d+\.\d+\.\d+.exe" `
+        -Buffered 60
     @{
         Version      = $release.Version
         ReleaseNotes = $release.ReleaseUrl

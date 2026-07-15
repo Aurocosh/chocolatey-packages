@@ -4,7 +4,8 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser PixiEditor `
     -RepoName PixiEditor `
-    -MainUrl64Regex "PixiEditor.\d+\.\d+\.\d+\.\d+.x64-win.zip"
+    -MainUrl64Regex "PixiEditor.\d+\.\d+\.\d+\.\d+.x64-win.zip" `
+    -Buffered 60
 
 function global:au_SearchReplace {
     @{

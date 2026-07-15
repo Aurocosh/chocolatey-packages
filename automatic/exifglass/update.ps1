@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser d2phap `
     -RepoName ExifGlass `
-    -MainUrl64Regex "ExifGlass_\d+\.\d+\.\d+\.\d+_x64.zip" `
+    -MainUrl64Regex "ExifGlass_\d+\.\d+\.\d+\.\d+_win-x64\.zip" `
     -VersionRegex "(\d+(?:\.\d+){0,2})(?:\.\d+)?$"
 
 function global:au_SearchReplace {

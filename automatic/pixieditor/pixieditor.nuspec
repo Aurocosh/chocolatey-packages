@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pixieditor</id>
-    <version>2.1.1.4</version>
+    <version>2.1.1.5</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/pixieditor</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>PixiEditor</title>
@@ -51,9 +51,9 @@ Node render system is what powers such extensive capabilities. All layers, effec
 ![Graph](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor/img/graph.png) 
 
 </description>
-    <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.4</releaseNotes>
+    <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.5</releaseNotes>
     <dependencies>
-      <dependency id="pixieditor.install" version="[2.1.1.4]" />
+      <dependency id="pixieditor.install" version="[2.1.1.5]" />
     </dependencies>
   </metadata>
   <files>

@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'ExifGlass*'
-  url64bit       = 'https://github.com/d2phap/ExifGlass/releases/download/1.10.0.0/ExifGlass_1.10.0.0_x64.zip'
-  checksum64     = 'ab3f1925640ac5cc150ecf366139565abff06323bfdc53a8e3c34c94adf5fff4'
+  url64bit       = 'https://github.com/d2phap/ExifGlass/releases/download/2.0.0.0/ExifGlass_2.0.0.0_win-x64.zip'
+  checksum64     = 'a17e84901b0c188ba7d56ed053794bbdb19647cb1d72ca609a9d27335ca88201'
   checksumType64 = 'sha256'
 }
 

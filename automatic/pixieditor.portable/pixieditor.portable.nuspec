@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pixieditor.portable</id>
-    <version>2.1.1.4</version>
+    <version>2.1.1.5</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/pixieditor.portable</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>PixiEditor (Portable)</title>
@@ -48,7 +48,7 @@ Node render system is what powers such extensive capabilities. All layers, effec
 
 ![Graph](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.portable/img/graph.png) 
 </description>
-    <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.4</releaseNotes>
+    <releaseNotes>https://github.com/PixiEditor/PixiEditor/releases/tag/2.1.1.5</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->

@@ -1,4 +1,4 @@
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'PixiEditor'
 $exeFile = Join-Path $installPath 'PixiEditor.exe'
@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'PixiEditor*'
-  url64bit       = 'https://github.com/PixiEditor/PixiEditor/releases/download/2.1.1.4/PixiEditor.2.1.1.4.x64-win.zip'
-  checksum64     = '2f86a2d1b38a754baea22f236812b73b9488210db7b2d2f361b5374689d1065f'
+  url64bit       = 'https://github.com/PixiEditor/PixiEditor/releases/download/2.1.1.5/PixiEditor.2.1.1.5.x64-win.zip'
+  checksum64     = '6215525f87f14c8e83da7aa73e6039da1c0bb2fe2e8a226696ca3c0438222ab2'
   checksumType64 = 'sha256'
 }
 

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>libation</id>
-    <version>13.5.0</version>
+    <version>13.5.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/libation</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Libation</title>
@@ -37,9 +37,9 @@ This meta package installs **Libation Chardonnay**, the recommended Windows edit
 ![screenshot-3](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/libation/img/screenshot-3.png)
 
 </description>
-    <releaseNotes>https://github.com/rmcrackan/Libation/releases/tag/v13.5.0</releaseNotes>
+    <releaseNotes>https://github.com/rmcrackan/Libation/releases/tag/v13.5.1</releaseNotes>
     <dependencies>
-      <dependency id="libation-chardonnay" version="[13.5.0]" />
+      <dependency id="libation-chardonnay" version="[13.5.1]" />
     </dependencies>
   </metadata>
   <files>

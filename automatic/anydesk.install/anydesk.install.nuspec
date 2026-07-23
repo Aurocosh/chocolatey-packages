@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anydesk.install</id>
-    <version>9.7.10</version>
+    <version>9.7.11</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/anydesk.install</packageSourceUrl>
     <owners>Aurocosh,TheCakeIsNaOH</owners>
     <title>AnyDesk (Install)</title>

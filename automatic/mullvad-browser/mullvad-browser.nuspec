@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mullvad-browser</id>
+    <version>15.0.19</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/mullvad-browser</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Mullvad Browser (Install)</title>
+    <authors>Mullvad VPN, Tor Project</authors>
+    <projectUrl>https://mullvad.net/en/browser</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/mullvad-browser/img/icon.png</iconUrl>
+    <copyright>Copyright © Mullvad VPN AB and The Tor Project</copyright>
+    <licenseUrl>https://github.com/mullvad/mullvad-browser/blob/15.0.19/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mullvad/mullvad-browser</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/mullvad/mullvad-browser/issues</bugTrackerUrl>
+    <tags>mullvad-browser mullvad browser privacy tor firefox fingerprinting</tags>
+    <summary>Privacy-focused browser developed by Mullvad VPN and the Tor Project</summary>
+    <description>Mullvad Browser is a privacy-focused browser developed together with the Tor Project.
+It is designed to minimize tracking and browser fingerprinting — essentially Tor Browser without the Tor Network, for use with (or without) a trustworthy VPN.
+
+### Features
+
+- Blocks third-party trackers with uBlock Origin
+- Resists fingerprinting (letterboxing and related techniques)
+- Private browsing mode enabled by default; no cookies saved between sessions
+- No telemetry
+- Open source and free of charge
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/mullvad-browser/img/screenshot.png)
+</description>
+    <releaseNotes>https://github.com/mullvad/mullvad-browser/releases/tag/15.0.19</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

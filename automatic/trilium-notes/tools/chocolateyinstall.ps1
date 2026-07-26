@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'trilium*'
-  url64bit       = 'https://github.com/TriliumNext/Trilium/releases/download/v0.104.0/TriliumNotes-v0.104.0-windows-x64.zip'
-  checksum64     = '0c4c559e85e0d92f48e23bc6d375b1ed8959d22c523bcd5cd5b08ecb435ef0e0'
+  url64bit       = 'https://github.com/TriliumNext/Trilium/releases/download/v0.104.1/TriliumNotes-v0.104.1-windows-x64.zip'
+  checksum64     = '5e8d2bce4305b3abed1113e3d9fc6137eedeea11c8e0a8d750be083cf58a7367'
   checksumType64 = 'sha256'
 }
 

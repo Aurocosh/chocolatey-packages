@@ -8,7 +8,7 @@ $packageArgs = @{
   checksum64     = '7c27606a1b899e325b5a421557adda41bd16c903496e4d42c2e480ce4cc0ec40'
   checksumType64 = 'sha256'
   validExitCodes = @(0, 3010, 1641)
-  silentArgs     = 'install --confirm-command --accept-messages'
+  silentArgs     = 'install --confirm-command --accept-messages --auto-answer installationErrorWithCancel=Ignore'
 }
 
 Install-ChocolateyPackage @packageArgs

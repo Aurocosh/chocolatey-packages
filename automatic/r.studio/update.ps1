@@ -13,17 +13,21 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://live-rstudio.pantheonsite.io/download/rstudio-desktop/' -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri 'https://docs.posit.co/ide/user/' -UseBasicParsing
 
-    $regex64 = "RStudio-(\d+\.\d+\.\d+)-\d+\.exe"
-    $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
+    # Open Source Windows installer only (exclude Pro builds like RStudio-pro-...)
+    $regex64 = 'https://download1\.rstudio\.org/electron/windows/RStudio-(\d+\.\d+\.\d+)-\d+\.exe'
+    $url64 = $download_page.Links | Where-Object href -match $regex64 | Select-Object -First 1 -ExpandProperty href
+    if (-not ($url64 -match $regex64)) {
+        throw 'Unable to find RStudio Windows download URL on docs.posit.co'
+    }
     $version = $matches[1]
     $releaseNotesUrl = "https://docs.posit.co/ide/news/#rstudio-$version"
-	
+
     @{
-        URL64   = $url64
-        Version = $version
-        ReleaseNotes = $releaseNotesUrl
+        URL64         = $url64
+        Version       = $version
+        ReleaseNotes  = $releaseNotesUrl
     }
 }
 

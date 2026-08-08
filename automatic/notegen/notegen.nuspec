@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>notegen</id>
+    <version>0.34.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/notegen</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>NoteGen (Install)</title>
+    <authors>Codexu</authors>
+    <projectUrl>https://notegen.top</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/notegen/img/icon.png</iconUrl>
+    <licenseUrl>https://github.com/codexu/note-gen/blob/dev/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/codexu/note-gen</projectSourceUrl>
+    <docsUrl>https://notegen.top/en/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/codexu/note-gen/issues</bugTrackerUrl>
+    <tags>notegen notes markdown ai knowledge-base local-first note-taking editor tauri</tags>
+    <summary>Capture first. Organize later. A local-first Markdown app that turns scattered records into clear notes with AI.</summary>
+    <description># NoteGen
+
+**Capture first. Organize later.**
+
+A local-first Markdown app that helps you collect scattered information and organize it into clear notes with AI.
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/notegen/img/screenshot.png)
+
+## Features
+
+- Capture text, voice, screenshots, images, links, files, and tasks without sorting them first
+- Organize selected records into structured Markdown notes with AI
+- Markdown editor with tables, math, diagrams, Mermaid, and source mode
+- Infinite canvas for flowcharts, mind maps, timelines, and diagrams
+- Local-first storage with optional sync via GitHub, GitLab, Gitee, Gitea, S3, or WebDAV
+- Knowledge base search, Agent mode, MCP servers, and installable Skills
+- No account required for core features
+
+</description>
+    <releaseNotes>https://github.com/codexu/note-gen/releases/tag/note-gen-v0.34.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

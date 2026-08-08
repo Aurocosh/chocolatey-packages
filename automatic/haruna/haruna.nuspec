@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>haruna</id>
+    <version>1.8.1</version>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/haruna</packageSourceUrl>
+    <owners>Aurocosh</owners>
+    <title>Haruna (Install)</title>
+    <authors>George Florea Bănuș, KDE</authors>
+    <projectUrl>https://haruna.kde.org</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/haruna/img/icon.png</iconUrl>
+    <licenseUrl>https://invent.kde.org/multimedia/haruna/-/blob/master/LICENSES/GPL-3.0-or-later.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://invent.kde.org/multimedia/haruna</projectSourceUrl>
+    <docsUrl>https://haruna.kde.org</docsUrl>
+    <bugTrackerUrl>https://bugs.kde.org/enter_bug.cgi?product=Haruna</bugTrackerUrl>
+    <tags>haruna kde mpv video player media multimedia qt qml</tags>
+    <summary>Open source video player built with Qt/QML and libmpv</summary>
+    <description><![CDATA[
+# Haruna
+
+Haruna is an open source media player built with Qt/QML and [libmpv](https://mpv.io/).
+
+![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/haruna/img/screenshot.png)
+
+## Features
+
+- Auto playlist populated from the same folder as the opened file
+- Video preview when hovering the seek bar
+- Configurable keyboard shortcuts and mouse actions
+- Play online videos through youtube-dl/yt-dlp
+- Auto skip chapters containing certain words
+- Custom mpv commands (at startup or via shortcuts)
+- Theming via color schemes and widget styles
+]]></description>
+    <releaseNotes>https://haruna.kde.org/blog/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

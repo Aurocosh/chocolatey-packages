@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>phoenix-code</id>
-    <version>5.1.24</version>
+    <version>5.2.4</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/phoenix-code</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Phoenix Code (Install)</title>
@@ -40,7 +40,7 @@ Phoenix Code is a free, open-source code editor and the official successor to Ad
 Phoenix Pro adds AI assistance with visual and runtime context from the rendered page.
 
 </description>
-    <releaseNotes>https://github.com/phcode-dev/phoenix-desktop/releases/tag/prod-app-v5.1.24</releaseNotes>
+    <releaseNotes>https://github.com/phcode-dev/phoenix-desktop/releases/tag/prod-app-v5.2.4</releaseNotes>
     <dependencies>
       <dependency id="webview2-runtime" />
     </dependencies>

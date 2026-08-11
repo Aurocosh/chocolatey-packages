@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'azahar*'
-  url64bit       = 'https://github.com/azahar-emu/azahar/releases/download/2125.1.3/azahar-windows-msvc-2125.1.3.zip'
-  checksum64     = '7d5fbc8de1364998b15c96437d090b88690653e17717b60d06d0de54c42522da'
+  url64bit       = 'https://github.com/azahar-emu/azahar/releases/download/2126.0/azahar-windows-msvc-2126.0.zip'
+  checksum64     = 'bacf010b89c8b0ec38164a9aa11bdfce98f47c99e8364c93a4a97240ba86e3ed'
   checksumType64 = 'sha256'
 }
 

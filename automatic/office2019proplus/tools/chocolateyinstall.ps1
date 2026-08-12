@@ -42,8 +42,8 @@ else {
 $packageArgs = @{
     packageName    = 'Office2019DeploymentTool'
     fileType       = 'exe'
-    url            = 'https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_20131-20090.exe'
-    checksum       = 'fa6cbe5b383f89b83f373c36c90ebdcc9acffa43d0cb47fb69062c41f46c0769'
+    url            = 'https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_20228-20124.exe'
+    checksum       = '92a3cbd56191533e36bde1c6e4640883c900c00d1b5d43a974c870893681e0d4'
     checksumType   = 'sha256'
     softwareName   = 'Microsoft Office 2019 ProPlus*'
     silentArgs     = "/extract:`"$officetempfolder`" /log:`"$officetempfolder\OfficeInstall.log`" /quiet /norestart"

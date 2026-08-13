@@ -1,7 +1,7 @@
 Import-Module Chocolatey-AU
 
-$releaseNotesUrl = 'https://unity.com/unity-hub/release-notes'
-$url64 = 'https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-x64.exe'
+$latestYmlUrl = 'https://public-cdn.cloud.unity3d.com/hub/prod/latest.yml'
+$downloadBaseUrl = 'https://public-cdn.cloud.unity3d.com/hub/prod/'
 
 function global:au_SearchReplace {
     @{
@@ -13,27 +13,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $page = Invoke-WebRequest -Uri $releaseNotesUrl -UseBasicParsing
+    $yml = [System.Text.Encoding]::UTF8.GetString(
+        (Invoke-WebRequest -Uri $latestYmlUrl -UseBasicParsing).Content
+    )
 
-    $version = [regex]::Match(
-        $page.Content,
-        'whitespace-nowrap[^>]*>(\d+\.\d+\.\d+)<'
-    ).Groups[1].Value
+    $version = [regex]::Match($yml, '(?m)^version:\s*(\S+)').Groups[1].Value
+    $path = [regex]::Match($yml, '(?m)^path:\s*(\S+)').Groups[1].Value
 
-    if (-not $version) {
-        $version = [regex]::Match(
-            $page.Content,
-            'mango-text-heading-xl[^>]*>(\d+\.\d+\.\d+)</h2>'
-        ).Groups[1].Value
-    }
-
-    if (-not $version) {
-        throw "Could not find Unity Hub version on $releaseNotesUrl"
+    if (-not $version -or -not $path) {
+        throw "Could not parse Unity Hub latest.yml from $latestYmlUrl"
     }
 
     @{
         Version = $version
-        URL64   = $url64
+        URL64   = "$downloadBaseUrl$path"
     }
 }
 

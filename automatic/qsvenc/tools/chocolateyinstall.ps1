@@ -6,11 +6,11 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'NVEnc*'
-  url            = 'https://github.com/rigaya/QSVEnc/releases/download/8.26/QSVEncC_8.26_Win32.7z'
-  checksum       = '3ace87a6cefc3b4605e986af6a39074dd2b79c248feab4199ddef73a702854e6'
+  url            = 'https://github.com/rigaya/QSVEnc/releases/download/8.27/QSVEncC_8.27_Win32.7z'
+  checksum       = 'c6bd04707d12c57d825f1ce64ee6840db47078507aa96dd9d64af315d4593f83'
   checksumType   = 'sha256'
-  url64bit       = 'https://github.com/rigaya/QSVEnc/releases/download/8.26/QSVEncC_8.26_x64.7z'
-  checksum64     = '081dd1cf791cf9ed5f46ed7776201aa940458ecd476832efc1f87ed3d8a01367'
+  url64bit       = 'https://github.com/rigaya/QSVEnc/releases/download/8.27/QSVEncC_8.27_x64.7z'
+  checksum64     = '65c7a641e20319a52b6c73052f5179bd20b5da7115ea058a79f262575ec7455f'
   checksumType64 = 'sha256'
 }
 

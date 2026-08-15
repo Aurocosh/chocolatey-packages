@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dz6</id>
-    <version>0.7.0</version>
+    <version>0.7.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/dz6</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>dz6 (Portable)</title>
@@ -37,7 +37,7 @@ Fast Vim-inspired TUI hex editor
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/dz6/img/screenshot.png)
 
 </description>
-    <releaseNotes>https://github.com/mentebinaria/dz6/releases/tag/v0.7.0</releaseNotes>
+    <releaseNotes>https://github.com/mentebinaria/dz6/releases/tag/v0.7.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

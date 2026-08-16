@@ -10,26 +10,20 @@ function global:au_SearchReplace {
     }
 }
 
-# function global:au_GetLatest {
-#     $download_page = Invoke-WebRequest -Uri 'https://www.glasswire.com/changes' -UseBasicParsing
-
-#     $regex32 = 'glasswire-setup-(\d+\.\d+\.\d+)-full\.exe'
-#     $url32 = $download_page.links | Where-Object href -match $regex32 | Select-Object -First 1 -expand href
-
-#     $version = $matches[1]
-
-#     @{
-#         Url32   = $url32
-#         Version = $version
-#     }
-# }
-
 function global:au_GetLatest {
-    Get-LatestWingetPkgsRelease `
-        -ManifestPath 'g/GlassWire/GlassWire' `
-        -InstallerManifest 'GlassWire.GlassWire.installer.yaml' `
-        -InstallerUrlRegex 'InstallerUrl:\s*(https://.*?.exe)' `
-        -VersionRegex '^\d+(?:\.\d+){1,2}$'
+    $download_page = Invoke-WebRequest -Uri 'https://www.glasswire.com/' -UseBasicParsing
+
+    $regex64 = 'https://download\.glasswire\.com/latest/GlassWireSetup\.exe\?v=(\d+\.\d+\.\d+)'
+    $url64 = $download_page.Links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
+
+    if (-not $url64) {
+        throw 'Could not find GlassWire download URL on https://www.glasswire.com/'
+    }
+
+    @{
+        Url64   = $url64
+        Version = $matches[1]
+    }
 }
 
-update -ChecksumFor none -NoCheckUrl
+update -ChecksumFor 64

@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
+$userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+
 $os = Get-CimInstance Win32_OperatingSystem
 $is32BitOs = (Get-OSArchitectureWidth) -eq 32
 $isWin7 = $os.Caption -match 'Windows 7'
@@ -13,6 +15,11 @@ $packageArgs = @{
   softwareName   = 'Glasswire*'
   validExitCodes = @(0, 3010, 1641)
   silentArgs     = '/S'  # NSIS
+  Options        = @{
+    Headers = @{
+      'User-Agent' = $userAgent
+    }
+  }
 }
 
 if ($useLegacy) {
@@ -23,7 +30,7 @@ if ($useLegacy) {
 }
 else {
   $packageArgs.url64bit          = 'https://download.glasswire.com/latest/GlassWireSetup.exe?v=3.9.1102'
-  $packageArgs.checksum64        = '47780711f5c5e0316c7ecd5926ea8d43f74e7d333310407bed5525f6f482d5c0'
+  $packageArgs.checksum64        = '234cca9e6ee79b7b7d488d21bb80af9828fc6dd9d959feb6b3a305ed31ff73b0'
   $packageArgs.checksumType64    = 'sha256'
 }
 

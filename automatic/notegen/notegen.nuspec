@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>notegen</id>
-    <version>0.34.1</version>
+    <version>0.35.1</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/notegen</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>NoteGen (Install)</title>
@@ -37,7 +37,7 @@ A local-first Markdown app that helps you collect scattered information and orga
 - No account required for core features
 
 </description>
-    <releaseNotes>https://github.com/codexu/note-gen/releases/tag/note-gen-v0.34.1</releaseNotes>
+    <releaseNotes>https://github.com/codexu/note-gen/releases/tag/note-gen-v0.35.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

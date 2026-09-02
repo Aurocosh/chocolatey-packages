@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'PixiEditor*'
-  url64bit       = 'https://github.com/PixiEditor/PixiEditor/releases/download/2.1.2.2/PixiEditor.2.1.2.2.x64-win.zip'
-  checksum64     = '15b8c8b57df16fcd759e54bb836cffa3dfb1a2228992ca445023a5b4c1a5e77d'
+  url64bit       = 'https://github.com/PixiEditor/PixiEditor/releases/download/2.1.2.3/PixiEditor.2.1.2.3.x64-win.zip'
+  checksum64     = 'ee4a9a402636950807d583c315a28b5aa3e79bfb7ea35d5a28b41dad6ae3913e'
   checksumType64 = 'sha256'
 }
 

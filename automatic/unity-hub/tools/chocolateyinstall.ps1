@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = "Stop"
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/3.21.0/UnityHubSetup-3.21.0-x64.exe"
-$checksum64 = "9e418bdfae1d5a6c279cd9dd327af4bc80d5b8b6a75f9a745c5174146221cdd8"
+$url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/3.21.1/UnityHubSetup-3.21.1-x64.exe"
+$checksum64 = "9f62430abe9cd88f73b813118ef5a6634618c275a3f3e5df7128226cc489a63b"
 
 $installArgs = '/S'  # NSIS
 

@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mullvad-browser</id>
-    <version>15.0.20</version>
+    <version>15.0.21</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/mullvad-browser</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Mullvad Browser (Install)</title>
@@ -31,7 +31,7 @@ It is designed to minimize tracking and browser fingerprinting — essentially T
 
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/mullvad-browser/img/screenshot.png)
 </description>
-    <releaseNotes>https://github.com/mullvad/mullvad-browser/releases/tag/15.0.20</releaseNotes>
+    <releaseNotes>https://github.com/mullvad/mullvad-browser/releases/tag/15.0.21</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

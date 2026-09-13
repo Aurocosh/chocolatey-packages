@@ -14,17 +14,15 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri 'https://www.glasswire.com/' -UseBasicParsing -UserAgent $userAgent
-
     $regex64 = 'https://download\.glasswire\.com/latest/GlassWireSetup\.exe\?v=(\d+\.\d+\.\d+)'
-    $url64 = $download_page.Links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
 
-    if (-not $url64) {
+    if ($download_page.Content -notmatch $regex64) {
         throw 'Could not find GlassWire download URL on https://www.glasswire.com/'
     }
 
     @{
-        Url64   = $url64
-        Version = $matches[1]
+        Url64   = [string]$matches[0]
+        Version = [string]$matches[1]
         Options = @{
             Headers = @{
                 'User-Agent' = $userAgent

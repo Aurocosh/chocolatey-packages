@@ -2,12 +2,16 @@
 
 $userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
 
-$os = Get-CimInstance Win32_OperatingSystem
-$is32BitOs = (Get-OSArchitectureWidth) -eq 32
-$isWin7 = $os.Caption -match 'Windows 7'
-$isServer = $os.ProductType -ne 1
+# AU Update-Package sets ChocolateyPackageName to 'chocolatey\<id>' while hashing.
+# Always use the current 64-bit installer in that mode so AppVeyor (Windows Server)
+# does not hash the legacy 3.8.1061 build.
+$isAuChecksum = $env:ChocolateyPackageName -like 'chocolatey\*'
 
-$useLegacy = $is32BitOs -or $isWin7 -or $isServer
+$nt = Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion'
+$is32BitOs = (Get-OSArchitectureWidth) -eq 32
+$isWin7 = $nt.ProductName -match 'Windows 7'
+$isServer = $nt.InstallationType -match 'Server' -or $nt.ProductName -match 'Windows Server'
+$useLegacy = -not $isAuChecksum -and ($is32BitOs -or $isWin7 -or $isServer)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

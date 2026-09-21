@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'topgrade*'
-  url64bit       = 'https://github.com/topgrade-rs/topgrade/releases/download/v17.11.0/topgrade-v17.11.0-x86_64-pc-windows-msvc.zip'
-  checksum64     = '73e991844fc9af7b84e55b66f75fc4c8316773276d7aeaefeede0af0fb8db34a'
+  url64bit       = 'https://github.com/topgrade-rs/topgrade/releases/download/v17.12.0/topgrade-v17.12.0-x86_64-pc-windows-msvc.zip'
+  checksum64     = 'dcc5e7e9b9dfd8bc7a1c4e7e6148afc84ef75738d178a6902989a163819ff226'
   checksumType64 = 'sha256'
 }
 

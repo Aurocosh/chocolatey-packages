@@ -11,6 +11,7 @@
     <authors>Pixieditor</authors>
     <projectUrl>https://pixieditor.net</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/pixieditor.install/img/icon.png</iconUrl>
+    <copyright>Copyright (c) PixiEditor contributors</copyright>
     <licenseUrl>https://github.com/PixiEditor/PixiEditor/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/PixiEditor/PixiEditor</projectSourceUrl>

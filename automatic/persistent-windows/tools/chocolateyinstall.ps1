@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'PersistentWindows*'
-  url            = 'https://github.com/kangyu-california/PersistentWindows/releases/download/5.76/PersistentWindows5.76.zip'
-  checksum       = 'bbf8ed2eb3e662d6f9dc35b85047ad52bd4c793afcf1951afd0c9599c7403c79'
+  url            = 'https://github.com/kangyu-california/PersistentWindows/releases/download/5.77/PersistentWindows5.77.zip'
+  checksum       = '09096a4028880909802cf364b9be47a82aa19bb0d5045b24e61d3f70283bc36c'
   checksumType   = 'sha256'
 }
 

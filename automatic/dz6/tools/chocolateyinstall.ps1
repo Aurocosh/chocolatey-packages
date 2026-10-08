@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'dz6*'
-  url64bit       = 'https://github.com/mentebinaria/dz6/releases/download/v0.7.1/dz6-x86_64-pc-windows-msvc.zip'
-  checksum64     = 'd7e9ae24adcf056c2cc0431a5763427a504508c14e3acc0eddd3f54892bd253e'
+  url64bit       = 'https://github.com/mentebinaria/dz6/releases/download/v0.8.0/dz6-x86_64-pc-windows-msvc.zip'
+  checksum64     = '4c5d3d2d41a3c4c60cf6a7d04cc7362a359096f68366973885e7f458ccd59bd4'
   checksumType64 = 'sha256'
 }
 

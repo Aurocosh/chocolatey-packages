@@ -22,6 +22,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    # Latest release may not include Windows installers — treat as unchanged.
+    if (-not $release.MainUrl32 -or -not $release.MainUrl64) {
+        return @{ Version = (Get-NuspecMetadata -key version) }
+    }
+
     @{
         Url32        = $release.MainUrl32
         Checksum32   = $release.MainUrl32_Sha256
@@ -32,4 +37,10 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor $release.ChocoChecksumFor
+if (-not $release.MainUrl32 -or -not $release.MainUrl64) {
+    # Avoid Chocolatey fix notation from forced updates when nothing changed.
+    $global:au_Force = $false
+    update -ChecksumFor none
+} else {
+    update -ChecksumFor $release.ChocoChecksumFor
+}

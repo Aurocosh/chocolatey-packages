@@ -13,13 +13,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri 'https://docs.posit.co/ide/user/' -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri 'https://docs.posit.co/ide/user/download.html' -UseBasicParsing
 
     # Open Source Windows installer only (exclude Pro builds like RStudio-pro-...)
     $regex64 = 'https://download1\.rstudio\.org/electron/windows/RStudio-(\d+\.\d+\.\d+)-\d+\.exe'
     $url64 = $download_page.Links | Where-Object href -match $regex64 | Select-Object -First 1 -ExpandProperty href
     if (-not ($url64 -match $regex64)) {
-        throw 'Unable to find RStudio Windows download URL on docs.posit.co'
+        throw 'Unable to find RStudio Windows download URL on docs.posit.co/ide/user/download.html'
     }
     $version = $matches[1]
     $releaseNotesUrl = "https://docs.posit.co/ide/news/#rstudio-$version"

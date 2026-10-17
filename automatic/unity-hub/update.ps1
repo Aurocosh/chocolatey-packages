@@ -17,16 +17,26 @@ function global:au_GetLatest {
         (Invoke-WebRequest -Uri $latestYmlUrl -UseBasicParsing).Content
     )
 
-    $version = [regex]::Match($yml, '(?m)^version:\s*(\S+)').Groups[1].Value
-    $path = [regex]::Match($yml, '(?m)^path:\s*(\S+)').Groups[1].Value
+    $version = [regex]::Match($yml, '(?m)^version:\s*[''"]?([^\s''"]+)').Groups[1].Value
+    # Current latest.yml lists x64 and arm64 under files[].url. Older files used a top-level path.
+    $path = [regex]::Match($yml, '(?m)^\s*-\s*url:\s*[''"]?([^\s''"]+x64\.exe)').Groups[1].Value
+    if (-not $path) {
+        $path = [regex]::Match($yml, '(?m)^path:\s*[''"]?([^\s''"]+)').Groups[1].Value
+    }
 
     if (-not $version -or -not $path) {
         throw "Could not parse Unity Hub latest.yml from $latestYmlUrl"
     }
 
+    if ($path -match '^https?://') {
+        $url64 = $path
+    } else {
+        $url64 = "$downloadBaseUrl$path"
+    }
+
     @{
         Version = $version
-        URL64   = "$downloadBaseUrl$path"
+        URL64   = $url64
     }
 }
 

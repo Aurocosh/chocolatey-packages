@@ -1,17 +1,17 @@
 Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 
+# x86 temporarily disabled: -MainUrl32Regex "VCEEncC_\d+\.\d+_Win32.7z"
 $release = Get-LatestGithubRelease `
     -GitUser rigaya `
     -RepoName VCEEnc `
-    -MainUrl32Regex "VCEEncC_\d+\.\d+_Win32.7z" `
     -MainUrl64Regex "VCEEncC_\d+\.\d+_x64.7z"
 
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.Url32)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            # "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.Url32)'" # x86 temporarily disabled
+            # "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'" # x86 temporarily disabled
             "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
             "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
@@ -23,8 +23,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     @{
-        Url32        = $release.MainUrl32
-        Checksum32   = $release.MainUrl32_Sha256
+        # Url32        = $release.MainUrl32 # x86 temporarily disabled
+        # Checksum32   = $release.MainUrl32_Sha256 # x86 temporarily disabled
         Url64        = $release.MainUrl64
         Checksum64   = $release.MainUrl64_Sha256
         Version      = $release.Version

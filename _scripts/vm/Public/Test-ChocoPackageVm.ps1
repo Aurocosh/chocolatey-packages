@@ -1,4 +1,4 @@
-function Test-MyChPackageVm {
+function Test-ChocoPackageVm {
     param(
         $Nu,
         [switch]$UninstallAfterInstall,
@@ -8,30 +8,29 @@ function Test-MyChPackageVm {
     )
 
     $exitCode = 1
-    $snap = Get-MyChTestVmSnapshot -Snapshot $Snapshot
+    $snap = Get-ChocoVmSnapshot -Snapshot $Snapshot
     $snapName = $snap.Name
     $restoredForTest = $false
 
     try {
-        Stage-MyChTestPackage -Nu $Nu -Vagrant $Vagrant
-        Restore-MyChTestVm -Snapshot $snapName
+        Stage-ChocoPackage -Nu $Nu -Vagrant $Vagrant
+        Restore-ChocoVm -Snapshot $snapName
         $restoredForTest = $true
-        Start-MyChTestVm
+        Start-ChocoVm
 
         $remote = $script:GuestTestAllPackagesScript
         if ($UninstallAfterInstall) {
             $remote = '& "$env:USERPROFILE/TestAllPackages.ps1" -UninstallAfterInstall'
         }
 
-        $exitCode = Invoke-MyChTestVmScript -Script $remote -Vagrant $Vagrant -ShowOutput:$ShowOutput
+        $exitCode = Invoke-ChocoVmScript -Script $remote -Vagrant $Vagrant -ShowOutput:$ShowOutput
         if ($null -eq $exitCode) { $exitCode = 0 }
         $exitCode = [int]$exitCode
     } finally {
         if ($restoredForTest) {
-            Restore-MyChTestVm -Snapshot $snapName
+            Restore-ChocoVm -Snapshot $snapName
         }
-        Clear-MyChTestVmPackages -Vagrant $Vagrant
-        Clear-MyChPackageArtifacts
+        Clear-ChocoPackages -Vagrant $Vagrant
     }
 
     if ($exitCode -ne 0) {

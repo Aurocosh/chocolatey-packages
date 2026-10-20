@@ -1,5 +1,5 @@
-function Connect-MyChTestVm {
-    $vmName = Get-MyChTestVmName
+function Connect-ChocoVm {
+    $vmName = Get-ChocoVmName
     $existing = (Get-Process | Where-Object {  $_.Name -match 'vmconnect' -and $_.MainWindowTitle  -match "^$vmName on .* - Virtual Machine Connection" }).Count -gt 0
     if ($existing) {
         Write-Verbose 'Test environment VM connection already open'

@@ -19,15 +19,13 @@ Get-ChildItem -LiteralPath $publicPath -Filter '*.ps1' -File | Sort-Object Name 
 }
 
 Export-ModuleMember -Function @(
-    'Start-MyChTestVm',
-    'Stop-MyChTestVm',
-    'Connect-MyChTestVm',
-    'Restore-MyChTestVm',
-    'Stage-MyChTestPackage',
-    'Start-MyChTestPackageManual',
-    'Test-MyChPackageVm',
-    'Clear-MyChPackageArtifacts',
-    'Clear-MyChTestVmPackages',
-    'Start-MyChTestPackageCleanUp',
-    'Stop-MyChTestVmCleanUp'
+    'Start-ChocoVm',
+    'Stop-ChocoVm',
+    'Connect-ChocoVm',
+    'Restore-ChocoVm',
+    'Stage-ChocoPackage',
+    'Start-ChocoManualTest',
+    'Test-ChocoPackageVm',
+    'Clear-ChocoPackages',
+    'Stop-ChocoAll'
 )

@@ -1,4 +1,4 @@
-function Get-MyChSanitizedVagrantOutput {
+function Get-ChocoSanitizedVagrantOutput {
     param([string]$Line)
 
     if ($null -eq $Line) { return $null }
@@ -22,16 +22,16 @@ function Get-MyChSanitizedVagrantOutput {
     return $content
 }
 
-function Write-MyChVagrantOutputLine {
+function Write-ChocoVagrantOutputLine {
     param([string]$Line)
 
-    $text = Get-MyChSanitizedVagrantOutput -Line $Line
+    $text = Get-ChocoSanitizedVagrantOutput -Line $Line
     if ($null -ne $text) {
         Write-Host $text
     }
 }
 
-function Invoke-MyChTestVmScriptViaVagrant {
+function Invoke-ChocoVmScriptViaVagrant {
     param(
         [Parameter(Mandatory)]
         [string]$Script,
@@ -39,7 +39,7 @@ function Invoke-MyChTestVmScriptViaVagrant {
         [switch]$ShowOutput
     )
 
-    $vagrantPath = Get-MyChVagrantPath -Vagrant $Vagrant
+    $vagrantPath = Get-ChocoVagrantPath -Vagrant $Vagrant
     $command = if ($ShowOutput) {
         @"
 `$exitCode = 0
@@ -62,7 +62,7 @@ exit `$exitCode
         if ($ShowOutput) {
             & vagrant powershell -e -c $command 2>&1 | ForEach-Object {
                 $line = if ($_ -is [System.Management.Automation.ErrorRecord]) { $_.ToString() } else { "$_" }
-                Write-MyChVagrantOutputLine -Line $line
+                Write-ChocoVagrantOutputLine -Line $line
             }
         } else {
             $prevEap = $ErrorActionPreference
@@ -80,7 +80,7 @@ exit `$exitCode
     }
 }
 
-function Invoke-MyChTestVmScript {
+function Invoke-ChocoVmScript {
     param(
         [Parameter(Mandatory)]
         [string]$Script,
@@ -89,17 +89,17 @@ function Invoke-MyChTestVmScript {
     )
 
     if ($ShowOutput) {
-        return Invoke-MyChTestVmScriptViaVagrant -Script $Script -Vagrant $Vagrant -ShowOutput
+        return Invoke-ChocoVmScriptViaVagrant -Script $Script -Vagrant $Vagrant -ShowOutput
     }
 
-    $exitCode = Invoke-MyChTestVmScriptViaVagrant -Script $Script -Vagrant $Vagrant
+    $exitCode = Invoke-ChocoVmScriptViaVagrant -Script $Script -Vagrant $Vagrant
     if ($exitCode -eq 0) {
         return $exitCode
     }
 
     Write-Warning "vagrant powershell exited with $exitCode; trying direct WinRM..."
     try {
-        return Invoke-MyChTestVmWinRm -Script $Script
+        return Invoke-ChocoVmWinRm -Script $Script
     } catch {
         throw "Guest command failed via vagrant and WinRM fallback: $_"
     }

@@ -1,4 +1,4 @@
-function Start-MyChTestPackageManual {
+function Start-ChocoManualTest {
     param(
         $Nu,
         [switch]$NoClear,
@@ -7,11 +7,11 @@ function Start-MyChTestPackageManual {
         [string]$Vagrant
     )
 
-    Stage-MyChTestPackage -Nu $Nu -NoClear:$NoClear -Vagrant $Vagrant
-    Restore-MyChTestVm -Snapshot $Snapshot
-    Start-MyChTestVm
+    Stage-ChocoPackage -Nu $Nu -NoClear:$NoClear -Vagrant $Vagrant
+    Restore-ChocoVm -Snapshot $Snapshot
+    Start-ChocoVm
     if (-not $NoConnect) {
-        Connect-MyChTestVm
+        Connect-ChocoVm
     }
 
     Write-Host ''

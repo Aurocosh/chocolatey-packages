@@ -1,4 +1,4 @@
-function Stop-MyChTestVm {
+function Stop-ChocoVm {
     param(
         [switch]$TurnOff,
         [switch]$Save
@@ -8,7 +8,7 @@ function Stop-MyChTestVm {
         throw 'Cannot use -TurnOff and -Save together.'
     }
 
-    $vm = Get-MyChTestVm
+    $vm = Get-ChocoVm
     if ($vm.State -eq 'Off') {
         Write-Host "VM '$($vm.Name)' is already off."
         return

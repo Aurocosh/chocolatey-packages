@@ -1,5 +1,5 @@
-function Start-MyChTestVm {
-    $vm = Get-MyChTestVm
+function Start-ChocoVm {
+    $vm = Get-ChocoVm
     if ($vm.State -eq 'Running') {
         Write-Host "VM '$($vm.Name)' is already running."
         return
@@ -10,7 +10,7 @@ function Start-MyChTestVm {
 
     $deadline = (Get-Date).AddMinutes(10)
     while ((Get-Date) -lt $deadline) {
-        $vm = Get-MyChTestVm
+        $vm = Get-ChocoVm
         if ($vm.State -eq 'Running') {
             Write-Host "VM '$($vm.Name)' is running."
             return

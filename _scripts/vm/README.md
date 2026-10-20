@@ -33,11 +33,11 @@ _scripts/vm/
 
 ## Exported commands
 
-All public commands use the **`MyCh`** prefix to avoid collisions with Chocolatey-AU or other modules.
+All public commands use the **`Choco`** prefix to avoid collisions with Chocolatey-AU or other modules.
 
 ### VM control
 
-#### `Start-MyChTestVm`
+#### `Start-ChocoVm`
 
 Start the test VM if it is not already running. Waits up to 10 minutes for `Running` state.
 
@@ -46,12 +46,12 @@ Start the test VM if it is not already running. Waits up to 10 minutes for `Runn
 | *(none)* | | |
 
 ```powershell
-Start-MyChTestVm
+Start-ChocoVm
 ```
 
 ---
 
-#### `Stop-MyChTestVm`
+#### `Stop-ChocoVm`
 
 Stop the test VM.
 
@@ -63,13 +63,13 @@ Stop the test VM.
 Default: graceful shutdown.
 
 ```powershell
-Stop-MyChTestVm
-Stop-MyChTestVm -TurnOff
+Stop-ChocoVm
+Stop-ChocoVm -TurnOff
 ```
 
 ---
 
-#### `Connect-MyChTestVm`
+#### `Connect-ChocoVm`
 
 Open Hyper-V Manager console (`vmconnect.exe`) for the test VM.
 
@@ -78,12 +78,12 @@ Open Hyper-V Manager console (`vmconnect.exe`) for the test VM.
 | *(none)* | | |
 
 ```powershell
-Connect-MyChTestVm
+Connect-ChocoVm
 ```
 
 ---
 
-#### `Restore-MyChTestVm`
+#### `Restore-ChocoVm`
 
 Restore a Hyper-V checkpoint on the test VM.
 
@@ -92,139 +92,112 @@ Restore a Hyper-V checkpoint on the test VM.
 | `-Snapshot` | string | Checkpoint name; omit to use `$Env:au_VmSnapshot` or the latest checkpoint by `CreationTime` |
 
 ```powershell
-Restore-MyChTestVm
-Restore-MyChTestVm -Snapshot 'good'
+Restore-ChocoVm
+Restore-ChocoVm -Snapshot 'good'
 ```
 
 ---
 
 ### Package staging and testing
 
-#### `Stage-MyChTestPackage`
+#### `Stage-ChocoPackage`
 
 Pack (if needed), optionally clear the Vagrant `packages/` folder, and copy a `.nupkg` for guest testing.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `-Nu` | path | `.nupkg`, `.nuspec`, or package directory; default: current directory |
-| `-NoClear` | switch | Do not remove existing `.nupkg`/`.xml` in `packages/` |
+| `-NoClear` | switch | Do not remove existing `.nupkg`/`.xml` in `packages/` before the final copy |
 | `-Vagrant` | string | Override `$Env:au_Vagrant` path |
 
 ```powershell
 cd automatic\my-package
-Stage-MyChTestPackage
-Stage-MyChTestPackage -Nu .\my-package.1.0.0.nupkg
+Stage-ChocoPackage
+Stage-ChocoPackage -Nu .\my-package.1.0.0.nupkg
 ```
 
 ---
 
-#### `Start-MyChTestPackageManual`
+#### `Start-ChocoManualTest`
 
 Manual test workflow: stage package → restore checkpoint → start VM → open vmconnect.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Nu` | path | Same as `Stage-MyChTestPackage` |
-| `-NoClear` | switch | Same as `Stage-MyChTestPackage` |
-| `-Snapshot` | string | Same as `Restore-MyChTestVm` |
+| `-Nu` | path | Same as `Stage-ChocoPackage` |
+| `-NoClear` | switch | Same as `Stage-ChocoPackage` |
+| `-Snapshot` | string | Same as `Restore-ChocoVm` |
 | `-NoConnect` | switch | Skip opening vmconnect |
-| `-Vagrant` | string | Same as `Stage-MyChTestPackage` |
+| `-Vagrant` | string | Same as `Stage-ChocoPackage` |
 
 In the guest, run `~\TestAllPackages.ps1` or `~\TestAllPackages.ps1 -UninstallAfterInstall`.
 
 ```powershell
 cd automatic\my-package
-Start-MyChTestPackageManual
+Start-ChocoManualTest
 ```
 
 ---
 
-#### `Test-MyChPackageVm`
+#### `Test-ChocoPackageVm`
 
 Automated test: stage → restore checkpoint → start VM → run `TestAllPackages.ps1` in guest → restore checkpoint again → **clear test-env `packages/` and repo `*.nupkg` artifacts** (always, pass or fail).
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Nu` | path | Same as `Stage-MyChTestPackage` |
+| `-Nu` | path | Same as `Stage-ChocoPackage` |
 | `-UninstallAfterInstall` | switch | Pass `-UninstallAfterInstall` to guest script |
 | `-ShowOutput` | switch | Stream guest output via `vagrant powershell` (recommended on Hyper-V) |
-| `-Snapshot` | string | Same as `Restore-MyChTestVm` |
-| `-Vagrant` | string | Same as `Stage-MyChTestPackage` |
+| `-Snapshot` | string | Same as `Restore-ChocoVm` |
+| `-Vagrant` | string | Same as `Stage-ChocoPackage` |
 
 Returns guest exit code (`0` = pass).
 
 ```powershell
 cd automatic\my-package
-Test-MyChPackageVm -UninstallAfterInstall -ShowOutput
+Test-ChocoPackageVm -UninstallAfterInstall -ShowOutput
 ```
 
 ---
 
 ### Cleanup
 
-#### `Clear-MyChTestVmPackages`
+#### `Clear-ChocoPackages`
 
-Delete `*.nupkg` and `*.xml` in the test-environment `packages/` folder (`{au_Vagrant}/packages`).
+Delete package artifacts from the repo and/or the test-environment `packages/` folder.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Vagrant` | string | Override `$Env:au_Vagrant` path |
+| `-Type` | string | `All` (default), `Repo`, or `VM` |
+| `-RepoRoot` | string | Repo root path; default: parent of `_scripts/` (used when clearing Repo) |
+| `-Vagrant` | string | Override `$Env:au_Vagrant` path (used when clearing VM) |
+
+- **Repo** — delete `*.nupkg` under `automatic/` and `manual/`
+- **VM** — delete `*.nupkg` and `*.xml` in `{au_Vagrant}/packages/`
+- **All** — both
 
 ```powershell
-Clear-MyChTestVmPackages
+Clear-ChocoPackages
+Clear-ChocoPackages -Type Repo
+Clear-ChocoPackages -Type VM
 ```
 
 ---
 
-#### `Clear-MyChPackageArtifacts`
+#### `Stop-ChocoAll`
 
-Delete all `*.nupkg` files under `automatic/` and `manual/` in the repo.
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `-RepoRoot` | string | Repo root path; default: parent of `_scripts/` |
-
-```powershell
-Clear-MyChPackageArtifacts
-```
-
----
-
-#### `Start-MyChTestPackageCleanUp`
-
-`Clear-MyChPackageArtifacts` then `Start-MyChTestPackageManual`.
+`Stop-ChocoVm` then `Clear-ChocoPackages -Type All`.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Nu` | path | Same as `Start-MyChTestPackageManual` |
-| `-NoClear` | switch | Same as `Start-MyChTestPackageManual` |
-| `-Snapshot` | string | Same as `Start-MyChTestPackageManual` |
-| `-NoConnect` | switch | Same as `Start-MyChTestPackageManual` |
-| `-Vagrant` | string | Same as `Start-MyChTestPackageManual` |
-
-Repo wrapper: `clean_up_and_test.ps1`.
+| `-TurnOff` | switch | Same as `Stop-ChocoVm` |
+| `-Save` | switch | Same as `Stop-ChocoVm` |
+| `-RepoRoot` | string | Same as `Clear-ChocoPackages` |
+| `-Vagrant` | string | Same as `Clear-ChocoPackages` |
 
 ```powershell
-Start-MyChTestPackageCleanUp
-```
-
----
-
-#### `Stop-MyChTestVmCleanUp`
-
-`Stop-MyChTestVm` then `Clear-MyChPackageArtifacts`.
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `-TurnOff` | switch | Same as `Stop-MyChTestVm` |
-| `-Save` | switch | Same as `Stop-MyChTestVm` |
-| `-RepoRoot` | string | Same as `Clear-MyChPackageArtifacts` |
-
-Repo wrapper: `clean_up.ps1` (artifacts only) combines with stop via this command.
-
-```powershell
-Stop-MyChTestVmCleanUp
-Stop-MyChTestVmCleanUp -TurnOff
+Stop-ChocoAll
+Stop-ChocoAll -TurnOff
 ```
 
 ---
@@ -236,9 +209,9 @@ Stop-MyChTestVmCleanUp -TurnOff
 ```powershell
 . .\Import-TestVmModule.ps1
 cd automatic\my-package
-Start-MyChTestPackageManual
+Start-ChocoManualTest
 # In guest: ~\TestAllPackages.ps1
-Stop-MyChTestVmCleanUp
+Stop-ChocoAll
 ```
 
 **Automated test**
@@ -246,7 +219,7 @@ Stop-MyChTestVmCleanUp
 ```powershell
 . .\Import-TestVmModule.ps1
 cd automatic\my-package
-Test-MyChPackageVm -UninstallAfterInstall -ShowOutput
+Test-ChocoPackageVm -UninstallAfterInstall -ShowOutput
 ```
 
 ## Related docs

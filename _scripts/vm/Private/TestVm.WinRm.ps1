@@ -1,4 +1,4 @@
-function Test-MyChWinRmPortOpen {
+function Test-ChocoWinRmPortOpen {
     param(
         [string]$ComputerName = '127.0.0.1',
         [int]$Port = $script:WinRmPort
@@ -20,10 +20,10 @@ function Test-MyChWinRmPortOpen {
     }
 }
 
-function Get-MyChTestVmWinRmTargets {
+function Get-ChocoVmWinRmTargets {
     $targets = [System.Collections.Generic.List[hashtable]]::new()
 
-    $vm = Get-MyChTestVm
+    $vm = Get-ChocoVm
     $ips = @(Get-VMNetworkAdapter -VM $vm -ErrorAction SilentlyContinue |
         ForEach-Object { $_.IPAddresses } |
         Where-Object { $_ -match '^(?:\d{1,3}\.){3}\d{1,3}$' -and $_ -notmatch '^169\.254\.' } |
@@ -46,7 +46,7 @@ function Get-MyChTestVmWinRmTargets {
     return $targets
 }
 
-function Wait-MyChTestVmWinRm {
+function Wait-ChocoVmWinRm {
     param(
         [int]$TimeoutSeconds = 120,
         [int]$IntervalSeconds = 3
@@ -57,14 +57,14 @@ function Wait-MyChTestVmWinRm {
     Write-Host "Waiting for guest WinRM (up to ${TimeoutSeconds}s)..."
 
     while ((Get-Date) -lt $deadline) {
-        $targets = @(Get-MyChTestVmWinRmTargets)
+        $targets = @(Get-ChocoVmWinRmTargets)
         if ($targets.Count -eq 0) {
             Write-Host '  no WinRM targets resolved yet'
         }
 
         foreach ($target in $targets) {
             Write-Host "  probing $($target.Via) $($target.ComputerName):$($target.Port)..."
-            if (-not (Test-MyChWinRmPortOpen -ComputerName $target.ComputerName -Port $target.Port)) {
+            if (-not (Test-ChocoWinRmPortOpen -ComputerName $target.ComputerName -Port $target.Port)) {
                 continue
             }
 
@@ -92,18 +92,18 @@ function Wait-MyChTestVmWinRm {
     throw @"
 Timed out waiting for guest WinRM after ${TimeoutSeconds}s.
 Direct WinRM from the host often does not work with Hyper-V (firewall / no port forward).
-Use Test-MyChPackageVm without -ShowOutput, or rely on vagrant powershell (-ShowOutput uses vagrant on Hyper-V).
+Use Test-ChocoPackageVm without -ShowOutput, or rely on vagrant powershell (-ShowOutput uses vagrant on Hyper-V).
 "@
 }
 
-function Invoke-MyChTestVmWinRm {
+function Invoke-ChocoVmWinRm {
     param(
         [Parameter(Mandatory)]
         [string]$Script,
         [switch]$ShowOutput
     )
 
-    Wait-MyChTestVmWinRm
+    Wait-ChocoVmWinRm
 
     if (-not $script:WinRmTarget) {
         throw 'WinRM target was not resolved.'
@@ -137,13 +137,13 @@ function Invoke-MyChTestVmWinRm {
                         "$_"
                     }
                 }
-                [PSCustomObject]@{ __MyChExitCode = $exitCode }
+                [PSCustomObject]@{ __ChocoExitCode = $exitCode }
             } -ArgumentList $Script
 
             $exitCode = 1
             foreach ($item in $items) {
-                if ($item -is [PSCustomObject] -and $null -ne $item.PSObject.Properties['__MyChExitCode']) {
-                    $exitCode = $item.__MyChExitCode
+                if ($item -is [PSCustomObject] -and $null -ne $item.PSObject.Properties['__ChocoExitCode']) {
+                    $exitCode = $item.__ChocoExitCode
                 } elseif ($null -ne $item -and "$item" -ne '') {
                     Write-Host $item
                 }
@@ -154,11 +154,11 @@ function Invoke-MyChTestVmWinRm {
         $result = Invoke-Command -Session $session -ScriptBlock {
             param($Command)
             Invoke-Expression $Command
-            [PSCustomObject]@{ __MyChExitCode = $LASTEXITCODE }
+            [PSCustomObject]@{ __ChocoExitCode = $LASTEXITCODE }
         } -ArgumentList $Script
 
-        if ($null -eq $result.__MyChExitCode) { return 0 }
-        return $result.__MyChExitCode
+        if ($null -eq $result.__ChocoExitCode) { return 0 }
+        return $result.__ChocoExitCode
     } finally {
         if ($session) {
             Remove-PSSession -Session $session -ErrorAction SilentlyContinue

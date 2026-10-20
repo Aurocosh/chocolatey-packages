@@ -1,9 +1,9 @@
-function Get-MyChTestVmName {
+function Get-ChocoVmName {
     if ($Env:au_TestVmName) { return $Env:au_TestVmName }
     return $script:DefaultVmName
 }
 
-function Get-MyChVagrantPath {
+function Get-ChocoVagrantPath {
     param([string]$Vagrant)
 
     $path = if ($Vagrant) { $Vagrant } else { $Env:au_Vagrant }
@@ -16,8 +16,8 @@ function Get-MyChVagrantPath {
     return (Resolve-Path -LiteralPath $path).Path
 }
 
-function Get-MyChTestVm {
-    $vmName = Get-MyChTestVmName
+function Get-ChocoVm {
+    $vmName = Get-ChocoVmName
     $vm = Get-VM -Name $vmName -ErrorAction SilentlyContinue
     if (-not $vm) {
         throw "Hyper-V VM not found: $vmName. Run init.ps1 or check au_TestVmName."
@@ -25,10 +25,10 @@ function Get-MyChTestVm {
     return $vm
 }
 
-function Get-MyChTestVmSnapshot {
+function Get-ChocoVmSnapshot {
     param([string]$Snapshot)
 
-    $vmName = Get-MyChTestVmName
+    $vmName = Get-ChocoVmName
     $name = if ($Snapshot) { $Snapshot } elseif ($Env:au_VmSnapshot) { $Env:au_VmSnapshot } else { $null }
 
     if ($name) {
@@ -46,7 +46,7 @@ function Get-MyChTestVmSnapshot {
     return $snaps[0]
 }
 
-function Resolve-MyChNupkg {
+function Resolve-ChocoNupkg {
     param($Nu)
 
     if (-not $Nu) {

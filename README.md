@@ -29,9 +29,9 @@ From this repo root, load the test module and run from a package directory:
 ```powershell
 . .\Import-TestVmModule.ps1
 cd automatic\<id>
-Start-MyChTestPackageManual              # semi-auto: stage, restore checkpoint, start VM
-Test-MyChPackageVm -UninstallAfterInstall -ShowOutput # full auto with checkpoint rollback
-Stop-MyChTestVmCleanUp                   # stop VM and clear .nupkg artifacts
+Start-ChocoManualTest                    # semi-auto: stage, restore checkpoint, start VM
+Test-ChocoPackageVm -UninstallAfterInstall -ShowOutput # full auto with checkpoint rollback
+Stop-ChocoAll                            # stop VM and clear .nupkg artifacts
 ```
 
 See `my-package-tools/docs/user/` for Hyper-V Administrators setup and full command reference.

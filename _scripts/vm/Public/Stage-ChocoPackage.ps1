@@ -1,15 +1,14 @@
-function Stage-MyChTestPackage {
+function Stage-ChocoPackage {
     param(
         $Nu,
         [switch]$NoClear,
         [string]$Vagrant
     )
 
-    Clear-MyChPackageArtifacts
-    Clear-MyChTestVmPackages -Vagrant $Vagrant
-    
-    $vagrantPath = Get-MyChVagrantPath -Vagrant $Vagrant
-    $Nu = Resolve-MyChNupkg -Nu $Nu
+    Clear-ChocoPackages -Vagrant $Vagrant
+
+    $vagrantPath = Get-ChocoVagrantPath -Vagrant $Vagrant
+    $Nu = Resolve-ChocoNupkg -Nu $Nu
 
     $packageName = $Nu.Name -replace '(\.\d+)+(-[^-]+)?\.nupkg$'
     $packageVersion = ($Nu.BaseName -replace [regex]::Escape($packageName)).Substring(1)
@@ -27,7 +26,7 @@ function Stage-MyChTestPackage {
     }
 
     if (-not $NoClear) {
-        Clear-MyChTestVmPackages -Vagrant $Vagrant
+        Clear-ChocoPackages -Type VM -Vagrant $Vagrant
     }
 
     Copy-Item -LiteralPath $Nu.FullName -Destination $packagesDir -Force

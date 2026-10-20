@@ -13,7 +13,7 @@ function Test-ChocoPackageVm {
     $restoredForTest = $false
 
     try {
-        Stage-ChocoPackage -Nu $Nu -Vagrant $Vagrant
+        Export-ChocoPackage -Nu $Nu -Vagrant $Vagrant
         Restore-ChocoVm -Snapshot $snapName
         $restoredForTest = $true
         Start-ChocoVm

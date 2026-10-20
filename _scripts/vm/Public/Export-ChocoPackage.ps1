@@ -1,4 +1,4 @@
-function Stage-ChocoPackage {
+function Export-ChocoPackage {
     param(
         $Nu,
         [switch]$NoClear,

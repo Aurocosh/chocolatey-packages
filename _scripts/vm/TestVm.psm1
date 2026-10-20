@@ -23,7 +23,7 @@ Export-ModuleMember -Function @(
     'Stop-ChocoVm',
     'Connect-ChocoVm',
     'Restore-ChocoVm',
-    'Stage-ChocoPackage',
+    'Export-ChocoPackage',
     'Start-ChocoManualTest',
     'Test-ChocoPackageVm',
     'Clear-ChocoPackages',

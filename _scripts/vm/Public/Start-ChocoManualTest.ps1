@@ -7,7 +7,7 @@ function Start-ChocoManualTest {
         [string]$Vagrant
     )
 
-    Stage-ChocoPackage -Nu $Nu -NoClear:$NoClear -Vagrant $Vagrant
+    Export-ChocoPackage -Nu $Nu -NoClear:$NoClear -Vagrant $Vagrant
     Restore-ChocoVm -Snapshot $Snapshot
     Start-ChocoVm
     if (-not $NoConnect) {

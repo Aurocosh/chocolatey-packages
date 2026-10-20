@@ -100,7 +100,7 @@ Restore-ChocoVm -Snapshot 'good'
 
 ### Package staging and testing
 
-#### `Stage-ChocoPackage`
+#### `Export-ChocoPackage`
 
 Pack (if needed), optionally clear the Vagrant `packages/` folder, and copy a `.nupkg` for guest testing.
 
@@ -112,8 +112,8 @@ Pack (if needed), optionally clear the Vagrant `packages/` folder, and copy a `.
 
 ```powershell
 cd automatic\my-package
-Stage-ChocoPackage
-Stage-ChocoPackage -Nu .\my-package.1.0.0.nupkg
+Export-ChocoPackage
+Export-ChocoPackage -Nu .\my-package.1.0.0.nupkg
 ```
 
 ---
@@ -124,11 +124,11 @@ Manual test workflow: stage package → restore checkpoint → start VM → open
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Nu` | path | Same as `Stage-ChocoPackage` |
-| `-NoClear` | switch | Same as `Stage-ChocoPackage` |
+| `-Nu` | path | Same as `Export-ChocoPackage` |
+| `-NoClear` | switch | Same as `Export-ChocoPackage` |
 | `-Snapshot` | string | Same as `Restore-ChocoVm` |
 | `-NoConnect` | switch | Skip opening vmconnect |
-| `-Vagrant` | string | Same as `Stage-ChocoPackage` |
+| `-Vagrant` | string | Same as `Export-ChocoPackage` |
 
 In the guest, run `~\TestAllPackages.ps1` or `~\TestAllPackages.ps1 -UninstallAfterInstall`.
 
@@ -145,11 +145,11 @@ Automated test: stage → restore checkpoint → start VM → run `TestAllPackag
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `-Nu` | path | Same as `Stage-ChocoPackage` |
+| `-Nu` | path | Same as `Export-ChocoPackage` |
 | `-UninstallAfterInstall` | switch | Pass `-UninstallAfterInstall` to guest script |
 | `-ShowOutput` | switch | Stream guest output via `vagrant powershell` (recommended on Hyper-V) |
 | `-Snapshot` | string | Same as `Restore-ChocoVm` |
-| `-Vagrant` | string | Same as `Stage-ChocoPackage` |
+| `-Vagrant` | string | Same as `Export-ChocoPackage` |
 
 Returns guest exit code (`0` = pass).
 

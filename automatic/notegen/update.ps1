@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser codexu `
     -RepoName note-gen `
-    -MainUrl64Regex "NoteGen_\d+\.\d+\.\d+_x64-setup.exe"
+    -MainUrl64Regex "NoteGen_\d+\.\d+\.\d+_x64_en-US\.msi$"
 
 function global:au_SearchReplace {
     @{

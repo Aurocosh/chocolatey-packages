@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop' # stop on all errors
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   softwareName   = 'NoteGen*'
-  fileType       = 'EXE'
-  silentArgs     = '/S'  # NSIS
+  fileType       = 'msi'
+  silentArgs     = '/qn /norestart'  # MSI
   validExitCodes = @(0, 3010, 1605, 1614, 1641)
 }
 
@@ -12,7 +12,8 @@ $packageArgs = @{
 
 if ($key.Count -eq 1) {
   $key | ForEach-Object {
-    $packageArgs['file'] = "$($_.UninstallString)"
+    $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
+    $packageArgs['file'] = ''
     Uninstall-ChocolateyPackage @packageArgs
   }
 }

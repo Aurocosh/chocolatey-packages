@@ -2,13 +2,23 @@
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath 'files'
 
+# Archive is .tar.gz, and it has to be extracted twice. So we cannot simply use Install-ChocolateyZipPackage to install the program
+$archiveFile = Join-Path $packagePath 'archive.tar.gz'
+
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $installPath
+  fileFullPath   = $archiveFile
   softwareName   = 'duckdb*'
-  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v1.5.6/duckdb_cli-windows-amd64.zip'
-  checksum64     = '798eae475d07c645ff3b914f7b0e676d06502b5412dd7552638fafed81f9e916'
+  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v2.0.0/duckdb-cli-windows-amd64.tar.gz'
+  checksum64     = '91663c2f36c2a334b0e5e639006d8c29c29e013af0c477d80bb931df68870312'
   checksumType64 = 'sha256'
 }
+Get-ChocolateyWebFile @packageArgs
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip -FileFullPath $archiveFile -Destination $packagePath -DisableLogging
+Remove-Item -Path $archiveFile -Force
+
+$archiveFile = Join-Path $packagePath 'archive.tar'
+
+Get-ChocolateyUnzip -FileFullPath $archiveFile -Destination $installPath -PackageName $env:ChocolateyPackageName
+Remove-Item -Path $archiveFile -Force

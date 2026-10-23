@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser duckdb `
     -RepoName duckdb `
-    -MainUrl64Regex "duckdb_cli-windows-amd64.zip"
+    -MainUrl64Regex "duckdb-cli-windows-amd64.tar.gz"
 
 function global:au_SearchReplace {
     @{

@@ -27,10 +27,17 @@ function global:au_GetLatest {
     }
 
     $version = $versions[0].ToString()
-    $url64 = "${releases}${version}/haruna-${version}-windows-gcc-x86_64.exe"
+    $version_page = Invoke-WebRequest -Uri "${releases}${version}/" -UseBasicParsing
+    $installer = $version_page.Links |
+        Where-Object href -match "^haruna-${version}-windows-.+-x86_64\.exe$" |
+        Select-Object -ExpandProperty href -First 1
+
+    if (-not $installer) {
+        throw "Could not find Windows x86_64 installer for Haruna $version"
+    }
 
     @{
-        URL64        = $url64
+        URL64        = "${releases}${version}/$installer"
         Version      = $version
         ReleaseNotes = 'https://haruna.kde.org/blog/'
     }

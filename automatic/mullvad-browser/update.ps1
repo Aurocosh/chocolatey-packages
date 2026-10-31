@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser mullvad `
     -RepoName mullvad-browser `
-    -MainUrl64Regex "mullvad-browser-windows-x86_64-\d+\.\d+\.\d+.exe"
+    -MainUrl64Regex "mullvad-browser-windows-x86_64-\d+(?:\.\d+)+\.exe$"
 
 function global:au_SearchReplace {
     @{

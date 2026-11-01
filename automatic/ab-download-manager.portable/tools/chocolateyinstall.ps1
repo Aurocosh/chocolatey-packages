@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $packagePath
   softwareName   = 'ABDownloadManager*'
-  url64bit       = 'https://github.com/amir1376/ab-download-manager/releases/download/v1.11.1/ABDownloadManager_1.11.1_windows_x64.zip'
-  checksum64     = 'e461297f121fb56c31dc3769e74936fc0a64aee779c3fa21070fc79a40e2fab0'
+  url64bit       = 'https://github.com/amir1376/ab-download-manager/releases/download/v1.11.2/ABDownloadManager_1.11.2_windows_x64.zip'
+  checksum64     = 'ad7bab0ceba8c831db1018340d0345077d9d2a5caa0ba3d1367407750e767126'
   checksumType64 = 'sha256'
 }
 

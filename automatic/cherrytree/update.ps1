@@ -4,7 +4,7 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser giuspen `
     -RepoName cherrytree `
-    -MainUrl64Regex "cherrytree_\d+\.\d+\.\d+\.\d+_win64_setup.exe"
+    -MainUrl64Regex "cherrytree_\d+(?:\.\d+)+_win64_setup(?:_nolatex)?\.exe"
 
 function global:au_SearchReplace {
     @{

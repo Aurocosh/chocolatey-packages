@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gyroflow</id>
-    <version>1.6.3</version>
+    <version>1.7.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/gyroflow</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Gyroflow (Portable)</title>
@@ -57,7 +57,7 @@ Gyroflow is an application that can stabilize your video by using motion data fr
 - Easy management of the video editor plugins from within the app
 - Ability to add an additional 3D rotation (useful for framing vertical videos)
 </description>
-    <releaseNotes>https://github.com/gyroflow/gyroflow/releases</releaseNotes>
+    <releaseNotes>https://github.com/gyroflow/gyroflow/releases/tag/v1.7.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" />
     </dependencies>

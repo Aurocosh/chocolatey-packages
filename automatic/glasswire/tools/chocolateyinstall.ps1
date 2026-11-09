@@ -33,8 +33,8 @@ if ($useLegacy) {
   $packageArgs.checksumType = 'sha256'
 }
 else {
-  $packageArgs.url64bit          = 'https://download.glasswire.com/latest/GlassWireSetup.exe?v=3.11.1164'
-  $packageArgs.checksum64        = '0d3c736cdcc73ea134f5392c4dc6d0aa48056c408b518d6a4299d022f36e18a2'
+  $packageArgs.url64bit          = 'https://download.glasswire.com/latest/GlassWireSetup.exe?v=3.11.1183'
+  $packageArgs.checksum64        = 'acf7e2233c5686ef21e962094f1a068e4851a9d1e31c49146127fa6d564a6738'
   $packageArgs.checksumType64    = 'sha256'
 }
 

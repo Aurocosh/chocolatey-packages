@@ -4,28 +4,23 @@ Import-Module "$PSScriptRoot/../../_scripts/my_functions.psm1"
 $release = Get-LatestGithubRelease `
     -GitUser cdgriffith `
     -RepoName FastFlix `
-    -MainUrl64Regex "FastFlix_\d+\.\d+\.\d+_installer\.exe" `
+    -MainUrl64Regex "FastFlix_\d+\.\d+\.\d+_win64\.zip" `
     -Buffered 60
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-        }
         "$($Latest.PackageName).nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+            "(?i)(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+            "(?i)(\<dependency id=`"fastflix.portable`" version=`"\[).*?(\]`" /\>)" = "`${1}$($Latest.Version)`$2"
         }
     }
 }
 
 function global:au_GetLatest {
     @{
-        Url64        = $release.MainUrl64
-        Checksum64   = $release.MainUrl64_Sha256
         Version      = $release.Version
         ReleaseNotes = $release.ReleaseUrl
     }
 }
 
-update -ChecksumFor $release.ChocoChecksumFor
+update -ChecksumFor none

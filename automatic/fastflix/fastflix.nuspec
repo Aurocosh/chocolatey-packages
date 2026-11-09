@@ -5,9 +5,9 @@
   <metadata>
     <id>fastflix</id>
     <version>6.3.2</version>
-    <packageSourceUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/fastflix</packageSourceUrl>
     <owners>Aurocosh</owners>
-    <title>FastFlix (Install)</title>
+    <title>FastFlix (Portable)</title>
     <authors>Chris Griffith</authors>
     <projectUrl>https://github.com/cdgriffith/FastFlix</projectUrl>
     <iconUrl>https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/icon.png</iconUrl>
@@ -19,20 +19,19 @@
     <bugTrackerUrl>https://github.com/cdgriffith/FastFlix/issues</bugTrackerUrl>
     <tags>fastflix ffmpeg libavcodec audio video convert media</tags>
     <summary>FastFlix is a handy GUI for encoding videos</summary>
-    <description>FastFlix is a handy GUI for encoding videos. 
+    <description>FastFlix is a handy GUI for encoding videos.
 
 ![Screenshot](https://cdn.statically.io/gh/Aurocosh/chocolatey-packages/master/automatic/fastflix/img/screenshot.png)
 
 It needs `FFmpeg` (version 4.3 or greater required, 5.0+ recommended) under the hood for the heavy lifting, and can work with a variety of encoders.
+
+**This is a virtual package.** Upstream's Windows installer is a custom GUI installer with no silent-install support, so this package installs [fastflix.portable](https://community.chocolatey.org/packages/fastflix.portable) instead.
 </description>
     <releaseNotes>https://github.com/cdgriffith/FastFlix/releases/tag/6.3.2</releaseNotes>
     <dependencies>
-      <dependency id="ffmpeg-full" />
+      <dependency id="fastflix.portable" version="[6.3.2]" />
     </dependencies>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="tools\**" target="tools" />
   </files>
 </package>
-

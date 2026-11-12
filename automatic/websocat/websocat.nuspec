@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>websocat</id>
-    <version>1.14.1</version>
+    <version>1.14.2</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/websocat</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>Websocat (Portable)</title>
@@ -34,7 +34,7 @@ Connect to echo servers, serve WebSocket endpoints, proxy TCP to WebSocket (and 
 
 See the [project wiki](https://github.com/vi/websocat/wiki) and [more examples](https://github.com/vi/websocat/blob/master/moreexamples.md) for usage details.
 </description>
-    <releaseNotes>https://github.com/vi/websocat/releases/tag/v1.14.1</releaseNotes>
+    <releaseNotes>https://github.com/vi/websocat/releases/tag/v1.14.2</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

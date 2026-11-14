@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opencomic</id>
-    <version>1.6.5</version>
+    <version>2.0.0</version>
     <packageSourceUrl>https://github.com/Aurocosh/chocolatey-packages/tree/master/automatic/opencomic</packageSourceUrl>
     <owners>Aurocosh</owners>
     <title>OpenComic (Install)</title>
@@ -44,7 +44,7 @@ More [Screenshots 📸](https://github.com/ollm/OpenComic/blob/master/SCREENSHOT
 - 🔄 Tracking with sites (AniList)
 - 🎮 Gamepad navigation
 - 🔢 Multiple interpolation methods: `lanczos3`, `lanczos2`, `mitchell`, `cubic`, `nearest` and others</description>
-    <releaseNotes>https://github.com/ollm/OpenComic/releases/tag/v1.6.5</releaseNotes>
+    <releaseNotes>https://github.com/ollm/OpenComic/releases/tag/v2.0.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

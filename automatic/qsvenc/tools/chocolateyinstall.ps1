@@ -10,7 +10,7 @@ $packageArgs = @{
   # checksum       = 'd0c3ce2ad7ced17e28cbd774503c31dc119ddbd81fcfaa5ce95b2fd3e62eb6da' # x86 temporarily disabled
   # checksumType   = 'sha256' # x86 temporarily disabled
   url64bit       = 'https://github.com/rigaya/QSVEnc/releases/download/8.38/QSVEncC_8.38_x64.7z'
-  checksum64     = 'a6ec2114f6bc76a0248104eeee86a14572cf8d01b1678466ea3a81f3af8e9a69'
+  checksum64     = '3a9ed59c4170bf63a41fcc8669a5fdeb50b335dc90056533455303acfac2f072'
   checksumType64 = 'sha256'
 }
 

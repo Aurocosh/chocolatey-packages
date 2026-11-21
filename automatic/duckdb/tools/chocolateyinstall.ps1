@@ -9,8 +9,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = $archiveFile
   softwareName   = 'duckdb*'
-  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v2.0.0/duckdb-cli-windows-amd64.tar.gz'
-  checksum64     = '91663c2f36c2a334b0e5e639006d8c29c29e013af0c477d80bb931df68870312'
+  url64bit       = 'https://github.com/duckdb/duckdb/releases/download/v2.0.1/duckdb-cli-windows-amd64.tar.gz'
+  checksum64     = '8e40d1e9c53dfd70dd671c1f886506211bd054272e7eed35e8aa979ad7bcc9b7'
   checksumType64 = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs

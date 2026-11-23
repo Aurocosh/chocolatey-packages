@@ -7,8 +7,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installPath
   softwareName   = 'Gyroflow*'
-  url64bit       = 'https://github.com/gyroflow/gyroflow/releases/download/v1.7.0/Gyroflow-windows64.zip'
-  checksum64     = '04c044c17bf3f5b20172fd12a709ac95ce99aa1e01c247687c12d158677df916'
+  url64bit       = 'https://github.com/gyroflow/gyroflow/releases/download/v1.7.1/Gyroflow-windows64.zip'
+  checksum64     = 'e882319e0455c452dd7c4dd69433d32bfd8271ba20fcf7f01ec9af669487b3d9'
   checksumType64 = 'sha256'
 }
 

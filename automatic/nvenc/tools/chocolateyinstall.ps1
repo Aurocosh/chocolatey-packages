@@ -9,8 +9,8 @@ $packageArgs = @{
   # url            = 'https://github.com/rigaya/NVEnc/releases/download/9.38/NVEncC_9.38_Win32.7z' # x86 temporarily disabled
   # checksum       = '5db7651070dc45002f9007bb42195b1cb1814b0564f5ea0b8e7caf1d4e33e25f' # x86 temporarily disabled
   # checksumType   = 'sha256' # x86 temporarily disabled
-  url64bit       = 'https://github.com/rigaya/NVEnc/releases/download/9.41/NVEncC_9.41_x64.7z'
-  checksum64     = '718ce2084d45e56706149bb9cf5d96a5ea697c4c5f75a2f256ebf79918259da2'
+  url64bit       = 'https://github.com/rigaya/NVEnc/releases/download/9.42/NVEncC_9.42_x64.7z'
+  checksum64     = 'd465144495e7f41b1c09a16d5829be39d8f67b767349b425d9110792a348f7ac'
   checksumType64 = 'sha256'
 }
 
